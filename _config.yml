@@ -29,7 +29,7 @@ studio:
     copyright: "© 2026 Eszett, LLC"
   # Cloudflare Web Analytics token, minted per live hostname by the DNS
   # steward into platform.yml (EPIC1-04). Backfill from there; not secret.
-  analytics_beacon: ""
+  analytics_beacon: "e5abd9ed0dc844bdadf574e0c5f3b611"
   # Email capture (platform ADR-0034). One shared studio list; the provider
   # holds the PII and this repo holds nothing but the dataset.
   signup:
