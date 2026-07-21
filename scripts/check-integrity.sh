@@ -10,3 +10,6 @@ PY="${PYTHON:-python3}"
 "$PY" scripts/counts.py --check
 # Imports are reproducible from their committed snapshot, or they are not imports.
 "$PY" scripts/import_register.py --register gb-wls-cadw --transform --check
+# The disagreement ledger is derived, so it is drift-checked like every other
+# published number.
+"$PY" scripts/analyse_disagreements.py --check

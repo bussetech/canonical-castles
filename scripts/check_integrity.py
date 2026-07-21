@@ -158,6 +158,39 @@ def main() -> int:
                 fail(f"sites/{rid}: definitions_met.{band} is register-derived but the "
                      f"record names no register_entries — the claim cannot be checked")
 
+    # --- cross-register disagreements -------------------------------------
+    dis = load(DATA / "disagreements.yml")
+    for side_name in ("left", "right"):
+        for d in dis["disagreements"]:
+            if d[side_name]["register"] not in register_ids:
+                fail(f"disagreements/{d['id']}: {side_name} names unknown register "
+                     f"{d[side_name]['register']!r}")
+            band = d[side_name]["band"]
+            if band is not None and band not in band_ids:
+                fail(f"disagreements/{d['id']}: {side_name} maps to unknown band {band!r}")
+
+    for d in dis["disagreements"]:
+        sid = d.get("site_id")
+        if sid and sid not in records:
+            fail(f"disagreements/{d['id']}: site_id {sid!r} has no record")
+        # A known band-conflict on a structure we hold must be reflected in the
+        # record. Otherwise the ledger says the registers disagree while the
+        # record quietly reports one register's answer as settled.
+        if d["kind"] == "band-conflict" and sid and sid in records:
+            rec = records[sid]
+            bands_in_play = {d["left"]["band"], d["right"]["band"]} - {None}
+            reflected = any(
+                (rec.get("definitions_met") or {}).get(b, {}).get("verdict") == "contested"
+                for b in bands_in_play
+            )
+            if not reflected:
+                fail(f"sites/{sid}: disagreements/{d['id']} records a band-conflict "
+                     f"between {sorted(bands_in_play)}, but the record marks none of "
+                     f"them contested — the ledger and the record disagree")
+            if not rec.get("disputed"):
+                fail(f"sites/{sid}: subject of band-conflict {d['id']} but disputed is "
+                     f"not true")
+
     # --- production ledger ------------------------------------------------
     production = load(DATA / "production.yml")["batches"]
     complete_cells = {f"{c['definition']}/{c['jurisdiction']}"

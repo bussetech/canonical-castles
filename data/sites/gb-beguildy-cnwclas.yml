@@ -12,17 +12,24 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument RD085 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: contested
+    assessment: assessed
+    basis: 'CONTESTED between two registers. Cadw schedules this as SiteType: Castle, which
+      maps to this band. Wikidata classes the same monument (joined on Cadw Monument ID) as
+      a contour fort, which maps to enclosure_fortification instead. The registers disagree
+      about what kind of thing it is, not about the evidence: Cnwclas (Knucklas) Castle —
+      a medieval castle on a hilltop with earlier enclosure works, so both readings describe
+      something real on the site. Recorded as contested rather than resolved to whichever
+      register we imported first.'
 register_entries:
 - register: gb-wls-cadw
   ref: RD085
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=1938
+disputed: true
+dispute_note: Cadw says Castle; Wikidata (Q5138262) says contour fort. A hilltop with both
+  medieval castle fabric and earlier enclosure works can honestly be classed either way, and
+  the two registers picked differently. See the cross-register disagreement ledger.
 first_seen: '2026-07-21'
 last_updated: '2026-07-21'
 confidence: low
@@ -34,8 +41,9 @@ sources:
   note: Register entry; the sole source for this record.
 signals:
 - sig-20260721-cadw-rd085
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+notes: 'Imported in bulk from Cadw''s scheduled-monument register, then CORRECTED by the cross-register
+  comparison: Wikidata disagrees about the band, so the verdict is contested rather than the
+  register-derived yes the import produced. One register speaks and nothing corroborates it,
+  hence confidence: low. Only fortified_residence carries a verdict; every other band is OMITTED
+  rather than set to no, because no source consulted so far speaks to them. Upgrading this
+  record means applying the bands to the structure itself and setting assessment: assessed.'

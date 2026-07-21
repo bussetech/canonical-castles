@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://castles.bussetech.com/schema/disagreements.schema.json",
+  "title": "Cross-register disagreements",
+  "description": "Where two registers classify the same physical structure differently. This is the dataset's own contribution rather than a transcription of anyone else's: individual records answer 'what is this?', the claims ledger answers 'where did that number come from?', and this file answers 'who disagrees, and about what kind of thing?'. Each entry joins two registers on a shared identifier — never on a name, which is what makes it checkable — and classifies the disagreement by KIND, because a register calling a motte a castle and a register calling a burial mound a castle are not the same event.",
+  "type": "object",
+  "required": ["version", "generated_from", "disagreements"],
+  "additionalProperties": false,
+  "properties": {
+    "version": { "const": 1 },
+    "generated_from": {
+      "type": "object",
+      "required": ["registers", "join", "note"],
+      "additionalProperties": false,
+      "properties": {
+        "registers": { "type": "array", "minItems": 2, "items": { "type": "string" } },
+        "join": { "type": "string", "description": "The identifier the two registers were joined on. Name matching is not permitted here — it manufactures agreement and disagreement in roughly equal measure." },
+        "note": { "type": "string", "minLength": 1 }
+      }
+    },
+    "disagreements": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/disagreement" }
+    }
+  },
+  "$defs": {
+    "disagreement": {
+      "type": "object",
+      "required": ["id", "kind", "left", "right", "basis"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*[a-z0-9]$" },
+        "kind": {
+          "enum": ["granularity", "band-conflict", "category-error"],
+          "description": "`granularity`: both classifications map to the SAME definition band — one register is simply more specific (motte vs castle). Real, but nobody is wrong. `band-conflict`: they map to DIFFERENT bands (castle vs hillfort) — a genuine dispute about what kind of thing it is, and the case that should make a record contested. `category-error`: one register's class maps to NO band at all — a burial mound is not a fortification under any definition here, so one of the two is simply wrong."
+        },
+        "left": { "$ref": "#/$defs/side" },
+        "right": { "$ref": "#/$defs/side" },
+        "site_id": { "type": ["string", "null"], "description": "Ref: data/sites/<id>.yml where this dataset holds the structure. Null is normal and honest — a disagreement is citable from two register identifiers without a local record." },
+        "basis": { "type": "string", "minLength": 1, "description": "Why this kind was assigned, in terms of the band mapping. Generated, so it is uniform by construction — the mapping itself is the reviewable artefact." }
+      }
+    },
+    "side": {
+      "type": "object",
+      "required": ["register", "ref", "classification", "band"],
+      "additionalProperties": false,
+      "properties": {
+        "register": { "type": "string", "description": "Ref: data/registers.yml id." },
+        "ref": { "type": "string", "description": "The register's own identifier — the join key, not a name." },
+        "name": { "type": "string", "description": "The register's own name for the structure. Recorded because the two often differ, which is itself informative." },
+        "classification": { "type": "string", "description": "The register's own class term, verbatim and untranslated." },
+        "band": { "type": ["string", "null"], "description": "The definition band this project maps that class onto. NULL means the class maps to no band — which is what makes a category-error a category-error." },
+        "url": { "type": "string", "pattern": "^https?://" }
+      }
+    }
+  }
+}

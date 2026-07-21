@@ -24,6 +24,9 @@ datasets:
   - name: claims
     schema: schema/claims.schema.json
     files: "data/claims.yml"
+  - name: disagreements
+    schema: schema/disagreements.schema.json
+    files: "data/disagreements.yml"
   - name: production
     schema: schema/production.schema.json
     files: "data/production.yml"

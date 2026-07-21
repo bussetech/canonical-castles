@@ -23,6 +23,7 @@ render from.
 | coverage | [`coverage.yml`](/data/coverage.yml) | [`coverage.schema.json`](/schema/coverage.schema.json) | The (definition × jurisdiction) grid |
 | counts | [`counts.yml`](/data/counts.yml) | — | **Generated.** Derived from records; CI fails on drift |
 | sources | [`sources.yml`](/data/sources.yml) | [`sources.schema.json`](/schema/sources.schema.json) | The fetch allowlist |
+| disagreements | [`disagreements.yml`](/data/disagreements.yml) | [`disagreements.schema.json`](/schema/disagreements.schema.json) | **Generated.** [Where two registers disagree](/disagreements/) |
 | production | [`production.yml`](/data/production.yml) | [`production.schema.json`](/schema/production.schema.json) | [What it cost to build this](/production/) |
 | snapshots | [`snapshots/`](https://github.com/bussetech/canonical-castles/tree/main/data/snapshots) | — | Verbatim register responses, for reproducibility |
 
