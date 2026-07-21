@@ -1,16 +1,81 @@
 # CLAUDE.md — canonical-castles
 
-Canonical Castles — how many castles are there? A source-cited dataset that answers per definition, not in general: every structure records which definitions of castle it satisfies, and every definition carries its own count and closure rule.
+Canonical Castles answers "how many castles are there?" *per definition, not
+in general.* It records, for every structure, **which definitions of
+"castle" it satisfies** — each verdict traced to a source — and publishes a
+count per definition, each with its own closure rule, rather than one global
+integer. A single global count of a contested term is a category error; this
+project ships the function instead of the number.
 
-This is a project repo of the **Bussetech Software Studio** — an agentic system that
-manages a GitHub org, its repos, and their web presence with minimal human
-touch. The studio's control repo is `bussetech/platform`; its front door is the
-portal at `https://bussetech.com`. This repo publishes a static site to
-`https://canonical-castles.bussetech.com`.
+This is a project repo of the **Bussetech Software Studio** — an agentic
+system that manages a GitHub org, its repos, and their web presence with
+minimal human touch. The studio's control repo is `bussetech/platform`; its
+front door is the portal at `https://bussetech.com`. This repo publishes a
+static site to `https://canonical-castles.bussetech.com`.
 
-> Founding note: this file was created from the studio's project template.
-> The founding PR replaces this preamble with project-specific guidance
-> (data model, sources, jobs); the studio sections below should survive.
+## What this project is
+
+- **Archetype:** info. It deploys the frozen info pair (`gn_info_scout` +
+  `gn_info_records`) as their fourth instance — **zero new gnome
+  machinery** (EPIC4-05, ADR-0045). Project context arrives only through
+  `data/profiles/{scout,records}.md` and `data/sources.yml`.
+- **Doctrine:** `signal > canon`. Disagreement between sources is preserved
+  as data, never averaged away. A structure is not "a castle" or "not a
+  castle"; it is `fortified_residence: false, schloss: true,
+  popular_castle: true`, each verdict cited.
+- **Counts are real but banded.** Some definitions are **enumerable** — a
+  national heritage register (Historic England NHLE, Historic Environment
+  Scotland, Cadw, the German Denkmallisten) is a finite, citable list; those
+  cells close with a real integer and a named register. Some are **open**
+  ("popular castle" has no register and never closes); those publish a
+  sourced range with visible assumptions, never a fake integer.
+- **Negative space is data (GD-0004).** Coverage is claimed per
+  `(definition × region × register)` cell as `complete` / `partial` /
+  `unexamined` / `surveyed_empty`. An empty cell reads as *surveyed* or
+  *unexamined* explicitly — never as *absent* — and each `unexamined` cell
+  names the register that would settle it.
+
+## Data model
+
+Text stores under `data/`, one JSON Schema per dataset in `schema/`.
+
+- **`data/signals/sig-*.yml`** — one sourced claim, append-only. Emitted by
+  `gn_info_scout`. **Frozen shape** — do not rename fields or retype
+  `site_id` (it is `["string","null"]`; the scout emits `null` + `site_hint`
+  for a newly-discovered structure). Domain nuance lives in the `attribute`
+  vocabulary and the profile, never in renamed keys.
+- **`data/sites/<id>.yml`** — one structure per file (the path is frozen
+  even though subjects are structures, not "sites"). Emitted by
+  `gn_info_records`. Fields (name, region, per-definition `definitions[]`
+  verdict block with `signal_refs`, `registers[]`, provenance) are defined
+  by `data/profiles/records.md`, under frozen structural rules (`id` =
+  filename stem; dates double-quoted; only profile fields; numeric metrics
+  plain numbers).
+- **`data/definitions.yml`** — authored reference: each definition, its
+  `closure_rule` (`enumerable`/`open`), its settling register, and its
+  scholarly citation. Not gnome-emitted.
+- **`data/coverage.yml`** — the `(definition × region × register)` matrix.
+  Cell `state` and closed-band `count` are **derived by code** from the
+  structure records and finite register lists; open-band ranges
+  (`count_low`/`count_high` + `assumptions`) are authored.
+- **`data/sources.yml`** — registers, Wikidata/OSM (**subjects of study,
+  not ground truth**), and the definitional literature; each with a
+  robots/ToS review note. **Gnomes never fetch.**
+
+Published counts in `data/index.md` are a deterministic aggregation over
+`data/coverage.yml` — code, not a gnome.
+
+## Jobs (this repo's agentic surface)
+
+- `gn_info_scout` (scheduled + manual): reads registered sources as
+  untrusted data, appends signals.
+- `gn_info_records` (after scout / scheduled): resolves signals into
+  structure records with verdicts and provenance.
+- Both propose via PR from `gnome/<name>/*` branches; humans merge.
+
+Everything else — coverage/count derivation, schema validation, feed, CI —
+is plain code. Before building anything new and agentic here, walk the reuse
+protocol (`platform/docs/gnome-reuse.md`): deterministic work is code.
 
 ## How this repo works
 
@@ -25,20 +90,19 @@ portal at `https://bussetech.com`. This repo publishes a static site to
 - **Feed:** the theme publishes `/feed.json` (JSON Feed 1.1) from `_posts/`.
   The portal aggregates it — writing a post is how this project surfaces on
   the studio homepage.
-- **Visibility:** `public` (declared in the control repo's
-  `platform.yml`, the single source of truth). All machinery keys off that
-  entry — do not contradict it here. For `private-published`: the site is
-  public while the repo stays private; never emit repo URLs or source maps
-  into the built site (the theme enforces this off `studio.visibility`).
+- **Visibility:** `public` (declared in the control repo's `platform.yml`,
+  the single source of truth). All machinery keys off that entry — do not
+  contradict it here.
 - **CI:** `.github/workflows/ci.yml` calls the studio's shared reusable
   workflows (`bussetech/ci@v1` — site build/link/leak checks + data schema
   validation). `deploy.yml` builds and publishes to GitHub Pages, then pings
-  the portal (`repository_dispatch: studio-content-updated` on `bussetech/www`)
-  so it re-aggregates promptly.
+  the portal (`repository_dispatch: studio-content-updated` on
+  `bussetech/www`) so it re-aggregates promptly.
 - **Gnomes** (studio agents): check the central registry
-  (`platform/gnomes.yml`) and the reuse protocol (`platform/docs/gnome-reuse.md`)
-  before building anything agentic here. Gnome dirs homed in this repo live
-  under `gnomes/`. Deterministic work is code, not a gnome.
+  (`platform/gnomes.yml`) and the reuse protocol
+  (`platform/docs/gnome-reuse.md`) before building anything agentic here.
+  Gnome dirs homed in this repo live under `gnomes/`. Deterministic work is
+  code, not a gnome.
 
 ## Working rules
 
@@ -82,8 +146,9 @@ and the repo itself is the collaboration protocol (STEERCO 4c, ADR-0042).
 
 This repo must keep working without the studio; its only bindings are:
 
-1. **Registry entry** in `bussetech/platform` `platform.yml` — gone means the
-   studio stops managing DNS/portal/UAT for it. Nothing in this repo breaks.
+1. **Registry entry** in `bussetech/platform` `platform.yml` — gone means
+   the studio stops managing DNS/portal/UAT for it. Nothing in this repo
+   breaks.
 2. **Shared CI callers** (`ci.yml`): both jobs are guarded by
    `if: github.repository_owner == 'bussetech'` and skip green outside the
    org. To keep real CI after detaching, replace them with a plain
