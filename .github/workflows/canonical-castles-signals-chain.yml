@@ -1,0 +1,32 @@
+# The chain link: when a scout PR touching data/signals/** lands on main,
+# dispatch the resolution gnome on the control repo. The trigger IS the merge
+# (ADR-0030) — no clock, no polling, no queue of its own.
+name: canonical-castles-signals-chain
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/signals/**"
+
+permissions:
+  contents: read
+
+jobs:
+  dispatch:
+    if: github.repository_owner == 'bussetech'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mint gnome App token
+        id: app-token
+        uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3.2.0
+        with:
+          app-id: ${{ secrets.GNOME_APP_ID }}
+          private-key: ${{ secrets.GNOME_APP_PRIVATE_KEY }}
+          owner: ${{ github.repository_owner }}
+      - name: Dispatch canonical-castles-signals-merged
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+        run: |
+          gh api "repos/${{ github.repository_owner }}/platform/dispatches" \
+            -f event_type=canonical-castles-signals-merged

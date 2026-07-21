@@ -36,6 +36,11 @@ This is the whole dataset. For each band in `data/definitions.yml`, decide
 criterion in its own terms**. "It's obviously a castle" is not a basis and CI
 rejects a basis under twenty characters.
 
+**Quote the verdict.** `verdict: yes` unquoted is the BOOLEAN true in YAML 1.1
+and fails schema validation. Write `verdict: "yes"` and `verdict: "no"`. This is
+the same class of trap as the archetype's all-dates-double-quoted rule, and it
+was caught by the founding's own closing check rather than in review.
+
 Three rules that are not negotiable:
 
 1. **Omission means unassessed, never no.** If no consulted source speaks to a
