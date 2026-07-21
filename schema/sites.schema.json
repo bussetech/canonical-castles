@@ -4,7 +4,17 @@
   "title": "canonical-castles record",
   "description": "One structure, resolved from its signals. The path data/sites/ is the frozen info-archetype record location (platform docs/archetype-contracts.md) even though this project's subjects are structures, not sites. The distinguishing field is `definitions_met`: this dataset never asserts that something IS a castle, only which named definitions it satisfies, each with a basis and each traceable to sources.",
   "type": "object",
-  "required": ["id", "name", "location", "tradition", "definitions_met", "first_seen", "last_updated", "confidence", "sources"],
+  "required": [
+    "id",
+    "name",
+    "location",
+    "tradition",
+    "definitions_met",
+    "first_seen",
+    "last_updated",
+    "confidence",
+    "sources"
+  ],
   "additionalProperties": false,
   "properties": {
     "id": {
@@ -12,9 +22,21 @@
       "pattern": "^[a-z0-9][a-z0-9-]*[a-z0-9]$",
       "description": "<country>-<place>-<name> per the id rule in data/profiles/records.md; must equal the filename stem."
     },
-    "name": { "type": "string", "minLength": 1, "description": "Common name in the structure's own language, in Latin script." },
-    "name_local": { "type": "string", "description": "Name in the local script where that differs (日本語, etc.)." },
-    "also_known_as": { "type": "array", "items": { "type": "string" } },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Common name in the structure's own language, in Latin script."
+    },
+    "name_local": {
+      "type": "string",
+      "description": "Name in the local script where that differs (日本語, etc.)."
+    },
+    "also_known_as": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
     "tradition": {
       "enum": [
         "european_medieval",
@@ -31,34 +53,80 @@
     },
     "location": {
       "type": "object",
-      "required": ["country"],
+      "required": [
+        "country"
+      ],
       "additionalProperties": false,
       "properties": {
-        "country": { "type": "string", "pattern": "^[A-Z]{2}$", "description": "ISO 3166-1 alpha-2. Never GB for a Scottish site's nation — use country: GB, region: Scotland." },
-        "region": { "type": "string", "description": "Nation, state, Land, province, or département." },
-        "county": { "type": "string" },
-        "locality": { "type": "string" },
-        "lat": { "type": "number", "minimum": -90, "maximum": 90 },
-        "lon": { "type": "number", "minimum": -180, "maximum": 180 }
+        "country": {
+          "type": "string",
+          "pattern": "^[A-Z]{2}$",
+          "description": "ISO 3166-1 alpha-2. Never GB for a Scottish site's nation — use country: GB, region: Scotland."
+        },
+        "region": {
+          "type": "string",
+          "description": "Nation, state, Land, province, or département."
+        },
+        "county": {
+          "type": "string"
+        },
+        "locality": {
+          "type": "string"
+        },
+        "lat": {
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90
+        },
+        "lon": {
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180
+        }
       }
     },
     "definitions_met": {
       "type": "object",
       "description": "A verdict per definition band. Keys MUST be ids present in data/definitions.yml — enforced by scripts/check_integrity.py. A band may be omitted only when no source speaks to it; omission means 'unassessed', never 'no'. That distinction is the difference between this dataset and the one it was built to answer.",
       "minProperties": 1,
-      "additionalProperties": { "$ref": "#/$defs/verdict" }
+      "additionalProperties": {
+        "$ref": "#/$defs/verdict"
+      }
     },
     "built": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "from": { "type": ["integer", "null"], "description": "Year construction began, negative for BCE. Null when only a period is known." },
-        "to": { "type": ["integer", "null"] },
-        "period": { "type": "string", "description": "Free text where years are unknown or contested: 'late 12th century', 'Iron Age'." }
+        "from": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "Year construction began, negative for BCE. Null when only a period is known."
+        },
+        "to": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "period": {
+          "type": "string",
+          "description": "Free text where years are unknown or contested: 'late 12th century', 'Iron Age'."
+        }
       }
     },
     "condition": {
-      "enum": ["intact", "occupied", "ruin", "earthwork", "fragmentary", "vanished", "reconstructed", "unknown"],
+      "enum": [
+        "intact",
+        "occupied",
+        "ruin",
+        "earthwork",
+        "fragmentary",
+        "vanished",
+        "reconstructed",
+        "unknown"
+      ],
       "description": "`vanished` structures stay in the dataset: a destroyed castle is a record, not an omission. `reconstructed` matters because several bands turn on original fabric."
     },
     "register_entries": {
@@ -66,13 +134,28 @@
       "description": "Where this structure appears in official registers. This is what converts an individual record into evidence about a count.",
       "items": {
         "type": "object",
-        "required": ["register", "ref"],
+        "required": [
+          "register",
+          "ref"
+        ],
         "additionalProperties": false,
         "properties": {
-          "register": { "type": "string", "description": "Ref: data/registers.yml id." },
-          "ref": { "type": "string", "description": "The register's own identifier for this structure." },
-          "designation": { "type": "string", "description": "The class the register assigns it (Scheduled Monument, Grade I listed, Monument historique, …)." },
-          "url": { "type": "string", "pattern": "^https?://" }
+          "register": {
+            "type": "string",
+            "description": "Ref: data/registers.yml id."
+          },
+          "ref": {
+            "type": "string",
+            "description": "The register's own identifier for this structure."
+          },
+          "designation": {
+            "type": "string",
+            "description": "The class the register assigns it (Scheduled Monument, Grade I listed, Monument historique, …)."
+          },
+          "url": {
+            "type": "string",
+            "pattern": "^https?://"
+          }
         }
       }
     },
@@ -80,39 +163,84 @@
       "type": "boolean",
       "description": "True when sources disagree about a band verdict for this structure. Set by the records gnome when it resolves a conflict; the conflict itself stays visible in the signals and in dispute_note."
     },
-    "dispute_note": { "type": "string", "description": "What the disagreement is and who is on each side. Required when disputed is true (enforced by check_integrity, not schema)." },
-    "first_seen": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
-    "last_updated": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
-    "confidence": { "enum": ["low", "medium", "high"], "description": "Aggregate corroboration for the record as a whole." },
+    "dispute_note": {
+      "type": "string",
+      "description": "What the disagreement is and who is on each side. Required when disputed is true (enforced by check_integrity, not schema)."
+    },
+    "first_seen": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "last_updated": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "confidence": {
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "description": "Aggregate corroboration for the record as a whole."
+    },
     "sources": {
       "type": "array",
       "minItems": 1,
       "description": "At least one. A record cannot exist without a citation — the schema enforces the honesty rule rather than trusting it.",
       "items": {
         "type": "object",
-        "required": ["url"],
+        "required": [
+          "url"
+        ],
         "additionalProperties": false,
         "properties": {
-          "url": { "type": "string", "pattern": "^https?://" },
-          "title": { "type": "string" },
-          "publisher": { "type": "string" },
-          "date": { "type": "string", "pattern": "^\\d{4}(-\\d{2}(-\\d{2})?)?$" },
-          "note": { "type": "string" }
+          "url": {
+            "type": "string",
+            "pattern": "^https?://"
+          },
+          "title": {
+            "type": "string"
+          },
+          "publisher": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string",
+            "pattern": "^\\d{4}(-\\d{2}(-\\d{2})?)?$"
+          },
+          "note": {
+            "type": "string"
+          }
         }
       }
     },
-    "signals": { "type": "array", "items": { "type": "string" }, "description": "Ref: data/signals/<id>.yml." },
-    "notes": { "type": "string" }
+    "signals": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Ref: data/signals/<id>.yml."
+    },
+    "notes": {
+      "type": "string"
+    }
   },
   "$defs": {
     "verdict": {
       "type": "object",
-      "required": ["verdict", "basis"],
+      "required": [
+        "verdict",
+        "basis"
+      ],
       "additionalProperties": false,
       "properties": {
         "verdict": {
-          "enum": ["yes", "no", "contested"],
-          "description": "`contested` is a first-class outcome, not a failure to decide: it means competent sources genuinely disagree under this band's criterion. Counts report contested separately from yes — never silently folded into either."
+          "enum": [
+            "yes",
+            "no",
+            "contested"
+          ],
+          "description": "MUST BE QUOTED IN YAML. `verdict: yes` without quotes parses as the BOOLEAN true under YAML 1.1 and fails this enum — write `verdict: \"yes\"`. Same trap as the archetype's all-dates-double-quoted rule. `contested` is a first-class outcome, not a failure to decide: it means competent sources genuinely disagree under this band's criterion. Counts report contested separately from yes — never silently folded into either."
         },
         "basis": {
           "type": "string",
