@@ -1,0 +1,64 @@
+id: in-rajasthan-chittorgarh-fort
+name: Chittorgarh Fort
+tradition: south_asian
+location:
+  country: IN
+  region: Rajasthan
+  locality: Chittorgarh
+  lat: 24.8887
+  lon: 74.6269
+built:
+  from: null
+  to: null
+  period: 7th century onward, with major phases to the 16th century
+condition: ruin
+definitions_met:
+  fortified_residence:
+    verdict: contested
+    basis: A hill fort enclosing palaces, temples and an urban settlement, seat of the Sisodia
+      rulers of Mewar. It is a lordly fortified seat, but the enclosed settlement makes it
+      closer to a fortified town than a private residence, and the European private/communal
+      distinction does not map cleanly onto Rajput polity.
+  enclosure_fortification:
+    verdict: 'yes'
+    basis: A hill fort in the Arthashastra giridurga sense - terrain-defined fortification
+      enclosing and commanding a large area, with the enclosure as the primary work.
+  popular_castle:
+    verdict: contested
+    basis: Called a fort in Indian usage and in UNESCO's inscription, but routinely rendered
+      'castle' in general-audience English travel writing. Usage differs by language and audience.
+  palatial_seat:
+    verdict: 'no'
+    basis: Contains palaces but is not itself a palatial seat; the fortification governs the
+      site.
+  state_fortification:
+    verdict: 'no'
+    basis: A dynastic seat rather than a state artillery installation of the gunpowder-age
+      European type.
+  revival_folly:
+    verdict: 'no'
+    basis: Genuine defensive fabric.
+disputed: true
+dispute_note: The European lord-versus-state axis that fortified_residence depends on does
+  not transfer to Rajput polity, where the ruler, the state and the fortified settlement are
+  not separable in the way the criterion assumes. Recorded as contested to make the criterion's
+  limits visible rather than hiding them behind a confident verdict.
+first_seen: '2026-07-21'
+last_updated: '2026-07-21'
+confidence: medium
+sources:
+- url: https://whc.unesco.org/en/list/247
+  title: Hill Forts of Rajasthan
+  publisher: UNESCO World Heritage Centre
+  date: '2013'
+- url: https://www.wisdomlib.org/hinduism/essay/architectural-data-in-the-puranas/d/doc1460157.html
+  title: Classification of Forts
+  publisher: wisdomlib
+  note: 'The Arthashastra six-fold terrain typology: giridurga, jaladurga, dhanvadurga, vanadurga,
+    mahidurga, naradurga.'
+notes: The most important record in the seed set for what it exposes. The Arthashastra classifies
+  forts by TERRAIN - hill, water, desert, forest, earth, and defended-by-men - which is a
+  complete, ancient and internally coherent classificatory scheme organised on an axis entirely
+  orthogonal to the European one of tenure. This dataset's bands are a European instrument,
+  and applying them here produces two contested verdicts rather than knowledge. That is recorded
+  as a limitation of the bands, not of Chittorgarh.

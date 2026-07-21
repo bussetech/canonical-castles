@@ -1,0 +1,82 @@
+---
+layout: default
+---
+{%- assign d = site.data.definitions.definitions | where: "id", page.band | first -%}
+{%- assign registers = site.data.registers.registers -%}
+{%- assign counts = site.data.counts.bands | where: "definition", page.band | first -%}
+<article class="prose">
+  <p class="eyebrow"><a href="/definitions/">Definitions</a></p>
+  <h1>{{ d.label }}</h1>
+  <p><em>{{ d.summary }}</em></p>
+
+  <h2>Criterion</h2>
+  <p>{{ d.criterion }}</p>
+
+  <h3>Includes</h3>
+  <ul>{% for i in d.includes %}<li>{{ i }}</li>{% endfor %}</ul>
+
+  <h3>Excludes</h3>
+  <ul>{% for e in d.excludes %}<li>{{ e }}</li>{% endfor %}</ul>
+
+  <h2>Closure: {{ d.closure }}</h2>
+  <p>{{ d.closure_note }}</p>
+  {%- if d.closure == "open" %}
+  <p><strong>This band will never close.</strong> No register bounds it and none
+  could, so it publishes a distribution or a range with its assumptions visible —
+  never a fabricated total. A coverage cell that tried to give it a world
+  population figure would fail the build.</p>
+  {%- endif %}
+
+  <h2>Who defines it this way</h2>
+  <ul>
+    {%- for a in d.authority %}
+    <li><strong>{{ a.name }}</strong>{% if a.work %} — <em>{{ a.work }}</em>{% endif %}
+      (<a href="{{ a.url }}" rel="external nofollow">source</a>)
+      {%- if a.kind == "project" %} — <strong>this project's own band; no external authority</strong>{% endif %}
+      {%- if a.quote %}<blockquote>{{ a.quote }}</blockquote>{% endif %}</li>
+    {%- endfor %}
+  </ul>
+
+  {%- if d.registers and d.registers.size > 0 %}
+  <h2>Bounded by</h2>
+  <ul>
+    {%- for r in d.registers %}{% assign reg = registers | where: "id", r | first %}
+    <li><a href="{{ reg.url }}" rel="external nofollow">{{ reg.name }}</a> — {{ reg.operator }}
+      {%- if reg.entries_matching %} · <strong>{{ reg.entries_matching }}</strong> matching entries{% endif %}
+      {%- unless reg.enumerable %} · <em>not enumerable for this purpose</em>{% endunless %}</li>
+    {%- endfor %}
+  </ul>
+  {%- endif %}
+
+  {%- if counts %}
+  <h2>In this dataset</h2>
+  <table>
+    <tbody>
+      <tr><th>Satisfies this definition</th><td><strong>{{ counts.held.yes }}</strong></td></tr>
+      <tr><th>Contested</th><td>{{ counts.held.contested }}</td></tr>
+      <tr><th>Does not satisfy</th><td>{{ counts.held.no }}</td></tr>
+      <tr><th>Unassessed</th><td>{{ counts.held.unassessed }}</td></tr>
+    </tbody>
+  </table>
+  <p>Derived from the records, not typed. See <a href="/counts/">counts</a> and
+  <a href="/coverage/">coverage</a>.</p>
+  {%- endif %}
+
+  {%- if d.note %}
+  <h2>Note</h2>
+  <p>{{ d.note }}</p>
+  {%- endif %}
+
+  <h2>Records</h2>
+  <ul>
+    {%- assign recs = site.data.sites | sort -%}
+    {%- for pair in recs %}{% assign r = pair[1] %}{% assign m = r.definitions_met[page.band] %}
+    {%- if m and m.verdict != "no" %}
+    <li><a href="/castles/{{ r.id }}/">{{ r.name }}</a> — <strong>{{ m.verdict }}</strong>: {{ m.basis }}</li>
+    {%- endif %}
+    {%- endfor %}
+  </ul>
+
+  <p><a href="/data/definitions.yml">Definition file</a> · dataset licensed
+  <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>
+</article>

@@ -1,0 +1,60 @@
+id: jp-hyogo-himeji
+name: Himeji Castle
+name_local: 姫路城
+tradition: japanese
+location:
+  country: JP
+  region: Hyogo Prefecture
+  locality: Himeji
+  lat: 34.8394
+  lon: 134.6939
+built:
+  from: 1333
+  to: 1609
+  period: remodelled to its present form 1601-1609
+condition: intact
+definitions_met:
+  fortified_residence:
+    verdict: 'yes'
+    basis: 'A fortified residence of a lord, satisfying the criterion on its own functional
+      terms: defensible works - baileys, gatehouses meant to be held, loopholes, a spiral
+      approach designed for defence - combined with the residence of a daimyo. The criterion
+      is functional rather than geographic and Himeji meets it without needing a special case.'
+  popular_castle:
+    verdict: 'yes'
+    basis: Japan's most visited castle, a National Treasure and World Heritage site, universally
+      called a castle in both Japanese and English.
+  palatial_seat:
+    verdict: 'no'
+    basis: Genuinely defensible rather than palatial; the defensive works govern the design.
+  state_fortification:
+    verdict: 'no'
+    basis: A daimyo's seat under the shogunate rather than a state artillery installation.
+  enclosure_fortification:
+    verdict: 'no'
+    basis: A designed lordly castle, not a prehistoric enclosure work.
+  revival_folly:
+    verdict: 'no'
+    basis: Genuine defensive-era fabric, extensively conserved but not a romantic reconstruction.
+register_entries:
+- register: wikidata
+  ref: Q182000
+  url: https://www.wikidata.org/wiki/Q182000
+disputed: false
+first_seen: '2026-07-21'
+last_updated: '2026-07-21'
+confidence: high
+sources:
+- url: https://whc.unesco.org/en/list/661
+  title: Himeji-jo
+  publisher: UNESCO World Heritage Centre
+  date: '1993'
+- url: https://en.wikipedia.org/wiki/Japanese_castle
+  title: Japanese castle
+  publisher: Wikipedia
+notes: 'Carried deliberately to test whether the strict band is Eurocentric in practice as
+  well as in origin. It is not: applied functionally, fortified_residence admits a shiro on
+  the same terms as an Anglo-Norman keep. The tradition field locates Himeji without demoting
+  it - which is why tradition is orthogonal to the bands rather than a band of its own. Note
+  that OpenStreetMap reached the same conclusion by a different route, adopting castle_type=shiro
+  as a first-class value (159 uses) instead of translating it away.'

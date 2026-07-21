@@ -1,0 +1,519 @@
+# The numbers people repeat about castles, graded by how well they are sourced.
+#
+# The grade is about METHOD, not plausibility. A folkloric number can be roughly
+# right and an official one can be misread — the point is whether anyone can
+# check it. There is a usable signature here, visible once the claims are laid
+# side by side: every citable figure has a named author or operator, a datable
+# publication and a disclosed underlying database, while every folkloric one is
+# a round number with no author, circulating in several magnitudes at once.
+version: 1
+
+claims:
+  - id: fr-45000-chateaux
+    claim: "France has 45,000 châteaux"
+    value: 45000
+    definition: null
+    jurisdiction: FR
+    grade: folklore
+    assessment: >
+      No primary source could be found. Every instance traces to content farms,
+      estate-agent marketing or tourism copy citing nothing, and no methodology is
+      stated anywhere. There is no earliest traceable use: the variants (20,000 /
+      30,000 / 40,000 / 45,000) circulate simultaneously rather than evolving from
+      a datable original, which is the signature of a meme rather than a statistic.
+      A frequently-alleged attribution to Demeure Historique or VMF could not be
+      confirmed — La Demeure Historique's own site describes roughly 3,000 member
+      monuments and makes no national estimate. Note the uncomfortable proximity of
+      the official 45,223 protected monuments historiques (see fr-mh-45223): this
+      project's hypothesis is that "45,000 châteaux" is a corruption of that figure,
+      which counts something entirely different. THAT HYPOTHESIS IS UNPROVEN and is
+      recorded as a hypothesis, not a finding. The claim maps to no definition band
+      at all, which is part of why it cannot be checked.
+    sources:
+      - url: "https://www.chateautheque.fr/"
+        title: "Châteauthèque"
+        note: "The best-sourced French enumeration found: 27,466 châteaux, manoirs, forteresses et maisons fortes in metropolitan France, with an explicit aggregation method over Base Mérimée, Wikidata, Wikipédia, Wikimedia Commons, BnF Gallica and DataTourisme. It produces no original data and inherits its sources' gaps, but it is the only French figure encountered with a stated method — and it is 40% below the folkloric number."
+      - url: "https://news.ycombinator.com/item?id=48994178"
+        title: "The World's 2,400 Castles"
+        publisher: "Hacker News"
+        date: "2026-07-21"
+        note: "Where the 20,000–45,000 range was asserted in the discussion that prompted this project."
+    last_updated: "2026-07-21"
+
+  - id: fr-mh-45223
+    claim: "France has 45,223 protected monuments historiques"
+    value: 45223
+    definition: null
+    jurisdiction: FR
+    grade: official
+    assessment: >
+      The Ministry of Culture's own figure as of 31 December 2024: 14,333 classés
+      plus 30,890 inscrits. Verified against the Ministry's published bilan. It
+      counts protected immeubles of every kind — overwhelmingly dwellings and
+      churches, with military architecture roughly 6% — so it is emphatically NOT
+      a castle count, and is recorded here only because its proximity to the
+      folkloric 45,000 is hard to ignore.
+    sources:
+      - url: "https://www.culture.gouv.fr/thematiques/monuments-sites/ressources/les-bilans/la-protection-au-titre-des-monuments-historiques-bilan-2024-chiffres-clefs-au-1er-janvier-2025"
+        title: "La protection au titre des monuments historiques — bilan 2024"
+        publisher: "Ministère de la Culture"
+        date: "2025"
+    last_updated: "2026-07-21"
+
+  - id: fr-chateaux-6286
+    claim: "France has 6,286 protected châteaux"
+    value: 6286
+    definition: fortified_residence
+    jurisdiction: FR
+    grade: derived
+    assessment: >
+      Derived from the Base Mérimée bulk extract of protected monuments historiques
+      on 2026-07-21, and published here with its tokenisation rule attached because
+      the rule IS the number. The denomination field is semicolon-delimited free
+      text with 1,998 distinct values, so every plausible rule gives a different
+      answer: token exactly "château" returns 6,159; token in {château, château
+      fort} returns 6,285; prefix "château" excluding "château d'eau" returns 6,286;
+      "château" as sole denomination returns 5,703. All four are defensible and they
+      differ only by tokenisation. The excluded term matters — château d'eau is a
+      WATER TOWER, and a naive prefix match silently imports them.
+
+      Two further traps for anyone reproducing this. Casing is not normalised
+      (château 5,703 against Château 1), and neither is hyphenation (château fort
+      104 against château-fort 1). More seriously, Mérimée mixes legally protected
+      monuments historiques with Inventaire général records carrying no protection
+      at all: the bulk CSV is pre-filtered to protected monuments, but the same
+      count taken through the POP search interface would silently include hundreds
+      of thousands of unprotected records. That is a category error, not a rounding
+      difference.
+
+      Against the folkloric 20,000–45,000 (see fr-45000-chateaux), the register
+      supports roughly one order of magnitude less.
+    sources:
+      - url: "https://www.data.gouv.fr/datasets/immeubles-proteges-au-titre-des-monuments-historiques-2"
+        title: "Immeubles protégés au titre des monuments historiques"
+        publisher: "Ministère de la Culture / data.gouv.fr"
+        date: "2026-07-21"
+        note: "Licence Ouverte 2.0, weekly refresh. The stable path — the POP API is live but undocumented and rate-blocked."
+    last_updated: "2026-07-21"
+
+  - id: ie-castles-4552
+    claim: "Ireland has 4,552 castles"
+    value: 4552
+    definition: fortified_residence
+    jurisdiction: IE
+    grade: derived
+    assessment: >
+      Re-run by this project against the National Monuments Service SMROpenData
+      FeatureServer on 2026-07-21: MONUMENT_CLASS LIKE 'Castle%' returns 4,552,
+      comprising unclassified 2,466, tower house 1,321, motte 258,
+      motte-and-bailey 175, ringwork 138, Anglo-Norman masonry castle 129,
+      hall-house 51 and ringwork-and-bailey 14. Reproducible: the query and the
+      endpoint are both published. The figure is only meaningful with the class
+      filter attached — see ie-castles-129 for what happens when a stricter
+      reading is applied to the same database on the same day.
+    sources:
+      - url: "https://www.archaeology.ie/collections-and-publications/open-data/"
+        title: "Archaeological Survey of Ireland — open data"
+        publisher: "National Monuments Service"
+        date: "2026-07-21"
+    last_updated: "2026-07-21"
+
+  - id: ie-castles-129
+    claim: "Ireland has about 100 castles"
+    value: 129
+    definition: fortified_residence
+    jurisdiction: IE
+    grade: derived
+    assessment: >
+      Asserted off the cuff in the originating Hacker News thread by a commenter
+      applying the strict definition — excluding crannógs, Dún Aonghasa and
+      standalone tower houses — and estimating "probably something around 100"
+      Anglo-Norman castles. The Irish SMR's own answer to that precise question is
+      129 records of class 'Castle - Anglo-Norman masonry castle'. The estimate was
+      accurate to within 30%, and the underlying point stands: the same official
+      database answers "how many castles does Ireland have?" with 129, 4,552 or
+      31,431 depending purely on which class filter is accepted. This is the
+      cleanest demonstration of this project's thesis anywhere in the dataset.
+    supersedes: ie-castles-4552
+    sources:
+      - url: "https://news.ycombinator.com/item?id=48995032"
+        title: "Comment on 'The World's 2,400 Castles'"
+        publisher: "Hacker News"
+        date: "2026-07-21"
+      - url: "https://www.archaeology.ie/collections-and-publications/open-data/"
+        title: "Archaeological Survey of Ireland — open data"
+        publisher: "National Monuments Service"
+        date: "2026-07-21"
+    last_updated: "2026-07-21"
+
+  - id: ie-ringforts-31431
+    claim: "Ireland has 30,000+ prehistoric forts"
+    value: 31431
+    definition: enclosure_fortification
+    jurisdiction: IE
+    grade: derived
+    assessment: >
+      Substantially correct, and now precisely sourceable. The Irish SMR returns
+      31,431 records for MONUMENT_CLASS LIKE 'Ringfort%' (rath 26,000, cashel 3,551,
+      unclassified 1,880), against a total of 151,308 SMR records. The scholarly
+      figure is larger because it counts structures CONSTRUCTED rather than
+      surviving — see ie-ringforts-45000.
+
+      CORRECTION TO THIS PROJECT'S OWN FOUNDING BRIEF: the "30,000+" figure was NOT
+      asserted in the originating thread, it was DENIED there — a commenter wrote
+      that "the idea of 30K castles in Ireland is clearly untrue." He was right and
+      wrong in different places, and the split is exactly this dataset's thesis:
+      wrong that the 30,000 figure is fictional (the SMR holds 31,431 ringfort-class
+      records), right that they are not castles (the same register holds 4,552
+      Castle-class records, and 129 Anglo-Norman masonry castles). The dispute was
+      never about the data. It was about the word.
+    sources:
+      - url: "https://www.archaeology.ie/collections-and-publications/open-data/"
+        title: "Archaeological Survey of Ireland — open data"
+        publisher: "National Monuments Service"
+        date: "2026-07-21"
+    last_updated: "2026-07-21"
+
+  - id: ie-ringforts-45000
+    claim: "About 45,000 ringforts were built in Ireland"
+    value: 45000
+    definition: enclosure_fortification
+    jurisdiction: IE
+    grade: scholarly
+    assessment: >
+      Attributed to Matthew Stout, The Irish Ringfort (Four Courts Press, 1997;
+      reprinted 2023), built on the all-Ireland ringfort database compiled by the
+      archaeological surveys and extrapolated for loss — Stout notes roughly 37%
+      have been swept away since the first Ordnance Survey. Consistent rather than
+      competing with the 31,431 recorded: the gap IS the attrition. CAVEAT, and it
+      matters: the 45,000 figure is taken from a History Ireland review
+      characterising the book, not from the book's own text, which this project has
+      not read. Competing tourism figures of 50,000 and 60,000 are folklore with no
+      traceable source.
+    sources:
+      - url: "https://www.fourcourtspress.ie/books/2023/the-irish-ringfort"
+        title: "The Irish Ringfort — Matthew Stout"
+        publisher: "Four Courts Press"
+        date: "2023"
+      - url: "https://historyireland.com/irish-ringforts-matthew-stout-four-courts-pressgroup-for-the-study-of-irish-historic-settlement-19-95-isbn-1-85182-300-x/"
+        title: "Review: Irish Ringforts"
+        publisher: "History Ireland"
+        note: "The proximate source of the 45,000 figure used here."
+    last_updated: "2026-07-21"
+
+  - id: de-sn-fortifications-700
+    claim: "Saxony alone has 700+ fortifications, with about 100 touristically interesting"
+    value: null
+    value_range: [700, 821]
+    definition: null
+    jurisdiction: DE-SN
+    grade: circulating
+    assessment: >
+      TRUE, BUT IT COUNTS SOMETHING ELSE — and this is the most instructive claim in
+      the ledger, because the trap is invisible without checking.
+
+      The figure that can be read at source is Susanne Grunwald (Leipziger
+      online-Beiträge zur Ur- und Frühgeschichtlichen Archäologie 2, 2003, p. 1):
+      "Hier sind inzwischen mehr als 700 vor- und frühgeschichtliche befestigte
+      Siedlungen bekannt" — more than 700 PREHISTORIC AND EARLY-HISTORIC FORTIFIED
+      SETTLEMENTS, that is, earthwork Burgwälle. Those are categorically distinct
+      from the medieval stone Burgen the thread was discussing, and Grunwald gives
+      no citation for the number, so it is an unreferenced scholarly assertion
+      rather than a register count.
+
+      Two separate medieval figures also exist and are close enough to collide with
+      it: 723 high- and late-medieval Wehranlagen (Müller & Dehn, Burgenwanderung
+      durch Sachsen, 2006), of which 93 are picked out as "touristisch interessant"
+      — plausibly the source of the thread's "about 100" — and 821 securely
+      verifiable installations (Billig & Müller, Burgen. Zeugen sächsischer
+      Geschichte, 1998). BOTH were verified only through the German Wikipedia
+      article quoting them, not from the works themselves.
+
+      So: read as prehistoric earthworks the claim is sourceable but not about
+      castles; read as medieval castles it is UNVERIFIED and rests on a coincidence
+      between two unrelated counts that both happen to be about 700. No Landesamt
+      figure exists to settle it — Saxony's register classifies by Denkmalart
+      (Kulturdenkmal, Gartendenkmal, Sachgesamtheit…) with no Burg, Schloss or
+      Wehranlage category anywhere, and archaeological monuments sit with a
+      different agency entirely. The coverage gap that provoked the thread is real;
+      the number attached to it is three numbers wearing a coat.
+    sources:
+      - url: "https://de.wikipedia.org/wiki/Liste_von_Burgen_und_Schl%C3%B6ssern_in_Sachsen"
+        title: "Liste von Burgen und Schlössern in Sachsen"
+        publisher: "Wikipedia (de)"
+        note: "Quotes Müller/Dehn 723 and Billig/Müller 821; neither work was consulted directly."
+      - url: "https://denkmalliste.denkmalpflege.sachsen.de/Gast/Denkmalliste_Sachsen.aspx"
+        title: "Denkmalliste Sachsen"
+        publisher: "Landesamt für Denkmalpflege Sachsen"
+        note: "Over 100,000 Denkmale, classified by Denkmalart with no fortification category. Licensed CC BY-NC-ND 3.0 DE — not open data — and no bulk download was found."
+      - url: "https://news.ycombinator.com/item?id=48994810"
+        title: "Comment on 'The World's 2,400 Castles'"
+        publisher: "Hacker News"
+        date: "2026-07-21"
+        note: "\"Germany's Saxony alone has 700+ fortications with about 100 being touristically interesting. In the map I count like 9.\""
+    last_updated: "2026-07-21"
+
+  - id: de-castles-20000-25000
+    claim: "Germany has around 25,000 castles"
+    value: null
+    value_range: [20000, 25000]
+    definition: fortified_residence
+    jurisdiction: DE
+    grade: circulating
+    assessment: >
+      Attributed to the Deutsche Burgenvereinigung and stated there as an
+      extrapolation (Hochrechnungen) with the basis undisclosed, and — critically —
+      with an inclusion rule that is usually dropped in quotation: it counts former
+      castles INCLUDING ruins and bare castle sites (Burgstellen).
+
+      THIS PROJECT'S OWN RESEARCH DISAGREES WITH ITSELF HERE, and the disagreement
+      is published rather than resolved. One research pass read the range at the
+      DBV's own projects page; a second pass could not verify it and recommended
+      treating it as unverified. Under the signal > canon rule the conflict stays
+      visible: it is graded circulating rather than official, and anyone relying on
+      it should re-check the source. This is what the doctrine costs and what it
+      buys — a number this dataset cannot stand behind is labelled instead of
+      quietly promoted.
+
+      Cite it as a range with the ruins-and-sites inclusion rule attached, never as
+      the hard "25,000" it becomes in circulation.
+    sources:
+      - url: "https://www.deutsche-burgen.org/de/verein-startseite/projekte.html"
+        title: "Projekte"
+        publisher: "Deutsche Burgenvereinigung"
+    last_updated: "2026-07-21"
+
+  - id: world-osm-castles-54182
+    claim: "OpenStreetMap holds 54,182 objects tagged historic=castle"
+    value: 54182
+    definition: null
+    jurisdiction: WORLD
+    grade: derived
+    assessment: >
+      Read from the taginfo API on 2026-07-21: 14,638 nodes and 35,203 ways. The
+      interesting figure is not the total but the breakdown: castle_type is present
+      on only 28,544 of them, across 223 distinct values with no enforced
+      enumeration, and only 19.5% of those are tagged defensive against 23.7%
+      stately, 20.5% manor and 16.4% palace. Under the strict definition roughly four
+      in five things tagged historic=castle are misfiled — or, read the other way,
+      the crowd's working definition of "castle" is overwhelmingly stately residence
+      rather than fortress. The tag also contains castle_type=castle, a tautology
+      typed 517 times.
+    sources:
+      - url: "https://taginfo.openstreetmap.org/"
+        title: "taginfo"
+        publisher: "OpenStreetMap"
+        date: "2026-07-21"
+    last_updated: "2026-07-21"
+
+  - id: world-wikidata-36716
+    claim: "Wikidata holds 36,716 castles"
+    value: 36716
+    definition: null
+    jurisdiction: WORLD
+    grade: derived
+    assessment: >
+      Queried live on 2026-07-21. The number depends entirely on a choice most
+      Wikidata-derived datasets never state: direct instances of Q23413 return
+      24,886, while walking the subclass tree (P31/P279*) returns 36,716. Of the
+      subclass-inclusive set, 33,265 carry coordinates and 6,594 carry both
+      coordinates and an English Wikipedia article. The depth of the subclass walk
+      is a definitional choice, and any dataset built on Wikidata has made it
+      whether or not it says so.
+    sources:
+      - url: "https://query.wikidata.org/"
+        title: "Wikidata Query Service"
+        publisher: "Wikimedia Foundation"
+        date: "2026-07-21"
+    last_updated: "2026-07-21"
+
+  - id: world-thecastlemap-2435
+    claim: "There are 2,435 castles in the world"
+    value: 2435
+    definition: popular_castle
+    jurisdiction: WORLD
+    grade: circulating
+    assessment: >
+      thecastlemap.com's published total across 129 countries — 937 castles, 389
+      fortresses, 692 palaces and châteaux, 417 ruins — and the claim that prompted
+      this project. Graded circulating rather than derived because the published
+      figure does not follow from the site's own stated rule. Its criteria are a
+      real photo, an English Wikipedia article and exact coordinates; this project's
+      live Wikidata query for castle-or-subclass items carrying BOTH coordinates and
+      an English Wikipedia article returns 6,594. The map publishes 2,435 — about
+      37% of the population its own filter defines. The site does declare a
+      curatorial rule on its homepage ("balanced across 129 countries so the map
+      stays explorable"), so the selection is disclosed; what is not disclosed is
+      that the result is a selection rather than a census, and "The World's 2,400
+      Castles" reads as the latter. The underlying work is careful, openly licensed
+      and honest about its Wikidata provenance — the criticism here is narrow and
+      is about the framing of a number, not the quality of a map.
+    sources:
+      - url: "https://thecastlemap.com/castles/ranked/"
+        title: "Castles ranked by fame"
+        publisher: "thecastlemap.com"
+        date: "2026-07-21"
+      - url: "https://query.wikidata.org/"
+        title: "Wikidata Query Service"
+        publisher: "Wikimedia Foundation"
+        date: "2026-07-21"
+        note: "The 6,594 counter-figure."
+      - url: "https://news.ycombinator.com/item?id=48996583"
+        title: "Comment on 'The World's 2,400 Castles'"
+        publisher: "Hacker News"
+        date: "2026-07-21"
+        note: "\"The point is not the rounding, it is that it is not counting a total number of castles, but rather some subset of 'significant' castles.\""
+    last_updated: "2026-07-21"
+
+  - id: gb-wls-per-square-mile
+    claim: "Wales has more castles per square mile than anywhere in the world"
+    value: null
+    definition: null
+    jurisdiction: GB-WLS
+    grade: folklore
+    assessment: >
+      No source, and no methodology anywhere. Two tells mark it as folklore rather
+      than a merely unverified statistic: it circulates in mutually inconsistent
+      forms ("in the world" versus "in Europe"), and the counts it would depend on
+      do not converge — 600+, 641 and 427 all appear in circulation. What makes
+      this entry worth keeping is that Wales is NOT a data gap: it has the cleanest
+      type-classified castle register in Britain (see gb-wls-castles-104), and the
+      folkloric claim survives anyway. Good data does not displace a good story.
+    sources:
+      - url: "https://cadw.gov.wales/advice-support/cof-cymru"
+        title: "Cof Cymru — National Historic Assets of Wales"
+        publisher: "Cadw"
+        date: "2026-07-21"
+    last_updated: "2026-07-21"
+
+  - id: gb-wls-castles-104
+    claim: "Wales has 104 scheduled castles"
+    value: 104
+    definition: fortified_residence
+    jurisdiction: GB-WLS
+    grade: derived
+    assessment: >
+      Queried against Cadw's scheduled-monument layer via DataMapWales on
+      2026-07-21. Wales is the best-classified castle register in Britain: unlike
+      England and Scotland, Cadw's data carries an explicit SiteType field, so
+      "castle" is a real filter rather than a keyword guess. SiteType = "Castle"
+      returns 104, against 4,237 scheduled monuments in total. But the band answer
+      moves with the filter, as always — BroadClass = "Defence" returns 1,019, and
+      the adjacent classes are counted separately (Motte 156, Motte and Bailey 72,
+      Hillfort 287, Moated Site 69). Coflein, the wider Welsh record of 112,894
+      terrestrial sites, independently returns 158 for site_type = 'CASTLE' and 180
+      for a looser match. So Wales is simultaneously a 104-castle country, a
+      158-castle country, a 332-castle country if mottes count, and a
+      1,019-fortification country. GOTCHA worth recording for anyone reproducing
+      this: the SiteType values are title-case and a case-sensitive filter silently
+      returns zero rather than erroring.
+    sources:
+      - url: "https://cadw.gov.wales/advice-support/cof-cymru"
+        title: "Cof Cymru — National Historic Assets of Wales"
+        publisher: "Cadw"
+        date: "2026-07-21"
+      - url: "https://www.coflein.gov.uk/"
+        title: "Coflein — National Monuments Record of Wales"
+        publisher: "Royal Commission on the Ancient and Historical Monuments of Wales"
+        date: "2026-07-21"
+    last_updated: "2026-07-21"
+
+  - id: gb-nir-castles-4
+    claim: "Northern Ireland has 4 castles"
+    value: 4
+    definition: fortified_residence
+    jurisdiction: GB-NIR
+    grade: derived
+    assessment: >
+      Literally what the register returns, and a perfect illustration of why a
+      number read straight out of a database can be worse than no number at all.
+      The Northern Ireland Sites and Monuments Record holds 18,506 records; querying
+      General_Type = 'CASTLE' returns 4. Northern Ireland obviously has more than
+      four castles. They are classified elsewhere: FORTIFICATION (353) and MOTTE
+      (48). The decisive detail is the tower houses — of 61 records whose text
+      mentions "tower-house", 55 are classified FORTIFICATION, and exactly ONE
+      record in the entire database carries General_Type = 'TOWER HOUSE'. Anyone
+      building a castle dataset by filtering national registers on a castle field
+      would report 4 for Northern Ireland and never notice. Recorded here as a
+      worked example of the failure mode, not as a fact about castles.
+    sources:
+      - url: "https://apps.communities-ni.gov.uk/Buildings/buildMain.aspx"
+        title: "Northern Ireland Sites and Monuments Record"
+        publisher: "Department for Communities"
+        date: "2026-07-21"
+    last_updated: "2026-07-21"
+
+  - id: es-castles-uncountable
+    claim: "Spain has [no derivable castle count]"
+    value: null
+    definition: fortified_residence
+    jurisdiction: ES
+    grade: folklore
+    assessment: >
+      Recorded as an absence with a legal cause, which makes Spain the most
+      interesting negative result in this dataset. The Decreto de 22 de abril de
+      1949 places ALL castles in Spain under state protection "cualquiera que sea
+      su estado de ruina" — whatever their state of ruin — with no individual
+      declaration proceeding, and Ley 16/1985 (Disposición adicional segunda)
+      converted that blanket protection into Bien de Interés Cultural status
+      automatically. Spanish castles are therefore protected BY OPERATION OF LAW
+      rather than by inscription, so no enumerated list is derivable even in
+      principle: the protected class is open-ended, and anything later determined
+      to be a castle was already protected in 1949. Proof that this is the operative
+      reading rather than a technicality: a 1994 Andalusian resolution terminated
+      the pending individual declaration file for the Castillo de Bélmez as
+      unnecessary, because the castle already held BIC status via that provision.
+      A name search for "castillo" returns 2,017, but that figure is contaminated
+      (it catches churches named for a castle) and incomplete (it misses every
+      alcazaba, torre, fortaleza, castell, gaztelu and castelo) — it is neither an
+      upper nor a lower bound and is not used here. A first inventory of 1949–62
+      catalogued roughly 5,200 castles and defensive elements; that is a historical
+      artefact, not a current count.
+    sources:
+      - url: "https://www.juntadeandalucia.es/boja/1994/126/39"
+        title: "Resolución — Castillo de Bélmez"
+        publisher: "Boletín Oficial de la Junta de Andalucía"
+        date: "1994"
+        note: "Terminates an individual BIC declaration as unnecessary given the 1949 decree — the clearest evidence that protection is automatic."
+      - url: "https://www.cultura.gob.es/planes-nacionales/dam/jcr:d7c490b8-eac4-4bd8-94f5-aacc93c1fa27/decreto-de-22-de-abril-de-1949-sobre-proteccion-de-los-castillos-espa-oles.pdf"
+        title: "Decreto de 22 de abril de 1949 sobre protección de los castillos españoles"
+        publisher: "Ministerio de Cultura"
+        date: "1949"
+        note: "Verbatim article text confirmed at second hand: the BOE HTML record reads 'Texto no disponible' and this PDF is a scan with no text layer."
+    last_updated: "2026-07-21"
+
+  - id: gb-eng-castle-count
+    claim: "England has [no verified castle count]"
+    value: null
+    definition: fortified_residence
+    jurisdiction: GB-ENG
+    grade: folklore
+    assessment: >
+      Recorded as an absence, deliberately, and the cause is more interesting than
+      the absence. England has an openly licensed, bulk-downloadable national
+      register — 379,680 listed buildings and 19,998 scheduled monuments — and this
+      project still cannot say how many castles are in it, because THE BULK SCHEMA
+      HAS NO TYPE FIELD AT ALL. The published columns are entry number, name, grade,
+      dates, capture scale, link and grid reference; `Grade` is importance (I, II*,
+      II), not typology. There is a controlled vocabulary — the FISH monument-type
+      thesaurus, whose term for castle reads "A fortress and dwelling, usually
+      medieval in origin" — but it is not applied in the National Heritage List, so
+      it cannot be filtered on.
+
+      What remains is keyword matching on the Name column, which returns 1,190
+      scheduled monuments and 3,237 listed buildings. That figure is worthless in
+      both directions at once: it catches Castle Farm and misses every unnamed
+      motte. A live count against Historic England's ArcGIS FeatureServer returned
+      "499 Token Required", and the website returns HTTP 403 to automated access
+      generally. The only official castle-class figure verified anywhere is a
+      monument-class boilerplate line that over 600 motte and motte-and-bailey
+      castles are recorded nationally.
+
+      Numerous tourism figures circulate; none is used. An unanswered question with
+      its blocker named is worth more than a borrowed number.
+    sources:
+      - url: "https://historicengland.org.uk/listing/the-list/"
+        title: "The National Heritage List for England"
+        publisher: "Historic England"
+        date: "2026-07-21"
+    last_updated: "2026-07-21"

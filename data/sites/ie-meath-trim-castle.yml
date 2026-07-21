@@ -1,0 +1,57 @@
+id: ie-meath-trim-castle
+name: Trim Castle
+tradition: european_medieval
+location:
+  country: IE
+  region: Leinster
+  county: Meath
+  locality: Trim
+  lat: 53.5548
+  lon: -6.7897
+built:
+  from: 1176
+  to: 1224
+condition: ruin
+definitions_met:
+  fortified_residence:
+    verdict: 'yes'
+    basis: 'The largest Anglo-Norman castle in Ireland: a genuine fortified private residence
+      of a lord, with curtain wall, towers, gatehouses meant to be held, and a great keep
+      serving as the lordly residence. Meets both halves of the criterion without strain.'
+  popular_castle:
+    verdict: 'yes'
+    basis: A major visitor attraction operated and signposted as a castle by the Office of
+      Public Works.
+  enclosure_fortification:
+    verdict: 'no'
+    basis: The curtain wall serves a lordly castle rather than standing as the primary work
+      of an undefended-lordship enclosure.
+  palatial_seat:
+    verdict: 'no'
+    basis: No palatial phase; it decayed rather than being rebuilt as a residence.
+  state_fortification:
+    verdict: 'no'
+    basis: Seigneurial rather than state construction, built by Hugh de Lacy as lord of Meath.
+  revival_folly:
+    verdict: 'no'
+    basis: A genuine medieval build, not a post-defensive-era romantic one.
+register_entries:
+- register: ie-smr
+  ref: ME036-021
+  designation: Castle - Anglo-Norman masonry castle
+disputed: false
+first_seen: '2026-07-21'
+last_updated: '2026-07-21'
+confidence: high
+sources:
+- url: https://www.archaeology.ie/collections-and-publications/open-data/
+  title: Archaeological Survey of Ireland - open data
+  publisher: National Monuments Service
+  date: '2026-07-21'
+- url: https://en.wikipedia.org/wiki/Trim_Castle
+  title: Trim Castle
+  publisher: Wikipedia
+notes: One of the 129 SMR records classed 'Castle - Anglo-Norman masonry castle' - the strictest
+  of Ireland's three answers to how many castles it has. The SMR reference is recorded to
+  the class the register assigns; the specific record identifier should be re-verified against
+  the register before it is relied upon.

@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://castles.bussetech.com/schema/definitions.schema.json",
+  "title": "Definition bands",
+  "description": "The spine of this dataset. Each band is one answer to 'what is a castle?' — a named, sourced criterion under which a structure either qualifies or does not. Records carry a verdict per band (see sites.schema.json); the site publishes a count per band. A band declares its own CLOSURE RULE: `enumerable` bands can in principle be counted to completion against named registers and publish an integer; `open` bands cannot and publish a sourced range instead. Adding or changing a band is a decision-request PR, never a data edit.",
+  "type": "object",
+  "required": ["version", "definitions"],
+  "additionalProperties": false,
+  "properties": {
+    "version": { "const": 1 },
+    "definitions": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/definition" }
+    }
+  },
+  "$defs": {
+    "definition": {
+      "type": "object",
+      "required": ["id", "label", "summary", "criterion", "includes", "excludes", "authority", "closure", "closure_note"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]*[a-z0-9]$",
+          "description": "Stable band key. Record verdicts and count outputs key off this."
+        },
+        "label": { "type": "string", "minLength": 1 },
+        "summary": { "type": "string", "minLength": 1, "description": "One line, plain language — what a person means when they use the word this way." },
+        "criterion": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The decision rule applied to a structure to reach a verdict. Must be specific enough that two people applying it to the same structure would usually agree."
+        },
+        "includes": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "excludes": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "authority": {
+          "type": "array",
+          "minItems": 1,
+          "description": "Who defines it this way. A band without a citable authority is this project's own opinion and must say so via kind: project.",
+          "items": {
+            "type": "object",
+            "required": ["kind", "name", "url"],
+            "additionalProperties": false,
+            "properties": {
+              "kind": {
+                "enum": ["scholar", "institution", "standard", "register", "project"],
+                "description": "`project` = defined by canonical-castles itself, with no external authority. Used honestly, not to dress up an opinion."
+              },
+              "name": { "type": "string" },
+              "work": { "type": "string", "description": "Book, standard, or dataset in which the definition appears." },
+              "url": { "type": "string", "pattern": "^https?://" },
+              "quote": { "type": "string", "description": "The defining words, verbatim, where short enough to quote." }
+            }
+          }
+        },
+        "closure": {
+          "enum": ["enumerable", "open"],
+          "description": "`enumerable`: bounded by named registers, so the count can in principle reach a real integer per jurisdiction. `open`: no register bounds it and none can — the band publishes a range with its assumptions shown, never a fabricated integer."
+        },
+        "closure_note": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Why this band closes or does not, in plain language. This is what the site prints next to the number."
+        },
+        "registers": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Ref: data/registers.yml ids that bound this band. Required in practice for `enumerable` bands; enforced by scripts/check_integrity.py, not by this schema."
+        },
+        "note": { "type": "string" }
+      }
+    }
+  }
+}

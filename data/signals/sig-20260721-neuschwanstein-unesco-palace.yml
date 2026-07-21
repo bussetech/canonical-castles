@@ -1,0 +1,15 @@
+id: sig-20260721-neuschwanstein-unesco-palace
+site_id: de-schwangau-neuschwanstein
+attribute: definition.palatial_seat
+value: 'Inscribed by UNESCO in July 2025 within ''The Palaces of King Ludwig II of Bavaria:
+  Neuschwanstein, Linderhof, Schachen and Herrenchiemsee''.'
+source_url: https://whc.unesco.org/en/list/1726
+source_title: The Palaces of King Ludwig II of Bavaria
+publisher: UNESCO World Heritage Centre
+source_date: '2025'
+observed_date: '2026-07-21'
+collected_by: console/founding-2026-07-21
+confidence: high
+notes: UNESCO frames the property as palaces; German official English-language communications
+  about the identical property say 'castles'. The naming disagreement is between two official
+  sources, which is why it is a signal rather than a settled fact.

@@ -1,0 +1,16 @@
+id: sig-20260721-smr-castle-class-count
+site_id: null
+site_hint: Ireland, national — Sites and Monuments Record, Castle monument class
+attribute: count_claim
+value: 'MONUMENT_CLASS LIKE ''Castle%'' returns 4,552 records; ''Castle - Anglo-Norman masonry
+  castle'' alone returns 129; ''Ringfort%'' returns 31,431. Total SMR records: 151,308.'
+source_url: https://www.archaeology.ie/collections-and-publications/open-data/
+source_title: Archaeological Survey of Ireland - open data
+publisher: National Monuments Service
+source_date: '2026-07-21'
+observed_date: '2026-07-21'
+collected_by: console/founding-2026-07-21
+confidence: high
+notes: 'Not about one structure, so site_id is null and site_hint names the population instead.
+  This single query is the clearest demonstration of the dataset''s thesis: one official database,
+  one day, three answers.'

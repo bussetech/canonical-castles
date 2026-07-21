@@ -1,0 +1,53 @@
+id: fr-haut-rhin-neuf-brisach
+name: Neuf-Brisach
+tradition: european_post_medieval
+location:
+  country: FR
+  region: Grand Est
+  locality: Neuf-Brisach
+  lat: 48.0175
+  lon: 7.5289
+built:
+  from: 1698
+  to: 1707
+condition: intact
+definitions_met:
+  state_fortification:
+    verdict: 'yes'
+    basis: A Vauban-system fortified town built by the French crown from 1698, octagonal bastioned
+      enceinte, purely military in commission and garrison. Inscribed by UNESCO within the
+      Fortifications of Vauban serial property.
+  fortified_residence:
+    verdict: 'no'
+    basis: A fortified town, not the residence of a private lord. Communal and state rather
+      than seigneurial - excluded by the criterion however formidable the works.
+  popular_castle:
+    verdict: 'no'
+    basis: Described as a fortified town or citadel rather than a castle in tourism and scholarship
+      alike.
+  palatial_seat:
+    verdict: 'no'
+    basis: Not a residence at all - a fortified town built for a garrison and the population
+      supporting it. The band requires a high-status lordly residence bearing a castle-word,
+      and Neuf-Brisach is neither a lordly residence nor castle-named.
+  enclosure_fortification:
+    verdict: 'no'
+    basis: A designed artillery-age enceinte rather than a prehistoric enclosure work; the
+      bands are distinguished by period and design intent, not merely by the presence of a
+      wall.
+  revival_folly:
+    verdict: 'no'
+    basis: Genuine military fabric.
+disputed: false
+first_seen: '2026-07-21'
+last_updated: '2026-07-21'
+confidence: high
+sources:
+- url: https://whc.unesco.org/en/list/1283
+  title: Fortifications of Vauban
+  publisher: UNESCO World Heritage Centre
+  date: '2008'
+notes: 'Carried because it is the clean negative case: overwhelming fortification, zero castle.
+  It scores yes on exactly one band and no on the other five, which is what a well-behaved
+  record looks like when the bands are doing their job. Datasets that merge ''castles and
+  fortresses'' into one field cannot represent the difference between this and Trim Castle.'

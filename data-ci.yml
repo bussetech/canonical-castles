@@ -1,0 +1,30 @@
+# Dataset ↔ schema mapping for studio data CI (bussetech/ci reusable-data-ci).
+#
+# Manifest mode (not convention) because this project needs the integrity
+# hook: every definitions_met key must name a real band, every register_entry
+# and coverage cell must name a real register, disputed records must say what
+# the dispute is, and — the one that matters most here — every published
+# count must be re-derivable from the records rather than asserted.
+datasets:
+  - name: sites
+    schema: schema/sites.schema.json
+    files: "data/sites/*.yml"
+  - name: signals
+    schema: schema/signals.schema.json
+    files: "data/signals/*.yml"
+  - name: definitions
+    schema: schema/definitions.schema.json
+    files: "data/definitions.yml"
+  - name: registers
+    schema: schema/registers.schema.json
+    files: "data/registers.yml"
+  - name: coverage
+    schema: schema/coverage.schema.json
+    files: "data/coverage.yml"
+  - name: claims
+    schema: schema/claims.schema.json
+    files: "data/claims.yml"
+  - name: sources
+    schema: schema/sources.schema.json
+    files: "data/sources.yml"
+integrity: scripts/check-integrity.sh

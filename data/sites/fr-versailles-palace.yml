@@ -1,0 +1,68 @@
+id: fr-versailles-palace
+name: Palace of Versailles
+name_local: Château de Versailles
+tradition: european_post_medieval
+location:
+  country: FR
+  region: Ile-de-France
+  locality: Versailles
+  lat: 48.8049
+  lon: 2.1204
+built:
+  from: 1623
+  to: 1710
+  period: hunting lodge 1623, progressively enlarged to 1710
+condition: intact
+definitions_met:
+  palatial_seat:
+    verdict: 'yes'
+    basis: 'The definitive European palatial seat bearing a castle-word: Chateau de Versailles
+      is a chateau in name with no fortification whatsoever, its defence being the French
+      state rather than any wall.'
+  fortified_residence:
+    verdict: 'no'
+    basis: Entirely unfortified. No wall walks, no parapets, no gatehouse meant to be held,
+      no defensive intent at any phase. Fails the criterion completely.
+  popular_castle:
+    verdict: contested
+    basis: 'English usage overwhelmingly calls it a palace, French usage calls it a chateau,
+      and castle-aggregator datasets file it as a castle - thecastlemap ranks it #1 by fame.
+      Usage genuinely differs by language, which is the whole difficulty.'
+  state_fortification:
+    verdict: 'no'
+    basis: A royal residence and seat of government, never a military installation.
+  enclosure_fortification:
+    verdict: 'no'
+    basis: No defensive enclosure.
+  revival_folly:
+    verdict: 'no'
+    basis: A genuine early-modern residence, not a castle-form build for effect.
+register_entries:
+- register: fr-pop
+  ref: PA00087661
+  designation: Monument historique (classe)
+disputed: true
+dispute_note: 'Whether Versailles is popularly a castle is a translation artefact rather than
+  a fact about the building: chateau maps to both ''castle'' and ''palace'' in English, and
+  which one a dataset picks determines whether the most famous chateau in the world appears
+  in its castle count. thecastlemap ranks it the single most famous castle on Earth.'
+first_seen: '2026-07-21'
+last_updated: '2026-07-21'
+confidence: high
+sources:
+- url: https://whc.unesco.org/en/list/83
+  title: Palace and Park of Versailles
+  publisher: UNESCO World Heritage Centre
+  date: '1979'
+- url: https://thecastlemap.com/castles/ranked/
+  title: Castles ranked by fame
+  publisher: thecastlemap.com
+  date: '2026-07-21'
+  note: 'Ranks Versailles #1.'
+signals:
+- sig-20260721-castlemap-versailles-rank
+notes: The single clearest demonstration that a castle dataset's headline number is a translation
+  decision. Rank Versailles first among castles and 'castle' has come to mean 'grand old building';
+  exclude it and a large fraction of what the public means by castle disappears. The register
+  reference is the Monument historique identifier and should be re-verified against Base Merimee
+  before being relied upon.

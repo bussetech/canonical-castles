@@ -1,0 +1,57 @@
+id: gb-bath-sham-castle
+name: Sham Castle
+tradition: european_post_medieval
+location:
+  country: GB
+  region: England
+  county: Somerset
+  locality: Bathampton
+  lat: 51.3856
+  lon: -2.3392
+built:
+  from: 1762
+  to: 1762
+condition: intact
+definitions_met:
+  revival_folly:
+    verdict: 'yes'
+    basis: 'The limiting case of the band: a screen wall built in 1762 as an eyecatcher for
+      a view from the city, with no rooms, no staircases and nothing behind the facade. Castle
+      form for purely picturesque purposes, with no defensive intent at any point.'
+  fortified_residence:
+    verdict: 'no'
+    basis: Neither fortified nor a residence - there is no interior at all. Fails both halves
+      of the criterion, which no other record in this dataset manages.
+  popular_castle:
+    verdict: contested
+    basis: Named, signposted and visited as a castle, but its own name concedes it is not
+      one. Whether a structure that announces its own falsity counts as popularly a castle
+      is genuinely unclear.
+  palatial_seat:
+    verdict: 'no'
+    basis: Not a residence of any kind.
+  enclosure_fortification:
+    verdict: 'no'
+    basis: 'Encloses nothing: a single screen wall with no return, no circuit and no enclosed
+      area whatsoever. The band requires an enclosure whose bank, ditch or wall defends the
+      area within, and here there is no within.'
+  state_fortification:
+    verdict: 'no'
+    basis: Not a military work in any sense.
+disputed: true
+dispute_note: A structure whose own name declares it is not a castle, while being universally
+  called one. The popular_castle verdict is contested because the claim and its denial are
+  carried by the same word.
+first_seen: '2026-07-21'
+last_updated: '2026-07-21'
+confidence: medium
+sources:
+- url: https://en.wikipedia.org/wiki/Sham_Castle
+  title: Sham Castle
+  publisher: Wikipedia
+notes: Carried as the reductio for the whole exercise. If a dataset's castle test admits a
+  freestanding wall with nothing behind it, the test is doing no work; if it excludes a structure
+  that everyone calls Sham Castle and visits as one, the dataset has left usage behind. The
+  band model records both without resolving them. Note the distinction Philip Davis draws
+  and most datasets collapse - a symbolic castle built to assert status is not the same as
+  a sham castle built as scenery, and this record is the second kind.

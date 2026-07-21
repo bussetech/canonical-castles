@@ -1,0 +1,64 @@
+id: sy-homs-crac-des-chevaliers
+name: Crac des Chevaliers
+tradition: islamic
+location:
+  country: SY
+  region: Homs Governorate
+  lat: 34.7569
+  lon: 36.2944
+built:
+  from: 1142
+  to: 1271
+  period: Kurdish garrison fort from 1031, rebuilt by the Knights Hospitaller from 1142
+condition: intact
+definitions_met:
+  fortified_residence:
+    verdict: contested
+    basis: 'A concentric fortress of the highest order that was also the residence of the
+      Hospitaller garrison. Whether a military order counts as a private lord is exactly the
+      boundary the criterion cannot settle: the Order was neither a state nor an ordinary
+      seigneur, and scholars differ. Recorded as contested rather than forced.'
+  state_fortification:
+    verdict: contested
+    basis: The Hospitallers functioned as a quasi-sovereign military corporation, so the work
+      is arguably state-like in commission and garrison while remaining formally non-royal.
+      The same ambiguity that makes the residence verdict contested makes this one contested.
+  popular_castle:
+    verdict: 'yes'
+    basis: Universally described as a castle in scholarship, tourism and general reference
+      - frequently as the best-preserved crusader castle in the world.
+  enclosure_fortification:
+    verdict: 'no'
+    basis: A designed concentric fortress rather than an enclosure work of the prehistoric
+      type.
+  palatial_seat:
+    verdict: 'no'
+    basis: Military and conventual in function; no palatial residential phase.
+  revival_folly:
+    verdict: 'no'
+    basis: A genuine medieval fortification.
+register_entries:
+- register: wikidata
+  ref: Q184515
+  url: https://www.wikidata.org/wiki/Q184515
+disputed: true
+dispute_note: The Knights Hospitaller sit between the private-lord and state categories that
+  the fortified_residence and state_fortification criteria depend on. Both verdicts are recorded
+  contested rather than arbitrarily assigning the Order to one side, because the ambiguity
+  is in the historical institution and not in the evidence.
+first_seen: '2026-07-21'
+last_updated: '2026-07-21'
+confidence: high
+sources:
+- url: https://whc.unesco.org/en/list/1229
+  title: Crac des Chevaliers and Qal'at Salah El-Din
+  publisher: UNESCO World Heritage Centre
+  date: '2006'
+- url: https://en.wikipedia.org/wiki/Krak_des_Chevaliers
+  title: Krak des Chevaliers
+  publisher: Wikipedia
+notes: UNESCO inscribed the property partly because its fortification systems 'substantially
+  differed from European defense systems' - an official statement that the European template
+  does not transfer cleanly. The tradition field records it as islamic-sphere to locate it
+  geographically without implying the builders were; the crusader-state context is precisely
+  what makes it interesting.

@@ -1,0 +1,15 @@
+id: sig-20260721-castlemap-versailles-rank
+site_id: fr-versailles-palace
+attribute: definition.popular_castle
+value: 'Ranked #1 by fame among castles worldwide.'
+source_url: https://thecastlemap.com/castles/ranked/
+source_title: Castles ranked by fame
+publisher: thecastlemap.com
+source_date: '2026-07-21'
+observed_date: '2026-07-21'
+collected_by: console/founding-2026-07-21
+confidence: medium
+notes: 'Evidence about USAGE, not about fabric: a castle aggregator ranking Versailles the
+  most famous castle on Earth is exactly the kind of claim the popular_castle band is built
+  to hold. It says nothing about whether Versailles is fortified, and it is not treated as
+  if it did.'
