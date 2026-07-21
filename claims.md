@@ -39,7 +39,7 @@ signature of a meme, not a statistic.
 {% for c in claims %}
 ### {{ c.claim }}
 
-**{{ c.grade | upcase }}**{% if c.value %} · asserted value **{{ c.value }}**{% elsif c.value_range %} · asserted range **{{ c.value_range[0] }}–{{ c.value_range[1] }}**{% endif %} · {{ c.jurisdiction }}{% if c.definition %} · band: [{{ c.definition | replace: "_", " " }}](/definitions/#{{ c.definition }}){% endif %}
+**{{ c.grade | upcase }}**{% if c.value %} · asserted value **{{ c.value }}**{% elsif c.value_range %} · asserted range **{{ c.value_range[0] }}–{{ c.value_range[1] }}**{% endif %} · {{ c.jurisdiction }}{% if c.definition %} · band: [{{ c.definition | replace: "_", " " }}](/definitions/{{ c.definition  }}/){% endif %}
 
 {{ c.assessment }}
 

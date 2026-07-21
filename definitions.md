@@ -21,40 +21,15 @@ These bands are not a better definition. They are the consequence of accepting
 that one definition was always the wrong shape.
 
 {% assign defs = site.data.definitions.definitions %}
-{% for d in defs %}
-<a id="{{ d.id }}"></a>
 
-## {{ d.label }}
-
-*{{ d.summary }}*
-
-**Closure: {{ d.closure }}.** {{ d.closure_note }}
-
-**Criterion.** {{ d.criterion }}
-
-**Includes**
-{% for i in d.includes %}
-- {{ i }}
-{%- endfor %}
-
-**Excludes**
-{% for e in d.excludes %}
-- {{ e }}
-{%- endfor %}
-
-**Who defines it this way**
-{% for a in d.authority %}
-- {{ a.name }}{% if a.work %} — *{{ a.work }}*{% endif %} ([source]({{ a.url }})){% if a.kind == "project" %} — **this project's own band; no external authority**{% endif %}{% if a.quote %}<br>&ldquo;{{ a.quote }}&rdquo;{% endif %}
-{%- endfor %}
-
-{% if d.registers and d.registers.size > 0 %}**Bounded by**
-{% for r in d.registers %}{% assign reg = site.data.registers.registers | where: "id", r | first %}[{{ reg.name }}](/data/#registers){% unless forloop.last %} · {% endunless %}{% endfor %}
-{% endif %}
-
-{% if d.note %}**Note.** {{ d.note }}{% endif %}
-
----
+| Definition | What it means | Closure |
+|---|---|---|
+{% for d in defs %}| **[{{ d.label }}](/definitions/{{ d.id }}/)** | {{ d.summary }} | {{ d.closure }} |
 {% endfor %}
+
+Each band has its own page with its full criterion, its inclusions and
+exclusions, the authorities that hold it, the registers that bound it, and every
+record that satisfies it.
 
 ## What "closure" means
 

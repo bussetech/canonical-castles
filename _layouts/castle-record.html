@@ -23,7 +23,7 @@ layout: default
       {%- for d in defs -%}
         {%- assign met = rec.definitions_met[d.id] -%}
         <tr>
-          <th><a href="/definitions/#{{ d.id }}">{{ d.label }}</a></th>
+          <th><a href="/definitions/{{ d.id  }}/">{{ d.label }}</a></th>
           {%- if met %}
           <td><strong>{{ met.verdict }}</strong></td>
           <td>{{ met.basis }}</td>

@@ -21,6 +21,16 @@ import yaml
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SITES = ROOT / "data" / "sites"
 PAGES = ROOT / "castles"
+DEFINITIONS = ROOT / "data" / "definitions.yml"
+BAND_PAGES = ROOT / "definitions"
+
+BAND_TEMPLATE = """---
+layout: definition
+band: {bid}
+title: "{title}"
+permalink: /definitions/{bid}/
+---
+"""
 
 TEMPLATE = """---
 layout: castle-record
@@ -57,6 +67,24 @@ def main() -> int:
             stale.append(rid)
             if not args.check:
                 target.write_text(text)
+
+    # Each band gets its own page: a definition is the unit this project
+    # reasons in, so it earns a citable URL rather than a fragment.
+    bands = yaml.safe_load(DEFINITIONS.read_text())["definitions"]
+    BAND_PAGES.mkdir(exist_ok=True)
+    for b in bands:
+        text = BAND_TEMPLATE.format(bid=b["id"], title=b["label"].replace('"', "'"))
+        target = BAND_PAGES / f"{b['id']}.md"
+        if not target.exists() or target.read_text() != text:
+            stale.append(f"definitions/{b['id']}")
+            if not args.check:
+                target.write_text(text)
+    band_ids = {b["id"] for b in bands}
+    for path in BAND_PAGES.glob("*.md"):
+        if path.stem != "index" and path.stem not in band_ids:
+            stale.append(f"definitions/{path.stem} (orphan)")
+            if not args.check:
+                path.unlink()
 
     orphans = [
         p for p in PAGES.glob("*.md") if p.stem != "index" and p.stem not in wanted
