@@ -1,0 +1,14 @@
+id: sig-20260721-cadw-pe169
+site_id: gb-cilgerran-pen-allt
+attribute: register_entry
+value: 'Scheduled monument PE169. SiteType: Castle. BroadClass: Defence. Period: Medieval.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3702
+source_title: Cof Cymru - National Historic Assets of Wales
+publisher: Cadw
+source_date: '2026-07-21'
+observed_date: '2026-07-21'
+collected_by: import/gb-wls-cadw@1.0.0
+confidence: high
+notes: Register classification, not an assessment against this project's criterion. Cadw asserts
+  its own typology; whether the structure meets the fortified_residence criterion is a separate
+  question nobody has answered for this entry.

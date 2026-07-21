@@ -52,10 +52,11 @@ layout: default
   <h2>In this dataset</h2>
   <table>
     <tbody>
-      <tr><th>Satisfies this definition</th><td><strong>{{ counts.held.yes }}</strong></td></tr>
-      <tr><th>Contested</th><td>{{ counts.held.contested }}</td></tr>
-      <tr><th>Does not satisfy</th><td>{{ counts.held.no }}</td></tr>
-      <tr><th>Unassessed</th><td>{{ counts.held.unassessed }}</td></tr>
+      <tr><th></th><th>assessed</th><th>register-derived</th></tr>
+      <tr><th>Satisfies this definition</th><td><strong>{{ counts.held.assessed.yes }}</strong></td><td>{{ counts.held.register_derived.yes }}</td></tr>
+      <tr><th>Contested</th><td>{{ counts.held.assessed.contested }}</td><td>{{ counts.held.register_derived.contested }}</td></tr>
+      <tr><th>Does not satisfy</th><td>{{ counts.held.assessed.no }}</td><td>{{ counts.held.register_derived.no }}</td></tr>
+      <tr><th>Unassessed</th><td>{{ counts.held.unassessed }}</td><td></td></tr>
     </tbody>
   </table>
   <p>Derived from the records, not typed. See <a href="/counts/">counts</a> and
@@ -67,15 +68,36 @@ layout: default
   <p>{{ d.note }}</p>
   {%- endif %}
 
-  <h2>Records</h2>
+  {%- assign recs = site.data.sites | sort -%}
+
+  <h2>Assessed records</h2>
+  <p>Structures somebody applied this criterion to, with the reasoning.</p>
   <ul>
-    {%- assign recs = site.data.sites | sort -%}
     {%- for pair in recs %}{% assign r = pair[1] %}{% assign m = r.definitions_met[page.band] %}
-    {%- if m and m.verdict != "no" %}
+    {%- if m and m.verdict != "no" and m.assessment != "register-derived" %}
     <li><a href="/castles/{{ r.id }}/">{{ r.name }}</a> — <strong>{{ m.verdict }}</strong>: {{ m.basis }}</li>
     {%- endif %}
     {%- endfor %}
   </ul>
+
+  {%- assign derived = 0 %}
+  {%- for pair in recs %}{% assign m = pair[1].definitions_met[page.band] %}
+  {%- if m and m.assessment == "register-derived" %}{% assign derived = derived | plus: 1 %}{% endif %}
+  {%- endfor %}
+  {%- if derived > 0 %}
+  <h2>Register-derived records ({{ derived }})</h2>
+  <p>Transcribed in bulk from a register's own typology. Nobody has applied this
+  band's criterion to these structures, so they carry <code>confidence: low</code>
+  and are counted separately above. Upgrading them to assessed verdicts is real
+  outstanding work, not a formality.</p>
+  <ul>
+    {%- for pair in recs %}{% assign r = pair[1] %}{% assign m = r.definitions_met[page.band] %}
+    {%- if m and m.assessment == "register-derived" %}
+    <li><a href="/castles/{{ r.id }}/">{{ r.name }}</a>{% if r.location.county %} — {{ r.location.county }}{% endif %}</li>
+    {%- endif %}
+    {%- endfor %}
+  </ul>
+  {%- endif %}
 
   <p><a href="/data/definitions.yml">Definition file</a> · dataset licensed
   <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>

@@ -20,17 +20,28 @@ cells:
     '
 - definition: fortified_residence
   jurisdiction: GB-WLS
-  state: unexamined
+  state: complete
   settled_by:
   - gb-wls-cadw
   - gb-wls-coflein
-  records_held: 0
+  records_held: 104
   register_count: 104
-  note: 'Not started, and the easiest remaining win: Cadw carries an explicit SiteType typology, so 104
-    scheduled castles is a real target rather than an estimate. Coflein independently gives 158 for the
-    wider record of what exists rather than what is protected.
+  note: 'THE FIRST CLOSED CELL. Every one of the 104 scheduled monuments Cadw classes SiteType: Castle
+    has a record here, imported from the register on 2026-07-21 and reproducible from the committed snapshot.
+    Cadw is the only British register with a real castle-type filter, which is why Wales closed first.
 
-    '
+
+    READ THE CLAIM NARROWLY, because it is narrower than "Wales has 104 castles". It means: complete against
+    Cadw''s scheduled-monument castle typology. It does NOT mean complete against the band''s own criterion
+    — all 104 verdicts are assessment: register-derived at confidence: low, transcribed from Cadw''s typology
+    rather than assessed against this band''s rule, and counts report them separately for exactly that
+    reason. Nor does it mean every Welsh castle: scheduling is a protection decision, so unscheduled castles
+    are absent by construction, and Coflein — a record of what exists rather than what is protected —
+    independently returns 158.
+
+
+    What closing this cell actually proves is that the pipeline can close a cell, and against exactly
+    what. Upgrading the 104 to assessed verdicts is the next real work.'
 - definition: fortified_residence
   jurisdiction: GB-ENG
   state: unexamined

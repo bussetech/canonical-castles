@@ -8,3 +8,5 @@ PY="${PYTHON:-python3}"
 "$PY" scripts/check_integrity.py
 "$PY" scripts/gen_pages.py --check
 "$PY" scripts/counts.py --check
+# Imports are reproducible from their committed snapshot, or they are not imports.
+"$PY" scripts/import_register.py --register gb-wls-cadw --transform --check

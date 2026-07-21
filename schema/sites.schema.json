@@ -246,6 +246,13 @@
           "type": "string",
           "minLength": 1,
           "description": "Why, against THIS band's criterion, in one or two sentences. 'It's obviously a castle' is not a basis. The basis must reference the criterion's terms."
+        },
+        "assessment": {
+          "enum": [
+            "assessed",
+            "register-derived"
+          ],
+          "description": "HOW the verdict was reached, which is not the same as how confident it is. `assessed` (the default when omitted): a human or gnome applied THIS band's criterion to this structure. `register-derived`: a register asserted its own typology and the verdict was transcribed from it in bulk, with nobody applying this band's criterion to this structure. The distinction exists because inheriting one register's definition wholesale is exactly the failure this project documents — a dataset that bulk-imports 4,552 rows and calls them assessed castles has not counted castles, it has copied a register. Counts report the two separately and never sum them into a single headline."
         }
       }
     }
