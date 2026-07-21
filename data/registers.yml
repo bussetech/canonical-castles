@@ -1,0 +1,388 @@
+# The registers against which a band's count can be closed.
+#
+# A register is what makes an integer honest: a finite, citable list kept by a
+# named body, so "complete" becomes checkable rather than hopeful. Several
+# entries here are subjects of study as much as sources — Wikidata, OSM and
+# thecastlemap appear because other castle datasets treat them as ground truth
+# and this one does not.
+#
+# `entries_total` is never estimated. Where a body publishes no exact figure the
+# field is null and the note says so; an estimate belongs in a sourced claim
+# with its basis, not in a field that reads as fact.
+version: 1
+
+registers:
+  - id: ie-smr
+    name: "Sites and Monuments Record — Archaeological Survey of Ireland"
+    operator: "National Monuments Service, Department of Housing, Local Government and Heritage"
+    url: "https://www.archaeology.ie/collections-and-publications/open-data/"
+    jurisdiction: IE
+    enumerable: true
+    entries_total: 151308
+    entries_matching: 4552
+    query: >
+      SMROpenData FeatureServer, MONUMENT_CLASS LIKE 'Castle%' — returns 4,552:
+      unclassified 2,466; tower house 1,321; motte 258; motte-and-bailey 175;
+      ringwork 138; Anglo-Norman masonry castle 129; hall-house 51;
+      ringwork-and-bailey 14. The same service returns 31,431 for
+      MONUMENT_CLASS LIKE 'Ringfort%'.
+    licence: "CC-BY-4.0"
+    access: api
+    inclusion_criterion: >
+      Archaeological monuments recorded by the statutory survey and classified
+      against the NMS monument-class vocabulary. The register classifies by
+      monument type, not by whether a thing "is a castle" — which is precisely
+      why it can answer the question three different ways.
+    accessed: "2026-07-21"
+    note: >
+      The single most valuable register for this project. Ireland is
+      simultaneously a 129-castle country, a 4,552-castle country and a
+      31,431-fort country, and all three figures come from the same official
+      database on the same day. Nothing argued elsewhere on this site
+      demonstrates the thesis as cleanly.
+
+  - id: hillforts-atlas
+    name: "Atlas of Hillforts of Britain and Ireland"
+    operator: "University of Edinburgh, University of Oxford and University College Cork (AHRC-funded)"
+    url: "https://hca.ed.ac.uk/research/about/research-projects/an-atlas-of-hillforts-in-britain-and-ireland"
+    jurisdiction: WORLD
+    enumerable: true
+    entries_total: 4147
+    entries_matching: 4147
+    query: "Full published atlas as released in 2017; every entry is in scope for enclosure_fortification."
+    licence: "See project terms"
+    access: bulk-download
+    inclusion_criterion: >
+      Sites meeting the project's own hillfort definition across Britain and
+      Ireland — a definition the project concedes is strained, noting that many
+      of its entries "are not on hills and are not really forts."
+    accessed: "2026-07-21"
+    note: >
+      Count discrepancy left open deliberately: 4,147 is the figure given by the
+      project announcement and by Wikipedia, while DigVentures reports 4,174.
+      The transposition is unresolved and this dataset carries the lower,
+      better-attested figure rather than picking the convenient one silently.
+
+  - id: gatehouse
+    name: "Gatehouse Gazetteer"
+    operator: "Philip Davis (independent)"
+    url: "http://www.gatehouse-gazetteer.info/home.html"
+    jurisdiction: WORLD
+    enumerable: false
+    entries_total: null
+    entries_matching: null
+    licence: "See site terms"
+    access: search-only
+    inclusion_criterion: >
+      Medieval fortified sites in England, Wales, the Channel Isles and the Isle
+      of Man, built or in use 1000–1600. The standard is explicitly derivative —
+      it counts as a fortification "that which the various authors from which the
+      information is drawn have considered to be a fortification," with rejected
+      sites flagged rather than deleted. Excludes purely passive defences
+      (moated houses, walls without wall walks or parapets). Includes royal and
+      episcopal houses and hunting lodges as a deliberate control group.
+    accessed: "2026-07-21"
+    note: >
+      Described by its author as around 6,000 site pages plus a further 1,000 of
+      historical references, but that total spans every class it maintains —
+      timber castle, masonry castle, siege work, palace, fortified manor house,
+      tower house, pele tower, bastle, artillery fort, fortified ecclesiastical
+      site, urban defences and more. It is therefore NOT a castle count and
+      entries_total is left null rather than misrepresenting it as one. The
+      control-group design — cataloguing undefended palaces alongside castles so
+      the boundary can be examined instead of assumed — is the most
+      methodologically sophisticated thing in this whole registry.
+
+  - id: gb-nhle
+    name: "National Heritage List for England"
+    operator: "Historic England"
+    url: "https://historicengland.org.uk/listing/the-list/"
+    jurisdiction: GB-ENG
+    enumerable: false
+    entries_total: null
+    entries_matching: null
+    licence: "OGL-UK-3.0"
+    access: bulk-download
+    inclusion_criterion: >
+      Designation under the Planning (Listed Buildings and Conservation Areas)
+      Act 1990 or scheduling under the Ancient Monuments and Archaeological
+      Areas Act 1979. Designation is a protection decision, not a typology —
+      "castle" is not a filterable designation class.
+    accessed: "2026-07-21"
+    note: >
+      Marked NOT enumerable despite being openly licensed and bulk-downloadable,
+      because the bulk schema HAS NO TYPE FIELD: the published columns are entry
+      number, name, grade, dates, capture scale, link and grid reference. Grade is
+      importance (I, II*, II), not typology. A controlled vocabulary exists — the
+      FISH monument-type thesaurus — but it is not applied in the List, so it cannot
+      be filtered on. Live figures on 2026-07-21: 379,680 listed buildings, 19,998
+      scheduled monuments, 1,721 parks and gardens, 47 battlefields, 57 protected
+      wrecks. Keyword matching on Name returns 1,190 scheduled monuments and 3,237
+      listed buildings, a figure that simultaneously catches "Castle Farm" and
+      misses every unnamed motte. A live count against the ArcGIS FeatureServer
+      returned "499 Token Required", and the site returns HTTP 403 to automated
+      access generally. The type-aware route is the Heritage Gateway, which browses
+      FISH classes across the List and local HERs but is not bulk-extractable.
+
+  - id: gb-wls-cadw
+    name: "Cof Cymru — National Historic Assets of Wales"
+    operator: "Cadw (Welsh Government)"
+    url: "https://cadw.gov.wales/advice-support/cof-cymru"
+    jurisdiction: GB-WLS
+    enumerable: true
+    entries_total: 4237
+    entries_matching: 104
+    query: >
+      DataMapWales WFS, Cadw_SAM layer: SiteType = 'Castle' → 104, against 4,237
+      scheduled monuments in total. BroadClass = 'Defence' → 1,019. Adjacent
+      classes counted separately: Motte 156, Motte and Bailey 72, Hillfort 287,
+      Moated Site 69. Welsh listed buildings (30,116) carry BroadClass but no
+      SiteType.
+    licence: "OGL-UK-3.0"
+    access: api
+    inclusion_criterion: >
+      Scheduling under s.3 and listing under s.76 of the Historic Environment
+      (Wales) Act 2023 — "of national importance" and "special architectural or
+      historic interest" respectively. Uniquely among British registers, Cadw then
+      classifies scheduled monuments by an explicit SiteType typology, which is why
+      "castle" is a real filter here and a keyword guess everywhere else.
+    accessed: "2026-07-21"
+    note: >
+      The cleanest type-classified castle register in Britain, and the one that
+      shows most starkly how much the filter does: Wales is a 104-castle country, a
+      332-castle country if mottes count, and a 1,019-fortification country, all in
+      the same layer on the same day. GOTCHA for reproduction: SiteType values are
+      title-case and a case-sensitive filter silently returns zero rather than
+      erroring. Note also that the Historic Environment (Wales) Act 2016 is
+      REPEALED — the operative statute is the 2023 Act, in force 4 November 2024,
+      and secondary sources citing the 2016 Act are out of date.
+
+  - id: gb-wls-coflein
+    name: "Coflein — National Monuments Record of Wales"
+    operator: "Royal Commission on the Ancient and Historical Monuments of Wales"
+    url: "https://www.coflein.gov.uk/"
+    jurisdiction: GB-WLS
+    enumerable: true
+    entries_total: 112894
+    entries_matching: 158
+    query: >
+      site_type = 'CASTLE' → 158; a looser ILIKE '%castle%' match → 180. site_type
+      is a semicolon-delimited multi-value field, so a record may read
+      'MOTTE; CASTLE' and belong to both classes.
+    licence: "OGL-UK-3.0"
+    access: api
+    inclusion_criterion: >
+      The national record of the historic environment of Wales — every known site,
+      whether designated or not. A RECORD, not a designation register, which is
+      why its total dwarfs Cadw's and its castle count differs.
+    accessed: "2026-07-21"
+    note: >
+      Carried alongside Cadw deliberately, to make a distinction most castle
+      datasets collapse: a record of what EXISTS and a register of what is
+      PROTECTED are different questions with different answers. Coflein holds
+      112,894 sites against Cadw's 4,237 designations, and returns 158 castles
+      against Cadw's 104. Neither is wrong.
+
+  - id: gb-nir-nismr
+    name: "Northern Ireland Sites and Monuments Record"
+    operator: "Department for Communities"
+    url: "https://apps.communities-ni.gov.uk/Buildings/buildMain.aspx"
+    jurisdiction: GB-NIR
+    enumerable: true
+    entries_total: 18506
+    entries_matching: 4
+    query: >
+      General_Type = 'CASTLE' → 4. Castles are classified elsewhere: FORTIFICATION
+      353, MOTTE 48. Of 61 records mentioning "tower-house", 55 are classified
+      FORTIFICATION and exactly one record in the whole database carries
+      General_Type = 'TOWER HOUSE'.
+    licence: "OGL"
+    access: api
+    inclusion_criterion: "Archaeological sites and monuments recorded by the statutory survey."
+    accessed: "2026-07-21"
+    note: >
+      entries_matching is recorded as 4 because that is genuinely what the register
+      returns, and it is the single most useful cautionary number in this file.
+      Northern Ireland plainly has more than four castles. Any dataset built by
+      filtering national registers on a castle-type field would report 4 here and
+      never notice — which is a good description of how castle datasets actually go
+      wrong. The official page still describes the record as "around 17,000"
+      entries, itself out of date against the live 18,506.
+
+  - id: es-bic
+    name: "Bienes de Interés Cultural"
+    operator: "Ministerio de Cultura and the autonomous communities"
+    url: "https://www.cultura.gob.es/"
+    jurisdiction: ES
+    enumerable: false
+    entries_total: 18537
+    entries_matching: null
+    licence: "No national open licence"
+    access: search-only
+    inclusion_criterion: >
+      Declaration as a Bien de Interés Cultural under Ley 16/1985 — EXCEPT for
+      castles, which hold the status automatically. The Decreto de 22 de abril de
+      1949 protected all Spanish castles "whatever their state of ruin" with no
+      individual proceeding, and Ley 16/1985's second additional provision converted
+      that blanket protection into BIC status wholesale.
+    accessed: "2026-07-21"
+    note: >
+      The most interesting NOT-enumerable entry here: Spain is uncountable BY LAW,
+      not by neglect. Because castles are protected by operation of law rather than
+      by inscription, the protected class is open-ended and no enumerated list is
+      derivable even in principle — anything later determined to be a castle was
+      already protected in 1949. entries_total is the count of BIC RECORDS, which
+      by construction cannot include goods protected without one. A name search for
+      "castillo" returns 2,017; that figure is contaminated (it catches churches
+      named for a castle) and incomplete (it misses every alcazaba, torre,
+      fortaleza, castell, gaztelu and castelo), so it is neither an upper nor a
+      lower bound and is not used anywhere on this site.
+
+  - id: gb-sct-trove
+    name: "Trove (formerly Canmore)"
+    operator: "Historic Environment Scotland"
+    url: "https://www.trove.scot/"
+    jurisdiction: GB-SCT
+    enumerable: false
+    entries_total: null
+    entries_matching: null
+    licence: "OGL-UK-3.0"
+    access: search-only
+    inclusion_criterion: >
+      The national record of the historic environment of Scotland — archaeology,
+      buildings, industry and maritime heritage — plus the statutory designation
+      layers (listing, scheduling, gardens and designed landscapes, battlefields).
+    accessed: "2026-07-21"
+    note: >
+      Castle is not a category. The scheduled-monument layer's CLASS field has
+      exactly one distinct value across every record — "Cultural", the INSPIRE
+      protected-site code — so only keyword matching is possible, returning 624
+      scheduled monuments and 2,214 listed buildings. Designation layers are
+      countable (67,480 listed-building rows, 8,072 scheduled monuments, 371 gardens
+      and designed landscapes, 40 battlefields) but the listed-building figure is
+      entity-level: a listed terrace counts many times, and HES's own prose says
+      "around 47,000", so the distinct-designation count is unverified.
+
+      Also recorded for its own sake: Canmore, Scran and ScotlandsPlaces were
+      retired on 24 June 2025 and canmore.org.uk now issues a 301 to trove.scot,
+      which is WAF-blocked to automated access. A national register changing
+      platform is a standing hazard for any dataset citing its URLs — every dataset
+      built on Canmore permalinks inherited a migration it did not choose, which is
+      an argument for recording register identifiers alongside URLs rather than
+      instead of them.
+
+  - id: fr-pop
+    name: "Plateforme Ouverte du Patrimoine (Base Mérimée)"
+    operator: "Ministère de la Culture"
+    url: "https://www.pop.culture.gouv.fr/"
+    jurisdiction: FR
+    enumerable: true
+    entries_total: 45223
+    entries_matching: 6286
+    query: >
+      Bulk extract of protected immeubles, denomination field. Prefix "château"
+      excluding "château d'eau" (a WATER TOWER) → 6,286. Neighbouring rules:
+      token exactly "château" → 6,159; token in {château, château fort} → 6,285;
+      "château" as sole denomination → 5,703. The field is semicolon-delimited free
+      text with 1,998 distinct values, unnormalised for case (château 5,703 vs
+      Château 1) and hyphenation (château fort 104 vs château-fort 1).
+    licence: "Etalab-2.0"
+    access: bulk-download
+    inclusion_criterion: >
+      Classement or inscription as a monument historique. A protection decision
+      across all heritage types — "château" is not the unit of designation.
+    accessed: "2026-07-21"
+    note: >
+      entries_total is the Ministry's own verified figure for protected immeubles
+      as of 31 December 2024 (14,333 classés + 30,890 inscrits). It counts
+      monuments of every kind, overwhelmingly dwellings and churches, with
+      military architecture roughly 6%. It is recorded here mainly because of its
+      uncomfortable proximity to the folkloric "France has 45,000 châteaux" —
+      see the count claim on the France coverage cell.
+
+  - id: wikidata
+    name: "Wikidata"
+    operator: "Wikimedia Foundation"
+    url: "https://query.wikidata.org/"
+    jurisdiction: WORLD
+    enumerable: true
+    entries_total: 36716
+    entries_matching: 36716
+    query: >
+      SELECT (COUNT(DISTINCT ?i) AS ?c) WHERE { ?i wdt:P31/wdt:P279* wd:Q23413 }
+      — 36,716 including subclasses; 24,886 for direct instances of Q23413 only;
+      33,265 carry coordinates; 23,012 carry a heritage designation (P1435); 6,594
+      carry both coordinates and an English Wikipedia article. For contrast, the
+      same walk against Q57821 (fortification) returns 92,798. By country:
+      Germany 9,327, Italy 4,262, France 3,822, UK 3,816, Spain 3,160, Japan 2,266,
+      Iran 950, Ireland 669.
+    licence: "CC0-1.0"
+    access: api
+    inclusion_criterion: >
+      Whatever editors asserted via P31. No authority and no consistency
+      guarantee — but fully transparent and re-runnable, which most national
+      registers are not.
+    accessed: "2026-07-21"
+    note: >
+      The subclass walk more than doubles the count, from 24,886 to 36,716. The
+      depth of P279* traversal is therefore a definitional choice, and any
+      dataset built on Wikidata has made it whether or not it says so.
+
+  - id: osm
+    name: "OpenStreetMap"
+    operator: "OpenStreetMap Foundation"
+    url: "https://taginfo.openstreetmap.org/"
+    jurisdiction: WORLD
+    enumerable: true
+    entries_total: 54182
+    entries_matching: 28544
+    query: >
+      taginfo: historic=castle → 54,182 objects (14,638 nodes / 35,203 ways).
+      castle_type is present on 28,544 of them across 223 distinct values:
+      stately 6,775 (23.7%), manor 5,839 (20.5%), defensive 5,560 (19.5%),
+      palace 4,692 (16.4%), fortress 3,105 (10.9%), castle 517, tower 465,
+      towerhouse 387, shiro 159.
+    licence: "ODbL-1.0"
+    access: bulk-download
+    inclusion_criterion: "None. Any mapper's judgement."
+    accessed: "2026-07-21"
+    note: >
+      The best single piece of evidence on this site that the bands are real.
+      Only 19.5% of typed OSM castles are defensive — so under the strict
+      definition roughly four in five things tagged historic=castle are
+      misfiled, or, read the other way, the crowd's working definition of
+      "castle" is overwhelmingly stately residence rather than fortress. Note
+      also that 223 distinct castle_type values are in use with no enforced
+      enumeration, that castle_type=castle is a tautology typed 517 times, and
+      that about 47% of historic=castle objects carry no castle_type at all.
+
+  - id: thecastlemap
+    name: "The Castle Map"
+    operator: "thecastlemap.com"
+    url: "https://thecastlemap.com/"
+    jurisdiction: WORLD
+    enumerable: true
+    entries_total: 2435
+    entries_matching: 2435
+    query: >
+      The site's own published total across 129 countries, categorised as
+      castles 937, fortresses 389, palaces and châteaux 692, ruins 417.
+    licence: "CC0-1.0"
+    access: bulk-download
+    inclusion_criterion: >
+      In the site's own words, "the 2,435 most significant castles, fortresses
+      and palaces — each verified to have a real photo, an English Wikipedia
+      article and exact coordinates — balanced across 129 countries so the map
+      stays explorable." Derived from Wikidata, with a fame score from Wikidata
+      sitelink counts and English-Wikipedia pageviews.
+    accessed: "2026-07-21"
+    note: >
+      Present as a subject of study: it is the dataset that prompted this
+      project. Recorded honestly, it is a careful, openly-licensed, well-built
+      curation of the popular_castle band — and its stated selection rule
+      ("balanced across 129 countries so the map stays explorable") is a
+      curatorial one, openly declared on its own homepage. The criticism this
+      project makes is narrow and specific: a curated selection published under
+      the title "The World's 2,400 Castles" reads as a census. See the count
+      claim recording that its own stated filter defines 6,594 Wikidata items
+      while it publishes 2,435 of them.

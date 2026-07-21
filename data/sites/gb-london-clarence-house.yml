@@ -1,0 +1,57 @@
+id: gb-london-clarence-house
+name: Clarence House
+tradition: european_post_medieval
+location:
+  country: GB
+  region: England
+  locality: London
+  lat: 51.5039
+  lon: -0.1393
+built:
+  from: 1825
+  to: 1827
+condition: occupied
+definitions_met:
+  palatial_seat:
+    verdict: contested
+    basis: A royal residence, and so palatial in status, but a Georgian stucco townhouse bearing
+      no castle-word in its name. It meets the residence half of the band while failing the
+      castle-word half, which the criterion requires as evidence.
+  fortified_residence:
+    verdict: 'no'
+    basis: Entirely unfortified; a Regency townhouse by John Nash with no defensive features.
+  popular_castle:
+    verdict: 'no'
+    basis: Nobody calls Clarence House a castle. It is called Clarence House.
+  state_fortification:
+    verdict: 'no'
+    basis: Not a military work.
+  enclosure_fortification:
+    verdict: 'no'
+    basis: No enclosure of any period on the site. The band requires a defended enclosure
+      as the primary work; Clarence House is a Regency townhouse fronting a street, with no
+      bank, ditch, rampart or defensive circuit.
+  revival_folly:
+    verdict: 'no'
+    basis: Neoclassical rather than castle-form.
+disputed: true
+dispute_note: Included in thecastlemap's top 100 as a world-famous palace despite being a
+  Georgian townhouse - flagged in the originating thread. The dispute is not about the building,
+  which is uncontroversial, but about whether any castle dataset should contain it.
+first_seen: '2026-07-21'
+last_updated: '2026-07-21'
+confidence: high
+sources:
+- url: https://en.wikipedia.org/wiki/Clarence_House
+  title: Clarence House
+  publisher: Wikipedia
+- url: https://news.ycombinator.com/item?id=48994717
+  title: Comment on 'The World's 2,400 Castles'
+  publisher: Hacker News
+  date: '2026-07-21'
+  note: '"It counts Clarence House in London in its top 100 as a world famous ''palace'' -
+    it''s a Georgian townhouse."'
+notes: The second false-positive control, and a more instructive one than the State Capitol
+  because it is genuinely a royal residence. It shows that widening a castle dataset to 'castles,
+  fortresses and palaces' does not fix the definitional problem - it relocates it, because
+  'palace' is no better defined than 'castle' and now the boundary has to be drawn twice.

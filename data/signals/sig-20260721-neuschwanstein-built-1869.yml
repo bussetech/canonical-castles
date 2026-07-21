@@ -1,0 +1,12 @@
+id: sig-20260721-neuschwanstein-built-1869
+site_id: de-schwangau-neuschwanstein
+attribute: built_from
+value: Construction began 1869; the castle was still unfinished at Ludwig II's death in 1886.
+source_url: https://en.wikipedia.org/wiki/Neuschwanstein_Castle
+source_title: Neuschwanstein Castle
+publisher: Wikipedia
+observed_date: '2026-07-21'
+collected_by: console/founding-2026-07-21
+confidence: medium
+notes: General reference work; medium confidence. The date matters to the revival_folly band,
+  which turns on the structure post-dating the defensive era.

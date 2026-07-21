@@ -1,0 +1,208 @@
+# Source registry — the fetch allowlist for gn_info_scout (EPIC2-04, ADR-0025).
+#
+# Schema: schema/sources.schema.json (validated by data CI). Convention:
+# platform docs/source-registry.md.
+#
+# THE RULES
+#   - This registry IS the allowlist: the deterministic fetch layer
+#     (platform scripts/source_fetch.py) requests exactly these URLs (plus
+#     each host's robots.txt) and nothing else. The gnome never fetches.
+#   - Adding a source is a one-file PR: pick an id, verify robots.txt and ToS
+#     yourself, record the findings under robots:, set the cadence.
+#   - status: manual sources are NEVER fetched. They exist to document why.
+#
+# WHY ALMOST EVERY SOURCE HERE IS `manual`
+#
+# This project's sources are not news feeds. They are register APIs, statutory
+# PDFs and scholarly essays — high-value, low-churn, and mostly hostile to
+# scheduled fetching. Historic England returns HTTP 403 to automated access and
+# its ArcGIS service demands a token; trove.scot sits behind a WAF; Saxony's
+# Denkmalliste is licensed CC BY-NC-ND with no bulk download.
+#
+# Following the precedent set by backpacks (ADR-0046): a cron against these
+# would wake up, fetch nothing, and journal an honest zero forever. That is not
+# a schedule, it is a lie with a timestamp. The registers that ARE openly
+# queryable change on a scale of years, not days, so they are fetched on a
+# monthly verify sweep rather than pretending to be a news beat.
+version: 1
+
+defaults:
+  cadence: monthly
+  rate_limit_s: 5
+  max_items_per_fetch: 50
+
+sources:
+  - id: ie-nms-smr
+    type: filing-index
+    url: "https://www.archaeology.ie/collections-and-publications/open-data/"
+    cadence: monthly
+    parser: link-list
+    publisher: "National Monuments Service"
+    scope: "Republic of Ireland — Sites and Monuments Record, all monument classes"
+    status: active
+    robots:
+      checked: "2026-07-21"
+      notes: >
+        Open data page, CC-BY 4.0, explicitly published for reuse; the ArcGIS
+        SMROpenData service is a public REST endpoint with no token requirement.
+        Fetching is compatible with both robots.txt and the stated licence.
+        Monthly cadence: the register is revised on a multi-year cycle, so a
+        daily fetch would be pure noise against a government server.
+    added: "2026-07-21"
+    notes: >
+      The most valuable source in this registry. It is the register that lets
+      Ireland answer the castle question three ways from one database.
+
+  - id: wikidata-sparql
+    type: filing-index
+    url: "https://query.wikidata.org/"
+    cadence: monthly
+    parser: link-list
+    publisher: "Wikimedia Foundation"
+    scope: "Global — castle-class items and their heritage-designation links"
+    status: active
+    robots:
+      checked: "2026-07-21"
+      notes: >
+        Public SPARQL endpoint, CC0 data, documented for programmatic use with a
+        published fair-use policy. Compatible. Registered as a SOURCE here and
+        also as a REGISTER in registers.yml — it is both a thing we query and a
+        thing we study.
+    added: "2026-07-21"
+
+  - id: osm-taginfo
+    type: filing-index
+    url: "https://taginfo.openstreetmap.org/"
+    cadence: monthly
+    parser: link-list
+    publisher: "OpenStreetMap Foundation"
+    scope: "Global — historic=castle and castle_type tag distributions"
+    status: active
+    robots:
+      checked: "2026-07-21"
+      notes: >
+        Public documented API over ODbL data. Compatible. Monthly is right: the
+        distribution shifts slowly and the finding that matters (only 19.5% of
+        typed castles are defensive) is structural, not a live figure.
+    added: "2026-07-21"
+
+  - id: gb-wls-datamapwales
+    type: filing-index
+    url: "https://datamap.gov.wales/"
+    cadence: monthly
+    parser: link-list
+    publisher: "Welsh Government / Cadw"
+    scope: "Wales — scheduled monuments with SiteType typology, listed buildings"
+    status: active
+    robots:
+      checked: "2026-07-21"
+      notes: >
+        Open WFS services under OGL with a required attribution string. The only
+        British register with a real castle-type filter, which makes Wales the
+        most closable British cell.
+    added: "2026-07-21"
+
+  - id: gb-eng-historic-england
+    type: html-page
+    url: "https://historicengland.org.uk/listing/the-list/"
+    cadence: monthly
+    parser: link-list
+    publisher: "Historic England"
+    scope: "England — National Heritage List"
+    status: manual
+    robots:
+      checked: "2026-07-21"
+      notes: >
+        MUST STAY MANUAL. The site returns HTTP 403 to automated access
+        including with a browser user-agent, and the ArcGIS FeatureServer
+        answers anonymous queries with "499 Token Required". The bulk download
+        is OGL v3 and genuinely open, so the licence is not the obstacle —
+        access control is. Material reaches the dataset through hand-assembled
+        research issues until a credentialed route is arranged.
+    added: "2026-07-21"
+
+  - id: gb-sct-trove
+    type: html-page
+    url: "https://www.trove.scot/"
+    cadence: monthly
+    parser: link-list
+    publisher: "Historic Environment Scotland"
+    scope: "Scotland — national record of the historic environment"
+    status: manual
+    robots:
+      checked: "2026-07-21"
+      notes: >
+        MUST STAY MANUAL. WAF-blocked, returning HTTP 403 to automated access.
+        Also note the platform migration: Canmore was retired on 24 June 2025
+        and now 301-redirects here, so any stored Canmore permalink is stale.
+    added: "2026-07-21"
+
+  - id: de-sn-denkmalliste
+    type: html-page
+    url: "https://denkmalliste.denkmalpflege.sachsen.de/Gast/Denkmalliste_Sachsen.aspx"
+    cadence: monthly
+    parser: link-list
+    publisher: "Landesamt für Denkmalpflege Sachsen"
+    scope: "Saxony — Denkmalliste (excludes archaeological monuments)"
+    status: manual
+    robots:
+      checked: "2026-07-21"
+      notes: >
+        MUST STAY MANUAL, and here the licence is the obstacle rather than
+        access: CC BY-NC-ND 3.0 DE is non-commercial and no-derivatives, which
+        is not open data and does not permit the transformation this dataset
+        performs. No WFS or bulk download was found. Recorded so the blocker on
+        the Saxony coverage cell is documented rather than assumed.
+    added: "2026-07-21"
+
+  - id: fr-mh-bulk
+    type: filing-index
+    url: "https://www.data.gouv.fr/datasets/immeubles-proteges-au-titre-des-monuments-historiques-2"
+    cadence: monthly
+    parser: link-list
+    publisher: "Ministère de la Culture"
+    scope: "France — protected monuments historiques, weekly bulk extract"
+    status: active
+    robots:
+      checked: "2026-07-21"
+      notes: >
+        Licence Ouverte 2.0, published for bulk reuse, refreshed weekly. This is
+        the stable path: the POP API is live but undocumented and returned
+        "Requête bloquée" to probing, so it is deliberately not registered here.
+    added: "2026-07-21"
+
+  - id: gatehouse-gazetteer
+    type: html-page
+    url: "http://www.gatehouse-gazetteer.info/home.html"
+    cadence: monthly
+    parser: link-list
+    publisher: "Philip Davis"
+    scope: "England, Wales, Channel Isles, Isle of Man — medieval fortified sites 1000–1600"
+    status: manual
+    robots:
+      checked: "2026-07-21"
+      notes: >
+        MUST STAY MANUAL on licence grounds. The site states that use of its
+        material for commercial purposes may breach copyright restrictions, and
+        it carries no open licence. This project cites its definitional essay
+        and its classification scheme — both scholarship, quoted with
+        attribution — and does not extract or republish its site data.
+    added: "2026-07-21"
+
+  - id: thecastlemap
+    type: html-page
+    url: "https://thecastlemap.com/"
+    cadence: monthly
+    parser: link-list
+    publisher: "thecastlemap.com"
+    scope: "Global — the dataset that prompted this project"
+    status: manual
+    robots:
+      checked: "2026-07-21"
+      notes: >
+        Manual by courtesy rather than necessity. Its data is offered as a CC0
+        GeoJSON/CSV download, so bulk reuse is expressly permitted. It is kept
+        manual because this project studies its published methodology and totals
+        rather than ingesting its records, and scheduled fetching of a site we
+        publicly critique would be discourteous without a reason.
+    added: "2026-07-21"

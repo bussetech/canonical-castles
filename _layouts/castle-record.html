@@ -1,0 +1,117 @@
+---
+layout: default
+---
+{%- assign rec = site.data.sites[page.site_id] -%}
+{%- assign defs = site.data.definitions.definitions -%}
+{%- assign registers = site.data.registers.registers -%}
+<article class="prose">
+  <p class="eyebrow"><a href="/castles/">Castles</a> /
+    {{ rec.location.country }}{% if rec.location.region %} / {{ rec.location.region }}{% endif %}</p>
+  <h1>{{ rec.name }}</h1>
+  {%- if rec.name_local and rec.name_local != rec.name %}
+  <p><em>{{ rec.name_local }}</em></p>
+  {%- endif %}
+
+  <h2>Which definitions does it satisfy?</h2>
+  <p>This dataset does not record whether something “is a castle”. It records a
+  verdict against each named <a href="/definitions/">definition</a>, with the
+  reasoning that produced it.</p>
+
+  <table>
+    <thead><tr><th>Definition</th><th>Verdict</th><th>Basis</th></tr></thead>
+    <tbody>
+      {%- for d in defs -%}
+        {%- assign met = rec.definitions_met[d.id] -%}
+        <tr>
+          <th><a href="/definitions/#{{ d.id }}">{{ d.label }}</a></th>
+          {%- if met %}
+          <td><strong>{{ met.verdict }}</strong></td>
+          <td>{{ met.basis }}</td>
+          {%- else %}
+          <td><em>unassessed</em></td>
+          <td>No source consulted so far speaks to this definition. Unassessed is
+              not the same as no.</td>
+          {%- endif %}
+        </tr>
+      {%- endfor -%}
+    </tbody>
+  </table>
+
+  {%- if rec.disputed %}
+  <h2>Disputed</h2>
+  <p>{{ rec.dispute_note }}</p>
+  {%- endif %}
+
+  <h2>Facts</h2>
+  <table>
+    <tbody>
+      <tr><th>Tradition</th><td>{{ rec.tradition | replace: "_", " " }}</td></tr>
+      <tr><th>Location</th><td>
+        {%- if rec.location.locality %}{{ rec.location.locality }}, {% endif -%}
+        {%- if rec.location.county %}{{ rec.location.county }}, {% endif -%}
+        {%- if rec.location.region %}{{ rec.location.region }}, {% endif -%}
+        {{ rec.location.country }}</td></tr>
+      {%- if rec.built %}
+      <tr><th>Built</th><td>
+        {%- if rec.built.from %}{{ rec.built.from }}{% if rec.built.to and rec.built.to != rec.built.from %}–{{ rec.built.to }}{% endif %}{% endif -%}
+        {%- if rec.built.period %}{% if rec.built.from %} · {% endif %}{{ rec.built.period }}{% endif -%}
+      </td></tr>
+      {%- endif %}
+      {%- if rec.condition %}
+      <tr><th>Condition</th><td>{{ rec.condition }}</td></tr>
+      {%- endif %}
+      <tr><th>Confidence</th><td>{{ rec.confidence }}</td></tr>
+      <tr><th>First recorded</th><td>{{ rec.first_seen }}</td></tr>
+      <tr><th>Last updated</th><td>{{ rec.last_updated }}</td></tr>
+    </tbody>
+  </table>
+
+  {%- if rec.register_entries %}
+  <h2>In the registers</h2>
+  <p>Where this structure appears in official inventories. This is what turns an
+  individual record into evidence about a <a href="/counts/">count</a>.</p>
+  <ul>
+    {%- for e in rec.register_entries -%}
+      {%- assign reg = registers | where: "id", e.register | first -%}
+    <li><strong>{{ reg.name | default: e.register }}</strong> —
+      <code>{{ e.ref }}</code>
+      {%- if e.designation %} · {{ e.designation }}{% endif -%}
+      {%- if e.url %} · <a href="{{ e.url }}" rel="external nofollow">entry</a>{% endif %}</li>
+    {%- endfor %}
+  </ul>
+  {%- endif %}
+
+  {%- if rec.location.lat and rec.location.lon %}
+  <h2>Location</h2>
+  {% include map-locator.html
+     lat=rec.location.lat lon=rec.location.lon
+     label=rec.name zoom=9
+     caption="Approximate. © OpenStreetMap contributors." %}
+  {%- endif %}
+
+  {%- if rec.notes %}
+  <h2>Notes</h2>
+  <p>{{ rec.notes }}</p>
+  {%- endif %}
+
+  <h2>Sources</h2>
+  <ul>
+    {%- for s in rec.sources %}
+    <li><a href="{{ s.url }}" rel="external nofollow">{{ s.title | default: s.url }}</a>
+      {%- if s.publisher %} — {{ s.publisher }}{% endif %}{% if s.date %}, {{ s.date }}{% endif %}
+      {%- if s.note %}<br><em>{{ s.note }}</em>{% endif %}</li>
+    {%- endfor %}
+  </ul>
+
+  {%- if rec.signals and rec.signals.size > 0 %}
+  <h2>Signals</h2>
+  <p>Raw per-source observations behind this record ({{ rec.signals | size }}):
+    {%- for sg in rec.signals %}
+    <a href="/data/signals/{{ sg }}.yml"><code>{{ sg }}</code></a>{% unless forloop.last %}, {% endunless %}
+    {%- endfor %}</p>
+  {%- endif %}
+
+  <p><a href="/data/sites/{{ rec.id }}.yml">Record file</a> · dataset licensed
+  <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> — see
+  <a href="/data/">provenance</a>.</p>
+</article>

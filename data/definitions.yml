@@ -1,0 +1,278 @@
+# The definition bands — the spine of this dataset.
+#
+# Six answers to "what is a castle?", each with a named authority, an explicit
+# criterion, and its own closure rule. A structure is never "a castle" here; it
+# takes a verdict per band, and each band publishes its own count.
+#
+# Adding or amending a band is a decision-request PR, never a data edit: the
+# bands are the dataset's contract with its readers, and silently moving one
+# would silently move every number on the site.
+version: 1
+
+definitions:
+  - id: fortified_residence
+    label: "Fortified residence"
+    summary: >
+      The strict scholarly castle: a fortified private residence of a lord.
+      Both halves are load-bearing — a fortress nobody lived in is not one,
+      and an undefended great house is not one either.
+    criterion: >
+      The structure was built or adapted to be BOTH a defensible work and the
+      residence of a private lord (secular or ecclesiastical), and was so used.
+      Defensibility means active defence — wall walks, parapets, flanking
+      fire, a gatehouse meant to be held — not merely a wall or a moat.
+      Communal defences held by a town, and works built and garrisoned by a
+      state, both fail the "private residence" half however formidable they
+      are. Tenure decides, not silhouette.
+    includes:
+      - "Masonry castles and timber castles (mottes, ringworks, motte-and-bailey)"
+      - "Tower houses and pele towers where residence and defence coincide"
+      - "Fortified episcopal and royal residences (a royal lord is still a lord)"
+      - "Japanese shiro and other non-European lordly fortifications — the criterion is functional, not geographic"
+    excludes:
+      - "Urban defences and town walls (communal, not private)"
+      - "State artillery forts and coastal batteries (state, not seigneurial)"
+      - "Moated houses and walled sites with no active defensive capability"
+      - "Palatial residences whose defensive features are decorative"
+    authority:
+      - kind: scholar
+        name: "R. Allen Brown"
+        work: "English Castles (Batsford, 1954)"
+        url: "http://www.gatehouse-gazetteer.info/Defin.pdf"
+        quote: "The private fortress and residence of a lord."
+      - kind: scholar
+        name: "D. J. Cathcart King"
+        work: "Castellarium Anglicanum (Kraus, 1983)"
+        url: "http://www.gatehouse-gazetteer.info/Defin.pdf"
+        quote: "A fortified residence of a (feudal) lord."
+      - kind: scholar
+        name: "John Goodall"
+        work: "The English Castle (2011)"
+        url: "http://www.gatehouse-gazetteer.info/Defin.pdf"
+        quote: "A castle is the residence of a lord made imposing through the architectural trappings of fortification."
+      - kind: scholar
+        name: "Philip Davis"
+        work: "Defining 'The Castle' (2009, revised 2016)"
+        url: "http://www.gatehouse-gazetteer.info/Defin.pdf"
+        quote: "In effect it is impossible to define 'the castle' since there is no one such thing. Much of the controversy in castle studies between militarists and revisionists lies in a befuddled use of examples of 'castles' of very different function."
+      - kind: standard
+        name: "FISH / Historic England Monument Type Thesaurus"
+        work: "Term 'Castle', scope note"
+        url: "http://purl.org/heritagedata/schemes/eh_tmt2/concepts/68833"
+        quote: "A fortress and dwelling, usually medieval in origin."
+    closure: enumerable
+    closure_note: >
+      Closable per jurisdiction, because national archaeological registers
+      classify by monument type and a "castle" class can be filtered and
+      counted. Ireland is the proof: the SMR returns 4,552 Castle-class
+      records, and 129 if you accept only Anglo-Norman masonry castles. The
+      band closes one jurisdiction at a time, never globally.
+    registers: [ie-smr, gb-wls-cadw, gb-wls-coflein, gb-nir-nismr, fr-pop, gatehouse, wikidata, osm]
+    note: >
+      Three cautions about this band, all of which its own authorities supply.
+
+      First, the scholars are cited THROUGH Davis's essay, which quotes each of
+      them and was read directly; the monographs themselves were not opened. That is
+      recorded rather than hidden, because a citation chain is only as strong as its
+      weakest undisclosed link.
+
+      Second, Davis — who built a six-thousand-site gazetteer, making him about the
+      most qualified person alive to define the term — concluded that it cannot be
+      done. This project agrees, and the bands are the consequence: not a better
+      definition, but an admission that one definition was always the wrong shape.
+
+      Third, medieval usage was itself unstable, so the strict band is not even
+      faithful to its own period. Davis notes that a castellum could be a manorial
+      centre with no fortification at all, or a village — the Vulgate calls
+      Bethlehem a castellum. Note too that the leading learned society, the Castle
+      Studies Group, publishes no definition of the term at all. That absence is
+      itself evidence.
+
+  - id: enclosure_fortification
+    label: "Enclosure fortification"
+    summary: >
+      Defended enclosures with no lord and often no permanent residence —
+      hillforts, ringforts, raths, cashels, brochs, promontory forts. The
+      band that turns Ireland from a 4,552-castle country into a 31,431-site one.
+    criterion: >
+      An enclosed site whose bank, ditch, rampart or wall was built to defend
+      or command the enclosed area, where the enclosure is the primary work
+      and no single lordly residence defines it. Predominantly prehistoric and
+      early-medieval. Excluded where the enclosure is agricultural, ritual or
+      merely boundary-marking with no defensive intent.
+    includes:
+      - "Hillforts, promontory forts, multivallate enclosures"
+      - "Irish ringforts: raths, cashels, and related enclosed settlement"
+      - "Brochs, duns, and crannógs where defensively sited"
+      - "Ringworks lacking an identified lordly residence"
+    excludes:
+      - "Enclosures of purely agricultural or ritual function"
+      - "Any site with an identified lordly residence — that is fortified_residence"
+      - "Post-medieval state works — that is state_fortification"
+    authority:
+      - kind: institution
+        name: "Atlas of Hillforts of Britain and Ireland"
+        work: "University of Edinburgh / University of Oxford / University College Cork, AHRC-funded; 4,147 entries at 2017 launch"
+        url: "https://hca.ed.ac.uk/research/about/research-projects/an-atlas-of-hillforts-in-britain-and-ireland"
+        quote: "Many hillforts are not on hills and are not really forts."
+      - kind: register
+        name: "Archaeological Survey of Ireland (National Monuments Service)"
+        work: "Sites and Monuments Record, monument classes Ringfort — rath / cashel / unclassified"
+        url: "https://www.archaeology.ie/collections-and-publications/open-data/"
+    closure: enumerable
+    closure_note: >
+      Strongly closable where a national survey exists, and the numbers are
+      large: 31,431 ringfort-class records in the Irish SMR, 4,147 in the
+      Atlas of Hillforts across Britain and Ireland. Closure fails wherever no
+      national survey has been done, which is most of the world.
+    registers: [ie-smr, hillforts-atlas, gb-wls-cadw]
+    note: >
+      This band is a European instrument and shows its limits fastest outside
+      Europe. Māori pā are hilltop fortifications built in the thousands with
+      timber palisades rather than stone, because metal tools were unavailable —
+      a whole fortification tradition invisible to any definition that reaches
+      for masonry, and one this dataset does not yet hold a single record for.
+      Recorded here so the omission is a stated gap rather than an implied absence.
+
+  - id: state_fortification
+    label: "State fortification"
+    summary: >
+      Works built and garrisoned by a state rather than held by a lord:
+      artillery forts, bastion and star forts, citadels, coastal batteries,
+      and the fortified systems of the gunpowder age onward.
+    criterion: >
+      A fortification commissioned, owned or garrisoned by a state, polity or
+      municipality as a military installation, where no private lordly
+      residence is the organising purpose. Typically post-1500 and designed
+      against artillery, but the test is tenure and military purpose, not date.
+    includes:
+      - "Bastion and star forts; Vauban-system citadels and fortified towns"
+      - "Coastal artillery forts, Martello and signal towers"
+      - "Nineteenth and twentieth-century defensive works, including WWI/WWII"
+      - "Urban citadels and town defences held communally"
+    excludes:
+      - "Lordly castles later garrisoned by a state — the original purpose governs"
+      - "Field works and temporary siege works"
+    authority:
+      - kind: institution
+        name: "UNESCO World Heritage Centre"
+        work: "Fortifications of Vauban (2008), 12 serial components — citadels, urban bastion walls, sea forts, a mountain battery"
+        url: "https://whc.unesco.org/en/list/1283"
+      - kind: register
+        name: "Gatehouse Gazetteer (Philip Davis)"
+        work: "Class 'Artillery Fort or Bulwark', maintained separately from castle classes"
+        url: "http://www.gatehouse-gazetteer.info/lists.html"
+    closure: enumerable
+    closure_note: >
+      Closable in principle — states keep records of their own works — but
+      much weaker in practice than the two bands above, because military
+      estates are documented by defence ministries rather than heritage
+      registers and the twentieth-century material is barely surveyed anywhere.
+    registers: [gatehouse, osm]
+
+  - id: palatial_seat
+    label: "Palatial seat"
+    summary: >
+      Buildings called "castle" in their own language whose defensive function
+      is absent or vestigial — the German Schloss, the French château, the
+      country seat. Where most of the world's famous "castles" actually sit.
+    criterion: >
+      A high-status residence commonly named with a castle-word (Schloss,
+      château, castello, kasteel, castle) whose fortification is absent,
+      decorative, or a retained relic of an earlier defensible phase that no
+      longer governs the building. The name is evidence; the defences are the test.
+    includes:
+      - "Schlösser and châteaux built as unfortified lordly residences"
+      - "Castles rebuilt so thoroughly as palaces that no defensible fabric governs"
+      - "Country seats and stately homes bearing a castle name"
+    excludes:
+      - "Buildings with real retained defensive capability — those take fortified_residence"
+      - "Purely ornamental structures never intended as residences — those are revival_folly"
+    authority:
+      - kind: institution
+        name: "UNESCO World Heritage Centre"
+        work: "The Palaces of King Ludwig II of Bavaria (2025) — Neuschwanstein, Linderhof, Schachen, Herrenchiemsee"
+        url: "https://whc.unesco.org/en/list/1726"
+      - kind: standard
+        name: "German usage: Burg vs Schloss"
+        work: "The standing terminological distinction between the medieval fortified residence (Burg) and the early-modern unfortified lordly residence (Schloss)"
+        url: "https://de.wikipedia.org/wiki/Burg"
+    closure: open
+    closure_note: >
+      Not closable. No register enumerates "buildings called castle that are
+      not fortified" — the category exists in language, not in law. OpenStreetMap
+      offers the best available evidence of scale rather than a bound: of the
+      28,544 objects carrying castle_type, 23.7% are tagged stately, 20.5%
+      manor and 16.4% palace, against 19.5% defensive. This band publishes
+      that distribution, not a total.
+    registers: [osm, wikidata]
+
+  - id: revival_folly
+    label: "Revival and folly"
+    summary: >
+      Castles built as architecture rather than defence: nineteenth-century
+      romantic revivals, castellated country houses, and sham castles that are
+      sometimes a screen wall and nothing behind it.
+    criterion: >
+      A structure built after the defensive era in castle form — battlements,
+      towers, curtain-wall silhouette — for aesthetic, symbolic, picturesque or
+      status purposes, with no defensive intent at any point in its history.
+    includes:
+      - "Gothic Revival and castellated country houses"
+      - "Sham castles and eyecatchers, including facades with no interior"
+      - "Purpose-built romantic castles of the nineteenth century"
+    excludes:
+      - "Genuine castles later restored or romanticised — the original intent governs"
+      - "Reconstructions of real castles on their own sites"
+    authority:
+      - kind: project
+        name: "canonical-castles"
+        work: "This project's own band, defined here for want of an external authority"
+        url: "https://castles.bussetech.com/definitions/"
+    closure: open
+    closure_note: >
+      Not closable, and honestly labelled: no register recognises "folly" as a
+      designation class. Individual examples are protected as listed buildings
+      — Leyburn Sham Castle is Grade II listed — but they are listed as
+      buildings, so no filter extracts them. This is also the one band whose
+      authority is this project itself, which is stated rather than dressed up.
+    registers: []
+    note: >
+      Philip Davis draws a distinction most datasets collapse — a SYMBOLIC
+      castle, built in castle form to assert status, is not the same as a SHAM
+      castle, built as scenery. This band currently holds both. Splitting it is
+      a live open question rather than a settled design.
+
+  - id: popular_castle
+    label: "Popularly a castle"
+    summary: >
+      What an ordinary person would call a castle and travel to see. No
+      scholarly standing whatsoever, and by far the most useful band for
+      anyone actually planning a visit.
+    criterion: >
+      A general audience, shown the structure without context, would call it a
+      castle — evidenced by how the structure is named and described by its own
+      operator, its national tourism body, and general reference works. This is
+      a claim about usage, and it is measured, not adjudicated.
+    includes:
+      - "Anything marketed, signposted or commonly referred to as a castle"
+      - "Structures failing every scholarly band but universally called castles — Neuschwanstein is the type case"
+    excludes:
+      - "Structures called castles only by this dataset"
+    authority:
+      - kind: project
+        name: "canonical-castles"
+        work: "Usage band; verdicts cite the naming sources rather than a definitional authority"
+        url: "https://castles.bussetech.com/definitions/"
+    closure: open
+    closure_note: >
+      Not closable, ever, and this is the band's point. Popular usage has no
+      register and no boundary, so any single global integer for it — 2,435,
+      for instance — is a selection presented as a census. This band exists to
+      hold that number and label it correctly.
+    registers: [wikidata, osm, thecastlemap]
+    note: >
+      This is the band thecastlemap.com actually built while presenting it as
+      the general one. Recording it as a band rather than dismissing it is the
+      point: popular usage is real, widely held, and the reason most people
+      arrive at a castle dataset in the first place. It is simply not a census.

@@ -1,0 +1,66 @@
+id: de-schwangau-neuschwanstein
+name: Neuschwanstein Castle
+name_local: Schloss Neuschwanstein
+tradition: european_post_medieval
+location:
+  country: DE
+  region: Bavaria
+  locality: Schwangau
+  lat: 47.5576
+  lon: 10.7498
+built:
+  from: 1869
+  to: 1886
+condition: intact
+definitions_met:
+  fortified_residence:
+    verdict: 'no'
+    basis: Built 1869-1886 as a romantic retreat for Ludwig II with no defensive intent at
+      any stage. It has no wall walks, no flanking fire and no gatehouse meant to be held;
+      the castle form is a stage set. Fails the defensibility half of the criterion outright,
+      and the private-lordly-residence half is met only trivially.
+  palatial_seat:
+    verdict: 'yes'
+    basis: A high-status unfortified royal residence bearing a castle-word (Schloss). UNESCO
+      inscribed it in 2025 within 'The Palaces of King Ludwig II of Bavaria', using the palace
+      frame; German and English official communications for the identical property use 'castles'
+      and 'palaces' interchangeably.
+  revival_folly:
+    verdict: 'yes'
+    basis: Built after the defensive era in castle form - towers, curtain-wall silhouette,
+      battlements - for aesthetic and symbolic purposes, with no defensive intent at any point.
+      A textbook nineteenth-century romantic revival.
+  popular_castle:
+    verdict: 'yes'
+    basis: Very probably the most photographed 'castle' on Earth, universally signposted,
+      marketed and described as one by its own operator and by German national tourism.
+  enclosure_fortification:
+    verdict: 'no'
+    basis: No defensive enclosure; the site is a rock spur built over for picturesque effect.
+  state_fortification:
+    verdict: 'no'
+    basis: Never a military installation. Commissioned privately by Ludwig II from his own
+      funds, not by the Bavarian state as a work of defence.
+register_entries:
+- register: wikidata
+  ref: Q4152
+  url: https://www.wikidata.org/wiki/Q4152
+disputed: false
+first_seen: '2026-07-21'
+last_updated: '2026-07-21'
+confidence: high
+sources:
+- url: https://whc.unesco.org/en/list/1726
+  title: The Palaces of King Ludwig II of Bavaria
+  publisher: UNESCO World Heritage Centre
+  date: '2025'
+- url: https://en.wikipedia.org/wiki/Neuschwanstein_Castle
+  title: Neuschwanstein Castle
+  publisher: Wikipedia
+signals:
+- sig-20260721-neuschwanstein-unesco-palace
+- sig-20260721-neuschwanstein-built-1869
+notes: The type case for this entire dataset. Neuschwanstein fails every scholarly definition
+  of a castle and is simultaneously the most famous castle in the world. Any dataset forced
+  to answer yes or no about it will be wrong in one direction or the other; the band model
+  simply records both facts and stops arguing.

@@ -6,11 +6,50 @@ This is a project repo of the **Bussetech Software Studio** — an agentic syste
 manages a GitHub org, its repos, and their web presence with minimal human
 touch. The studio's control repo is `bussetech/platform`; its front door is the
 portal at `https://bussetech.com`. This repo publishes a static site to
-`https://canonical-castles.bussetech.com`.
+`https://castles.bussetech.com`.
 
-> Founding note: this file was created from the studio's project template.
-> The founding PR replaces this preamble with project-specific guidance
-> (data model, sources, jobs); the studio sections below should survive.
+## The premise, in one paragraph
+
+There is no single count of castles, because "castle" names at least six
+different things. This dataset never records that something *is* a castle: it
+records a verdict against each of six named **definition bands**
+(`data/definitions.yml`), each with a cited authority, an explicit criterion and
+its own **closure rule** — `enumerable` bands can in principle reach a real
+integer against a named register; `open` bands cannot and never will. Counts are
+published per band and **never summed across bands**. Ireland is the proof case:
+its own SMR answers "how many castles?" with 129, 4,552 or 31,431 depending on
+the class filter.
+
+## The rules that are not negotiable
+
+- **Omission means unassessed, never no.** A band left off a record means no
+  source spoke to it. Silently converting ignorance into a negative is the exact
+  failure this project documents.
+- **`contested` is a result, not a hedge.** It means competent sources disagree
+  under that band's criterion. Set `disputed: true` and say who is on each side.
+- **Never sum bands.** Most structures satisfy more than one; a total would
+  double-count them and re-create the single global integer we reject.
+- **An open band never gets a population figure.** Enforced in CI, not just
+  intended (`scripts/check_integrity.py`).
+- **Every published number is derived, never typed.** `scripts/counts.py`
+  regenerates `data/counts.yml` and coverage `records_held` from the records;
+  CI fails on drift.
+- **Unverified stays labelled.** Where sourcing is second-hand or two research
+  passes disagreed, the caveat lives in the data file so it travels with the
+  number if the data is reused.
+
+## Layout
+
+- `data/definitions.yml` — the six bands. **Amending one is a decision-request PR, never a data edit** — moving a band silently moves every number on the site.
+- `data/sites/<id>.yml` — one structure per file (frozen archetype path; the subjects are structures, not sites).
+- `data/signals/` — one claim, one source, append-only.
+- `data/registers.yml` — the inventories a count can close against, with the exact query that produced each figure.
+- `data/claims.yml` — circulating castle numbers, graded by method (`official` … `folklore`).
+- `data/coverage.yml` — the (definition x jurisdiction) grid; `records_held` is generated.
+- `data/profiles/{scout,records}.md` — the ONLY project context the gnomes receive.
+- `scripts/` — `gen-pages.sh` after editing records; `check-integrity.sh` is the CI hook.
+
+Local checks: `PYTHON=.venv/bin/python bash scripts/check-integrity.sh`.
 
 ## How this repo works
 
@@ -91,7 +130,7 @@ This repo must keep working without the studio; its only bindings are:
 3. **Deploy workflow** (`deploy.yml`): same owner guard. After detaching,
    remove the guard, drop the `ping-portal` job (the dispatch secrets and
    target are studio-specific), and wire GitHub Pages (or any static host)
-   for the new home. The custom domain `canonical-castles.bussetech.com` is
+   for the new home. The custom domain `castles.bussetech.com` is
    studio DNS and does not travel.
 4. **Theme**: `remote_theme: bussetech/theme@<tag>` is a public repo — it
    keeps working detached. To cut the last tie, vendor the theme or switch

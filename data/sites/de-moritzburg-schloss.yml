@@ -1,0 +1,59 @@
+id: de-moritzburg-schloss
+name: Moritzburg Castle
+name_local: Schloss Moritzburg
+tradition: european_post_medieval
+location:
+  country: DE
+  region: Saxony
+  locality: Moritzburg
+  lat: 51.1672
+  lon: 13.6806
+built:
+  from: 1542
+  to: 1546
+  period: rebuilt as a baroque palace 1723-1736
+condition: intact
+definitions_met:
+  fortified_residence:
+    verdict: 'no'
+    basis: A hunting lodge rebuilt as a baroque palace on an artificial island. The water
+      setting is ornamental rather than defensive - no wall walks, no parapets, no flanking
+      fire - so it fails the active-defence test even though it is surrounded by water.
+  palatial_seat:
+    verdict: 'yes'
+    basis: 'The paradigm Schloss: an early-modern unfortified lordly residence bearing a castle-word,
+      rebuilt 1723-1736 for Augustus the Strong as a baroque hunting palace.'
+  popular_castle:
+    verdict: 'yes'
+    basis: Marketed and signposted as Schloss Moritzburg and routinely rendered 'Moritzburg
+      Castle' in English-language tourism copy.
+  revival_folly:
+    verdict: 'no'
+    basis: Not a post-defensive-era build in castle form for effect; it is a genuine early-modern
+      residence in baroque idiom, which is a different thing.
+  enclosure_fortification:
+    verdict: 'no'
+    basis: No defensive enclosure of any period on the site.
+  state_fortification:
+    verdict: 'no'
+    basis: A private electoral residence, never a state military installation.
+register_entries:
+- register: wikidata
+  ref: Q321045
+  url: https://www.wikidata.org/wiki/Q321045
+disputed: false
+first_seen: '2026-07-21'
+last_updated: '2026-07-21'
+confidence: high
+sources:
+- url: https://en.wikipedia.org/wiki/Moritzburg_Castle
+  title: Moritzburg Castle
+  publisher: Wikipedia
+- url: https://de.wikipedia.org/wiki/Burg
+  title: Burg
+  publisher: Wikipedia (de)
+  note: The standing Burg/Schloss distinction this record turns on.
+notes: 'In Saxony, the region whose 700-against-9 coverage gap provoked the originating thread.
+  Moritzburg is the clean case for why that gap is definitional as well as numerical: it is
+  unambiguously a Schloss and unambiguously not a Burg, and a dataset with one castle field
+  has to lie about one of those.'

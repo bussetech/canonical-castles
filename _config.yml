@@ -6,10 +6,10 @@
 #
 # Theme: pinned tag, never a branch (theme docs/versioning.md). Bump
 # canary-first when a new theme version ships.
-title: canonical-castles
+title: Canonical Castles
 description: "Canonical Castles — how many castles are there? A source-cited dataset that answers per definition, not in general: every structure records which definitions of castle it satisfies, and every definition carries its own count and closure rule."
 lang: en
-url: "https://canonical-castles.bussetech.com"
+url: "https://castles.bussetech.com"
 baseurl: ""
 
 remote_theme: bussetech/theme@v0.11.0
@@ -30,9 +30,40 @@ studio:
   # Cloudflare Web Analytics token, minted per live hostname by the DNS
   # steward into platform.yml (EPIC1-04). Backfill from there; not secret.
   analytics_beacon: ""
+  # Email capture (platform ADR-0034). One shared studio list; the provider
+  # holds the PII and this repo holds nothing but the dataset.
+  signup:
+    enabled: true
+    rail: true
+    rail_placement: "castles-rail"
+    action: "https://buttondown.com/api/emails/embed-subscribe/bussetech"
+    email_field: email
+    heading: "Canonical Castles + Studio updates"
+    value_prop: "Get a note when a coverage cell closes or a count claim is regraded - plus the occasional update on what the studio ships. No spam, no tracking."
+    button_label: "Subscribe"
+    privacy_note: "We store only your email, to send these updates, under the Eszett, LLC privacy notice. Double opt-in; unsubscribe any time."
+    hidden:
+      embed: "1"
+    placement_field: "metadata__placement"
   nav:
     - title: Home
       url: /
+    - title: Definitions
+      url: /definitions/
+    - title: Counts
+      url: /counts/
+    - title: Castles
+      url: /castles/
+    - title: Claims
+      url: /claims/
+    - title: Coverage
+      url: /coverage/
+    - title: Data
+      url: /data/
+
+# Jekyll reads site.data from data/ (not _data/) so the CI-validated record
+# files are also the render source - one copy, no mirroring.
+data_dir: data
 
 markdown: kramdown
 sass:
@@ -53,3 +84,6 @@ exclude:
   - README.md
   - LICENSE
   - gnomes/
+  - scripts/
+  - .venv/
+  - data-ci.yml

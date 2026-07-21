@@ -1,0 +1,57 @@
+id: us-nc-raleigh-state-capitol
+name: North Carolina State Capitol
+tradition: american_colonial
+location:
+  country: US
+  region: North Carolina
+  locality: Raleigh
+  lat: 35.7804
+  lon: -78.6391
+built:
+  from: 1833
+  to: 1840
+condition: occupied
+definitions_met:
+  fortified_residence:
+    verdict: 'no'
+    basis: A Greek Revival legislative building. Neither fortified nor a residence; it has
+      no defensive works of any kind.
+  palatial_seat:
+    verdict: 'no'
+    basis: A public government building, not a lordly residence, and it bears no castle-word
+      in its name.
+  popular_castle:
+    verdict: 'no'
+    basis: Nobody calls it a castle. It is called the State Capitol, by everyone, including
+      itself.
+  revival_folly:
+    verdict: 'no'
+    basis: Greek Revival rather than castle-form; it has no battlements, towers or curtain-wall
+      silhouette.
+  enclosure_fortification:
+    verdict: 'no'
+    basis: No enclosure of any kind. The band requires a bank, ditch, rampart or wall built
+      to defend or command an enclosed area; the Capitol stands in an open public square with
+      no defensive circuit.
+  state_fortification:
+    verdict: 'no'
+    basis: A civil government building, not a military work.
+disputed: false
+first_seen: '2026-07-21'
+last_updated: '2026-07-21'
+confidence: high
+sources:
+- url: https://en.wikipedia.org/wiki/North_Carolina_State_Capitol
+  title: North Carolina State Capitol
+  publisher: Wikipedia
+- url: https://news.ycombinator.com/item?id=48995014
+  title: Comment on 'The World's 2,400 Castles'
+  publisher: Hacker News
+  date: '2026-07-21'
+  note: '"This dataset is bad. The North Carolina state capitol is a castle?"'
+notes: 'Carried as a deliberate all-no record, which this dataset treats as a real finding
+  rather than an empty one. It appears in thecastlemap and was named in the originating thread
+  as evidence the dataset was broken. A structure scoring no on every band is exactly what
+  a false positive looks like when it is written down, and being able to record one is a feature
+  of the band model: a dataset with a single castle flag can only include or omit, never assess
+  and reject with reasons.'

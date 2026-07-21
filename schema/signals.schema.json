@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://castles.bussetech.com/schema/signals.schema.json",
+  "title": "canonical-castles signal",
+  "description": "One claim from one source about one structure. Append-only; conflicting signals coexist by design (signal > canon). SHAPE IS FROZEN: this is the info-archetype contract that gn_info_scout emits (platform docs/archetype-contracts.md). Field names are not the project's to rename — domain nuance lives in the attribute vocabulary and data/profiles/scout.md, never in renamed keys. `site_id` MUST stay typed [string, null]: the scout emits null + site_hint whenever it discovers a structure the dataset does not yet hold.",
+  "type": "object",
+  "required": ["id", "attribute", "value", "source_url", "observed_date", "collected_by", "confidence"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^sig-\\d{8}-[a-z0-9][a-z0-9-]*[a-z0-9]$",
+      "description": "sig-YYYYMMDD-<slug>; must equal the filename stem."
+    },
+    "site_id": {
+      "type": ["string", "null"],
+      "description": "Ref: data/sites/<id>.yml. Null while the structure is an unmatched candidate."
+    },
+    "site_hint": {
+      "type": "string",
+      "description": "Free-text identification when site_id is null: \"<name as reported> — <locality>, <country>\"."
+    },
+    "attribute": {
+      "type": "string",
+      "pattern": "^[a-z0-9_.]+$",
+      "description": "What the claim is about. Vocabulary in data/profiles/scout.md: name, location, tradition, built_from, built_to, condition, register_entry, definition.<band>, count_claim, …"
+    },
+    "value": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The claim, raw, as reported — no normalization here. A source calling something 'a castle' is recorded in the source's own words; the band verdict is the records gnome's resolution, not the scout's."
+    },
+    "source_url": { "type": "string", "pattern": "^https?://" },
+    "source_title": { "type": "string" },
+    "publisher": { "type": "string" },
+    "source_date": { "type": "string", "pattern": "^\\d{4}(-\\d{2}(-\\d{2})?)?$" },
+    "observed_date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "collected_by": { "type": "string", "description": "Gnome name + version, or console identifier." },
+    "confidence": {
+      "type": "string",
+      "enum": ["low", "medium", "high"],
+      "description": "Source-level trust for this single claim."
+    },
+    "notes": { "type": "string" }
+  }
+}

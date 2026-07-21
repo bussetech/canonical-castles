@@ -1,35 +1,48 @@
-# canonical-castles
+# Canonical Castles
 
-**Status:** ![status](https://img.shields.io/badge/status-active-00843D) ·
-[![ci](https://github.com/bussetech/canonical-castles/actions/workflows/ci.yml/badge.svg)](https://github.com/bussetech/canonical-castles/actions/workflows/ci.yml)
-· **Site:** <https://canonical-castles.bussetech.com> · **Visibility:** `public`
+**How many castles are there?** There is no single answer, and the reason is not
+missing data — "castle" names at least six different things, and each has a
+different count.
 
-Canonical Castles — how many castles are there? A source-cited dataset that answers per definition, not in general: every structure records which definitions of castle it satisfies, and every definition carries its own count and closure rule.
+Live at **<https://castles.bussetech.com>**.
 
-A [Bussetech Software Studio](https://bussetech.com) project: a static site
-(Jekyll, shared studio theme) rendered from text-based data stores.
+This dataset never records that something *is* a castle. It records a verdict
+against each of six named definition bands, each with a cited authority, an
+explicit criterion, and its own closure rule. Counts are published per band and
+never summed.
+
+Ireland proves the point in a single database: the state's Sites and Monuments
+Record answers "how many castles?" with **129**, **4,552** or **31,431**,
+depending purely on which class filter you accept.
+
+## Why
+
+A [Hacker News thread](https://news.ycombinator.com/item?id=48994178) took apart
+a map of "the world's 2,400 castles". The coverage gaps were loud; the deeper
+problem was that it published a single integer for a contested term. Its own
+stated criteria define ~6,594 Wikidata items and it publishes 2,435 of them.
 
 ## Layout
 
 | path | what |
-| --- | --- |
-| `data/` | the datasets — JSON/YAML/CSV/Markdown, versioned in git |
-| `schema/` | JSON Schemas; CI validates `data/<name>.*` against `schema/<name>.schema.json` |
-| `_posts/` | site posts — each one becomes a `/feed.json` item the studio portal aggregates |
-| `gnomes/` | project gnome directories (stub — see `gnomes/README.md`) |
-| `.github/workflows/` | thin callers into the studio's shared CI + the Pages deploy |
+|---|---|
+| `data/definitions.yml` | The six bands — the spine |
+| `data/sites/` | One structure per file, with a verdict per band |
+| `data/registers.yml` | Inventories a count can close against, with the exact query |
+| `data/claims.yml` | Circulating castle numbers, graded by method |
+| `data/coverage.yml` | The (definition x jurisdiction) grid |
+| `scripts/counts.py` | Derives every published number; CI fails on drift |
 
-## Build locally
+## Local
 
 ```sh
-bundle install
-bundle exec jekyll serve      # http://127.0.0.1:4000
+python3 -m venv .venv && .venv/bin/pip install pyyaml jsonschema
+PYTHON=.venv/bin/python bash scripts/check-integrity.sh   # integrity + drift
+bundle install && bundle exec jekyll serve                # the site
 ```
 
-No studio access needed — the theme and CI machinery are public. See
-`CLAUDE.md` for how this repo fits the studio (and how it detaches from it).
+Data is CC BY 4.0; code is MIT. See [provenance](https://castles.bussetech.com/data/)
+— the seed dataset was collected by hand from a console session, not by an agent,
+and the site says so.
 
-## Licenses
-
-Code: MIT (`LICENSE`). Published datasets: CC BY 4.0 — license and
-provenance statements live in `data/index.md`.
+A [Bussetech Software Studio](https://bussetech.com) project.

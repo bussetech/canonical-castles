@@ -1,0 +1,60 @@
+id: gh-central-elmina-castle
+name: Elmina Castle
+tradition: african
+location:
+  country: GH
+  region: Central Region
+  locality: Elmina
+  lat: 5.0847
+  lon: -1.3511
+built:
+  from: 1482
+  to: 1482
+  period: Portuguese 1482, Dutch from 1637, British from 1872
+condition: intact
+definitions_met:
+  state_fortification:
+    verdict: 'yes'
+    basis: Built and garrisoned by the Portuguese crown as a fortified trading post and later
+      held by the Dutch and British states. State commission and military purpose, with no
+      private lordly residence organising it.
+  fortified_residence:
+    verdict: 'no'
+    basis: A garrison and trading establishment rather than the residence of a private lord.
+      The resident governor held office from a state, which is the distinction the criterion
+      turns on.
+  popular_castle:
+    verdict: 'yes'
+    basis: Universally called Elmina Castle, a World Heritage site and one of the most visited
+      historic sites in Ghana.
+  palatial_seat:
+    verdict: 'no'
+    basis: Not a palatial residence.
+  enclosure_fortification:
+    verdict: 'no'
+    basis: A designed artillery-era fort, not a prehistoric enclosure.
+  revival_folly:
+    verdict: 'no'
+    basis: Genuine defensive fabric.
+register_entries:
+- register: wikidata
+  ref: Q1140852
+  url: https://www.wikidata.org/wiki/Q1140852
+disputed: false
+first_seen: '2026-07-21'
+last_updated: '2026-07-21'
+confidence: high
+sources:
+- url: https://whc.unesco.org/en/list/34
+  title: Forts and Castles, Volta, Greater Accra, Central and Western Regions
+  publisher: UNESCO World Heritage Centre
+  date: '1979'
+- url: https://en.wikipedia.org/wiki/Elmina_Castle
+  title: Elmina Castle
+  publisher: Wikipedia
+notes: 'Raised in the originating thread as a case where the strict definition and ordinary
+  usage collide, and where the word does heavy and uncomfortable work: Elmina was a site of
+  the transatlantic slave trade, and its dungeons are what most visitors come to see. UNESCO''s
+  own inscription is titled ''Forts and Castles'' - using both words rather than choosing.
+  A dataset that quietly resolves this to ''castle'' or quietly drops it is making a historical
+  judgement while appearing to make a taxonomic one.'

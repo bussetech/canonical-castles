@@ -1,0 +1,68 @@
+id: ie-galway-dun-aonghasa
+name: Dún Aonghasa
+tradition: european_medieval
+location:
+  country: IE
+  region: Connacht
+  county: Galway
+  locality: Inishmore, Aran Islands
+  lat: 53.1264
+  lon: -9.7681
+built:
+  from: null
+  to: null
+  period: Bronze Age to Iron Age, with phases from c. 1100 BCE
+condition: ruin
+definitions_met:
+  enclosure_fortification:
+    verdict: 'yes'
+    basis: A prehistoric multivallate promontory fort of concentric drystone enclosures on
+      a cliff edge, with a chevaux-de-frise of set stones. The enclosure is the primary work
+      and no lordly residence defines it.
+  fortified_residence:
+    verdict: 'no'
+    basis: No identified lordly residence and no seigneurial tenure - the defining feature
+      is the enclosure itself. Fails the private-residence half of the criterion, and its
+      ritual as against defensive purpose is itself debated.
+  popular_castle:
+    verdict: contested
+    basis: A major signposted heritage attraction that many visitors experience as a castle-equivalent,
+      but Irish sources generally call it a fort, and a commenter in the originating thread
+      named it specifically as something he would NOT consider a castle. Usage genuinely splits.
+  palatial_seat:
+    verdict: 'no'
+    basis: No residential palatial phase.
+  state_fortification:
+    verdict: 'no'
+    basis: Prehistoric, long predating any state military establishment.
+  revival_folly:
+    verdict: 'no'
+    basis: A genuine prehistoric structure.
+register_entries:
+- register: ie-smr
+  ref: GA110-012
+  designation: Hillfort
+disputed: true
+dispute_note: 'Whether Dún Aonghasa is popularly a castle splits real usage: heritage signage
+  and scholarship call it a fort, while general visitors and aggregator datasets frequently
+  file it with castles. Recorded as contested rather than resolved, because resolving it would
+  mean picking one audience over the other.'
+first_seen: '2026-07-21'
+last_updated: '2026-07-21'
+confidence: high
+sources:
+- url: https://www.archaeology.ie/collections-and-publications/open-data/
+  title: Archaeological Survey of Ireland - open data
+  publisher: National Monuments Service
+  date: '2026-07-21'
+- url: https://news.ycombinator.com/item?id=48995032
+  title: Comment on 'The World's 2,400 Castles'
+  publisher: Hacker News
+  date: '2026-07-21'
+  note: Names Dun Aonghasa specifically as not-a-castle under the strict reading.
+- url: https://en.wikipedia.org/wiki/D%C3%BAn_Aonghasa
+  title: Dun Aonghasa
+  publisher: Wikipedia
+notes: Sits in the 31,431-strong enclosure band that Ireland's SMR records alongside its 4,552
+  castles. Include it and Ireland has tens of thousands of castle-adjacent sites; exclude
+  it and Ireland has a few thousand. Nothing about the structure changes.
