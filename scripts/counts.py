@@ -12,6 +12,11 @@ Two things it deliberately refuses to do:
   * It never emits a total across bands. Summing `fortified_residence` and
     `palatial_seat` would double-count every structure that satisfies both and
     would re-create the single global integer this project exists to reject.
+  * It never merges assessed verdicts with register-derived ones. A verdict
+    transcribed in bulk from a register's own typology is not the same claim as
+    one somebody reached by applying the band's criterion, and a headline that
+    adds them together would be a dataset reporting how many rows it copied.
+
   * It never fills an `open` band's count with the number of records held.
     Holding 30 records in a band that has no bounding register tells you about
     this dataset's progress, not about the world, and the two are reported in
@@ -79,8 +84,12 @@ def collect() -> tuple[dict, dict, list[str]]:
     records = [load_yaml(p) for p in sorted(SITES.glob("*.yml"))]
 
     # band -> verdict -> count, and band -> jurisdiction -> yes-count
-    by_band: dict[str, dict[str, int]] = {
-        b: {"yes": 0, "no": 0, "contested": 0, "unassessed": 0} for b in band_ids
+    def empty():
+        return {"yes": 0, "no": 0, "contested": 0}
+
+    by_band: dict[str, dict] = {
+        b: {"assessed": empty(), "register_derived": empty(), "unassessed": 0}
+        for b in band_ids
     }
     by_cell: dict[tuple[str, str], int] = defaultdict(int)
 
@@ -93,7 +102,11 @@ def collect() -> tuple[dict, dict, list[str]]:
                 by_band[band]["unassessed"] += 1
                 continue
             verdict = entry["verdict"]
-            by_band[band][verdict] += 1
+            # Absent `assessment` means somebody applied the criterion; bulk
+            # imports must say so explicitly.
+            kind = ("register_derived"
+                    if entry.get("assessment") == "register-derived" else "assessed")
+            by_band[band][kind][verdict] += 1
             # A cell counts records the dataset actually holds for it, which
             # includes contested ones — a contested record is research done,
             # not research skipped.
@@ -108,9 +121,8 @@ def collect() -> tuple[dict, dict, list[str]]:
                 "definition": band,
                 "closure": closure[band],
                 "held": {
-                    "yes": by_band[band]["yes"],
-                    "contested": by_band[band]["contested"],
-                    "no": by_band[band]["no"],
+                    "assessed": by_band[band]["assessed"],
+                    "register_derived": by_band[band]["register_derived"],
                     "unassessed": by_band[band]["unassessed"],
                 },
             }

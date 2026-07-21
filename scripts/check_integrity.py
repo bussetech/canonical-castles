@@ -151,6 +151,32 @@ def main() -> int:
                 fail(f"coverage {key}: 'complete' but holds {held} of {total} "
                      f"register entries")
 
+        # A register-derived verdict must name the register it came from,
+        # otherwise "the register said so" is unfalsifiable.
+        for band, entry in met.items():
+            if entry.get("assessment") == "register-derived" and not rec.get("register_entries"):
+                fail(f"sites/{rid}: definitions_met.{band} is register-derived but the "
+                     f"record names no register_entries — the claim cannot be checked")
+
+    # --- production ledger ------------------------------------------------
+    production = load(DATA / "production.yml")["batches"]
+    complete_cells = {f"{c['definition']}/{c['jurisdiction']}"
+                      for c in coverage if c["state"] == "complete"}
+    for batch in production:
+        cost = batch["cost"]
+        # THE rule: an unmeasured cost is never a number, and least of all 0.
+        if not cost["measured"] and cost["model_usd"] is not None:
+            fail(f"production/{batch['id']}: measured is false but model_usd is "
+                 f"{cost['model_usd']!r} — an unmeasured cost must be null, never a "
+                 f"figure and never 0")
+        if cost["measured"] and cost["model_usd"] is None:
+            fail(f"production/{batch['id']}: measured is true but model_usd is null — "
+                 f"say what was measured or set measured: false")
+        for cell in batch.get("cells_closed") or []:
+            if cell not in complete_cells:
+                fail(f"production/{batch['id']}: claims to have closed {cell}, but that "
+                     f"cell is not 'complete' in data/coverage.yml")
+
     # --- count claims -----------------------------------------------------
     claims = load(DATA / "claims.yml")["claims"]
     claim_ids = {c["id"] for c in claims}

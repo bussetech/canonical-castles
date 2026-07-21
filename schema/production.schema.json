@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://castles.bussetech.com/schema/production.schema.json",
+  "title": "Production ledger",
+  "description": "What it cost to build this dataset, recorded as the dataset is built rather than reconstructed afterwards. One entry per production batch, carrying what was produced, by what method, and what that cost — with UNMEASURED distinguished from ZERO at the schema level. The distinction is the whole point of this file: a studio tool once estimated every agent run at $0 and reported a budget that could never be breached, and a dataset about honest counting has no business repeating that with its own numbers.",
+  "type": "object",
+  "required": ["version", "batches"],
+  "additionalProperties": false,
+  "properties": {
+    "version": { "const": 1 },
+    "batches": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/batch" } }
+  },
+  "$defs": {
+    "batch": {
+      "type": "object",
+      "required": ["id", "date", "method", "produced", "cost", "note"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*[a-z0-9]$" },
+        "date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+        "method": {
+          "enum": ["console", "importer", "gnome"],
+          "description": "`console`: an interactive session authored it. `importer`: deterministic code, no model call. `gnome`: a dispatched agent run, journaled on the studio cost ledger. The three have cost profiles that differ by orders of magnitude, which is the comparison this file exists to make possible."
+        },
+        "produced": {
+          "type": "object",
+          "additionalProperties": { "type": "integer", "minimum": 0 },
+          "description": "Counts by artefact kind: records, signals, claims, registers, definitions, cells_closed. Keys are open so a future batch can produce something this schema did not anticipate."
+        },
+        "cells_closed": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Coverage cells this batch moved to `complete`, as \"<definition>/<jurisdiction>\". The unit of real progress — closing one cell is worth more than a thousand scattered records."
+        },
+        "run_ref": {
+          "type": ["string", "null"],
+          "description": "Join key to the studio cost ledger: a gnome run_uid, or a GitHub Actions run id. Null for work with no run to point at — which is itself a finding about what the ledger can and cannot see."
+        },
+        "cost": { "$ref": "#/$defs/cost" },
+        "note": { "type": "string", "minLength": 1 }
+      }
+    },
+    "cost": {
+      "type": "object",
+      "required": ["measured", "model_usd", "basis"],
+      "additionalProperties": false,
+      "properties": {
+        "measured": {
+          "type": "boolean",
+          "description": "Whether the model cost was actually measured. When false, model_usd MUST be null — enforced by scripts/check_integrity.py. An unmeasured cost may never be written as a number, and least of all as 0."
+        },
+        "model_usd": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "description": "Measured model spend in USD. NULL MEANS NOT MEASURED — it never means zero. A genuine zero (a deterministic importer that makes no API call) is written as 0 with measured: true and a basis saying how that was verified."
+        },
+        "actions_minutes": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "description": "GitHub Actions minutes consumed. Null when not measured. Reconcilable against the studio's monthly Actions usage report."
+        },
+        "human_minutes": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "description": "Human or interactive-session wall-clock minutes, where known. The largest real cost of console-method work and the one no automated ledger captures."
+        },
+        "basis": {
+          "type": "string",
+          "minLength": 1,
+          "description": "How the figures were arrived at, or why they could not be. Required whether or not anything was measured: an unmeasured cost with no explanation is indistinguishable from an oversight."
+        }
+      }
+    }
+  }
+}

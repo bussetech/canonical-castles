@@ -8,47 +8,77 @@
 # WORLD, per the bounding register. They are never the same field and an
 # open band never gets a population figure at all.
 version: 1
-records_total: 13
+records_total: 117
 bands:
 - definition: fortified_residence
   closure: enumerable
   held:
-    'yes': 2
-    contested: 2
-    'no': 9
+    assessed:
+      'yes': 2
+      'no': 9
+      contested: 2
+    register_derived:
+      'yes': 104
+      'no': 0
+      contested: 0
     unassessed: 0
 - definition: enclosure_fortification
   closure: enumerable
   held:
-    'yes': 2
-    contested: 0
-    'no': 11
-    unassessed: 0
+    assessed:
+      'yes': 2
+      'no': 11
+      contested: 0
+    register_derived:
+      'yes': 0
+      'no': 0
+      contested: 0
+    unassessed: 104
 - definition: state_fortification
   closure: enumerable
   held:
-    'yes': 2
-    contested: 1
-    'no': 10
-    unassessed: 0
+    assessed:
+      'yes': 2
+      'no': 10
+      contested: 1
+    register_derived:
+      'yes': 0
+      'no': 0
+      contested: 0
+    unassessed: 104
 - definition: palatial_seat
   closure: open
   held:
-    'yes': 3
-    contested: 1
-    'no': 9
-    unassessed: 0
+    assessed:
+      'yes': 3
+      'no': 9
+      contested: 1
+    register_derived:
+      'yes': 0
+      'no': 0
+      contested: 0
+    unassessed: 104
 - definition: revival_folly
   closure: open
   held:
-    'yes': 2
-    contested: 0
-    'no': 11
-    unassessed: 0
+    assessed:
+      'yes': 2
+      'no': 11
+      contested: 0
+    register_derived:
+      'yes': 0
+      'no': 0
+      contested: 0
+    unassessed: 104
 - definition: popular_castle
   closure: open
   held:
-    'yes': 6
-    contested: 4
-    'no': 3
-    unassessed: 0
+    assessed:
+      'yes': 6
+      'no': 3
+      contested: 4
+    register_derived:
+      'yes': 0
+      'no': 0
+      contested: 0
+    unassessed: 104

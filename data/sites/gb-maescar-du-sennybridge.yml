@@ -1,0 +1,41 @@
+id: gb-maescar-du-sennybridge
+name: Castell-Du, Sennybridge
+tradition: european_medieval
+location:
+  country: GB
+  region: Wales
+  locality: Maescar
+  county: Powys
+  lat: 51.94358
+  lon: -3.57303
+built:
+  period: Medieval
+definitions_met:
+  fortified_residence:
+    verdict: 'yes'
+    assessment: register-derived
+    basis: 'Cadw classes scheduled monument BR126 as SiteType: Castle within BroadClass: Defence.
+      This verdict is transcribed from the register''s own typology and NOT assessed against
+      this band''s criterion — the register designates by protection class, and its inclusion
+      rule is not this band''s rule. Treat as provisional.'
+register_entries:
+- register: gb-wls-cadw
+  ref: BR126
+  designation: 'Scheduled Monument — SiteType: Castle'
+  url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=1761
+first_seen: '2026-07-21'
+last_updated: '2026-07-21'
+confidence: low
+sources:
+- url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=1761
+  title: Cof Cymru - National Historic Assets of Wales
+  publisher: Cadw
+  date: '2026-07-21'
+  note: Register entry; the sole source for this record.
+signals:
+- sig-20260721-cadw-br126
+notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
+  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
+  every other band is OMITTED rather than set to no, because no source consulted so far speaks
+  to them. Upgrading this record means applying the bands to the structure itself and setting
+  assessment: assessed.'

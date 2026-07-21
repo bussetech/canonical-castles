@@ -13,6 +13,13 @@ description: "Every record, with its verdict against each of the six definitions
 unassessed. Blank means no source consulted so far speaks to that band; it is
 not a quiet no.
 
+A **†** marks a verdict transcribed in bulk from a register's own typology
+rather than assessed against the band's criterion. 104 of these rows are the
+Cadw import that [closed the Welsh cell](/coverage/) — real register entries at
+`confidence: low`, counted separately from assessed verdicts everywhere on this
+site. They are here because a closed cell is worth having, not because anyone
+has yet decided whether they meet the criterion.
+
 <div style="overflow-x:auto">
 <table>
   <thead>
@@ -30,7 +37,7 @@ not a quiet no.
       <td><a href="/castles/{{ r.id }}/">{{ r.name }}</a>{% if r.disputed %} <abbr title="Sources disagree about at least one verdict">※</abbr>{% endif %}</td>
       <td>{{ r.location.country }}{% if r.location.region %} · {{ r.location.region }}{% endif %}</td>
       {%- for d in defs %}{% assign m = r.definitions_met[d.id] %}
-      <td>{% if m.verdict == "yes" %}<strong>y</strong>{% elsif m.verdict == "no" %}n{% elsif m.verdict == "contested" %}?{% endif %}</td>
+      <td>{% if m.verdict == "yes" %}<strong>y</strong>{% elsif m.verdict == "no" %}n{% elsif m.verdict == "contested" %}?{% endif %}{% if m.assessment == "register-derived" %}<abbr title="Register-derived: transcribed from the register's typology, not assessed against the criterion">†</abbr>{% endif %}</td>
       {%- endfor %}
     </tr>
     {%- endfor %}
@@ -59,6 +66,11 @@ silent absence.
 
 ## Coverage
 
-Thirteen records is a seed, not a survey, and the [coverage grid](/coverage/)
-says so cell by cell — including which register would close each one. Ireland's
-`fortified_residence` cell has 4,552 waiting in it.
+One cell is now [closed](/coverage/): every scheduled monument Cadw classes
+`SiteType: Castle` in Wales — all 104 — has a record here. That is the narrowest
+possible reading of "complete", and the coverage grid states exactly what it
+does and does not mean.
+
+Everything else is a floor. The [coverage grid](/coverage/) says so cell by cell,
+including which register would close each one. Ireland's `fortified_residence`
+cell has 4,552 waiting in it, and its `enclosure_fortification` cell has 31,431.

@@ -60,6 +60,8 @@ studio:
       url: /coverage/
     - title: Data
       url: /data/
+    - title: Production
+      url: /production/
 
 # Jekyll reads site.data from data/ (not _data/) so the CI-validated record
 # files are also the render source - one copy, no mirroring.

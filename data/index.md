@@ -23,13 +23,26 @@ render from.
 | coverage | [`coverage.yml`](/data/coverage.yml) | [`coverage.schema.json`](/schema/coverage.schema.json) | The (definition × jurisdiction) grid |
 | counts | [`counts.yml`](/data/counts.yml) | — | **Generated.** Derived from records; CI fails on drift |
 | sources | [`sources.yml`](/data/sources.yml) | [`sources.schema.json`](/schema/sources.schema.json) | The fetch allowlist |
+| production | [`production.yml`](/data/production.yml) | [`production.schema.json`](/schema/production.schema.json) | [What it cost to build this](/production/) |
+| snapshots | [`snapshots/`](https://github.com/bussetech/canonical-castles/tree/main/data/snapshots) | — | Verbatim register responses, for reproducibility |
 
 ## Provenance
 
-**Collected by hand, from a console session, on 2026-07-21.** No research agent
-has yet run against this repo — the gnome pair is deployed and configured but
-the seed dataset was assembled directly, and it would be dishonest to imply
-otherwise on a site about honest sourcing.
+**Two production methods so far, both recorded in the [production ledger](/production/).**
+
+The 13 founding records were **collected by hand from a console session** on
+2026-07-21. No research agent has run against this repo — the gnome pair is
+deployed and configured, but the seed was assembled directly, and it would be
+dishonest to imply otherwise on a site about honest sourcing.
+
+The remaining 104 records were **imported deterministically** from Cadw's
+scheduled-monument register on the same day by `scripts/import_register.py`,
+which makes no model call. Every verdict from that batch is marked
+`assessment: register-derived` at `confidence: low`: the register asserted its
+own typology and we transcribed it, which is not the same as assessing those
+structures against this project's criterion. Counts report the two separately
+and never sum them. The verbatim register response is committed under
+`data/snapshots/` so the import is reproducible and any drift is a diff.
 
 **Where it came from.** Register figures were obtained by querying the
 registers directly on 2026-07-21: the Irish Sites and Monuments Record via its

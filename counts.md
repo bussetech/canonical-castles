@@ -19,18 +19,28 @@ most common error in this field:
 - **Held** — how many records *this dataset* holds. A fact about our progress.
 - **Population** — how many exist in the world, per the bounding register. A fact about castles.
 
+And a third distinction, which matters just as much:
+
+- **Assessed** — somebody applied the band's criterion to the structure.
+- **Register-derived** — a register asserted its own typology and we transcribed it in bulk.
+
+They are never summed. Copying 104 rows out of Cadw is not the same act as
+assessing 104 structures, and a headline that added them together would be a
+dataset reporting how many rows it copied. Register-derived verdicts all carry
+`confidence: low` and say so on every record.
+
 ## Per definition
 
 {% for band in counts.bands %}{% assign d = defs | where: "id", band.definition | first %}
 ### {{ d.label }}
 
-| | |
-|---|---|
-| Satisfies this definition | **{{ band.held.yes }}** |
-| Contested | {{ band.held.contested }} |
-| Does not satisfy | {{ band.held.no }} |
-| Unassessed | {{ band.held.unassessed }} |
-| Closure | **{{ band.closure }}** |
+| | assessed | register-derived |
+|---|---|---|
+| Satisfies this definition | **{{ band.held.assessed.yes }}** | {{ band.held.register_derived.yes }} |
+| Contested | {{ band.held.assessed.contested }} | {{ band.held.register_derived.contested }} |
+| Does not satisfy | {{ band.held.assessed.no }} | {{ band.held.register_derived.no }} |
+| Unassessed | {{ band.held.unassessed }} | |
+| Closure | **{{ band.closure }}** | |
 
 {{ d.closure_note }}
 {% endfor %}
