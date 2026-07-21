@@ -66,7 +66,7 @@ registers:
   - id: gatehouse
     name: "Gatehouse Gazetteer"
     operator: "Philip Davis (independent)"
-    url: "http://www.gatehouse-gazetteer.info/home.html"
+    url: "https://www.gatehouse-gazetteer.info/home.html"
     jurisdiction: WORLD
     enumerable: false
     entries_total: null

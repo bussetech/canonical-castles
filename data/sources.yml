@@ -173,7 +173,7 @@ sources:
 
   - id: gatehouse-gazetteer
     type: html-page
-    url: "http://www.gatehouse-gazetteer.info/home.html"
+    url: "https://www.gatehouse-gazetteer.info/home.html"
     cadence: monthly
     parser: link-list
     publisher: "Philip Davis"

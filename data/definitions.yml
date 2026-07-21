@@ -38,22 +38,22 @@ definitions:
       - kind: scholar
         name: "R. Allen Brown"
         work: "English Castles (Batsford, 1954)"
-        url: "http://www.gatehouse-gazetteer.info/Defin.pdf"
+        url: "https://www.gatehouse-gazetteer.info/Defin.pdf"
         quote: "The private fortress and residence of a lord."
       - kind: scholar
         name: "D. J. Cathcart King"
         work: "Castellarium Anglicanum (Kraus, 1983)"
-        url: "http://www.gatehouse-gazetteer.info/Defin.pdf"
+        url: "https://www.gatehouse-gazetteer.info/Defin.pdf"
         quote: "A fortified residence of a (feudal) lord."
       - kind: scholar
         name: "John Goodall"
         work: "The English Castle (2011)"
-        url: "http://www.gatehouse-gazetteer.info/Defin.pdf"
+        url: "https://www.gatehouse-gazetteer.info/Defin.pdf"
         quote: "A castle is the residence of a lord made imposing through the architectural trappings of fortification."
       - kind: scholar
         name: "Philip Davis"
         work: "Defining 'The Castle' (2009, revised 2016)"
-        url: "http://www.gatehouse-gazetteer.info/Defin.pdf"
+        url: "https://www.gatehouse-gazetteer.info/Defin.pdf"
         quote: "In effect it is impossible to define 'the castle' since there is no one such thing. Much of the controversy in castle studies between militarists and revisionists lies in a befuddled use of examples of 'castles' of very different function."
       - kind: standard
         name: "FISH / Historic England Monument Type Thesaurus"
@@ -161,7 +161,7 @@ definitions:
       - kind: register
         name: "Gatehouse Gazetteer (Philip Davis)"
         work: "Class 'Artillery Fort or Bulwark', maintained separately from castle classes"
-        url: "http://www.gatehouse-gazetteer.info/lists.html"
+        url: "https://www.gatehouse-gazetteer.info/lists.html"
     closure: enumerable
     closure_note: >
       Closable in principle — states keep records of their own works — but

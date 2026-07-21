@@ -22,7 +22,9 @@ that one definition was always the wrong shape.
 
 {% assign defs = site.data.definitions.definitions %}
 {% for d in defs %}
-## {{ d.label }} {#{{ d.id }}}
+<a id="{{ d.id }}"></a>
+
+## {{ d.label }}
 
 *{{ d.summary }}*
 
