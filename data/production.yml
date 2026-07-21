@@ -1,82 +1,78 @@
-# What it cost to build this dataset.
-#
-# Recorded as the work happens, not reconstructed afterwards — because
-# reconstructed cost is estimated cost, and this project has opinions about
-# numbers that arrive without a method.
-#
-# THE ONE RULE: `measured: false` requires `model_usd: null`. An unmeasured
-# cost is never written as a number and never as 0. A studio tool once
-# estimated every agent run at $0 and reported a budget that could not be
-# breached; a dataset about honest counting has no business repeating that
-# with its own figures. CI enforces the rule.
 version: 1
-
 batches:
-  - id: founding-seed
-    date: "2026-07-21"
-    method: console
-    produced:
-      records: 13
-      signals: 4
-      claims: 13
-      registers: 13
-      definitions: 6
-      cells: 20
-    cells_closed: []
-    run_ref: null
-    cost:
-      measured: false
-      model_usd: null
-      actions_minutes: null
-      human_minutes: null
-      basis: >-
-        NOT MEASURED, and the gap is structural rather than an oversight. The
-        studio cost ledger journals gnome runs by run_uid; this batch was
-        authored in an interactive console session, which the ledger does not
-        see at all. There is no per-session token accounting to read after the
-        fact, so any figure here would be a reconstruction. run_ref is null for
-        the same reason — there is no run to point at.
+- id: founding-seed
+  date: '2026-07-21'
+  method: console
+  produced:
+    records: 13
+    signals: 4
+    claims: 13
+    registers: 13
+    definitions: 6
+    cells: 20
+  cells_closed: []
+  run_ref: null
+  cost:
+    measured: false
+    model_usd: null
+    actions_minutes: null
+    human_minutes: null
+    basis: 'NOT MEASURED, and the gap is structural rather than an oversight. The studio cost ledger journals
+      gnome runs by run_uid; this batch was authored in an interactive console session, which the ledger
+      does not see at all. There is no per-session token accounting to read after the fact, so any figure
+      here would be a reconstruction. run_ref is null for the same reason — there is no run to point at.
 
-        This is the most expensive batch in the file per artefact produced, by
-        a wide margin, and it is the one with no number. That asymmetry is
-        worth keeping visible rather than quietly filling in.
-    note: >-
-      The founding: six definition bands, thirteen structure records chosen to
-      stress the band boundaries, thirteen graded count claims, thirteen
-      registers with their queries, and the twenty-cell coverage grid. Hand
-      research and hand authoring throughout — no research agent has run
-      against this repo.
+      This is the most expensive batch in the file per artefact produced, by a wide margin, and it is
+      the one with no number. That asymmetry is worth keeping visible rather than quietly filling in.'
+  note: 'The founding: six definition bands, thirteen structure records chosen to stress the band boundaries,
+    thirteen graded count claims, thirteen registers with their queries, and the twenty-cell coverage
+    grid. Hand research and hand authoring throughout — no research agent has run against this repo.'
+- id: cadw-castles-import
+  date: '2026-07-21'
+  method: importer
+  produced:
+    signals: 104
+    records: 104
+    cells_closed: 1
+  cells_closed:
+  - fortified_residence/GB-WLS
+  run_ref: null
+  cost:
+    measured: true
+    model_usd: 0
+    actions_minutes: null
+    human_minutes: null
+    basis: 'A genuine zero, not an unmeasured one. scripts/import_register.py is a deterministic transform
+      that makes no model API call — verifiable by reading it, and by the fact that it runs in CI against
+      a committed snapshot with no credentials of any kind in scope. The zero is a property of the design,
+      not an estimate.
 
-  - id: cadw-castles-import
-    date: "2026-07-21"
-    method: importer
-    produced:
-      signals: 104
-      records: 104
-      cells_closed: 1
-    cells_closed:
-      - fortified_residence/GB-WLS
-    run_ref: null
-    cost:
-      measured: true
-      model_usd: 0
-      actions_minutes: null
-      human_minutes: null
-      basis: >-
-        A genuine zero, not an unmeasured one. scripts/import_register.py is a
-        deterministic transform that makes no model API call — verifiable by
-        reading it, and by the fact that it runs in CI against a committed
-        snapshot with no credentials of any kind in scope. The zero is a
-        property of the design, not an estimate.
-
-        actions_minutes is null rather than 0: the transform does consume CI
-        time, and that time has simply not been attributed to this batch yet.
-        Reconcilable later against the studio's monthly Actions usage report
-        via the workflow run id.
-    note: >-
-      Stage 1 + 2. The 104 scheduled monuments Cadw classes SiteType=Castle,
-      imported as one signal each and resolved into one record each, closing
-      the first coverage cell in the dataset. Every verdict from this batch is
-      marked assessment: register-derived and carries confidence: low — the
-      register asserted its own typology, nobody assessed these structures
-      against this project's criterion.
+      actions_minutes is null rather than 0: the transform does consume CI time, and that time has simply
+      not been attributed to this batch yet. Reconcilable later against the studio''s monthly Actions
+      usage report via the workflow run id.'
+  note: 'Stage 1 + 2. The 104 scheduled monuments Cadw classes SiteType=Castle, imported as one signal
+    each and resolved into one record each, closing the first coverage cell in the dataset. Every verdict
+    from this batch is marked assessment: register-derived and carries confidence: low — the register
+    asserted its own typology, nobody assessed these structures against this project''s criterion.'
+- id: cadw-wikidata-disagreements
+  date: '2026-07-21'
+  method: importer
+  produced:
+    disagreements: 359
+    records_corrected: 2
+  cells_closed: []
+  run_ref: null
+  cost:
+    measured: true
+    model_usd: 0
+    actions_minutes: null
+    human_minutes: null
+    basis: A genuine zero. scripts/analyse_disagreements.py is a deterministic join over two committed
+      snapshots and makes no model call. The expensive part of this batch was not compute at all — it
+      was the four rounds of correcting the band mapping when the first passes produced accusations the
+      evidence did not support, and that cost sits in the unmeasured console column like all judgement
+      does.
+  note: 'Stage 4. Cadw joined to Wikidata on P3007 (Cadw Monument ID) — an identifier join, never names.
+    359 disagreements: 258 granularity, 89 band-conflict, 12 category-error. Two records inside the closed
+    Welsh cell were corrected from register-derived yes to contested, which reduced the fortified_residence
+    register-derived count from 104 to 102.'

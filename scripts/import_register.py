@@ -325,6 +325,27 @@ def main() -> int:
         return 1
 
     ids = resolve_ids(adapter, items)
+    adopted_ids: list[str] = []
+
+    def adopted(path: pathlib.Path, band: str) -> bool:
+        """Has a human taken this record over from the importer?
+
+        IMPORT SEEDS A RECORD; IT DOES NOT OWN ONE. The moment somebody upgrades
+        a band from `register-derived` to `assessed` — by weighing a second
+        register, or by reading the site — that record is theirs and a re-import
+        must not overwrite it. Without this, the drift check would helpfully
+        revert every correction anyone ever made, which is the failure mode
+        where a pipeline quietly outranks a person.
+        """
+        if not path.exists():
+            return False
+        try:
+            existing = yaml.safe_load(path.read_text())
+        except Exception:
+            return False
+        entry = ((existing or {}).get("definitions_met") or {}).get(band) or {}
+        return entry.get("assessment") == "assessed"
+
     wanted: dict[pathlib.Path, str] = {}
     for item in items:
         rid = ids[item["ref"]]
@@ -334,7 +355,11 @@ def main() -> int:
         rec = adapter.record(item, sig["id"])
         rec["id"] = rid
         wanted[SIGNALS / f"{sig['id']}.yml"] = dump(sig, SIGNAL_KEY_ORDER)
-        wanted[SITES / f"{rid}.yml"] = dump(rec, SITE_KEY_ORDER)
+        site_path = SITES / f"{rid}.yml"
+        if adopted(site_path, adapter.band):
+            adopted_ids.append(rid)
+        else:
+            wanted[site_path] = dump(rec, SITE_KEY_ORDER)
 
     stale = [p.name for p, text in wanted.items()
              if not p.exists() or p.read_text() != text]
@@ -345,15 +370,17 @@ def main() -> int:
                   f"{', '.join(stale[:3])}\n  Run scripts/import_register.py "
                   f"--register {args.register} --transform and commit.", file=sys.stderr)
             return 1
-        print(f"import[{args.register}]: fresh ({len(items)} entries)")
+        print(f"import[{args.register}]: fresh ({len(items)} entries"
+              + (f", {len(adopted_ids)} adopted and left alone)" if adopted_ids else ")"))
         return 0
 
     SIGNALS.mkdir(parents=True, exist_ok=True)
     SITES.mkdir(parents=True, exist_ok=True)
     for path, text in wanted.items():
         path.write_text(text)
-    print(f"import[{args.register}]: wrote {len(items)} signals + {len(items)} records "
-          f"({len(stale)} changed)")
+    print(f"import[{args.register}]: wrote {len(items)} signals + "
+          f"{len(items) - len(adopted_ids)} records ({len(stale)} changed"
+          + (f", {len(adopted_ids)} adopted: {', '.join(adopted_ids)})" if adopted_ids else ")"))
     print(f"  snapshot sha256: {hashlib.sha256(body).hexdigest()}")
     return 0
 
