@@ -12,30 +12,75 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
+    verdict: contested
+    assessment: assessed
+    basis: 'The designation text argues both sides of this band in consecutive sentences,
+      which is why it is contested rather than decided. Against: Cadw states Raglan was built
+      ''not as a defensive structure, but as a fortress-palace'', and that the Great Tower
+      MIMICKED the keeps of earlier castles as ''the ultimate status symbol''. For: the fabric
+      includes a Great Tower, a gatehouse, a closet tower and a walled court, and a 15th-century
+      magnate''s seat was defensible in fact whatever the intent. This is exactly the militarist/revisionist
+      dispute the band''s own authorities are divided on — Coulson would read the display
+      as the point, and the fabric as the vocabulary of rank rather than of war.'
+  palatial_seat:
     verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument MM005 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    assessment: assessed
+    basis: Cadw's own term is 'fortress-palace'. Sir William ap Thomas bought the manor of
+      Raglan in 1432, demolished the existing manor house, and built to impress — high-quality
+      ashlar, some of the earliest brickwork in Wales, a building programme continued by a
+      son described as enormously wealthy. A high-status residence bearing a castle-word whose
+      fortification is governed by display.
+  revival_folly:
+    verdict: 'no'
+    assessment: assessed
+    basis: Built in the 1430s-40s, within the defensive era, and genuinely inhabited as a
+      lordly seat. The mimicry of earlier keeps makes it what Philip Davis calls a SYMBOLIC
+      castle, which he is explicit is not the same thing as a sham castle — this band holds
+      the latter.
+  state_fortification:
+    verdict: 'no'
+    assessment: assessed
+    basis: 'Private throughout: built by Sir William ap Thomas and continued by Sir William
+      Herbert. Not a crown commission and not a garrison work.'
+  enclosure_fortification:
+    verdict: 'no'
+    assessment: assessed
+    basis: A designed courtyard castle of the 15th century, not a prehistoric or early-medieval
+      enclosure work.
+  popular_castle:
+    verdict: 'yes'
+    assessment: assessed
+    basis: Named Castell Rhaglan / Raglan Castle by the national heritage body that designates
+      it, and operated and signposted as a castle. General usage is not in any doubt here.
 register_entries:
 - register: gb-wls-cadw
   ref: MM005
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2342
+disputed: true
+dispute_note: Cadw states plainly that Raglan was built 'not as a defensive structure, but
+  as a fortress-palace' whose Great Tower mimicked earlier keeps as a status symbol — while
+  describing fabric (Great Tower, gatehouse, closet tower) that reads as defensive. The structure
+  sits on the fault line between the militarist and revisionist readings of what a castle
+  is, and this dataset records that rather than picking a side.
 first_seen: '2026-07-21'
 last_updated: '2026-07-21'
-confidence: low
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2342
   title: Cof Cymru - National Historic Assets of Wales
   publisher: Cadw
   date: '2026-07-21'
   note: Register entry; the sole source for this record.
+- url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2342
+  title: Scheduled Monument Full Report — Castell Rhaglan
+  publisher: Cadw
+  date: '2026-07-22'
+  note: 'The designation text: fabric, defensive features, period and documentary history.
+    The evidence these verdicts were assessed against.'
 signals:
 - sig-20260721-cadw-mm005
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+notes: 'ASSESSED against the six band criteria on 2026-07-22, reading Cadw''s full designation
+  report rather than transcribing the register row. This record was previously a bulk import
+  carrying one register-derived verdict at confidence: low; it now carries a verdict per band,
+  each with a basis that engages that band''s criterion, and the importer no longer owns it.'

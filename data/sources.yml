@@ -102,6 +102,33 @@ sources:
         most closable British cell.
     added: "2026-07-21"
 
+  - id: gb-wls-cadw-reports
+    type: filing-index
+    url: "https://cadwpublic-api.azurewebsites.net/reports/sam/FullReport"
+    cadence: monthly
+    parser: link-list
+    publisher: "Cadw"
+    scope: "Wales — the full scheduled-monument report behind each Cadw designation"
+    status: active
+    robots:
+      checked: "2026-07-22"
+      notes: >
+        No robots.txt is published (404), so nothing is disallowed — but absence
+        of a prohibition is not an invitation, so this is fetched at one request
+        per second and only for monuments already in the dataset, never crawled.
+        The report URL for each monument comes from the register's own Report
+        field under OGL, and the reports are the designation text Cadw publishes
+        for public reference. Content is Crown copyright under OGL like the rest
+        of Cof Cymru: quoted and cited per record, never republished wholesale.
+    added: "2026-07-22"
+    notes: >
+      The evidence layer that makes ASSESSMENT possible rather than just
+      transcription. Each report carries a substantive description — fabric,
+      defensive features, period, and often the documentary history — plus
+      Cadw's own inline definition of the monument class. That is enough to
+      apply this project's band criteria to a structure, which a register row
+      alone never is.
+
   - id: gb-eng-historic-england
     type: html-page
     url: "https://historicengland.org.uk/listing/the-list/"
