@@ -1,0 +1,69 @@
+id: sig-20260722-report-pe163
+site_id: gb-tenby-tenby
+attribute: designation_report
+value: 'Reference Number
+
+  PE163
+
+  Name
+
+  Tenby Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Pembrokeshire
+
+  Community
+
+  Tenby
+
+  Easting
+
+  213770
+
+  Northing
+
+  200521
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a castle, dating to the medieval period.  It occupies
+  a large steep-sided promontory on the coast dividing the north and south beaches of Tenby
+  and was attached at the narrow neck to the medieval town walls. The castle is first mentioned
+  in the twelfth century. In the 13th century it was part of the Lordship of Pembroke. The
+  castle is ruinous and comprises a gate tower and D-shaped barbican at the south-west entrance,
+  on the summit of the hill a round central watch tower of c 5.8m in diameter with a square
+  stair turret, defensive walls and parts of domestic buildings. Short lengths of embattled
+  curtain wall are exposed at low tide.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2037
+source_title: Scheduled Monument Full Report — Tenby Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

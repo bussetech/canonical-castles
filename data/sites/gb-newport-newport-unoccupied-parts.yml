@@ -12,30 +12,43 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument PE087 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: >-
+      Cadw report PE087 records a gatehouse, three corner towers and a curtain
+      wall set within a large moat and counterscarp bank (active defence),
+      enclosing an internal building with an undercroft, the castle founded by
+      the lord William Fitzmartin — a lord's defensible residence, both halves
+      met. (The 1859-60 conversion of the gatehouse into a house is excluded
+      from this scheduled area.)
 register_entries:
 - register: gb-wls-cadw
   ref: PE087
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3553
 first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+last_updated: '2026-07-22'
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3553
   title: Cof Cymru - National Historic Assets of Wales
   publisher: Cadw
   date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  note: Register entry; original bulk-import source.
+- url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3553
+  title: Scheduled Monument Full Report — Newport Castle (Unoccupied parts)
+  publisher: Cadw
+  date: '2026-07-22'
+  note: Full designation report; the evidence for the assessed verdict.
 signals:
 - sig-20260721-cadw-pe087
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-pe087
+notes: >-
+  Upgraded from bulk register import to assessed against Cadw's full
+  scheduled-monument report (sig-20260722-report-pe087). fortified_residence
+  assessed yes from the moated gatehouse/towers/curtain and the internal
+  undercrofted range of a lord-founded castle. palatial_seat left unassessed:
+  the 19th-century domestic conversion described in the report is of the
+  gatehouse, which the scheduling explicitly excludes from this record's scope.
+  All other bands omitted. Confidence medium — one official report plus the
+  register.

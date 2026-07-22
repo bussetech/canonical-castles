@@ -1,0 +1,72 @@
+id: sig-20260722-report-cm085
+site_id: gb-newcastle-emlyn-newcastle-emlyn
+attribute: designation_report
+value: 'Reference Number
+
+  CM085
+
+  Name
+
+  Newcastle Emlyn Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Carmarthenshire
+
+  Community
+
+  Newcastle Emlyn
+
+  Easting
+
+  231141
+
+  Northing
+
+  240720
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a castle, dating to the medieval period. A castle
+  is a defended residence or stronghold, built mainly of stone, in which the principal or
+  sole defence comprises the walls and towers bounding the site. Some form of keep may have
+  stood within the enclosure but these were not significant in defensive terms and served
+  mainly to provide accommodation. Newcastle Emlyn Castle occupies a site within a hairpin
+  bend of the Teifi. The remains consist of a twin-towered gateway measuring c. 7.6m high
+  and partially reconstructed. There are the ruins of a corner-tower to its south.  In front
+  of this on the west side is a steep banked barbican which is now grass covered, but must
+  contain stone foundations. To the west of this are a further bank and ditch 3m behind it.
+  Within the gateway is an oval-shaped ward with banks c. 1.8m high all containing glimpses
+  of masonry.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=671
+source_title: Scheduled Monument Full Report — Newcastle Emlyn Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

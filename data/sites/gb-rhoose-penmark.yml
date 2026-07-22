@@ -12,30 +12,29 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument GM229 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: "A substantial 13th-c castle: a round tower standing to second-floor level and a stretch of massive curtain walling running south from it around the inner ward, with a large outer ward to the west — a defensive enceinte. Held by the de Umfreville family and then the Bawdrips — identified private lordly tenure. Both halves met."
 register_entries:
 - register: gb-wls-cadw
   ref: GM229
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3362
 first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+last_updated: '2026-07-22'
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3362
-  title: Cof Cymru - National Historic Assets of Wales
+  title: Scheduled Monument Full Report — Penmark Castle
   publisher: Cadw
   date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  note: Full designation report; the sole source, assessed against the definition bands.
 signals:
 - sig-20260721-cadw-gm229
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-gm229
+notes: 'Assessed from Cadw''s full report (GM229), replacing the register-derived verdict.
+  The report is concise but substantive: a round tower, massive inner-ward curtain
+  walling and a large outer ward (defensive fabric) held by named lords (de Umfreville,
+  then Bawdrip). That supports fortified_residence YES. All other bands OMITTED: the
+  report does not speak to them and gives no popular-usage evidence. Confidence medium:
+  one official report plus register.'

@@ -12,30 +12,31 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument DE022 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: "A 13th-c castle on a sandstone ridge, an irregular pentagon with a surviving curtain wall, two standing wall-towers, a corner entrance gateway and a moat still visible to the north — active defence. Within it the report locates the hall (opposite the gateway) and a chapel abutting the west curtain — the lordly residential accommodation. Both halves met."
 register_entries:
 - register: gb-wls-cadw
   ref: DE022
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3804
 first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+last_updated: '2026-07-22'
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3804
-  title: Cof Cymru - National Historic Assets of Wales
+  title: Scheduled Monument Full Report — Ruthin Castle
   publisher: Cadw
   date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  note: Full designation report; the sole source, assessed against the definition bands.
 signals:
 - sig-20260721-cadw-de022
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-de022
+notes: 'Assessed from Cadw''s full report (DE022), replacing the register-derived verdict.
+  The report opens with a boilerplate definition sentence (identical to other Cadw
+  texts) which I treat as non-specific; the site-specific description — pentagon plan,
+  curtain wall, two towers, entrance gateway, moat, hall and chapel — is substantive
+  enough to assess. fortified_residence YES on the defensive enceinte plus the hall
+  and chapel (lordly residence); no lord is named in the report but the hall establishes
+  lordly residential use. All other bands OMITTED: not spoken to, and no popular-usage
+  evidence. Confidence medium: one official report plus register.'

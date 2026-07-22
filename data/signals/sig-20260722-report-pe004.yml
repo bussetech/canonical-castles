@@ -1,0 +1,93 @@
+id: sig-20260722-report-pe004
+site_id: gb-manorbier-manorbier
+attribute: designation_report
+value: 'Reference Number
+
+  PE004
+
+  Name
+
+  Manorbier Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Pembrokeshire
+
+  Community
+
+  Manorbier
+
+  Easting
+
+  206411
+
+  Northing
+
+  197809
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a castle, dating to the medieval period and which
+  is located about 800m from the sea on a low spur dividing a deep valley above the confluence
+  of two streams. The castle is first mentioned as the birthplace of Giraldus Cambrensis in
+  1147. Giraldus was the fourth son of William de Barri from a family which held estates principally
+  in Ireland and is famous for documenting a journey around Wales in 1188 whilst accompanying
+  Archbishop Baldwin who was recruiting for the Third Crusade.  Manorbier passed down the
+  family line until the 14th century and had a peaceful history apart from one internal family
+  dispute in 1327. After a succession of subsequent occupiers in 1475 it became crown property,
+  by 1630 had been disposed of to the Phillips of Picton Castle and in 1645 the castle was
+  taken for Parliament during the Civil War. In the 17th and 18th centuries several agricultural
+  buildings were constructed within it and in 1880 when the castle was under lease a house
+  was built within the inner ward and other parts restored to habitable use.
+
+  The castle retains substantial stone buildings erected before 1200 though most are the result
+  of rebuilding in the thirteenth and early fourteenth centuries, some remains dating to refortification
+  for the civil war are also present. The remains consist of an inner ward, about 76m by 44m,
+  an outer ward, about 100m by 76m together with an area that encompasses some of the associated
+  park, grounds, and gardens. The inner ward is surrounded by a curtain wall with a gatehouse
+  in the east wall. At the north-east and south-east corners are two towers, the north tower,
+  and the round tower. There is a spur tower at the south-western corner and a turret roughly
+  mid-way along the northern curtain wall. A range of domestic buildings, including a hall
+  block, kitchens, and a chapel, formerly abutted the southern, western and north-western
+  curtain walls. Some of these have been replaced by modern buildings. The hall block and
+  the chapel survive. The outer ward is located to the east of the inner and separated by
+  a defensive ditch protected to north and south by short wing walls and was surrounded a
+  less substantial curtain; most that now survives is on the north side. This includes the
+  ground-level remains of a small rectangular tower to the north and a half round turret on
+  the northeast. Within the outer ward are the remains of a large later medieval barn. Extending
+  northwards from the castle wards are two long lengths of wing wall, one at the west end
+  of the hall block and the other from the flanking wall of the outer ward, these descend
+  down-slope to where they terminate at what was the location of the pond for a mill southeast
+  of the castle
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2687
+source_title: Scheduled Monument Full Report — Manorbier Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

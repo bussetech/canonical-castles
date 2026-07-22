@@ -1,0 +1,80 @@
+id: sig-20260722-report-gm028
+site_id: gb-pant-morlais
+attribute: designation_report
+value: 'Reference Number
+
+  GM028
+
+  Name
+
+  Morlais Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Merthyr Tydfil
+
+  Community
+
+  Pant
+
+  Easting
+
+  304958
+
+  Northing
+
+  209585
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument comprises the remains of a castle, dating to the medieval period. It is situated
+  at the northern border of the lands of Senghennydd Uwch Caeach on a high limestone ridge.
+  When begun in 1288, this land had been newly annexed by the lord of Glamorgan, Gilbert de
+  Clare and the castle was intended to control this territory, a position viewed as provocative
+  by the neighbouring lord of Brecon, Humphrey de Bohun. The result in 1290 was warfare between
+  the two brought under control by their imprisonment in the Tower of London by Edward 1.
+  In 1294 the castle was captured during a Welsh rebellion by Madog ap Llywelyn and it may
+  have been abandoned shortly afterwards. The remains are now almost completely collapsed
+  but represent a curtain walled enclosure measuring about 130m north-south by 60m wide outside
+  of which is a rock-cut ditch and countescarp bank. Towers were situated around the wall
+  at the angles; one on the west side, three on the east and one each at the north and south
+  ends. The latter two were about 20m diameter and would have served to dominate the skyline.
+  The basement of the south tower is intact and has a central pillar with twelve vaulting
+  ribs that supported the floor above now capped in concrete. The castle is subdivided into
+  inner and outer wards with the inner ward at the north end showing traces of internal buildings
+  that might have included a hall and chapel while the outer ward has further indications
+  of buildings and includes a great rock-cut water cistern. Outside of the castle ditch on
+  the south side is a further court protected by earthworks alone.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive and domestic practices and has strong historical associations. The monument is
+  well-preserved and an important relic of the medieval landscape. It retains significant
+  archaeological potential, with a strong probability of the presence of both structural evidence
+  and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=636
+source_title: Scheduled Monument Full Report — Morlais Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

@@ -1,0 +1,125 @@
+id: sig-20260722-report-mm012
+site_id: gb-usk-usk-unoccupied-parts
+attribute: designation_report
+value: 'Reference Number
+
+  MM012
+
+  Name
+
+  Usk Castle (Unoccupied Parts)
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Monmouthshire
+
+  Community
+
+  Usk
+
+  Easting
+
+  337684
+
+  Northing
+
+  201106
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a castle, dating to the medieval period. The castle
+  was established by the Normans soon after the conquest of south Wales by William fitz Osbern
+  in the 1070s. The earliest stone building is the four sided keep which rises up dramatically
+  within the gardens of Castle House. This was probably the work of the de Clares who held
+  the lordship of Usk from 1115 to 1174 - the first mention of a castle at Usk dates from
+  1138. Although much altered, enough of the original structures survives to show that this
+  was a typically Norman keep. It is in an offensive position, jutting out from the curtain
+  wall, and is rectangular and austere with few windows and immensely thick walls. It stands
+  to its full height and its walls are now punctuated by doors and windows from four phases
+  of building in the 12th, 13th, 14th and 15th centuries. The original 12th century keep would
+  have had three storeys, with an unlit basement and would have been entered by wooden stairs
+  on the inner side of the first floor.
+
+  In 1174 the castle fell to the Welsh lord of Caerleon, Hywel ap Iorwerth, but was recaptured
+  by the crown in 1085 after which a considerable sum of money was spent on strengthening
+  it. A substantial garrison was recorded as being in residence in the castle at around this
+  time - 10 archers, 10 residents, 15 mobile sergeants, 4 watchmen, a chaplain and a clerk.
+  Much of the remainder of the castle was built by William Marshal between 1212 and 1219,
+  transforming it into a major stronghold and demonstrating his great power to the Welsh and
+  to his neighbouring antagonist Reginald de Braose. The very latest French ideas on military
+  layout were employed at the castle, which was given a strong curtain wall with round towers
+  at four of the eight angles of its flattened octagonal shape. The entrance comprised a simple
+  arched gateway with a portcullis, to the N of the keep. The curtain wall is well-preserved
+  and standing to its full height in places, and the entrance retains its portcullis slot
+  but no evidence for a gatehouse. Of the round towers only the one on the SW side (the Garrison
+  Tower) survives to any extent. The tower in the W corner was destroyed during 14th century
+  rebuilding, the N tower was rebuilt in the late 13th century and only the foundations of
+  the S tower remain. The Garrison Tower is impressive in form, surviving to its original
+  height, it has battlements and a ring of external beam holes that would have supported a
+  wooden fighting gallery or hoard accessed through a blocked doorway at third floor level.
+  The entrance was at first floor level, reached by wooden stairs.
+
+  After William Marshal''s death in 1219 his sons held the castle until 1245 and it was during
+  this time that modifications were carried out to provide more high status apartments. In
+  1233 the defensive capabilities of the castle were tested when Henry III laid siege to it
+  during his quarrel with Richard Marshal, but failed to capture it.
+
+  After 1262 the castle was held by Gilbert de Clare who instigated alterations to the Garrison
+  Tower and rebuilt the N tower. According to an account from 1289 the N tower was rebuilt
+  to house Gilbert de Clares treasure. It is a three storey D-shaped tower with stone stairs
+  on the inner side and a garderobe tucked into the NE corner. On the first floor was a well-appointed
+  room with a fireplace, a window on the inner side and some cruciform arrowslits on the outer
+  side. Very little survives of the second floor but an 18th century print shows that it had
+  corbelled-out battlements, like those on the Garrison Tower.
+
+  In 1314 Gilbert de Clare died at the battle of Bannockburn and the castle passed to his
+  sister Elizabeth de Burgh. During her ownership the castle was transformed to allow greater
+  domestic comfort, with the building of the hall block, square tower and chapel along the
+  NW side of the inner ward.
+
+  Between 1368 and 1399 the castle was held, through marriage, by the Earls of March. They
+  built the outer ward and gatehouse on lower ground to the SE of the inner ward, and the
+  small NE angle tower next to the entrance to the inner ward. The roughly rectangular outer
+  ward is now entirely occupied by the gardens of Castle House, which incorporates the 14th
+  century gatehouse into its structure. The curtain wall runs SW from the house to a small
+  circular tower, the Dovecote Tower. It has been altered since the 14th century but stands
+  to its full height, with two storeys and a basement.
+
+  The last major event in the history of the castle was the decisive defeat of Glyndwr''s
+  sons forces at Pwll Melyn in 1405 by forces garrisoned at the castle. At that time the castle
+  was in royal hands and Richard, Duke of York, used it as a favourite retreat. In the third
+  quarter of the 15th century Sir William Herbert of Raglan held Usk and modernised the keep
+  and the hall, and built lodgings in the inner ward. After his death in 1469 the castle was
+  abandoned and fell into decay.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2959
+source_title: Scheduled Monument Full Report — Usk Castle (Unoccupied Parts)
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

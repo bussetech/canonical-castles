@@ -1,0 +1,110 @@
+id: sig-20260722-report-fl004
+site_id: gb-rhuddlan-rhuddlan
+attribute: designation_report
+value: 'Reference Number
+
+  FL004
+
+  Name
+
+  Castell Rhuddlan
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Denbighshire
+
+  Community
+
+  Rhuddlan
+
+  Easting
+
+  302437
+
+  Northing
+
+  377910
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The following provides a description of the Scheduled Ancient Monument.
+
+  This monument comprises the remains of a medieval castle built by King Edward I. Begun in
+  1277, Rhuddlan Castle was sited to the north of an earlier Norman motte and bailey castle.
+  For many years Rhuddlan was the lowest crossing point and highest point of navigation on
+  the river Clwyd; this became particularly important between the 10th and 13th centuries.
+  It could control traffic running both along and across the northern part of the Vale of
+  Clwyd, and could be supplied by water.
+
+  The castle is concentric in design, consisting of a very strongly defended inner ward, completely
+  surrounded by a slighter outer ward. On the south-west, this fronts the river, but elsewhere,
+  it overlooks an artificial moat, also walled on the outer side, which was dry apart from
+  a short section south of the castle used as a dock. Four gates (Town Gate, Friary Gate,
+  Dock Gate and River Gate) – led into the outer ward – two from the river and two from the
+  town.
+
+  All four curtains are almost intact and survive to the height of the wall-walks with only
+  the battlemented parapets lacking. Built to a thickness of 2.7m, the curtain walls widen
+  to 3.3m where they join the towers to accommodate latrines at the ground and intermediate
+  stages. Narrow flights of steps lead to the wall-walk from the top of the wide circular
+  staircase with which each of the towers is provided.
+
+  The diamond-shaped inner ward has twin-towered gatehouses at the eastern and western angles,
+  with single towers projecting from the northern and southern angles. All the towers, which
+  rise a stage higher than the curtains, were exactly similar in plan, with four rooms in
+  each, though the south tower also has a basement. The rooms in the towers would have accommodated
+  officials and members of the royal households, and no doubt one of the gatehouses contained
+  the residence of the constable. Little trace remains of the structures that originally stood
+  in the outer ward. Most were probably timber framed and included the granary, the great
+  and little stables, the forge, the treasury, a workshop for the Queen’s goldsmith and, no
+  doubt ancillary buildings necessary to the life of any great medieval establishment.
+
+  There are three towers, namely: Gillot’s Tower; South Tower and North Tower. Gillot’s Tower
+  is probably named after Gillot de Chalons, a mason who was working at Conwy in 1286 and
+  had been previously employed at Rhuddlan. Four storeys high and projecting from the southern
+  corner of the outer ward, the original entrance was on the third storey. The two windows
+  in this room are almost the only ones in the building which retain their dressed stonework
+  intact. The arrangement of rooms in the South Tower repeats the pattern seen in the gatehouse
+  towers, with the addition of a basement. In the North Tower the ground-floor room is partly
+  above and partly below courtyard level. It was entered by steps leading directly from the
+  courtyard rather than by a trapdoor.
+
+  The principal apartments of the castle stood within the enclosure of the inner ward and
+  included the king’s hall and chamber, the queen’s hall and chamber, the kitchens and the
+  chapel. There is a well some 15m deep near the centre of the courtyard.
+
+  Rhuddlan saw action in 1400 at the beginning of the Welsh rebellion led by Owain Glyn Dŵr,
+  but although the town was ravaged by the rebels, the castle was not taken. During the Civil
+  War (1642-48) Rhuddlan was garrisoned for the king and held out until July 1646 when it
+  was forced to surrender to Major-General Thomas Mytton, the parliamentarians’ commander-in-chief
+  in north Wales. Thereafter the House of Commons voted that the castle should be made untenable,
+  and it was subsequently demolished. The castle’s present condition of ruin dates principally
+  from this year.
+
+  This monument is of national importance for its potential to enhance our knowledge of medieval
+  social, domestic and political life and warfare. The scheduled area comprises the remains
+  described and an area around them within which related evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=194
+source_title: Scheduled Monument Full Report — Castell Rhuddlan
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

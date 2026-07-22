@@ -1,0 +1,81 @@
+id: sig-20260722-report-gm007
+site_id: gb-mumbles-oystermouth
+attribute: designation_report
+value: 'Reference Number
+
+  GM007
+
+  Name
+
+  Oystermouth Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Swansea
+
+  Community
+
+  Mumbles
+
+  Easting
+
+  261325
+
+  Northing
+
+  188367
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a castle, dating to the medieval period. Oystermouth
+  Castle was established c. 1107 by William de Londres. The first castle, probably of timber,
+  is said to have been destroyed during the Welsh uprising of 1136, and was subsequently rebuilt
+  by Maurice de Londres. The present keep is a partial survival of this second phase. The
+  castle was again destroyed when it was captured by the Welsh in 1215 and held until 1220.
+  Its re-acquisition by John de Braose, lord of Gower, probably saw rebuilding soon after,
+  including the enlargement of the original keep into a more ambitious hall block. The north-west
+  and west blocks were added soon after and the castle was further strengthened by William
+  de Braose, probably in the period 1256-66 when the present gatehouse and curtain walls were
+  built following another assault. William clearly regarded it as his most impressive residence
+  as in 1284 Edward I stayed there for 2 nights. The castle was attacked again during the
+  rebellion of Rhys ap Meredudd in 1287. The addition of a chapel block is credited to the
+  last of the de Braose family, Alina, who was resident 1327-31, but it may alternatively
+  have been built by her son John, Lord Mowbray. Although Lord Mowbray was not permanently
+  resident he was ordered to strengthen the defences in 1335.
+
+  According to John Leland, by the 1530s the castle was ruinous. In the post-medieval period
+  the late medieval service buildings were adapted as cottages, while the gatehouse was inhabited
+  in the 18th and 19th centuries. The antiquary George Grant Francis undertook some restoration
+  to the chapel block in the 1840s and other subsequent minor repairs.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2860
+source_title: Scheduled Monument Full Report — Oystermouth Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

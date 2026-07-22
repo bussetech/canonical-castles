@@ -13,30 +13,35 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument GM046 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: >-
+      Both halves met — a ringwork castle of the lordship of Gower founded by
+      Henry de Villiers (a lord), with a stone curtain wall built before 1215,
+      an adjoining entrance gateway, and a late-13th-century stone tower whose
+      fireplace and garderobe show it was residential.
 register_entries:
 - register: gb-wls-cadw
   ref: GM046
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=142
-first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+first_seen: "2026-07-21"
+last_updated: "2026-07-22"
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=142
   title: Cof Cymru - National Historic Assets of Wales
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: "2026-07-22"
+  note: Scheduled-monument register entry and full designation report; the source assessed for the band verdict.
 signals:
 - sig-20260721-cadw-gm046
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-gm046
+notes: >-
+  Assessed 2026-07-22 from Cadw's full scheduled-monument report
+  (sig-20260722-report-gm046). fortified_residence upgraded to assessed:
+  seigneurial ringwork with a residential tower. enclosure_fortification
+  omitted despite the ringwork form because an identified lordly residence
+  places it in fortified_residence. The Roman fort of Leucarum underlies the
+  site but is context, not this structure. All other bands omitted — the report
+  does not speak to popular usage, palatial conversion, revival, or state tenure.

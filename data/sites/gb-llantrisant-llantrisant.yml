@@ -12,30 +12,29 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument GM074 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: "Built c.1250 by Richard de Clare, Lord of Glamorgan, to hold the district of Meisgyn (an identified private lord), with a circular great tower (the 'raven') giving onto a wall-walk, a curtain wall skirting the spur, a half-round projecting mural tower and flanking ditches providing active defence — both halves met, though the report details defence more fully than domestic accommodation."
 register_entries:
 - register: gb-wls-cadw
   ref: GM074
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=635
-first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+first_seen: "2026-07-21"
+last_updated: "2026-07-22"
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=635
-  title: Cof Cymru - National Historic Assets of Wales
+  title: Scheduled Monument Full Report — Llantrisant Castle
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: "2026-07-22"
+  note: Full scheduled-monument report; the basis for the assessed verdict.
 signals:
 - sig-20260721-cadw-gm074
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-gm074
+notes: >
+  Upgraded to an assessed record from Cadw's full report (GM074).
+  fortified_residence assessed 'yes' — an identified lord (Richard de Clare) and
+  active defensive fabric (great tower, curtain wall, wall-walk, projecting
+  tower, ditches). Other bands omitted; the report gives no usage evidence for
+  popular_castle.

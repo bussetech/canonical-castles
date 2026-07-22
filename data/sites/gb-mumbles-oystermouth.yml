@@ -12,30 +12,39 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument GM007 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: >-
+      Cadw report GM007 describes a keep, a gatehouse and curtain walls built
+      1256-66 for active defence, and states William de Braose regarded it as
+      his most impressive residence (Edward I lodged there in 1284), with a hall
+      block and a chapel added — a defensible work that was the private seat of a
+      lord meets both halves of the band.
 register_entries:
 - register: gb-wls-cadw
   ref: GM007
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2860
 first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+last_updated: '2026-07-22'
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2860
   title: Cof Cymru - National Historic Assets of Wales
   publisher: Cadw
   date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  note: Register entry; original bulk-import source.
+- url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2860
+  title: Scheduled Monument Full Report — Oystermouth Castle
+  publisher: Cadw
+  date: '2026-07-22'
+  note: Full designation report; the evidence for the assessed verdict.
 signals:
 - sig-20260721-cadw-gm007
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-gm007
+notes: >-
+  Upgraded from bulk register import to assessed against Cadw's full
+  scheduled-monument report (sig-20260722-report-gm007). fortified_residence
+  assessed yes from the described defensive fabric and the report naming it a
+  lord's residence; all other bands omitted (unassessed) because the report does
+  not speak to them. Confidence medium — one official report plus the register.

@@ -1,0 +1,82 @@
+id: sig-20260722-report-pe087
+site_id: gb-newport-newport-unoccupied-parts
+attribute: designation_report
+value: 'Reference Number
+
+  PE087
+
+  Name
+
+  Newport Castle (Unoccupied parts)
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Pembrokeshire
+
+  Community
+
+  Newport
+
+  Easting
+
+  205705
+
+  Northing
+
+  238865
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a castle, dating to the medieval period which is
+  situated on a short spur of ground on the lower slopes of Mynydd Carningli about 100m south
+  west of the parish church of Newport and 600m south of the inlet to the Afon Nyfer. It comprises
+  a gatehouse, three corner towers and an internal building with an undercroft linked originally
+  by a single curtain wall of which very little remains. All the masonry remains are 13th
+  century or later. The castle was surrounded by a large moat and counterscarp bank which
+  might be the remains of an earlier ringwork. A castle at Newport was founded by William
+  Fitzmartin son of Robert Fitzmartin who first conquered Cemais in the 12th century and is
+  first recorded in 1215 when it was taken by Llywelyn ap Iorwerth; restored to the Fitzmartins
+  not long afterwards, and then again in 1257 when both castle and town were burned by Llywelyn
+  ap Gruffyd. These records however could either to the possible ringwork or to another earthwork
+  on the banks of the Afon Nyfer to the north (scheduled as PE404 The Old Castle). Therefore
+  the new castle’s date cannot be confirmed before 1277-78 when a gaol is recorded there.
+  In 1324-5 the castle passed to the Audley family by descent, repairs were made in 1398 but
+  the castle was reported destroyed in 1408 as a result of the Glyndwr uprising. In 1497 the
+  after the execution of James, Lord Audley the castle passed to the crown before returning
+  to the Audley’s in 1534. It was then bought in 1543 by William Owen the father of George
+  Owen the famous Elizabethan Antiquarian who later described the castle in 1583 as having
+  been in ruins for some time when the moat was in use as a fishpond. In 1859-60 the ruins
+  of the gatehouse were converted into a house designed by R.K. Penson.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive, it excludes the gatehouse and also the moat and outer
+  earthworks.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3553
+source_title: Scheduled Monument Full Report — Newport Castle (Unoccupied parts)
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

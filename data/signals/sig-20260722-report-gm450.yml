@@ -1,0 +1,73 @@
+id: sig-20260722-report-gm450
+site_id: gb-peterston-super-ely-remains-peterston
+attribute: designation_report
+value: 'Reference Number
+
+  GM450
+
+  Name
+
+  Remains of Peterston Castle
+
+  Date of Designation
+
+  02/11/1994
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Vale of Glamorgan
+
+  Community
+
+  Peterston-super-Ely
+
+  Easting
+
+  308345
+
+  Northing
+
+  176391
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a medieval castle at Peterston. Comprising the north-west
+  angle tower, it is the main surviving part of the castle of the le Sores of St Fagans and
+  Peterston. Richard le Sore was settled in Glamorgan by c. 1102 and the family remained in
+  possession until the site of the castle was sold to John Butler in c. 1382. There are possible
+  traces of a 12th century keep, but the north-west tower is probably of 13th-14th century
+  date. The surviving west wall stands to a height of c. 6m, with traces of north and south
+  returns. The tower was of three floors. Of the uppermost only the beam holes of its floors
+  remain. In the west wall is a splayed window with a segmented headed rear arch. There are
+  traces of other windows at ground floor level in the north wall, and a garderobe chute in
+  the south-west angle. Access between the floors was via a newel stair in the south wall.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3682
+source_title: Scheduled Monument Full Report — Remains of Peterston Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

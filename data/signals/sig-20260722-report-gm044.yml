@@ -1,0 +1,86 @@
+id: sig-20260722-report-gm044
+site_id: gb-pennard-pennard-church
+attribute: designation_report
+value: 'Reference Number
+
+  GM044
+
+  Name
+
+  Pennard Castle & Church
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Swansea
+
+  Community
+
+  Pennard
+
+  Easting
+
+  254435
+
+  Northing
+
+  188499
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a castle and church dating to the medieval period.
+
+  Pennard was a demesne manor of the lords of Gower, and the first defensive work on the site
+  was a ringwork of the 12th century. A small settlement with church grew up adjacent to the
+  castle. A detached stone hall was built inside this ringwork in the 13th century, as revealed
+  by excavations. The curtain wall and gatehouse were rebuilt in stone in the late 13th or
+  early 14th century. The comparatively flimsy walling and light defences suggest it was built
+  when the threat of Welsh wars had receded, while its gatehouse is a copy of substantial
+  Edwardian gatehouses such as Caerphilly. During the 14th century the court of the lordship
+  was occasionally held at Pennard rather than Swansea.
+
+  The church conforms to the standard medieval plan of nave and square chancel, and the shape
+  can be clearly seen under the grass, although the only standing masonry is at the west end,
+  standing to a maximum of c.2.5m.  The nave measures c. 11m by 5.5m, and the chancel c. 5.0
+  by 5.5m.  The masonry of the west end is intact right across to a height of at least a metre,
+  suggesting that there was no west door; there was no sign of one having been blocked.  While
+  the masonry on the inside of the building still retained its original outer face, that on
+  the outside had been either heavily robbed or badly eroded, possibly by sand.  The standing
+  length of wall includes putlog holes.  There is no fenestration.  The church is thought
+  to have been built during the thirteenth century, but by 1478 moving sand was causing damage.
+
+  The settlement and church suffered the encroachment of sand dunes from the 14th century
+  and the settlement and church were rebuilt further inland. The castle was described as ''desolate
+  and ruinous'' in 1650, although an engraving of 1741 by the Buck brothers shows most of
+  the walls standing to their full height.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3757
+source_title: Scheduled Monument Full Report — Pennard Castle & Church
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

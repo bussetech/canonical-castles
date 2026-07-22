@@ -12,30 +12,34 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument GM421 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: >
+      On a knoll with artificially scarped slopes on all sides save the south and a
+      wide ditch running around south, south-west and east, a curtain wall enclosed
+      the site and "would have protected a keep and other associated castle buildings",
+      placed to command the road north from Cowbridge — an enclosing defensive wall and
+      earthworks around a lordly residential keep.
 register_entries:
 - register: gb-wls-cadw
   ref: GM421
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3683
-first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+first_seen: "2026-07-21"
+last_updated: "2026-07-22"
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3683
   title: Cof Cymru - National Historic Assets of Wales
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: "2026-07-21"
+  note: Register entry and full scheduled-monument report; the report was read and the fortified_residence band assessed against it.
 signals:
 - sig-20260721-cadw-gm421
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-gm421
+notes: >
+  fortified_residence upgraded to assessed against Cadw's full report (GM421), which
+  documents a curtain wall, scarped slopes and a wide ditch enclosing a keep and
+  castle buildings in a road-commanding position. No lord is named and no palatial,
+  revival or public-usage evidence appears, so every other band is left OMITTED, not
+  set to no. Single Cadw source, confidence medium.

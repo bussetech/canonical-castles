@@ -13,6 +13,7 @@ version: 1
 
 registers:
   - id: ie-smr
+    membership_prefix: Castle
     name: "Sites and Monuments Record — Archaeological Survey of Ireland"
     operator: "National Monuments Service, Department of Housing, Local Government and Heritage"
     url: "https://www.archaeology.ie/collections-and-publications/open-data/"
@@ -125,6 +126,7 @@ registers:
       FISH classes across the List and local HERs but is not bulk-extractable.
 
   - id: gb-wls-cadw
+    membership_prefix: 'Scheduled Monument — SiteType: Castle'
     name: "Cof Cymru — National Historic Assets of Wales"
     operator: "Cadw (Welsh Government)"
     url: "https://cadw.gov.wales/advice-support/cof-cymru"

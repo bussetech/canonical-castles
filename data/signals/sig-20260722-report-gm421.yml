@@ -1,0 +1,68 @@
+id: sig-20260722-report-gm421
+site_id: gb-welsh-st-donats-tal-fan
+attribute: designation_report
+value: 'Reference Number
+
+  GM421
+
+  Name
+
+  Castell Tal-y-Fan
+
+  Date of Designation
+
+  28/04/1982
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Vale of Glamorgan
+
+  Community
+
+  Welsh St. Donats
+
+  Easting
+
+  302098
+
+  Northing
+
+  177188
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a medieval castle situated on a knoll of high ground
+  3.5km north-east of Cowbridge. It has artificially scarped slopes on all sides save the
+  south, with a wide ditch running around the south, south-west and east. A curtain wall encloses
+  the knoll and would have protected a keep and other associated castle buildings. It was
+  strategically placed to protect the road running north from Cowbridge.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3683
+source_title: Scheduled Monument Full Report — Castell Tal-y-Fan
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

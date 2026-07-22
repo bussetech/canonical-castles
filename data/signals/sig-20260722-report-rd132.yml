@@ -1,0 +1,68 @@
+id: sig-20260722-report-rd132
+site_id: gb-rhayader-rhayader
+attribute: designation_report
+value: 'Reference Number
+
+  RD132
+
+  Name
+
+  Rhayader Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Powys
+
+  Community
+
+  Rhayader
+
+  Easting
+
+  296823
+
+  Northing
+
+  268033
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a castle, dating to the medieval period. A castle
+  is a defended residence or stronghold, built mainly of stone, in which the principal or
+  sole defence comprises the walls and towers bounding the site. Some form of keep may have
+  stood within the enclosure but these were not significant in defensive terms and served
+  mainly to provide accommodation. Rhayader Castle is set on a promontory above the River
+  Wye, with large rock-cut vertical ditch to north-west and a scarp to the river plain on
+  the west and south. The site is open ground covered with rough grass.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2610
+source_title: Scheduled Monument Full Report — Rhayader Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

@@ -12,30 +12,62 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument CD032 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: >-
+      Cadw's report describes a defended residence bounded by active
+      defences — a rampart and ditch on the north where it faces level
+      ground, and scarps above steep natural slopes elsewhere — with a
+      massive rectangular stone tower (18-20m) forming part of a building
+      complex, the keep "served mainly to provide accommodation" (the
+      residence half). Established about 1110, disputed, besieged and
+      rebuilt through the later 12th century: a lordly stronghold held and
+      contested, satisfying both the defensible and residential halves.
+  revival_folly:
+    verdict: "no"
+    assessment: assessed
+    basis: >-
+      A genuine defensive-era work, not a castle built in castle form for
+      effect — established about 1110, destroyed in 1137, then rebuilt and
+      besieged through the later 12th century and last recorded in 1208.
+      Real ramparts, ditch and stone tower with a documented military
+      history place it firmly within the defensive era, so no sham or
+      revival intent applies.
 register_entries:
 - register: gb-wls-cadw
   ref: CD032
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3588
 first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+last_updated: '2026-07-22'
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3588
   title: Cof Cymru - National Historic Assets of Wales
   publisher: Cadw
   date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  note: Register entry; original bulk-import source for this record.
+- url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3588
+  title: Scheduled Monument Full Report — Ystrad-Meurig Castle
+  publisher: Cadw
+  date: '2026-07-22'
+  note: Full designation report; the assessment evidence for the assessed bands.
 signals:
 - sig-20260721-cadw-cd032
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-cd032
+notes: >-
+  Upgraded from the bulk register import: the full Cadw scheduled-monument
+  report (CD032) was read and the bands assessed against its own evidence.
+  fortified_residence is now assessed: yes — the report describes both active
+  enclosure defence (rampart, ditch, scarps) and a residential keep providing
+  accommodation. revival_folly is assessed: no — a documented 12th-century
+  defensive work (built c.1110, destroyed 1137, besieged and rebuilt), not a
+  post-defensive-era castle in form only. enclosure_fortification is OMITTED:
+  the report frames this as a lordly castle with a residential keep, not a
+  lord-less defended enclosure, so this band's scenario is not spoken to.
+  state_fortification and palatial_seat are OMITTED: the report describes a
+  medieval lordly stronghold, nothing about state/municipal tenure or an
+  unfortified palatial seat. popular_castle is OMITTED: the report shows an
+  obscure well-preserved earthwork/ruin with no visitor operation or public
+  standing, and a register name is not usage evidence. Confidence medium: one
+  official report plus the register, no independent corroboration.

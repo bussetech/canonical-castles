@@ -12,30 +12,36 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument CM004 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: "A square gatehouse defended by portcullis and doors, a later double-towered gatehouse (modelled on Caerphilly's East Gate) with front and rear portcullises, five murder holes and outer machicolations, wall-walks carried on vaults and D-shaped mural towers provide active defence; the North Tower and the gatehouse's well-appointed great rooms with fireplaces served as the lord's private accommodation — both halves met."
+  enclosure_fortification:
+    verdict: "yes"
+    assessment: assessed
+    basis: "The promontory neck was first defended in the 6th century BC when a double bank and ditch were thrown across it to form a promontory fort — a prehistoric defensive enclosure with no identified lordly residence — satisfying this band for that earliest phase."
 register_entries:
 - register: gb-wls-cadw
   ref: CM004
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=1439
-first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+first_seen: "2026-07-21"
+last_updated: "2026-07-22"
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=1439
-  title: Cof Cymru - National Historic Assets of Wales
+  title: Scheduled Monument Full Report — Castell Llansteffan
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: "2026-07-22"
+  note: Full scheduled-monument report; the basis for the assessed verdicts.
 signals:
 - sig-20260721-cadw-cm004
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-cm004
+notes: >
+  Upgraded to an assessed record from Cadw's full report (CM004). Two bands
+  carry verdicts for two phases: enclosure_fortification 'yes' for the Iron Age
+  promontory fort, fortified_residence 'yes' for the medieval castle. The Tudor
+  conversion 'from a military structure into a comfortable residence' was weighed
+  for palatial_seat but left unassessed — the castle retained heavy defences and
+  the change was a blocked gatehouse, not a palatial rebuild. popular_castle left
+  unassessed (taken into state care in 1959, but the report gives no
+  visitor-operation or tourism evidence).

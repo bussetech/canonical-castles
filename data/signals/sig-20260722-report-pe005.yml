@@ -1,0 +1,115 @@
+id: sig-20260722-report-pe005
+site_id: gb-pembroke-pembroke
+attribute: designation_report
+value: 'Reference Number
+
+  PE005
+
+  Name
+
+  Pembroke Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Pembrokeshire
+
+  Community
+
+  Pembroke
+
+  Easting
+
+  198173
+
+  Northing
+
+  201612
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a castle, dating to the medieval period. Pembroke
+  castle is sited on a high ridge between two tidal inlets, a strategic position located on
+  a major route-way chosen early in the first Norman incursions into south-west Wales, when
+  the castle was founded by Roger of Montgomery in 1093, the castle was never to fall to the
+  Welsh. It was from here that the Normans embarked upon their Irish campaigns.  In 1189,
+  the castle came into the hands of William Marshal, who, over the next 30 years transformed
+  an earth-and-timber castle into a mighty stone fortification.  First to be built was the
+  inner ward, within which is a magnificent round keep over 22m in height possessing a remarkable
+  domed roof.  The keep had four floors, connected by a spiral stair which also led to the
+  battlements.  Large square holes at the top on the outside could hold a timber hoard, or
+  fighting platform. The original entrance was on the first floor, approached by an external
+  stair, the present ground-floor entrance is a later insertion.
+
+  Enclosing the keep was the inner-ward curtain wall, to the south-west stood a large horseshoe-shaped
+  gate of which now only the footings survive, and to the east a strong round tower with a
+  basement prison.  Along the cliff edge only a thin wall was required, this had a small observation
+  turret at the apex, a square stone platform to the north of it supported a huge medieval
+  catapult for defence against attack from the sea.  Domestic buildings were on the west and
+  east of the inner ward including William Marshal''s hall and private apartments.  These
+  were improved and further buildings added in the later 13th century, when a new Great Hall
+  was built with walling projecting over the south-east corner to enclose the mouth of a large
+  cavern in the rock below which may have served as a boathouse.  At the same period, a large
+  single-storey building was added near the keep to serve as the county court.  By this time,
+  the castle had passed to the de Valence family; the Hastings family then held it from 1324
+  to 1389, after which the castle passed into the hands of the crown.
+
+  Much of the building work in the outer ward may also belong to the early 13th- century and
+  to William Marshal, and the main plan of the present defences remains as originally constructed
+  though the end result of a systematic programme of restoration in the 19th and early 20th
+  century.  Much of the north-eastern defences, most of the curtain wall, the outer parts
+  of the gatehouse and barbican, and most of the Westgate and Henry VII towers have been rebuilt
+  from footings. Around the outer ward are a fine series of four round towers, the St Annes’s
+  Bastion on the north-east and a southern Great Gatehouse.  Postern gates on either side
+  were defended by the bastion and the Monkton Tower respectively. The Great Gatehouse had
+  two portcullises, stout doors, and three machicolation in the vaulting as well as a series
+  of arrowslits, it is one of the finest and earliest of its kind.  The gatehouse western
+  Bygate Tower has a prison in its basement. Each gate tower has a ground and two upper floors
+  reached by stairs spiralling in opposite directions.  Doors lead from the upper rooms on
+  to the wall-walk.  The gatehouse is in essence a double-towered gate, with one of the towers
+  moved along the curtain wall to clear the oblique entrance approach; its outer parts are
+  further defended by a fine semi-circular barbican.
+
+  The castle was granted out by the crown with a series of short-lived tenancies, and fell
+  into considerable disrepair.  In 1405 Francis Court was hastily given munitions to hold
+  the castle against Owain Glydwr''s uprising.  The castle later passed into the hands of
+  Jasper Tewdwr, earl of Pembroke, and was apparently the birthplace of his nephew Henry,
+  later King Henry VII.
+
+  Pembroke declared its support for Parliament at the beginning of the Civil War, but in 1648,
+  the town''s mayor, John Poyer, disgruntled at his lack of reward, joined a disaffected group
+  of Roundheads unwilling to be demobilised.  Cromwell himself came to besiege the castle
+  which only fell after seven weeks when the water supply was cut off and a train of siege
+  cannon arrived to start a bombardment.  After this defiance Cromwell blew up the barbican
+  and the fronts of all the towers to prevent the castle ever being used again militarily.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3013
+source_title: Scheduled Monument Full Report — Pembroke Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

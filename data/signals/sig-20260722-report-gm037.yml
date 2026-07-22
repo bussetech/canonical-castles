@@ -1,0 +1,86 @@
+id: sig-20260722-report-gm037
+site_id: gb-st-bride-s-major-ogmore
+attribute: designation_report
+value: 'Reference Number
+
+  GM037
+
+  Name
+
+  Ogmore Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Vale of Glamorgan
+
+  Community
+
+  St. Bride''s Major
+
+  Easting
+
+  288186
+
+  Northing
+
+  176960
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a castle, dating to the medieval period. It is situated
+  on the east bank of the tidal River Ewenni half a kilometre above its junction with the
+  Afan Ogwr at a strategic fording point now marked by ancient stepping stones.
+
+  The castle was established by William de Londres probably before 1107 as a ringwork and
+  bailey. A rectangular stone keep was built early in the 12th century facing the bailey;
+  it measures c.14m x 10m above a battered base with walls 1.8m wide; the west wall survives
+  to a height of 12.5m, the other walls standing to basement level. A second freestanding
+  stone building was erected on the east side of the inner ward towards the end of the 12th
+  century, only the basement remains measuring c. 9.5 x 7.5m with walls 1.1m thick. The entrance
+  is approached along a barrel vaulted passage via three stone steps and a ramp. The walls
+  may have supported a timber superstructure with the building functioning as domestic quarters
+  or as an exchequer.
+
+  Early in the 13th century the ringwork was levelled and the surrounding ditch re-cut through
+  the bedrock which allowed the river to enter. The stone obtained was used in the construction
+  of a faceted curtain wall, entered by a simple and poorly defended gate passage on the west
+  side adjacent to the keep. Against the north wall a hall measuring 21m x c.7m; only the
+  lower walls of this survive, at this time the keep was also heightened by adding a second
+  floor. In the outer bailey excavation evidence has shown a small masonry building existed
+  at this period before being demolished under a later lime kiln, in turn underlying the extent
+  standing walls of a later medieval courthouse, or possibly chapel, measuring c. 14m x 6.5m.
+  The remains of another building from this last period, of a similar size but unknown function
+  are situated on the south east side of the inner ward.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape and of particular significance in preserving its primary form to an exceptional
+  degree. It retains significant archaeological potential, with a strong probability of the
+  presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive. The stepping stones are scheduled separately.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2234
+source_title: Scheduled Monument Full Report — Ogmore Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

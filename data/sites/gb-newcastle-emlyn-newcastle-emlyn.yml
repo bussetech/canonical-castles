@@ -12,30 +12,42 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument CM085 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: >-
+      Cadw report CM085, which defines a castle as "a defended residence or
+      stronghold... in which the principal or sole defence comprises the walls
+      and towers bounding the site", records a twin-towered gateway c.7.6m high,
+      a corner tower and a steep banked barbican with bank and ditch — active
+      enclosing defence meant to be held for a lordly castle, meeting both
+      halves.
 register_entries:
 - register: gb-wls-cadw
   ref: CM085
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=671
 first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+last_updated: '2026-07-22'
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=671
   title: Cof Cymru - National Historic Assets of Wales
   publisher: Cadw
   date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  note: Register entry; original bulk-import source.
+- url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=671
+  title: Scheduled Monument Full Report — Newcastle Emlyn Castle
+  publisher: Cadw
+  date: '2026-07-22'
+  note: Full designation report; the evidence for the assessed verdict.
 signals:
 - sig-20260721-cadw-cm085
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-cm085
+notes: >-
+  Upgraded from bulk register import to assessed against Cadw's full
+  scheduled-monument report (sig-20260722-report-cm085). fortified_residence
+  assessed yes from the twin-towered gateway and barbican and the report's own
+  definition of a defended residence/stronghold; residential fabric is
+  described only generically, but the active enclosing defence carries the
+  verdict. All other bands omitted (unassessed). Confidence medium — one
+  official report plus the register.

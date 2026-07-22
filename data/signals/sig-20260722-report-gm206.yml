@@ -1,0 +1,118 @@
+id: sig-20260722-report-gm206
+site_id: gb-tongwynlais-coch
+attribute: designation_report
+value: 'Reference Number
+
+  GM206
+
+  Name
+
+  Castell Coch
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Cardiff
+
+  Community
+
+  Tongwynlais
+
+  Easting
+
+  313082
+
+  Northing
+
+  182654
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The following provides a description of the Scheduled Ancient Monument.
+
+  This monument comprises the remains of a medieval castle and much later Victorian Gothic-style
+  castle. Situated on a natural ledge of Carboniferous Limestone at the mouth of the Taff
+  gorge, Castell Coch ‘the red castle’ commands a highly visible and defensive position.
+
+  The original medieval castle consisted of a substantial earth and timber structure built
+  after the Norman Conquest (1066). Subsequently, in the 13th century the strategic value
+  of the site was to be recognised by the Clare lords of Glamorgan. It was the Clares – probably
+  no later than 1290 – who were to develop the powerful stone fortress over the earlier defences.
+  It is during their tenure of the castle that the only medieval mention of Castell Coch –
+  castrum rubeum or the red castle – appears in 1307.
+
+  The fortification of the site began with a massive earthen motte some 34m across the base
+  and about 9.1m high. The later masonry sits atop this earthwork core. On the south side,
+  flanking the hall, are two large round towers – the Kitchen and Keep Towers. Adjoining the
+  south-east tower (Keep Tower) is a rectangular gatehouse and next to this a short stretch
+  of curtain wall leads to a third round tower (Well Tower) on the north-east side. From here,
+  back to the south-west tower (Kitchen Tower) there is a substantial length of curving curtain
+  wall. Following the construction of the earthen motte it seems likely that it was next clad
+  in a masonry ‘apron’ – which covers the otherwise exposed sections of the motte – before
+  the shell keep was raised on top.
+
+  It is assumed from structural evidence that the castle was destroyed militarily in the early
+  14th century, probably during the Welsh rebellions in Glamorgan between 1314 and 1316. Its
+  walls and towers were to decline into almost total obscurity.
+
+  It was not until the late Victorian period that a castle at Castell Coch would rise again.
+  In the summer of 1875, John Patrick Crichton-Stuart (1847-1900), third marquess of Bute
+  employed the eccentric genius of William Burges (1827-1881), to create the Gothic fairytale
+  castle that can be seen today.
+
+  The Victorian castle comprises three towers with courtyard. Entrance into the castle is
+  via a working drawbridge over the moat. The gatehouse contains a portcullis and double doors
+  which lead onto the courtyard. The courtyard is enclosed by curtain walls which incorporate
+  sections of the original medieval masonry. The Kitchen Tower is raised over two stone-vaulted
+  medieval rooms and contains the kitchen and Lady Margaret’s Bedroom. This room, belonging
+  to the eldest daughter of Lord and Lady Bute, contains a suite of cream furniture based
+  on simplified Burges designs.
+
+  The Keep Tower, the tallest and most impressive of the three towers, is built over a vaulted
+  medieval basement. It contains the Drawing Room – a lavish galleried vaulted chamber containing
+  original furnishings. It is dominated by the statues of the Three Fates on the chimney-piece
+  and decorated with scenes from Aesop’s Fables. Above the Drawing Room is Lady Bute’s Bedroom
+  – a sumptuous red and gold domed chamber, decorated with ‘Sleeping Beauty’ imagery containing
+  equally splendid furniture.
+
+  Lord Bute’s Bedroom can be found in a room at the top of the gatehouse originally designed
+  to house the winding mechanism for the portcullis and drawbridge. This rather spartan room
+  was converted to a bedroom when the Keep Tower was redesigned. Located between the Kitchen
+  Tower and Keep Tower is the Banqueting Hall – the first of Burges’s ‘Castellan’s rooms’
+  and the only room to be furnished and decorated before his death in 1881. The walls are
+  decorated with murals depicting the martyrdom of St Lucius and his sister, and family portraits.
+  Below the Banqueting Hall lies the large vaulted chamber of the Lower Hall.
+
+  The Well Tower is raised over a stone-vaulted basement and contains the castle’s well. It
+  is likely to be the earliest of the three medieval towers. Originally, a small projecting
+  chapel was constructed at roof level but was later removed. In the basement is the Dungeon
+  – cleverly designed with two small windows from which shafts of light meet at the centre
+  of the floor.
+
+  This monument is of national importance for its potential to enhance our knowledge of medieval
+  warfare and castle-building practices and Victorian era Gothic-style architecture. The scheduled
+  area comprises the remains described and an area around them within which related evidence
+  may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3377
+source_title: Scheduled Monument Full Report — Castell Coch
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

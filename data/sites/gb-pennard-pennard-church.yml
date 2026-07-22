@@ -12,30 +12,32 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument GM044 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: "Stone curtain wall and a gatehouse the report calls a copy of substantial Edwardian gatehouses such as Caerphilly, built within a 12th-c ringwork — an actively defensible work; a demesne manor of the lords of Gower where the court of the lordship was occasionally held — a lordly residence. Both halves met despite the comparatively light defences."
 register_entries:
 - register: gb-wls-cadw
   ref: GM044
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3757
 first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+last_updated: '2026-07-22'
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3757
-  title: Cof Cymru - National Historic Assets of Wales
+  title: Scheduled Monument Full Report — Pennard Castle & Church
   publisher: Cadw
   date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  note: Full designation report; the sole source, assessed against the definition bands.
 signals:
 - sig-20260721-cadw-gm044
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-gm044
+notes: 'Assessed from Cadw''s full scheduled-monument report (GM044), which replaces
+  the register-derived verdict. Only fortified_residence is assessed: the report gives
+  a curtain wall, a gatehouse copying Caerphilly, and lordly tenure (lords of Gower).
+  enclosure_fortification is OMITTED — the 12th-c ringwork phase is excluded from that
+  band because the site has an identified lordly residence. palatial_seat, state_fortification,
+  revival_folly and popular_castle are OMITTED: the report speaks to none of them, and
+  it gives no usage evidence for popular standing. Confidence medium: one official
+  report plus the register. The bundled church is a separate structure on the site,
+  not assessed against the castle bands.'

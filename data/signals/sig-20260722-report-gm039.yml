@@ -1,0 +1,85 @@
+id: sig-20260722-report-gm039
+site_id: gb-neath-neath
+attribute: designation_report
+value: 'Reference Number
+
+  GM039
+
+  Name
+
+  Neath Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Neath Port Talbot
+
+  Community
+
+  Neath
+
+  Easting
+
+  275364
+
+  Northing
+
+  197801
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a castle dating to the medieval period. Neath Castle
+  was one of the minor Norman castles in the lordship of Glamorgan. The Normans chose this
+  strategic spot, guarding the river crossing, for a stronghold. The main surviving feature
+  of the castle is the great twin-towered gatehouse on its west side. This belongs to the
+  latest phase in its 250 year history.
+
+  The first castle was a castle-ringwork known to have been built here in the 12th century
+  by Robert, earl of Gloucester. The roughly oval, raised enclosure to the east of the gatehouse
+  probably dates from this period. The castle was much harried by the Welsh, and was rebuilt
+  in stone some time in the early 13th century, possibly after being destroyed by Llywelyn
+  ab Iorwerth in 1231. The ruined curtain wall is part of this castle, although it has been
+  much modified since. It had two projecting round towers, the stump of one of which is visible
+  on the east side. There was a simple gatehouse on the site of the present one, and the flight
+  of steps well below the present ground level in front of the present gatehouse led up to
+  this 13th century one.
+
+  The castle was again severely damaged in 1321-2 by enemies of the unpopular lord of Glamorgan,
+  Hugh le Despenser. It was the 14th century rebuilding after this attack that gave it its
+  magnificent gatehouse. Only the fronts of the great D-shaped towers and the arch between
+  them survive. The steps of the old gateway, now uncovered again, were buried and a drawbridge
+  used instead. Blocked windows and the springing of the arch over the gateway still retain
+  their dressed Sutton stone surrounds which contrast nicely with the dark local sandstone
+  of the walls. Jutting out from the front of the right-hand tower is the broken end of the
+  town wall. In the interior of the castle, the foundations of buildings now only remain.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices.The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2855
+source_title: Scheduled Monument Full Report — Neath Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

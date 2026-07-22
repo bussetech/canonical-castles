@@ -12,30 +12,38 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument GM255 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: >-
+      A motte-and-bailey castle — a sub-rectangular mound divided by a broad
+      ditch and girdled by a deep V-shaped ditch, with drystone structures on
+      top — raised during the late-13th-century border dispute between the lords
+      William de Breos and Rhys Fychan; the report notes only temporary
+      occupation, but the form and lordly context are those of a private
+      fortified work.
 register_entries:
 - register: gb-wls-cadw
   ref: GM255
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3573
-first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+first_seen: "2026-07-21"
+last_updated: "2026-07-22"
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3573
   title: Cof Cymru - National Historic Assets of Wales
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: "2026-07-22"
+  note: Scheduled-monument register entry and full designation report; the source assessed for the band verdict.
 signals:
 - sig-20260721-cadw-gm255
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-gm255
+notes: >-
+  Assessed 2026-07-22 from Cadw's full scheduled-monument report
+  (sig-20260722-report-gm255). fortified_residence upgraded to assessed on the
+  motte-and-bailey form (a castle type this band includes) and its lordly
+  frontier context; the report's note of "only temporary occupation" weakens the
+  residence half but does not negate the character of a lord's fortified work.
+  enclosure_fortification omitted — this is a lorded motte-and-bailey, not an
+  unlorded hillfort/ringfort. All other bands omitted — the report does not speak
+  to popular usage, palatial conversion, revival, or state tenure.

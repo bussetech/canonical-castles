@@ -1,0 +1,84 @@
+id: sig-20260722-report-mm159
+site_id: gb-monmouth-monmouth
+attribute: designation_report
+value: 'Reference Number
+
+  MM159
+
+  Name
+
+  Monmouth Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Monmouthshire
+
+  Community
+
+  Monmouth
+
+  Easting
+
+  350678
+
+  Northing
+
+  212895
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a castle, dating to the medieval period. Monmouth
+  Castle was built between 1067 and 1071 by William Fitz Osbern, close consellor of William
+  the Conqueror, as part of the Norman campaign to control Wales and the Marches. The earliest
+  castle would have been of earth and timber construction, later fortified in stone. The only
+  surviving elements of the medieval castle are the ruins of the Great Tower and Hall.
+
+  The Great Tower, built sometime before 1150, was a fine early Norman rectangular two-storeyed
+  building, similar to the Great Tower at Chepstow castle. It would have comprised a hall
+  and appartments on the first floor and a cellar below. The castle was held uneventfully
+  by the Norman lods as the headquarters of an independent lordship until 1267 when it was
+  granted, along with the Three Castles (White, Grosmont and Skenfrith) to Edmund Crouchback,
+  son of Henry III, when he became Duke of Lancaster. Edmund built a large single storey rectangular
+  structure to the south of the Great Tower, known as the Hall, which was used for holding
+  courts up until the 17th century. In addition to these two rectangular structures the castle
+  originally had a large circular keep, a gatehouse and a curtain wall, all of which were
+  destroyed during the Civil War. The keep is famous as the probable birthplace of the future
+  Henry V on 16th September 1387.
+
+  During the Civil War, the castle changed hands three times and was eventually destroyed
+  by the Parliamentarians. A local man''s diary for 30th March 1647 records that townsmen
+  and soldiers began pulling down the round tower, and that on the 22nd December of that year
+  it finally fell down ''upon one side, whilst we were all at sermon''. The site of the round
+  tower is now occupied by Great Castle House.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2393
+source_title: Scheduled Monument Full Report — Monmouth Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.
