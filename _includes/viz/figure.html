@@ -1,0 +1,21 @@
+{%- comment -%}
+  Figure wrapper: title, one-line subtitle, and a note beneath.
+
+  The subtitle states what the reader should take from the figure — Few's rule
+  that a display exists to answer a question, not to present a dataset.
+
+  Open a figure with title/sub, emit the marks, then call it again with
+  close=true to render the note and shut the section. NOTE: Liquid parses tags
+  even inside comment blocks, so this file deliberately carries no literal
+  include example — one here broke the build.
+
+  Params: title, sub, note, close
+{%- endcomment -%}
+{%- if include.close -%}
+  {%- if include.note %}<p class="viz__note">{{ include.note }}</p>{% endif -%}
+</section>
+{%- else -%}
+<section class="viz">
+  <h3 class="viz__title">{{ include.title }}</h3>
+  {%- if include.sub %}<p class="viz__sub">{{ include.sub }}</p>{% endif -%}
+{%- endif -%}

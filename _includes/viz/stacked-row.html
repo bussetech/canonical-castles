@@ -1,0 +1,43 @@
+{%- comment -%}
+  Ordered part-to-whole in one line. Up to three segments, dark → light, in a
+  fixed order that carries meaning (best-evidenced first, or least-severe first).
+
+  Segments are separated by a 2px gap of page ground, never by a drawn border.
+  Because the lightest step sits below 3:1 against the surface, EVERY segment is
+  direct-labelled in the value column — the colour is a comparison aid, and the
+  text carries the meaning.
+
+  NOTE: every internal variable is prefixed `_s`. Liquid includes share the
+  caller's scope, so a bare `assign a` here silently overwrites the caller's `a`
+  — and, worse, an `assign b` clobbers a caller's `for b in ...` loop variable.
+  That produced six identical 100% bars before it was caught.
+
+  Params:
+    label   (required)
+    sub     (optional)
+    a,b,c   (required a) segment values, in fixed order
+    a_label,b_label,c_label  (optional) names for the printed breakdown
+    total   (optional) defaults to a+b+c
+{%- endcomment -%}
+{%- assign _sa = include.a | default: 0 -%}
+{%- assign _sb = include.b | default: 0 -%}
+{%- assign _sc = include.c | default: 0 -%}
+{%- assign _tot = include.total -%}
+{%- unless _tot -%}{%- assign _tot = _sa | plus: _sb | plus: _sc -%}{%- endunless -%}
+{%- assign _pa = 0 -%}{%- assign _pb = 0 -%}{%- assign _pc = 0 -%}
+{%- if _tot > 0 -%}
+  {%- assign _pa = _sa | times: 1.0 | divided_by: _tot | times: 100 -%}
+  {%- assign _pb = _sb | times: 1.0 | divided_by: _tot | times: 100 -%}
+  {%- assign _pc = _sc | times: 1.0 | divided_by: _tot | times: 100 -%}
+{%- endif -%}
+<div class="viz-row">
+  <div class="viz-row__label">{{ include.label }}{% if include.sub %}<small>{{ include.sub }}</small>{% endif %}</div>
+  <div class="viz-stack" role="presentation">
+    {%- if _sa > 0 %}<div class="viz-stack__seg viz-bar" style="width: {{ _pa }}%"></div>{% endif -%}
+    {%- if _sb > 0 %}<div class="viz-stack__seg viz-bar viz-bar--muted" style="width: {{ _pb }}%"></div>{% endif -%}
+    {%- if _sc > 0 %}<div class="viz-stack__seg viz-bar viz-bar--faint" style="width: {{ _pc }}%"></div>{% endif -%}
+  </div>
+  <div class="viz-row__value">
+    {{ _sa }}{% if _sb > 0 or _sc > 0 %} <small>· {{ _sb }}{% if _sc > 0 %} · {{ _sc }}{% endif %}</small>{% endif %}
+  </div>
+</div>

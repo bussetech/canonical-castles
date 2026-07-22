@@ -57,6 +57,10 @@ Local checks: `PYTHON=.venv/bin/python bash scripts/check-integrity.sh`.
   — adoption is by register ref not file path; adopted means untouched; deletion
   requires a positive `register-derived` marker, never the absence of one. Three
   separate bugs in one day all resolved in the machine's favour by default.
+- [`docs/viz.md`](docs/viz.md) — the four `_includes/viz/` primitives behind
+  `/figures/`. Project-agnostic and theme-bound; `max` must be shared across a
+  figure, and include internals are `_`-prefixed because Liquid includes share
+  the caller's scope.
 - [`docs/roadmap.md`](docs/roadmap.md) — what is planned, and what is
   deliberately not (Ireland's 31,431 ringforts, the three open bands, the four
   blocked cells). Read the "deliberately not planned" section before adding

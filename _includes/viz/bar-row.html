@@ -1,0 +1,35 @@
+{%- comment -%}
+  One labelled bar. Magnitude against a shared maximum.
+
+  Params:
+    label   (required) the row label
+    sub     (optional) small print under the label
+    value   (required) the number
+    max     (required) the scale maximum — SHARED across every row in a figure,
+            so bars are comparable along a straight edge. Never per-row.
+    display (optional) pre-formatted value text; defaults to `value`
+    detail  (optional) small print after the value
+    tone    (optional) "" | "muted" | "faint"
+
+  The value is always printed. A bar is a comparison aid, never the only way to
+  read a number.
+{%- endcomment -%}
+{%- comment -%}
+  Internals are `_`-prefixed: Liquid includes share the caller's scope, so a
+  bare `assign pct` here would overwrite a caller's variable of that name.
+
+  No minimum-width floor. Where magnitudes span orders the short bars are
+  honestly short — that disparity is usually the finding, and padding it would
+  hide the thing worth seeing. The value column always carries the number.
+{%- endcomment -%}
+{%- assign _pct = 0 -%}
+{%- if include.max and include.max > 0 -%}
+  {%- assign _pct = include.value | times: 1.0 | divided_by: include.max | times: 100 -%}
+{%- endif -%}
+<div class="viz-row">
+  <div class="viz-row__label">{{ include.label }}{% if include.sub %}<small>{{ include.sub }}</small>{% endif %}</div>
+  <div class="viz-track" role="presentation">
+    <div class="viz-bar{% if include.tone %} viz-bar--{{ include.tone }}{% endif %}" style="width: {{ _pct }}%"></div>
+  </div>
+  <div class="viz-row__value">{{ include.display | default: include.value }}{% if include.detail %} <small>{{ include.detail }}</small>{% endif %}</div>
+</div>

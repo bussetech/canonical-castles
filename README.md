@@ -35,6 +35,7 @@ stated criteria define ~6,594 Wikidata items and it publishes 2,435 of them.
 
 ## Documents
 
+- [Figures](https://castles.bussetech.com/figures/) — the shape of the data ([how they are built](docs/viz.md))
 - [Roadmap](docs/roadmap.md) — what is planned, and what is deliberately not
 - [ADR 0001](docs/decisions/0001-importers-do-not-own-human-judgement.md) — importers seed records, they do not own them
 - [Founding proposal](docs/founding/) — the founder gnome's proposal, preserved, with an as-built delta
