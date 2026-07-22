@@ -12,30 +12,34 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument MM274 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: contested
+    assessment: assessed
+    basis: "Cadw MM274 cuts both ways — the moated enclosure, gatehouse and round corner tower offered 'a degree of security' but 'more importantly' formed 'a suitably imposing show façade', with curtain walls under 1.5m thick and under 4m high, a postern lacking a draw-bar hole and a tower opening that is 'not an arrow loop'; genuine defensibility and decorative fortification are both argued in the report."
+  palatial_seat:
+    verdict: "yes"
+    assessment: assessed
+    basis: "Cadw MM274 calls Pencoed a 'towering early to mid-16th century embattled mansion of the Morgan family', among the best-preserved Tudor mansions in Wales, whose castle-form gatehouse and curtain walls form a show façade and status statement rather than serious defence."
+  revival_folly:
+    verdict: "no"
+    assessment: assessed
+    basis: "A 16th-century embattled mansion incorporating earlier medieval fabric and offering some real if modest defence — a symbolic status statement within the era, not a post-defensive sham castle or picturesque folly."
+disputed: true
+dispute_note: "Cadw's report both states the walls offered 'a degree of security' and stresses they 'more importantly' formed an imposing show façade, describing thin curtain walls, a postern without a draw-bar hole and a tower opening that is not an arrow loop. A militarist reading takes Pencoed as a genuinely fortified residence; a revisionist reading takes it as an essentially palatial embattled mansion whose fortification is display."
 register_entries:
 - register: gb-wls-cadw
   ref: MM274
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3884
-first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+first_seen: "2026-07-21"
+last_updated: "2026-07-22"
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3884
   title: Cof Cymru - National Historic Assets of Wales
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: "2026-07-21"
+  note: Register entry and full scheduled-monument report; the sole source for this record.
 signals:
 - sig-20260721-cadw-mm274
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-mm274
+notes: "Upgraded from register-derived to assessed against Cadw report MM274. The report cuts both ways on defensibility, so fortified_residence is contested (disputed flag set). palatial_seat is supported — an embattled Tudor mansion of the Morgan family whose castle-form fabric is a show façade. revival_folly is no — a 16th-century embattled residence with earlier medieval fabric and some real defence, a symbolic statement within the era rather than a post-defensive sham. popular_castle and the remaining bands are unassessed."

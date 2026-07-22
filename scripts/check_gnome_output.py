@@ -28,6 +28,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import pathlib
 import subprocess
 import sys
 
@@ -54,15 +55,24 @@ def main() -> int:
     ap.add_argument("--against", default="main", help="ref the run started from")
     args = ap.parse_args()
 
+    # Both committed and uncommitted changes. A gnome's output is applied into
+    # the working tree and checked BEFORE it is committed — reading the "after"
+    # side from a ref would compare main against itself and call every record an
+    # echo, which is exactly what this checker did on its first live run.
     changed = subprocess.run(
         ["git", "diff", "--name-only", args.against, "--", "data/sites"],
+        capture_output=True, text=True, check=True).stdout.split()
+    changed += subprocess.run(
+        ["git", "ls-files", "--others", "--exclude-standard", "data/sites"],
         capture_output=True, text=True, check=True).stdout.split()
 
     faults: list[str] = []
     ok = 0
     for path in changed:
         before = at_ref(args.against, path)
-        after = at_ref("HEAD", path) or yaml.safe_load(open(path).read())
+        # The WORKING TREE is the after side, always.
+        f = pathlib.Path(path)
+        after = yaml.safe_load(f.read_text()) if f.is_file() else None
         if before is None or after is None:
             continue
 

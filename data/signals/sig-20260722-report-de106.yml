@@ -1,0 +1,74 @@
+id: sig-20260722-report-de106
+site_id: gb-holt-holt
+attribute: designation_report
+value: 'Reference Number
+
+  DE106
+
+  Name
+
+  Holt Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Wrexham
+
+  Community
+
+  Holt
+
+  Easting
+
+  341124
+
+  Northing
+
+  353769
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The following provides a general description of the scheduled ancient monument.
+
+  The monument consists of the remains of a castle, dating to the medieval period. A castle
+  is a defended residence or stronghold, built mainly of stone, in which the principal or
+  sole defence comprises the walls and towers bounding the site. Some form of keep may have
+  stood within the enclosure but these were not significant in defensive terms and served
+  mainly to provide accommodation.  Holt Castle was built between 1282-1311 and demolished
+  between 1675-83. The surviving remains include an irregular pentagon of walls, about 20-24m
+  across set upon and against a boss of natural rock. The castle is reached by a causeway
+  from the north, and is raised about 10m proud the expansive floor of a quarry that has subsumed
+  any traces of ditches, moats or out-works. Old prints and plans show that the present remains
+  represent a courtyard around which were ranges of apartments within a towered curtain. There
+  are associated fishponds about 600m to west.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2940
+source_title: Scheduled Monument Full Report — Holt Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

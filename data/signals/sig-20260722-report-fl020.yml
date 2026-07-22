@@ -1,0 +1,75 @@
+id: sig-20260722-report-fl020
+site_id: gb-hope-caergwrle
+attribute: designation_report
+value: 'Reference Number
+
+  FL020
+
+  Name
+
+  Castell Caergwrle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Flintshire
+
+  Community
+
+  Hope
+
+  Easting
+
+  330697
+
+  Northing
+
+  357212
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a castle, dating to the medieval period.  A castle
+  is a defended residence or stronghold, built mainly of stone, in which the principal or
+  sole defence comprises the walls and towers bounding the site.  Some form of keep may have
+  stood within the enclosure but these were not significant in defensive terms and served
+  mainly to provide accommodation.
+
+  Caergwrle Castle was erected by Dafydd ap Gruffydd in about 1278, and was thus the last
+  native Welsh stone built castle.  The castle was then held and refurbished by Edward I (1282).  The
+  castle is defended on the north and east sides by a rock-cut ditch and counterscarp bank.  The
+  castle was destroyed by fire on 27th August 1282.  The remains of the late thirteenth century
+  masonry castle are set at the south-south-west angle of an irregular enclosure defining
+  the relatively level summit of a steep-sided hill. Excavation demonstrated that this enclosure,
+  roughly 110m north-west to south-east by 120m, had been defined by a stone-revetted wall,
+  radio-carbon dating indicating an early medieval date.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices.  The monument is well-preserved and an important relic of the medieval
+  landscape.  It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3086
+source_title: Scheduled Monument Full Report — Castell Caergwrle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

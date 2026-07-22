@@ -14,11 +14,11 @@ bands:
   closure: enumerable
   held:
     assessed:
-      'yes': 44
+      'yes': 49
       'no': 9
-      contested: 8
+      contested: 9
     register_derived:
-      'yes': 4607
+      'yes': 4601
       'no': 0
       contested: 0
     unassessed: 0
@@ -50,35 +50,35 @@ bands:
   closure: open
   held:
     assessed:
-      'yes': 7
+      'yes': 8
       'no': 11
       contested: 1
     register_derived:
       'yes': 0
       'no': 0
       contested: 0
-    unassessed: 4649
+    unassessed: 4648
 - definition: revival_folly
   closure: open
   held:
     assessed:
       'yes': 2
-      'no': 33
+      'no': 34
       contested: 0
     register_derived:
       'yes': 0
       'no': 0
       contested: 0
-    unassessed: 4633
+    unassessed: 4632
 - definition: popular_castle
   closure: open
   held:
     assessed:
-      'yes': 17
+      'yes': 18
       'no': 3
       contested: 4
     register_derived:
       'yes': 0
       'no': 0
       contested: 0
-    unassessed: 4644
+    unassessed: 4643
