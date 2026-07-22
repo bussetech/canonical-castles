@@ -14,11 +14,11 @@ bands:
   closure: enumerable
   held:
     assessed:
-      'yes': 6
+      'yes': 11
       'no': 9
       contested: 8
     register_derived:
-      'yes': 4645
+      'yes': 4640
       'no': 0
       contested: 0
     unassessed: 0
@@ -74,11 +74,11 @@ bands:
   closure: open
   held:
     assessed:
-      'yes': 9
+      'yes': 10
       'no': 3
       contested: 4
     register_derived:
       'yes': 0
       'no': 0
       contested: 0
-    unassessed: 4652
+    unassessed: 4651

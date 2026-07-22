@@ -12,30 +12,36 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument GM358 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: >-
+      Cadw report GM358 records a castle or fortified house on an artificially
+      levelled rectangular platform defended on west and south by steep natural
+      slopes and across the north and part of the east by a constructed ditch, with
+      a rectangular residential building (14m by 12m) and an abutting courtyard.
+      Defence and a lordly residence coincide on one site, satisfying both halves.
 register_entries:
 - register: gb-wls-cadw
   ref: GM358
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=318
 first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+last_updated: '2026-07-22'
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=318
   title: Cof Cymru - National Historic Assets of Wales
   publisher: Cadw
   date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  note: Register entry and full scheduled-monument report; the assessment source.
 signals:
 - sig-20260721-cadw-gm358
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-gm358
+notes: >-
+  Assessed 2026-07-22 against Cadw scheduled-monument full report GM358
+  (sig-20260722-report-gm358); fortified_residence upgraded to assessed. Defence
+  here is modest (turf-covered walls, ditch, natural slopes) but coincides with a
+  clear residential building, and the register frames it as "castle or fortified
+  house". enclosure_fortification NOT assessed — an identified lordly residence
+  excludes it from that band. popular, palatial, revival and state bands OMITTED,
+  unspoken to by the report. Confidence medium: single official report plus register.

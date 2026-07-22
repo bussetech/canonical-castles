@@ -1,0 +1,77 @@
+id: sig-20260722-report-cd008
+site_id: gb-aberystwyth-aberystwyth
+attribute: designation_report
+value: 'Reference Number
+
+  CD008
+
+  Name
+
+  Aberystwyth Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Ceredigion
+
+  Community
+
+  Aberystwyth
+
+  Easting
+
+  257958
+
+  Northing
+
+  281522
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a castle, dating to the medieval period. A castle
+  is a defended residence or stronghold, built mainly of stone, in which the principal or
+  sole defence comprises the walls and towers bounding the site. Some form of keep may have
+  stood within the enclosure but these were not significant in defensive terms and served
+  mainly to provide accommodation. Aberystwyth Castle is a concentric-walled lozenge-plan
+  castle measuring c.80m north-south by c.45m wide, built of coursed rubble masonry. It has
+  a dry moat to the west and round towers to the inner and outer wards. There is an inner
+  gate tower to the west with an outer gate beyond. The twin apsidal tower gateway has a pointed
+  entrance, portcullis chase, crenellated parapet and splayed stair turret. There is a dungeon
+  to the southwest and a mural tower on the south side of the inner ward. Work on Aberystwyth
+  Castle commenced in 1277 under Edward I; it was taken by the Welsh in 1282 while still unfinished,
+  and was completed (by the English again) in 1289. By 1636 the castle was largely ruinous
+  and in 1637 a Royal Mint was established by Thomas Bushell in the castle hall. Around 1790
+  the ground in front of the castle was laid out in a series of walks by John Probert; this
+  area is now partly covered by St. Michael’s Church. The castle remains have been much restored
+  and now form part of a public park.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=764
+source_title: Scheduled Monument Full Report — Aberystwyth Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

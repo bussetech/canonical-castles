@@ -1,0 +1,103 @@
+id: sig-20260722-report-gm063
+site_id: gb-bridgend-newcastle
+attribute: designation_report
+value: 'Reference Number
+
+  GM063
+
+  Name
+
+  Newcastle Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Bridgend
+
+  Community
+
+  Bridgend
+
+  Easting
+
+  290239
+
+  Northing
+
+  180078
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a castle dating to the medieval period. Newcastle
+  is strategically placed on a high bluff above the Ogmore Valley guarding the river crossing
+  below. The original castle, first mentioned in 1106, marked the western limit of Robert
+  Fitzhamon''s conquests. It is thought to have been an earthwork castle of ringwork type,
+  and its location is unknown. It could have been on the site of the present castle, in which
+  case its palisade may have underlain the later stone curtain wall. The round-cornered stone
+  building, the foundations of which are visible in the south-east corner of the interior,
+  could, on stylistic grounds, date from this initial phase, and might have been a keep; in
+  the 19th century a stony mound was recorded here which was interpreted by G.T. Clark as
+  the ruins of a free-standing keep. Rebuilding in stone probably took place during an unsettled
+  phase in the 1180s, when the king himself, Henry II, held the castle. The layout and style
+  of stonework are of this period, and the fact that it was in royal hands would explain its
+  superior quality.
+
+  Apart from refurbishments in the south tower in the late 16th century the castle is virtually
+  untouched since the late 12th century: in 1217 it was given to the Turbeville, Lords of
+  Coity, who had little use for it as their main seat was nearby Coity Castle. The castle''s
+  most outstanding feature is its complete Norman doorway, which is on the south. It is late
+  12th century, contemporary with the curtain wall. On the inside it is quite plain, but the
+  outside is given fine decorative treatment. Sutton stone is used, as it is for the high-quality
+  ashlar facing still in place around it, and also for all other quoins and dressings in the
+  castle. A round-headed arch over attached columns with crude ionic capitals frames the doorway,
+  around which is a shallower segmental arch surrounded by sunken rectangular panels and ''pellet''
+  decoration. This is a rare survival from the period, and no other decoration of the kind
+  is known in Glamorgan. The steps in front are modern.
+
+  Once inside the curtain wall it becomes apparent that it is a courtyard castle. It is roughly
+  circular in plan, with two mural towers built into the curtain wall on the south and west
+  sides, and originally a few buildings on the edge of the north and east sides. The curtain
+  wall, which was built in straight sections, is impressive and stands to its full height
+  on the west side. On the outside it was strongly battered at the base, and this batter is
+  still visible, although most of the facing stone has gone from the lower parts of the walls,
+  and from all of the east wall.
+
+  The square mural towers were a new development in military planning when built, but were
+  soon to be superseded by round towers. The south tower is the better preserved, standing
+  in parts three storeys high. It was much altered for domestic use in the late 16th century,
+  when Tudor windows and fireplaces were inserted. Only the ground floor of the west tower
+  survives. Very fragmentary foundations of a detached building at the north end, and the
+  more complete foundations of two buildings against the east curtain wall are visible. The
+  small, northernmost one of these is thought to be early 13th century, while the larger,
+  southernmost one is possibly the keep of the initial phase.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=4354
+source_title: Scheduled Monument Full Report — Newcastle Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

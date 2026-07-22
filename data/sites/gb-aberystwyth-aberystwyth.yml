@@ -12,30 +12,37 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument CD008 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: >-
+      Cadw report CD008 describes a concentric-walled castle with a twin-apsidal
+      tower gateway carrying a pointed entrance, portcullis chase and crenellated
+      parapet, round flanking towers to inner and outer wards, a mural tower and a
+      dry moat — active defence built to be held, not merely a wall. A Royal Mint
+      was later established "in the castle hall", evidencing the residential hall
+      of the royal builder Edward I; a royal lord is still a lord under this band.
 register_entries:
 - register: gb-wls-cadw
   ref: CD008
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=764
 first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+last_updated: '2026-07-22'
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=764
   title: Cof Cymru - National Historic Assets of Wales
   publisher: Cadw
   date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  note: Register entry and full scheduled-monument report; the assessment source.
 signals:
 - sig-20260721-cadw-cd008
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-cd008
+notes: >-
+  Assessed 2026-07-22 against Cadw scheduled-monument full report CD008
+  (sig-20260722-report-cd008); fortified_residence upgraded from register-derived
+  to assessed. Other bands OMITTED: the report does not speak to palatial, revival,
+  enclosure or state character. popular_castle left unassessed — the report shows
+  the remains now form a public park but cites no visitor operation, WHS status or
+  comparable evidence of popular standing, and a name is not usage. Confidence
+  medium: a single official report plus the register.
