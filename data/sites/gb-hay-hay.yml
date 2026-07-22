@@ -13,11 +13,38 @@ built:
 definitions_met:
   fortified_residence:
     verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument BR076 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    assessment: assessed
+    basis: 'A substantial ringwork with a circular enclosure and a stone keep on its summit,
+      held by the de Braose lords — an identified lordly residence, which is what routes a
+      ringwork into this band rather than the enclosure one. Defensibility is documented in
+      use, not merely in form: captured and burnt by King John in 1216, rebuilt by Henry III,
+      and recorded as defensible against the Welsh in 1403.'
+  palatial_seat:
+    verdict: 'yes'
+    assessment: assessed
+    basis: A later and separate phase. In the 1660s large sections of the medieval apartments
+      were demolished to make way for a new mansion, and the curtain wall was progressively
+      taken down partly to improve the views from it. Defence was dismantled in favour of
+      amenity.
+  enclosure_fortification:
+    verdict: 'no'
+    assessment: assessed
+    basis: The ringwork has an identified lordly residence and a stone keep, which the band's
+      own criterion routes to fortified_residence.
+  state_fortification:
+    verdict: 'no'
+    assessment: assessed
+    basis: Seigneurial and dynastic — de Braose, Lancaster, Stafford, Buckingham. Crown involvement
+      is as captor and restorer, not as commissioning power.
+  revival_folly:
+    verdict: 'no'
+    assessment: assessed
+    basis: Genuine medieval fabric with a genuine post-medieval mansion; neither is castle-form
+      built for effect.
+  popular_castle:
+    verdict: 'yes'
+    assessment: assessed
+    basis: Named and open as Hay Castle, a well-known visitor attraction in Hay-on-Wye.
 register_entries:
 - register: gb-wls-cadw
   ref: BR076
@@ -25,17 +52,22 @@ register_entries:
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=1734
 first_seen: '2026-07-21'
 last_updated: '2026-07-21'
-confidence: low
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=1734
   title: Cof Cymru - National Historic Assets of Wales
   publisher: Cadw
   date: '2026-07-21'
   note: Register entry; the sole source for this record.
+- url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=1734
+  title: Scheduled Monument Full Report — Hay Castle
+  publisher: Cadw
+  date: '2026-07-22'
+  note: 'The designation text: fabric, defensive features, period and documentary history.
+    The evidence these verdicts were assessed against.'
 signals:
 - sig-20260721-cadw-br076
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+notes: 'ASSESSED against the six band criteria on 2026-07-22, reading Cadw''s full designation
+  report rather than transcribing the register row. This record was previously a bulk import
+  carrying one register-derived verdict at confidence: low; it now carries a verdict per band,
+  each with a basis that engages that band''s criterion, and the importer no longer owns it.'

@@ -13,11 +13,36 @@ built:
 definitions_met:
   fortified_residence:
     verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument PE001 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    assessment: assessed
+    basis: 'The medieval phase meets the criterion: three towered ranges set about a courtyard,
+      a great hall flanked by two great towers on spurred bases, a walled forecourt, an outer
+      court and a gatehouse — active defence organised around the residence of the de Carew
+      lords, on a ridge commanding a tidal river crossing.'
+  palatial_seat:
+    verdict: 'yes'
+    assessment: assessed
+    basis: A later phase, and simultaneously true. After 1480 Rhys ap Thomas remodelled the
+      castle into 'a comfortable Tudor palace with additions intended to achieve a more contemporary,
+      uniform and decorative whole', and Sir John Perrot later REMOVED the northeast tower
+      and north curtain to build a great north range. Defensive fabric was demolished to make
+      a residence of display — the clearest possible evidence for this band.
+  state_fortification:
+    verdict: 'no'
+    assessment: assessed
+    basis: Held privately throughout — Gerald of Windsor, the de Carews, Rhys ap Thomas, Perrot.
+  enclosure_fortification:
+    verdict: 'no'
+    assessment: assessed
+    basis: Earlier prehistoric fortification is noted on the site, but the monument assessed
+      here is the masonry castle built over it, not the enclosure work.
+  revival_folly:
+    verdict: 'no'
+    assessment: assessed
+    basis: Genuine medieval and Tudor fabric, not a post-defensive-era build in castle form.
+  popular_castle:
+    verdict: 'yes'
+    assessment: assessed
+    basis: Named and operated as Carew Castle, a major Pembrokeshire visitor attraction.
 register_entries:
 - register: gb-wls-cadw
   ref: PE001
@@ -25,17 +50,22 @@ register_entries:
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2078
 first_seen: '2026-07-21'
 last_updated: '2026-07-21'
-confidence: low
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2078
   title: Cof Cymru - National Historic Assets of Wales
   publisher: Cadw
   date: '2026-07-21'
   note: Register entry; the sole source for this record.
+- url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2078
+  title: Scheduled Monument Full Report — Carew Castle
+  publisher: Cadw
+  date: '2026-07-22'
+  note: 'The designation text: fabric, defensive features, period and documentary history.
+    The evidence these verdicts were assessed against.'
 signals:
 - sig-20260721-cadw-pe001
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+notes: 'ASSESSED against the six band criteria on 2026-07-22, reading Cadw''s full designation
+  report rather than transcribing the register row. This record was previously a bulk import
+  carrying one register-derived verdict at confidence: low; it now carries a verdict per band,
+  each with a basis that engages that band''s criterion, and the importer no longer owns it.'

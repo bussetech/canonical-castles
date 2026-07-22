@@ -13,11 +13,36 @@ built:
 definitions_met:
   fortified_residence:
     verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument RD029 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    assessment: assessed
+    basis: 'Meets both halves of the criterion on the designation evidence. Active defence:
+      a curtain wall still standing to c.1.9m, round towers of c.6m diameter at each corner,
+      a ditch on three sides, and an entrance broken by a causeway across it. Lordly residence:
+      slight traces of internal buildings, and Walter Hakelutel received a LICENCE TO CRENELLATE
+      by 1285 — the documentary class Coulson reads as a royal acknowledgement of private
+      seigneurial status rather than a military permission, which is precisely what this band
+      means by a lord''s fortified residence.'
+  enclosure_fortification:
+    verdict: 'no'
+    assessment: assessed
+    basis: The primary work is a masonry castle with an identified lord, not an enclosure
+      whose bank or wall is itself the monument. The band explicitly routes any site with
+      an identified lordly residence to fortified_residence instead.
+  state_fortification:
+    verdict: 'no'
+    assessment: assessed
+    basis: Seigneurial, not state. Built by or for Walter Hakelutel in the wake of Llywelyn
+      ap Gruffudd's defeat; a licence to crenellate is the crown acknowledging a private work,
+      not commissioning or garrisoning one.
+  palatial_seat:
+    verdict: 'no'
+    assessment: assessed
+    basis: No palatial phase at any point. The castle is not recorded beyond the 14th century
+      and the masonry was already crumbling; nothing was rebuilt here as a residence of display.
+  revival_folly:
+    verdict: 'no'
+    assessment: assessed
+    basis: Genuine late-13th-century defensive fabric, securely dated to c.1284-5. Nothing
+      here was built in castle form after the defensive era for effect.
 register_entries:
 - register: gb-wls-cadw
   ref: RD029
@@ -25,17 +50,22 @@ register_entries:
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=1916
 first_seen: '2026-07-21'
 last_updated: '2026-07-21'
-confidence: low
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=1916
   title: Cof Cymru - National Historic Assets of Wales
   publisher: Cadw
   date: '2026-07-21'
   note: Register entry; the sole source for this record.
+- url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=1916
+  title: Scheduled Monument Full Report — Aberedw Castle
+  publisher: Cadw
+  date: '2026-07-22'
+  note: 'The designation text: fabric, defensive features, period and documentary history.
+    The evidence these verdicts were assessed against.'
 signals:
 - sig-20260721-cadw-rd029
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+notes: 'ASSESSED against the six band criteria on 2026-07-22, reading Cadw''s full designation
+  report rather than transcribing the register row. This record was previously a bulk import
+  carrying one register-derived verdict at confidence: low; it now carries a verdict per band,
+  each with a basis that engages that band''s criterion, and the importer no longer owns it.'

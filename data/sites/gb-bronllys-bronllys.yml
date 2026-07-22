@@ -13,11 +13,30 @@ built:
 definitions_met:
   fortified_residence:
     verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument BR008 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    assessment: assessed
+    basis: A motte up to 8m high with inner and outer baileys, initially with timber defences
+      and later a stone tower on the motte, battered at the base and entered at first-floor
+      level with a room on each floor. Lordly throughout — built for Richard fitz Pons and
+      inherited by the Cliffords with the lordship of Cantref Selyf. Accommodation and defence
+      in the same work, which is the criterion.
+  enclosure_fortification:
+    verdict: 'no'
+    assessment: assessed
+    basis: A motte-and-bailey castle of the Norman conquest period with a named lord, not
+      an enclosure work standing as the primary monument.
+  state_fortification:
+    verdict: 'no'
+    assessment: assessed
+    basis: Built by a Norman marcher lord after the conquest of Brecknock. Crown tenure at
+      intervals is inheritance and forfeiture, not a state military commission.
+  palatial_seat:
+    verdict: 'no'
+    assessment: assessed
+    basis: Said to be beyond repair by 1521; no phase of palatial rebuilding.
+  revival_folly:
+    verdict: 'no'
+    assessment: assessed
+    basis: Genuine late-11th or early-12th-century foundation.
 register_entries:
 - register: gb-wls-cadw
   ref: BR008
@@ -25,17 +44,22 @@ register_entries:
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=1705
 first_seen: '2026-07-21'
 last_updated: '2026-07-21'
-confidence: low
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=1705
   title: Cof Cymru - National Historic Assets of Wales
   publisher: Cadw
   date: '2026-07-21'
   note: Register entry; the sole source for this record.
+- url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=1705
+  title: Scheduled Monument Full Report — Castell Bronllys
+  publisher: Cadw
+  date: '2026-07-22'
+  note: 'The designation text: fabric, defensive features, period and documentary history.
+    The evidence these verdicts were assessed against.'
 signals:
 - sig-20260721-cadw-br008
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+notes: 'ASSESSED against the six band criteria on 2026-07-22, reading Cadw''s full designation
+  report rather than transcribing the register row. This record was previously a bulk import
+  carrying one register-derived verdict at confidence: low; it now carries a verdict per band,
+  each with a basis that engages that band''s criterion, and the importer no longer owns it.'

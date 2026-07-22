@@ -82,3 +82,78 @@ Build `<country>-<place>-<name>`, lowercase, ASCII, hyphenated:
   especially when it appears in another castle dataset. Record it with reasons.
 - **False positives from other datasets.** Being wrong somewhere else is a
   reason to have a record here, not a reason to omit one.
+
+
+## Assessment mode — turning a register transcription into a verdict
+
+The task above resolves SIGNALS into records. This section covers a second,
+distinct job: reading a designation report for a structure this dataset already
+holds, and replacing its `register-derived` verdict with `assessed` ones.
+
+The input is one official document per structure — Cadw's full scheduled-monument
+report, or an equivalent. It carries fabric, defensive features, period, and
+often documentary history. That is the evidence. Nothing outside it may be used:
+if the report does not support a verdict, the band is OMITTED, not guessed.
+
+### Rules, in order of how often they matter
+
+**1. Omit any band the report does not speak to.** This is the most common
+correct outcome and the easiest to get wrong. A report describing masonry and a
+ditch supports `fortified_residence`; it says nothing about whether the public
+calls the place a castle. Omission means unassessed, which is a true statement.
+Setting `no` because the report is silent is a false one.
+
+**2. `popular_castle` needs usage evidence, not a name.** A register calling
+something "X Castle" is one body's naming convention, not proof of popular
+usage. Assess this band only where the report shows real public standing — a
+World Heritage citation, a visitor operation, a monument everybody has heard of.
+For an obscure earthwork, leave it unassessed. Being eager here inflates the one
+band that has no register to check it against.
+
+**3. Several bands can be `yes` at once, for different phases.** This is normal
+and is what the band model is for. A castle later rebuilt as a country seat is
+`fortified_residence: yes` AND `palatial_seat: yes`. The strongest evidence for
+the second is defensive fabric being REMOVED for amenity — a curtain wall taken
+down to improve a view, a tower demolished to build a residential range.
+
+**4. `contested` when the report itself argues both ways.** Not when you are
+unsure — when the evidence genuinely cuts both directions. If a designation says
+a monument was built "not as a defensive structure" while describing a great
+tower, a gatehouse and a walled court, that is contested, and the basis should
+quote both halves. Set `disputed: true` and write `dispute_note`.
+
+**5. The basis must engage the criterion in ITS terms.** Name the feature and
+say which half of the test it satisfies: wall walks, parapets, flanking fire, a
+gatehouse meant to be held, an identified lord. "It is clearly a castle" is not
+a basis and CI rejects anything under 20 characters. Quote the report where it
+states a definition of its own — those are the best sentences available.
+
+**6. Refuse thin reports.** Some designation texts are placeholders — one of the
+greatest castles in Wales carries the entire text "This description is in the
+process of being updated." Under ~400 characters of substance, produce NO
+verdicts for that structure and say so. A famous name is not evidence.
+
+**7. Confidence is corroboration, not certainty.** One official report plus the
+register is `medium`. Do not write `high` on a single source however emphatic it
+is. Confidence and `assessment` are different axes: `assessment` says who applied
+the criterion, `confidence` says how well evidenced it is.
+
+### Worked example
+
+Raglan is the reference case. Cadw states it was built "not as a defensive
+structure, but as a fortress-palace" whose great tower "mimicked the keeps of
+earlier medieval castles" as "the ultimate status symbol" — while describing a
+Great Tower, a gatehouse, a closet tower and a walled court. The correct output
+is `fortified_residence: contested` (quoting both halves in the basis),
+`palatial_seat: yes` (the register's own word is "fortress-palace"),
+`revival_folly: no` (15th century, within the defensive era — a SYMBOLIC castle
+is not a SHAM one), `popular_castle: yes` (a major operated monument), and
+`disputed: true` with a dispute_note naming both readings.
+
+### Output
+
+For each structure, emit only `definitions_met`, `confidence`, and — when
+contested — `disputed` and `dispute_note`. Everything else on the record is
+carried forward by deterministic code. Setting `assessment: assessed` on a band
+transfers ownership of that record away from the importer permanently, so do it
+only where the report actually supports the verdict.
