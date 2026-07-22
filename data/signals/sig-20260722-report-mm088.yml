@@ -1,0 +1,114 @@
+id: sig-20260722-report-mm088
+site_id: gb-llangattock-vibon-avel-skenfrith
+attribute: designation_report
+value: 'Reference Number
+
+  MM088
+
+  Name
+
+  Skenfrith Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Monmouthshire
+
+  Community
+
+  Llangattock-Vibon-Avel
+
+  Easting
+
+  345679
+
+  Northing
+
+  220309
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a castle, dating to the medieval period located
+  on level ground immediately alongside the River Monnow, which provided it with wet defences
+  and a means of transport. Skenfrith is one of the Three Castles (with White Castle (MM006)
+  and Grosmont Castle (MM007), administering a single lowland Marcher lordship. A castle may
+  have originally been established here as early as 1070 by William Fitz Osbern although its
+  form is unknown. Evidence for the early castle was found through excavation in the form
+  of Romanesque architectural fragments, pottery and associated deposits. The present castle
+  was built by Hubert de Burgh between 1219 and 1232 and comprises a substantial raised, roughhly
+  rectangular earthwork platform enclosed by high curtain walls with boldly projecting round
+  corner towers, a central round keep and timber framed domestic ranges against the curtain
+  walls.  The whole was set within a broad, stone lined wet moat, now mostly back-filled and
+  fed by the river, which still periodically washes the east curtain wall. Excavation has
+  demonstrated that a very large outer enclosure alongside the Monnow to the north incorporated
+  a substantial masonry wharf. This enclosure may have extended to the west to include the
+  12th century and later parish church and early village core.
+
+  The main entrance has largely been destroyed but the limited architectural remains and early
+  engravings indicate that it was a simple archway set high above the base of the curtain
+  wall. A smaller postern or water gate in the east curtain led directly onto the river bank.
+  As at White Castle and Grosmont de Burgh''s curtain walls were windowless but retain most
+  of their wall-walks and joist holes for timber hourding at this level and steps up to the
+  rear of the towers. There is limited joist hole evidence for the timber ranges that backed
+  onto them, sections of their foundations having been revealed by excavation; the exposed
+  remains of an oven can be seen in the north-eastern area of the courtyard. The corner towers
+  had flared bases and were entered at first floor level with rooms lit by plain arrow loops
+  over featureless basements that were probably accessed by ladders and used for storage.
+  Most of the outer section of the north-west tower has been destroyed. The central keep stands
+  on a low mound shown by excavation to have been formed over its base rather than the remnant
+  of an earlier motte. It was of two stories above a battered plinth and projecting string
+  course and was entered at first floor level with a projecting circular turret containing
+  a newel stair to the upper rooms and ladder access through the floor to an unlit basement.
+  Both upper rooms contain fireplaces with projecting hoods, the first floor probably forming
+  a reception room or private hall and the upper a well-appointed chamber with a latrine and
+  corbelled-out oriel window facing east. A series of rectangular holes at the wall head have
+  been interpreted as evidence of a timber gallery or defensive hourd. The north-western range
+  was rebuilt in stone in the late 13th or early fourteenth century; only its excavated basement,
+  dug into the earthwork platform survives with the stub of a fine chamfered and pyramidal
+  stopped doorway into the lost room above. The basement retains similar architectural details
+  including simple rectangular windows, one with surviving iron bars and shutter hinges. At
+  the same time a solid semi-circular tower was added mid-way along the western curtain wall.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive and domestic architecture. It shares group value with the other castles of the
+  Trilateral, White and Grosmont, the three collectively forming key sites in the development
+  of the medieval castle in the first half of the thirteenth century as the innovative works
+  of a leading magnate that were little-altered in the later medieval period. The round keep
+  is one of a discrete concentration of broadly contemporary towers across the southern Welsh
+  Marches, sharing a series of distinctive architectural features with others including its
+  first-floor entrance, high battered plinth, string course (Tretower, Bronllys) and projecting
+  turret (Longtown, Caldicot). Skenfrith is a good example of a valley bottom site, utilising
+  the Monnow to provide extensive wet defensive and to provide riverine transport both directly
+  into the castle and on a larger scale via the wharf in the outer enclosure.The monument
+  is well-preserved and an important relic of the medieval landscape, forming a distinctive
+  manorial group with the fine parish church and present village, which formerly held borough
+  status.  It retains significant archaeological potential, with a strong probability of the
+  presence of both structural evidence and intact associated deposits from multiple phases
+  of construction. The low-lying site is likely to favour the preservation of waterlogged
+  deposits, artefacts and environmental evidence.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=586
+source_title: Scheduled Monument Full Report — Skenfrith Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

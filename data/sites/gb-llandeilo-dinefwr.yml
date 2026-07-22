@@ -12,30 +12,32 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument CM029 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: "The seat of the Welsh rulers of Deheubarth (built by Rhys Gryg, d. 1233) and by Edward I's wars 'a formidable fortress' — a great round keep, a high angular curtain wall, a gatehouse, an entrance passage protected by a high wall, and a defensive bank with a deep rock-cut ditch; a fortified lordly residence."
+  revival_folly:
+    verdict: "no"
+    assessment: assessed
+    basis: "A genuine medieval fortress later romanticised — the keep top was converted to an 18th-century summer-house for Picturesque views — not a structure built as a sham; original defensive intent governs."
+  popular_castle:
+    verdict: "yes"
+    assessment: assessed
+    basis: "The keep-top summer-house 'became a famous landmark' and the castle drew 'artists, poets and tourist' in search of the Picturesque and Romantic — evidenced public standing as a visited monument."
 register_entries:
 - register: gb-wls-cadw
   ref: CM029
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=678
-first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+first_seen: "2026-07-21"
+last_updated: "2026-07-22"
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=678
-  title: Cof Cymru - National Historic Assets of Wales
+  title: Scheduled Monument Full Report — Castell Dinefwr
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: "2026-07-22"
+  note: Cadw scheduled-monument full report (CM029); consulted in full for the band assessment.
 signals:
 - sig-20260721-cadw-cm029
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-cm029
+notes: "Bands assessed from Cadw's full scheduled-monument report (CM029). fortified_residence yes (Deheubarth seat, a formidable fortress); revival_folly no (a genuine castle romanticised with summer-houses, not built as a sham); popular_castle yes (famous landmark drawing tourists). palatial_seat omitted — the castle became a picturesque ruin with summer-houses, not a residential palace. enclosure and state bands omitted as unassessed."

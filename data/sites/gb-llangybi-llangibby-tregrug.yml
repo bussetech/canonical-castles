@@ -12,30 +12,24 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument MM109 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: "Built by the de Clare family in the 13th century (thought unfinished after Gilbert de Clare V died at Bannockburn in 1314); a large oblong bailey enclosed by a curtain wall largely complete to battlement level, flanking round towers at the entrance, and a rectangular keep with massive corner towers give active defence, and the keep with its vaulted rooms provided the lordly residence."
 register_entries:
 - register: gb-wls-cadw
   ref: MM109
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=365
-first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+first_seen: "2026-07-21"
+last_updated: "2026-07-22"
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=365
   title: Cof Cymru - National Historic Assets of Wales
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: "2026-07-21"
+  note: Cadw full scheduled-monument report (MM109); sole source, used for band assessment.
 signals:
 - sig-20260721-cadw-mm109
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-mm109
+notes: "Bands assessed against Cadw's full scheduled-monument report (MM109). fortified_residence upgraded from register-derived to assessed — a battlemented curtain wall, flanking round towers at the entrance and a rectangular corner-towered keep for defence, and the keep's vaulted rooms for the de Clare residence. The report notes the castle may have been unfinished, but the standing keep and defended bailey satisfy both halves. Other bands omitted. One official report, so confidence is medium."

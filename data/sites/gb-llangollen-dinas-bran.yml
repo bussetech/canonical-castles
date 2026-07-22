@@ -11,31 +11,29 @@ location:
 built:
   period: Medieval
 definitions_met:
+  enclosure_fortification:
+    verdict: "yes"
+    assessment: assessed
+    basis: "A later prehistoric (probably Iron Age) univallate hillfort crowns the steep isolated summit, its rampart enclosing an undulating interior with visible possible hut sites and a probable south-west entrance — a defended enclosure with no identified lordly residence."
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument DE021 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: "A stone castle built in the 1260s by the lords of Powys Fadog occupies the hillfort's north-west corner; a rock-cut ditch, a keep well preserved on its south and west, an intermittent curtain wall and a typically Welsh apsidal tower give active defence, and the great hall or chapel with surviving arched windows housed the lord."
 register_entries:
 - register: gb-wls-cadw
   ref: DE021
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2300
-first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+first_seen: "2026-07-21"
+last_updated: "2026-07-22"
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2300
   title: Cof Cymru - National Historic Assets of Wales
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: "2026-07-21"
+  note: Cadw full scheduled-monument report (DE021); sole source, used for band assessment.
 signals:
 - sig-20260721-cadw-de021
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-de021
+notes: "Bands assessed against Cadw's full scheduled-monument report (DE021), which describes two phases. enclosure_fortification: yes for the Iron Age univallate hillfort on the summit; fortified_residence: yes for the 1260s stone castle of the lords of Powys Fadog built into the hillfort's north-west corner. Both hold at once — this is not an inconsistency but the two-phase site the report documents. Other bands omitted; the report does not speak to popular usage, palatial conversion, or folly. One official report, so confidence is medium."

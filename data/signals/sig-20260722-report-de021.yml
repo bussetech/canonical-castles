@@ -1,0 +1,74 @@
+id: sig-20260722-report-de021
+site_id: gb-llangollen-dinas-bran
+attribute: designation_report
+value: 'Reference Number
+
+  DE021
+
+  Name
+
+  Castell Dinas Bran
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Denbighshire
+
+  Community
+
+  Llangollen
+
+  Easting
+
+  322330
+
+  Northing
+
+  343037
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument comprises the remains of a later prehistoric (probably Iron Age) hillfort,
+  constructed on the summit of a steep isolated hill where the Dee Valley is joined by the
+  Horseshoe Pass from the north.  The hillfort is univallate, with a probable entrance in
+  the southwest.  A number of possible hut sites are visible in the undulating interior of
+  the hillfort.  A medieval stone-built castle was later constructed during the 1260s by the
+  lords of Powys Fadog, in the northwest corner of the hillfort.  A rock-cut ditch surrounds
+  the castle in the south and the east.  The south and west sides of the keep are well preserved.  The
+  curtain wall survives intermittently, with remains of a typically Welsh apsidal tower in
+  the middle of the south side.  Traces of buildings in the west probably represent workshops,
+  accommodation and stabling.  The arched windows of the great hall or chapel survive to the
+  east of the apsidal tower.
+
+  The monument is of national importance for its potential to enhance our knowledge of later
+  prehistoric, and medieval defensive organisation and settlement. The site forms an important
+  element within the wider later prehistoric and medieval context and within the surrounding
+  landscape. The site is well preserved and retains considerable archaeological potential.
+  There is a strong probability of the presence of evidence relating to chronology, building
+  techniques and functional detail.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2300
+source_title: Scheduled Monument Full Report — Castell Dinas Bran
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

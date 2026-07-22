@@ -13,30 +13,32 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument CM003 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: "Strong masonry castle of the de Brian lords — a stone curtain wall with two round towers, the NW tower acting as a keep, and a late-13th-century forward-projecting gatehouse with a defended entrance passage and postern; a fortified private lordly residence."
+  palatial_seat:
+    verdict: "yes"
+    assessment: assessed
+    basis: "In 1575 Sir John Perrot converted it into a comfortable Tudor mansion — the north curtain between the two round towers was demolished for a residential accommodation block, the wall heightened with mock battlements, and ranges built round a cobbled courtyard with a fountain and gardens; defensive fabric removed for amenity."
+  revival_folly:
+    verdict: "no"
+    assessment: assessed
+    basis: "A genuine 12th–14th-century defensive castle later slighted and left a romantic ruin, not a structure built as a sham; the mock battlements are a Tudor cosmetic addition and the original intent was defensive."
 register_entries:
 - register: gb-wls-cadw
   ref: CM003
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3078
-first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+first_seen: "2026-07-21"
+last_updated: "2026-07-22"
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3078
-  title: Cof Cymru - National Historic Assets of Wales
+  title: Scheduled Monument Full Report — Laugharne Castle
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: "2026-07-22"
+  note: Cadw scheduled-monument full report (CM003); consulted in full for the band assessment.
 signals:
 - sig-20260721-cadw-cm003
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-cm003
+notes: "Bands assessed from Cadw's full scheduled-monument report (CM003). fortified_residence and palatial_seat both yes for different phases — a de Brian defensive castle later converted by Sir John Perrot into a Tudor mansion; revival_folly no (romanticised, not sham). Other bands omitted as unassessed: the report does not evidence popular usage, an enclosure without a lord, or state-military tenure."

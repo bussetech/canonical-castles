@@ -1,0 +1,73 @@
+id: sig-20260722-report-gm074
+site_id: gb-llantrisant-llantrisant
+attribute: designation_report
+value: 'Reference Number
+
+  GM074
+
+  Name
+
+  Llantrisant Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Rhondda Cynon Taff
+
+  Community
+
+  Llantrisant
+
+  Easting
+
+  304754
+
+  Northing
+
+  183412
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a castle dating to the medieval period. It was built
+  in about 1250 by Richard de Clare, Lord of Glamorgan, to hold this hill district of Meisgyn
+  which he had just wrested from its Welsh overlords. The castle''s strategic and commanding
+  position, guarding an important route from the upland to the lowland zone, is very apparent.
+  The castle stands on a flat-topped blunt spur on the edge of a steep drop to the south.
+  Parts of the spur''s stone revetment are still visible, and ditches separate it from the
+  rest of the ridge top on the east and west sides. The north side of a circular tower, once
+  called the raven (or Gigvran in Welsh), is the main upstanding stonework of the castle.
+  Details on a doorway halfway up it point to a mid 13th century date, and also give an idea
+  of the height of the curtain wall, and the wall-walk of which was originally reached from
+  this doorway. The curtain wall would have skirted the spur, but very little of it survives.
+  On the south-west flank there is the base of a half round projecting tower.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=635
+source_title: Scheduled Monument Full Report — Llantrisant Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

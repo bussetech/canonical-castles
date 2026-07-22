@@ -1,0 +1,83 @@
+id: sig-20260722-report-br057
+site_id: gb-llanddew-llanddew
+attribute: designation_report
+value: 'Reference Number
+
+  BR057
+
+  Name
+
+  Llanddew Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Powys
+
+  Community
+
+  Llanddew
+
+  Easting
+
+  305544
+
+  Northing
+
+  230803
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a castle, dating to the medieval period. The castle
+  at Llanddew belonged to the Bishops of St David''s and was built in the 12th century and
+  was also the residence of the Archdeacon of Brecon from at least the late 12th century.
+  The castle''s most famous occupant was Giraldus Cambrensis, Archdeacon of Brecon, who lived
+  there between 1175 and 1203 and who described it as ''a small residence well adapted to
+  literary pursuits and the contemplation of eternity''. Little remains of the original castle,
+  with the standing structures thought to be 13th or 14th century in date. The remains comprise
+  two sections of curtain wall with the partial remains of two round towers on the SW and
+  NW side of the rectangular ward, with a stretch of ditch or moat along the NE side. The
+  curtain walls are stone built and survive to a maximum height of 2.5m. At the SE end is
+  an arched entrance at 90 degrees to the line of the curtain wall. Around half way along
+  the curtain wall on the SW side is Bishop Gower''s well. This comprises a rectangular recess
+  set into the wall, fronted by a low arch around 1m high, containing a pool of water. The
+  well was built in 1340 and was the main water supply for the village until the 1940s. On
+  the interior of the curtain wall are a set of steps leading down to another arched entrance
+  to the well which would have supplied the castle. Within the castle ward are the remains
+  of a rectangular building with standing walls on three sides. The building measures 11m
+  by 20m and is orientated SW/NE. The walls are stone built and 0.7m thick, surviving to a
+  maximum height of 5m. This building is thought to be a hall block and recent clearance work
+  revealed that it was built over a vaulted cellar. The site was derelict by the mid 17th
+  century and was sold after the Civil War but returned to the see of St David''s after the
+  restoration.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=1724
+source_title: Scheduled Monument Full Report — Llanddew Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

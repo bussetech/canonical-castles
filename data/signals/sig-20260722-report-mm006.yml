@@ -1,0 +1,97 @@
+id: sig-20260722-report-mm006
+site_id: gb-llantilio-crossenny-white
+attribute: designation_report
+value: 'Reference Number
+
+  MM006
+
+  Name
+
+  White Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Monmouthshire
+
+  Community
+
+  Llantilio Crossenny
+
+  Easting
+
+  337944
+
+  Northing
+
+  216773
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a castle, dating to the medieval period, and, with
+  Grosmont (MM007) and Skenfrith (MM088), is one of the Three Castles. White Castle was probably
+  originally of earth and timber construction,
+
+  built shortly after the Norman conquest by William Fitz Osbern to stamp his overlordship
+  on the area. The great mound that the stone castle stands on, its deep surrounding moat
+  and the crescent-shaped hornwork to the south may all have been part of this original castle.
+
+  The stone-built castle is the result of two distinct phases of building, about 100 yeards
+  apart. At the south-eastern end of the inner ward are the immensely thick foundations of
+  the earliest stone building of the castle, a small squarish keep dating from the first half
+  of the 12th century. At this time the stone keep would have been surrounded by a timber
+  curtain wall. The stone curtain wall was built in the 1180s; it had no towers and was faceted,
+  and the entrance was located at the southern end, adjacent to the keep. The next great phase
+  of building was undertaken by the crown in the mid-13th century when the castle was granted
+  to Lord Edward (later Edward I). This was his first castle in Wales, the antecedent to all
+  his magnificent castles in North Wales. Works undertaken by Edward involved demolishing
+  the original keep and reorientating the whole castle so the that the entrance was at the
+  north-western end. A strong gatehouse with two round towers, doors, a portcullis and drawbridge
+  was added at the new northern entrance, and round towers were built onto the angles of the
+  curtain wall. Lastly, the outer ward, which may already have existed in timber with a ditch
+  around it, was walled in stone with towers at the angles and a small gatehouse on the south-east
+  side.
+
+  All through its life the sole purpose of White Castle was military, and as a deterrent it
+  suceeded admirably for it was never attacked. It is austere and functional; only arrowslits
+  pierce the tower walls, and the moat is exceptionally deep and steep-sided. The only civilian
+  concession was a chapel, whose chancel was on the second floor of the south-east tower and
+  whose nave projected into the inner ward. Simple timber-framed buildings ranged along the
+  interior of the east and west curtain walls within the inner ward: the kitchen with its
+  circular oven on the west, the hall, buttery and pantry on the east and a well, private
+  appartment and deep latrine pit to the south. Troops were probably garrisoned in the outer
+  ward in timber buildings, with the troop commander probably lodging in the north-west tower.
+
+  After Edward I''s pacification of Wales the castle remained in use as an administrative
+  centre, but by the 16th century had fallen into ruin.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2957
+source_title: Scheduled Monument Full Report — White Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

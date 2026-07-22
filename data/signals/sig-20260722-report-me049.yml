@@ -1,0 +1,93 @@
+id: sig-20260722-report-me049
+site_id: gb-llanuwchllyn-carn-dochan
+attribute: designation_report
+value: 'Reference Number
+
+  ME049
+
+  Name
+
+  Castell Carn Dochan
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Gwynedd
+
+  Community
+
+  Llanuwchllyn
+
+  Easting
+
+  284705
+
+  Northing
+
+  330660
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The following provides a general description of the Scheduled Monument.
+
+  A Welsh castle, probably built by Llywellyn ap Iorwerth between 1215 and 1230.  It is situated
+  on a rocky summit above the Lliw valley, at the NE end of a ridge, with superb views.  The
+  remains consist of a curtain wall, with three towers built into its line, and a central
+  tower.  A rock-cut ditch (which may also have served as a quarry) forms a further defence
+  from the ridge on the SW side. To the SW of the ditch is the base of a limekiln, presumably
+  used in the production of mortar during construction of the castle walls.
+
+  The simple entrance is in the S curtain wall, against the E wall of the apsidal tower.
+
+  The apsidal tower at the W end is of coursed, mortared masonry, and built to a higher standard
+  than the rest of the masonry.  The E wall stands 1.5 m high from the E side, with well-preserved
+  masonry, but on the interior the inner wall face has fallen away from the upper courses.  In
+  the SE corner the rubble has been dug away to expose the wall to a height of 2.5 - 3 m.  The
+  N wall contains a 2-m wide break.  The apsidal W end, standing just over 1 m high, appears
+  partly corbelled at the upper levels.  Much of the inner face of the wall has fallen away.
+
+  The N curtain wall is a low, grass-covered stone wall, with parts of the inner face visible
+  in the centre of its length.
+
+  The round tower at the NE end is dug into solid rock on the S, E and W sides.  The remaining
+  masonry is poor and uncoursed.
+
+  The S curtain wall is a low, grass-covered stone wall, incorporating a D-shaped tower at
+  its S end, close to the entrance.
+
+  The inner, square tower, is largely obscured by rubble, although the inner face of the N
+  wall is visible to a height of 0.5m.  The remains of a poorly constructed dry-stone wall
+  connects the central tower with the apsidal tower.  Its character is different to any other
+  masonry on the site and may be a later addition.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  settlement and defence.  It retains significant archaeological potential, with a strong
+  probability of the presence of associated archaeological features and deposits.  The structures
+  themselves may be expected to contain archaeological information concerning chronology and
+  building techniques.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3208
+source_title: Scheduled Monument Full Report — Castell Carn Dochan
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

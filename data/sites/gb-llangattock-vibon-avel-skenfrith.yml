@@ -13,30 +13,24 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument MM088 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: "Built by Hubert de Burgh (1219-1232) to administer a Marcher lordship; high curtain walls with boldly projecting round corner towers, arrow loops, retained wall-walks and joist holes for timber hourding, and a broad stone-lined wet moat give active defence, while the central round keep's reception room, well-appointed chamber with latrine and oriel, and timber domestic ranges housed the lord."
 register_entries:
 - register: gb-wls-cadw
   ref: MM088
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=586
-first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+first_seen: "2026-07-21"
+last_updated: "2026-07-22"
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=586
   title: Cof Cymru - National Historic Assets of Wales
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: "2026-07-21"
+  note: Cadw full scheduled-monument report (MM088); sole source, used for band assessment.
 signals:
 - sig-20260721-cadw-mm088
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-mm088
+notes: "Bands assessed against Cadw's full scheduled-monument report (MM088). fortified_residence upgraded from register-derived to assessed — curtain walls with round corner towers, wall-walks, hourding and a wet moat for defence, and the round keep's private hall and chamber for the residence of Hubert de Burgh. Other bands omitted — the report describes fabric and group value but does not speak to popular usage, palatial conversion, or folly. One official report, so confidence is medium."

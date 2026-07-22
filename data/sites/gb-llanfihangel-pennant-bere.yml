@@ -12,30 +12,24 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument ME023 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: "Built by Llywelyn ab Iorwerth of Gwynedd in 1221; large and small apsidal towers, a small round tower overlooking a tiny barbican, complex entrance works, rock-cut ditches and a curtain wall around the inner ward give active defence, while the non-defensive rectangular structures abutting the inner face of the curtain wall housed the residence of a Welsh princely lord."
 register_entries:
 - register: gb-wls-cadw
   ref: ME023
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2458
-first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+first_seen: "2026-07-21"
+last_updated: "2026-07-22"
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2458
   title: Cof Cymru - National Historic Assets of Wales
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: "2026-07-21"
+  note: Cadw full scheduled-monument report (ME023); sole source, used for band assessment.
 signals:
 - sig-20260721-cadw-me023
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-me023
+notes: "Bands assessed against Cadw's full scheduled-monument report (ME023). fortified_residence upgraded from register-derived to assessed — apsidal towers, barbican, rock-cut ditches and curtain wall for defence, and internal rectangular structures for the residence of Llywelyn ab Iorwerth's princely seat. Other bands omitted — the report does not speak to popular usage, palatial conversion, or folly. One official report, so confidence is medium."

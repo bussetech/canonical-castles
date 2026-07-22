@@ -1,0 +1,104 @@
+id: sig-20260722-report-cm004
+site_id: gb-llansteffan-llansteffan
+attribute: designation_report
+value: 'Reference Number
+
+  CM004
+
+  Name
+
+  Castell Llansteffan
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Carmarthenshire
+
+  Community
+
+  Llansteffan
+
+  Easting
+
+  235112
+
+  Northing
+
+  210132
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a castle, dating to the medieval period situated
+  on a high promontory ridge overlooking the Tywi estuary, a location first defended in the
+  6th century BC when a double bank and ditch were thrown across the neck to form a promontory
+  fort. These earthworks were refurbished early in the 12th century when a ringwork and bailey
+  of earth and timber was constructed within them. Built by the Norman Marmion family this
+  castle passed to the de Camvilles and is first mentioned in 1146 when it was captured by
+  the princes Cadell, Maredudd and Rhys of the royal house of Deheubarth. After returning
+  to English hands it fell again to Rhys in 1189, and then again in 1215, when Llywelyn the
+  Great invaded south-west Wales.  The first masonry structures dating to the late 12th and
+  early 13th centuries are probably associated with these attacks. When south Wales was overrun
+  by Llywelyn ab Iowerth prince of Gwynedd in 1257 following the English defeat at the battle
+  of Coed Llathen the castle was captured once more. When the de Camvilles regained control
+  a major remodelling to strengthen it took place. The death of the last male de Camville
+  in 1338 led to a decline in importance and in 1377, it passed into the hands of the Crown.
+  During the Glyndwr uprising in 1405-6 the tenant, Sir John Penres was ordered to strengthen
+  the castle and it may have been captured and held by Glyndwr for a short period.  Later,
+  Henry VII conferred it on his uncle Jasper Tewdwr who held it until his death in 1495. After
+  this, the castles history becomes obscure; parts were in use as an agricultural building
+  as recently as 1860, in 1959 it was taken into state care.
+
+  The castle consists of an inner Upper Ward and outer Lower Ward. The curtain wall of the
+  Upper Ward dates from the first phase of construction, it has a well-preserved square gatehouse
+  on the north which was defended by portcullis and doors.  Some time after this curtain wall
+  was heightened, and in places provided with a wider wall-walk supported on vaults.  The
+  lower courses of a small round tower and remains of other buildings in the ward also date
+  to this 13th-century work. The bailey was fortified in stone in the mid 13th century to
+  form the Lower Ward. This was protected at its most vulnerable points by the building of
+  two strong D-shaped towers on the north and west along with a complex bastion on the east,
+  all inter-linked via a wall-walk. The North Tower was strengthened and being relatively
+  spacious with fireplaces, separate stair and latrine turrets this is likely to have provided
+  the private accommodation for the lord. A hall may have stood on the north-east, though
+  nothing now remains. A little later the separation of the castle into two wards altered
+  with the partial demolition of the inner ward wall. This was followed by the construction
+  of the impressive double-towered gatehouse which dominates the northern side of the castle.
+  Modelled on the East Gate at Caerphilly Castle the gate passage was defended by both front
+  and rear portcullises , two sets of five murder holes in the vault above and conspicuous
+  outer machicolations, a guardroom is situated either side.  Each of the upper floors forms
+  a single great room, both spacious and well appointed despite the lower one having to accommodate
+  the portcullis in its raised position.  The upper of the two rooms probably served as the
+  new private apartment of the lord, the fine, large fireplace on the south wall having decorated
+  ''sconces'', one of which retains its carved female head.  Later in Tudor times the gatehouse
+  passage was blocked as is seen today  and a smaller gate inserted alongside as part of the
+  conversion from a military structure into a comfortable residence.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive and domestic practices. The monument is well-preserved and an important relic
+  of the medieval landscape. It retains significant archaeological potential, with a strong
+  probability of the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=1439
+source_title: Scheduled Monument Full Report — Castell Llansteffan
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

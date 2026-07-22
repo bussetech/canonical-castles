@@ -1,0 +1,115 @@
+id: sig-20260722-report-cm029
+site_id: gb-llandeilo-dinefwr
+attribute: designation_report
+value: 'Reference Number
+
+  CM029
+
+  Name
+
+  Castell Dinefwr
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Carmarthenshire
+
+  Community
+
+  Llandeilo
+
+  Easting
+
+  261203
+
+  Northing
+
+  221739
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The following provides a description of the Scheduled Ancient Monument.
+
+  This monument comprises the remains of a medieval castle probably built by Rhys Gryg (d.
+  1233), son of Rhys ap Gruffudd. Situated upon a rocky crag with commanding views over the
+  wide Tywi Valley, this location is characteristic of Welsh-built stone castles in the early
+  years of the thirteenth century. The castle was of paramount importance in Welsh history
+  as the seat of the Welsh rulers of Deheubarth, the medieval principality of south-west Wales.
+
+  There is nothing in the surviving archaeological evidence to argue for or against there
+  having been a fortification on the site before the time of Rhys ap Gruffud (d. 1197), and
+  the present defensive layout was probably first adopted in his time. By the later twelfth
+  century, two enclosures stood side by side along the rock crag, defined on three open sides
+  by a deep rock-cut ditch. Buildings within the defences would have been of timber or stone,
+  but their form remains unknown.
+
+  What survives in terms of upstanding remains dates largely from the thirteenth century and
+  was the work of Rhys ap Gruffudd’s heirs and successors. The castle consists of an outer
+  ward, inner ward, substantial keep, hall and other buildings. The approach to the castle
+  is from the east - the outer ward being accessed via an outer gate. It is divided into upper
+  and lower terraced areas, a defensive bank and deep rock-cut ditch enclose the lower part
+  of the hilltop. This is where the castle’s domestic and service buildings such as, perhaps,
+  the stables, smithy and bakehouse were sited. The path continues through the fragmentary
+  remains of a middle gate and a long, narrow entrance passage protected by a high wall to
+  the inner gate. Despite considerable alteration during several building phases, the joints
+  of the original, large entrance arch can still be seen in the masonry.
+
+  Inside the inner ward, only the foundations of the gatehouse survive. The inner ward is
+  enclosed by a high, angular curtain wall. Dominating the interior of the castle is the great
+  round keep on the east, with its battered base and heavy roll-moulded string course. The
+  present ground-floor entrance is a later insertion, and the original door was on the first
+  floor. This is now blocked by the later arched bridge leading from the steps. A trapdoor
+  in the floor probably provided the sole access to the large, dark basement. It is now difficult
+  to know now how much taller the keep would have been before it was so drastically modified
+  by the addition of the later summer-house on the top, but it may well have had at least
+  one further storey. The summer-house, with its conical roof, became a famous landmark, and
+  it still retains its door and large windows designed to give splendid views over Dinefwr
+  Park.
+
+  The curtain wall probably continued around the keep on the east but has now fallen, and
+  the walling on the north-east corner is modern. The circular three-storey tower on the north
+  was probably constructed after 1277. It has a latrine on the west side, and a deep basement.
+  The tower and the adjacent rectangular hall, the inner wall of which has now fallen, were
+  substantially modified in the early Tudor period. Of unknown date are the (probably) timber
+  buildings which evidently lay against the curtain wall on the west. Built into the wall
+  on the south is a latrine chamber with a corbelled roof, and adjacent to the gatehouse is
+  a small turret which was transformed into another summer-house in the 18th century.
+
+  The Welsh town of Dinefwr lay in the immediate vicinity of the castle; its precise position
+  is uncertain, though the flat ground just to the north of the castle is a distinct possibility.
+
+  By the time of the Welsh Wars of Edward I (1276-77 and 1282-83), the castle was already
+  a formidable fortress. However, in 1287 the castle was captured by the English. From the
+  late thirteenth through to the fifteenth century, the castle served as a centre of royal
+  authority and administration. Repairs and new building occasionally featured to a greater
+  or lesser extent during this period. Subsequently Dinefwr was to see a new lease of life
+  in the late seventeenth and eighteenth centuries. The top of its keep was converted to a
+  summerhouse as artists, poets and tourist began to visit in search of the Picturesque and
+  Romantic.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  social, domestic and political life and warfare. The scheduled area comprises the remains
+  described and an area around them within which related evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=678
+source_title: Scheduled Monument Full Report — Castell Dinefwr
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

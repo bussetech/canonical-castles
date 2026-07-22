@@ -1,0 +1,92 @@
+id: sig-20260722-report-br014
+site_id: gb-llanfihangel-cwmdu-with-bwlch-cathedine-tretower
+attribute: designation_report
+value: 'Reference Number
+
+  BR014
+
+  Name
+
+  Tretower Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Powys
+
+  Community
+
+  Llanfihangel Cwmdu with Bwlch and Cathedine
+
+  Easting
+
+  318494
+
+  Northing
+
+  221261
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The following provides a description of the Scheduled Ancient Monument.
+
+  This monument comprises the remains of a medieval castle, probably first established in
+  the late 11th or early 12th century. Situated on the northern bank of a small tributary
+  of the river Rhiangoll, the prominence of the castle led to the early village name becoming
+  known as ‘Tretower – the place of the tower’.
+
+  The castle was established by the Picard family who built an earth and timber castle to
+  help strengthen their claim and authority on the area. At its heart was a motte or mound,
+  surrounded by a ditch and presumably crowned by a wooden palisade. To one side stood a bailey,
+  a defended enclosure housing a variety of domestic and agricultural buildings. From this
+  stronghold the Picard family exercised local power and influence for the next two centuries.
+
+  The outer walls of the late 12th century shell keep stand to a considerable height on the
+  southern and western sides. The windows were blocked when the keep was gutted to make way
+  for the circular tower about 1235-50. There was a gatehouse on the south-east side of the
+  keep, retained in the later arrangements, but only its low footings survive.
+
+  A vaulted passage leads to the castle kitchen with its fireplace in the outer wall. Apart
+  from this, the internal layout of the 12th century castle is difficult to envisage. An integrated
+  two-storey hall and chamber block stood in the angle where the outer walls still stand at
+  their highest point. The main rooms were at first floor level, as witnessed by the blocked
+  doors and windows, and by the blocked fireplace in the west wall of the chamber. There was
+  a spiral staircase in the angle turret at the south-west corner.
+
+  The 12th century arrangements were all sacrificed to make way for Roger Picard’s great round
+  tower, although the outer masonry of the keep was retained to serve as a protective curtain
+  wall. The massive four-storey tower has a battered or sloping base, above which the walls
+  are about 2.7m thick. There is structural evidence to suggest that the top of the tower
+  carried a permanent wooden fighting gallery, or hourd. The entrance to the tower was by
+  way of a wooden stair to a doorway at first-floor level. Inside, above the poorly lit basement,
+  each of the principal floors has a large fireplace, and offered comfortable private accommodation
+  for Roger and his wife Matilda. From the second-floor level, a doorway led out to a bridge
+  which linked the tower with the surrounding curtain wall. The topmost floor of the tower
+  has windows but no fireplace.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  social, domestic and political life and warfare. The scheduled area comprises the remains
+  described and an area around them within which related evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=1708
+source_title: Scheduled Monument Full Report — Tretower Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.
