@@ -1,0 +1,76 @@
+id: sig-20260722-report-mg114
+site_id: gb-llandyssil-dolforwyn
+attribute: designation_report
+value: 'Reference Number
+
+  MG114
+
+  Name
+
+  Castell Dolforwyn
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Powys
+
+  Community
+
+  Llandyssil
+
+  Easting
+
+  315166
+
+  Northing
+
+  295014
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The following provides a general description of the scheduled monument.
+
+  The monument consists of the remains of a castle, dating to the medieval period. A castle
+  is a defended residence or stronghold, built mainly of stone, in which the principal or
+  sole defence comprises the walls and towers bounding the site. Some form of keep may have
+  stood within the enclosure but these were not significant in defensive terms and served
+  mainly to provide accommodation. Dolforwyn Castle is situated above the village of Abermule.
+  The fortification was established by Llywelyn ap Gruffudd, Prince of Gwynedd in the late
+  13th century. It is sited on a wooded ridge commanding excellent views of the upper Severn
+  Valley. The original castle consisted of a rectangular keep at the south west end of the
+  platform and a circular tower at the opposite end. The two structures were subsequently
+  connected by ramparts to make a rectangular shaped enclosure with a D-shaped tower on the
+  northern wall. The enclosed area was divided into two wards by a rock-cut ditch. A two-storey
+  structure was built against the north wall. The main gateway into the castle was in the
+  west wall. A smaller entrance was sited in the south wall.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2997
+source_title: Scheduled Monument Full Report — Castell Dolforwyn
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

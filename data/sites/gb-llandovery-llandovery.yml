@@ -12,30 +12,24 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument CM015 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: "A 12th-century motte-and-bailey castle later refortified in stone — a shell keep on the motte, a strong D-shaped tower and a twin-towered gatehouse with a well turret — held by lords such as John Giffard, granted Cantref Bychan by Edward I; a fortified lordly residence."
 register_entries:
 - register: gb-wls-cadw
   ref: CM015
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2095
-first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+first_seen: "2026-07-21"
+last_updated: "2026-07-22"
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2095
-  title: Cof Cymru - National Historic Assets of Wales
+  title: Scheduled Monument Full Report — Llandovery Castle
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: "2026-07-22"
+  note: Cadw scheduled-monument full report (CM015); consulted in full for the band assessment.
 signals:
 - sig-20260721-cadw-cm015
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-cm015
+notes: "Band assessed from Cadw's full scheduled-monument report (CM015). fortified_residence yes — a motte-and-bailey later stone-refortified with a shell keep, D-shaped tower and twin-towered gatehouse, held by lords. Other bands omitted as unassessed: the report shows no palace conversion, folly, popular-usage evidence, enclosure type or state tenure."

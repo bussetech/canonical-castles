@@ -1,0 +1,71 @@
+id: sig-20260722-report-gm085
+site_id: gb-llangynwyd-middle-llangynwyd
+attribute: designation_report
+value: 'Reference Number
+
+  GM085
+
+  Name
+
+  Llangynwyd Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Bridgend
+
+  Community
+
+  Llangynwyd Middle
+
+  Easting
+
+  285137
+
+  Northing
+
+  188692
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument comprises the masonry and earthwork remains of a medieval castle, occupying
+  a strong position on the promontory above the confluence of two streams. The castle is thought
+  to date from the thirteenth century AD, although the earthwork upon which it stands may
+  well be earlier. The outer enclosure probably represents an associated bailey. The castle
+  comprises an impressive gatehouse (probably built c. 1262-3), partially surviving curtain
+  wall and the visible footings of several buildings within. The area covered by the original
+  designation did not relate accurately to the remains on the ground and the scheduled area
+  has been revised in order to rectify the original designation.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive organisation. The monument forms an important element within the wider medieval
+  context and the structure itself may be expected to contain archaeological information in
+  regard to chronology, building techniques and functional detail. The large outer bailey
+  and defensive earthwork may be expected to contain buried archaeological deposits associated
+  with the occupation of the castle.
+
+  The area to be scheduled comprises the remains described and an area around them within
+  which related evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2864
+source_title: Scheduled Monument Full Report — Llangynwyd Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

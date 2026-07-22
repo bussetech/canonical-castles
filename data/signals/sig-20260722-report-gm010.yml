@@ -1,0 +1,76 @@
+id: sig-20260722-report-gm010
+site_id: gb-llanrhidian-lower-weobley
+attribute: designation_report
+value: 'Reference Number
+
+  GM010
+
+  Name
+
+  Weobley Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Swansea
+
+  Community
+
+  Llanrhidian Lower
+
+  Easting
+
+  247820
+
+  Northing
+
+  192729
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a castle, dating to the medieval period. Weobley
+  was established in the 14th century by the de la Bere family; the two earliest phases of
+  construction have been attributed to David de la Bere, c.1304-1327. The earliest surviving
+  work includes the hall, sections of the east curtain wall, and two southern towers. Beneath
+  the hall is a kitchen and to its north east corner a stairs turret rising to a lookout.
+  To the east side is a much altered set of rooms with large fireplaces at ground and first
+  floor levels, and to the west side a solar above store rooms and an entrance gatehouse.
+  The considerable alterations especially at the west side are taken to be a second early
+  phase, implying a decision to reduce the ambitiousness of the plan. In the late 15th century
+  Weobley came into the ownership of Sir Rhys ap Thomas of Dinefwr who improved the house.
+  His work may be taken as a third phase. He improved the entrance to the Great Hall from
+  within the ward by adding a two-storey porch block. The central section of the south range
+  is also attributed to Sir Rhys; this appears to have incorporated a first-floor chapel,
+  but is now ruined. The lordship passed to the Crown under Henry VIII and thence to Sir William
+  Herbert, Earl of Pembroke.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=137
+source_title: Scheduled Monument Full Report — Weobley Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

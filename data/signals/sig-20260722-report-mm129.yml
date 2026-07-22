@@ -1,0 +1,74 @@
+id: sig-20260722-report-mm129
+site_id: gb-llanvaches-llanvaches
+attribute: designation_report
+value: 'Reference Number
+
+  MM129
+
+  Name
+
+  Llanvaches Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Newport
+
+  Community
+
+  Llanvaches
+
+  Easting
+
+  343368
+
+  Northing
+
+  192053
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the earthworks and buried lower walls of a long rectangular hall
+  or tower at the eastern side of a faceted walled enclosure, traditionally held to be a small
+  medieval castle or defended manor house of John Martel mentioned in the 1271 Wentwood Survey.
+  It occupies a low limestone knoll c250m to the north of the parish church and village. The
+  enclosure is sub-rectangular and measures c54m E/W by 42m N/S. It is defined by a spread
+  stony bank between 0.5 and 1.3m high covering a collapsed limestone rubble wall but there
+  is no sign of an external ditch. There is a large, levelled opening in the bank on the NW
+  side that may indicate later disturbance; a break at the SE corner towards the aproach from
+  the villlage along the possible earthworks of a former lane may represent the original entrance.
+  The lack of any antiquarian descriptions, cartographic or pictoral evidence suggests that
+  the site has long been ruinous.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive and domestic architecture. It forms an important relic of the medieval landscape
+  and shares group value with a series of other minor castles, fortified houses and small
+  manors documented in the 1271 Wentwood Survey. It retains significant archaeological potential,
+  with a strong probability of the presence of both structural evidence and intact associated
+  deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2373
+source_title: Scheduled Monument Full Report — Llanvaches Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

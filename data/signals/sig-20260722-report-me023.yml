@@ -1,0 +1,87 @@
+id: sig-20260722-report-me023
+site_id: gb-llanfihangel-pennant-bere
+attribute: designation_report
+value: 'Reference Number
+
+  ME023
+
+  Name
+
+  Castell y Bere
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Gwynedd
+
+  Community
+
+  Llanfihangel-y-Pennant
+
+  Easting
+
+  266779
+
+  Northing
+
+  308550
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The following provides a general description of the Scheduled Monument.
+
+  The monument consists of the remains of a castle, dating to the medieval period.  It occupies
+  a prominent rock outcrop near the head of the Dysynni valley, which at the time the castle
+  was built carried an important route between the coast at Tywyn and Dolgellau.  The castle
+  is thought to have been built by Llewelyn ab Iorwerth of Gwynedd in 1221, to defend the
+  southern borders of his kingdom.  It was captured by Edward I in 1283, after which it was
+  remodelled.  A charter was granted for a borough in 1284, but no more is heard of either
+  castle or borough after a siege during the Welsh rebellion of 1294.  The ground plan displays
+  features, in particular apsidal towers, in common with other Welsh-built castles in north
+  Wales.  There have clearly been alterations to the fabric, in particular the apparent addition
+  of the southern apsidal tower, but these are difficult to date.
+
+  The ground plan of the castle is unusually long and narrow, constrained by the underlying
+  rock.  The masonry remains, which vary considerably in surviving height across the site,
+  consist of a large inner ward, measuring c.60m by 40m overall, reached by complex entrance
+  works on the south-west, with a large apsidal tower (c.18m by 10m externally) at its northern
+  end and a smaller rectangular one (c.15m by 11m externally) at its southern.  On its west,
+  north of the entrance, are the footings of a small round tower (c.10m across externally),
+  overlooking a tiny barbican, while a cistern or well lies immediately inside the entrance.  Traces
+  of further non-defensive rectangular structures abut the inner face of the curtain wall
+  around this ward.  To the south, beyond the rectangular tower, a possible extension to the
+  initial plan includes the ‘ditch yard’ (c.18m by 15m), spanning a stretch of earlier rock-cut
+  ditch, beyond which lies a further large apsidal tower, measuring c.24m by 13m externally.  At
+  points around the outside of the walls, particularly at either end of the ridge, additional
+  stretches of rock-cut ditch survive.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices.  The monument is well-preserved and an important relic of the medieval
+  landscape.  It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2458
+source_title: Scheduled Monument Full Report — Castell y Bere
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

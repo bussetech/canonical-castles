@@ -1,0 +1,68 @@
+id: sig-20260722-report-gm337
+site_id: gb-llanfair-llandough-remains-hall
+attribute: designation_report
+value: 'Reference Number
+
+  GM337
+
+  Name
+
+  Llandough Castle, Remains of Hall
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Vale of Glamorgan
+
+  Community
+
+  Llanfair
+
+  Easting
+
+  299500
+
+  Northing
+
+  172993
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument comprises the remains of a medieval hall. The surviving wall of the hall block
+  may be dated to the late 13th century, but the first substantive period of building dates
+  to the 15th century. Measuring approximately 4m high, it runs NNW-SSE and is 1-1.2m thick.
+  At the northern end is a large fireplace, there is another at the midpoint along the wall,
+  and in the southern end there is another blocked fireplace c. 2.2m high with a small oven
+  built into the wall.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  secular architecture. The monument is a well-preserved example of its type and forms an
+  important element within the wider medieval context. The structure itself may be expected
+  to contain archaeological information in regard to chronology, building techniques and functional
+  detail.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=171
+source_title: Scheduled Monument Full Report — Llandough Castle, Remains of Hall
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

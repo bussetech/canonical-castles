@@ -195,7 +195,7 @@ cells:
   settled_by:
   - gb-wls-cadw
   - hillforts-atlas
-  records_held: 0
+  records_held: 1
   register_count: 287
   note: Cadw gives 287 scheduled hillforts; the Atlas of Hillforts covers Wales within its 4,147 entries.
 - definition: enclosure_fortification

@@ -1,0 +1,81 @@
+id: sig-20260722-report-cm015
+site_id: gb-llandovery-llandovery
+attribute: designation_report
+value: 'Reference Number
+
+  CM015
+
+  Name
+
+  Llandovery Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Carmarthenshire
+
+  Community
+
+  Llandovery
+
+  Easting
+
+  276767
+
+  Northing
+
+  234214
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a castle, dating to the medieval period.  It was
+  originally constructed in the 12th century as a motte and bailey; the motte, a large conical
+  mound was scarped out of a rocky hillock overlooking the Afon Bran and stands c 15m high.
+  The bailey, a sub-rectangular embanked enclosure of c 4.5m high above the surroundings is
+  located to the east. Further outlying banks formerly existed to the south west.  These defences
+  will have been surrounded by wet or dry ditches and possibly strengthened with palisades,
+  revetments, and/or a tower on top of the motte, all of wood. Later in the thirteenth century
+  the castle was refortified in stone and the remains today comprise the footings of a shell
+  keep, a strong D-shaped tower on the west and a twin-towered gatehouse with a well turret
+  to the north together with sections of a curtain wall around the motte.
+
+  The castle had an English foundation and is first mentioned in 1116 when it was attacked
+  by Gruffudd ap Rhys. It fell briefly to the Lord Rhys in 1158 but between 1159 and 1161
+  was extensively repaired by Henry II. Captured again by Lord Rhys in 1162 it remained in
+  Welsh hands for over 100 years figuring between 1195 and 1213 in a series of repeated skirmishes
+  during the dynastic quarrels of the southern Welsh princes. In 1277 it fell to the English
+  king Edward I and remained in English hands except for when temporarily captured by Llywelyn
+  the Last in 1282. The repercussion of this disturbance was the fortification of the castle
+  in stone following the grant of Cantref Bychan by Edward I to John Giffard who had assisted
+  the king in his wars against Llywelyn.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2095
+source_title: Scheduled Monument Full Report — Llandovery Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

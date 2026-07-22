@@ -1,0 +1,106 @@
+id: sig-20260722-report-mm109
+site_id: gb-llangybi-llangibby-tregrug
+attribute: designation_report
+value: 'Reference Number
+
+  MM109
+
+  Name
+
+  Llangibby Castle (Castell Tregrug)
+
+  Date of Designation
+
+  05/09/1950
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Monmouthshire
+
+  Community
+
+  Llangybi
+
+  Easting
+
+  336397
+
+  Northing
+
+  197408
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The following provides a general summary of the Scheduled Ancient Monument.
+
+  The monument consists of the remains of a castle, dating to the medieval period. The castle
+  was built by the De Clare family in the 13th century, but is thought to have been unfinished
+  when Gilbert de Clare V was killed at Bannockburn in 1314. The site consists of a large
+  oblong bailey, 160m long by 80m wide, surrounded by a curtain wall that is largely complete
+  to battlement level. There is an entrance into the bailey at the E end of the site. The
+  entrance is 3.5m wide and has the remains of round towers on either side - the N round tower
+  only survives as a curved wall, while the S tower is complete and stands to a height of
+  5m. The walls of the tower are 3m thick. The curtain wall on the E side survives in short
+  stretches, one to the N of the entrance and three to the S. These sections of curtain wall
+  stand to between 1.2m and 5m high on the inside, and up to 2m higher on the outside, and
+  retain many original facing stones. On the S side of the site, there is a short stretch
+  of curtain wall, 12m long and 3m high, at the E end. To the W of this section of wall is
+  a 50m wide gap before a long stretch of curtain wall. In the gap there is a low scarp. The
+  long section of walling is 30m long and 3.5m high, and has putlog holes for supporting timber
+  buildings on its inside. In the SW corner of the bailey are the remains of a large tower,
+  6m high on the outside, with a large arched opening on the S side and the remains of a spiral
+  staircase. Adjacent to the tower are the remains of a series of room. To the N of this tower
+  is a 20m long, 2.5m wide entrance passage, with standing walls 3.5m high. To the N of the
+  entrance is a round tower, 3.5m high, with a room behind it. A well-preserved doorway survives
+  to the N of the tower. It is 1.8m wide and has a dressed stone wall behind it. To the N
+  of the tower the curtain wall becomes more ruinous and the peters out. In the NW corner
+  are the remains of a rectangular keep with towers at its corners. The tower in the SW corner
+  is massive, 6m high with facing stones surviving for much of its height. The NW corner tower
+  is 5.5m high with most of the facing stones missing. Large sections of fallen walling lie
+  on the ground to the W of the tower. Inside the W end of the rectangular keep are two large
+  arches with two smaller ones on either side. On the S side there are portions of ashlared
+  vaulting on the roof of the room. At the E end there is a large central arch through the
+  keep wall, with round towers on either side, each with an arch into it. The walls are up
+  to 3.5m high and retain much of their faced stone. There is a further vaulted roof in the
+  NE tower, which has a six-sided interior and two steps on the SE side. On the N side of
+  the castle the curtain wall is continuous, 3m high on the inside and 4m high on the outside.
+  There are putlog holes in the N wall and the stonework is in good condition. In the centre
+  of the N side are the remains of a round tower standing 2m high with 2m thick walls. There
+  are gaps in the middle on each side. The curtain wall ends abruptly at the NE corner of
+  the castle.
+
+  On the W side of the castle the ground drops steeply down to a deep ditch, part of which
+  forms a sheer rock face 3m high. Outside the ditch is a narrow berm and a bank, varying
+  in height between 1.6m and 3m. At the S end of the bank there is a gap for a modern track,
+  after which is continues along the S side of the site. On the N side of the castle the ground
+  drops sharply away.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=365
+source_title: Scheduled Monument Full Report — Llangibby Castle (Castell Tregrug)
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

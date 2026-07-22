@@ -1,0 +1,71 @@
+id: sig-20260722-report-mg044
+site_id: gb-llangyniew-mathrafal
+attribute: designation_report
+value: 'Reference Number
+
+  MG044
+
+  Name
+
+  Mathrafal Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Powys
+
+  Community
+
+  Llangyniew
+
+  Easting
+
+  313159
+
+  Northing
+
+  310790
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The following provides a general description of the scheduled ancient monument.
+
+  The monument comprises the remains of a motte and bailey castle, a military stronghold built
+  during the medieval period. A motte and bailey castle comprises a large conical or pyramidal
+  mound of soil or stone (the motte) surrounded by, or adjacent to, one or more embanked enclosures
+  (the bailey). Both may be surrounded by wet or dry ditches and could be further strengthened
+  with palisades, revetments, and/or a tower on top of the motte.  Mathrafal consists of an
+  impressive series of rectangular defences set around the motte, with further protection
+  afforded by the River Banwy to the east .  Excavations suggest these rectangular defences
+  were the result of 13th century refashioning and enlargement of earlier curving defences.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive organisation. The well-preserved monument forms an important element within the
+  wider medieval context and the structure itself may be expected to contain archaeological
+  information relating to chronology, building techniques and functional detail.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2622
+source_title: Scheduled Monument Full Report — Mathrafal Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

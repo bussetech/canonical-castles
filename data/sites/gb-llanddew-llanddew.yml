@@ -12,30 +12,24 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument BR057 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: "An episcopal residence of the Bishops of St David's and seat of the Archdeacon of Brecon (Giraldus Cambrensis lived here 1175–1203), defended by a stone curtain wall with two round flanking towers and a ditch or moat; a fortified residence of an ecclesiastical lord."
 register_entries:
 - register: gb-wls-cadw
   ref: BR057
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=1724
-first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+first_seen: "2026-07-21"
+last_updated: "2026-07-22"
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=1724
-  title: Cof Cymru - National Historic Assets of Wales
+  title: Scheduled Monument Full Report — Llanddew Castle
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: "2026-07-22"
+  note: Cadw scheduled-monument full report (BR057); consulted in full for the band assessment.
 signals:
 - sig-20260721-cadw-br057
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-br057
+notes: "Band assessed from Cadw's full scheduled-monument report (BR057). fortified_residence yes — a fortified episcopal and archdeaconal residence with curtain wall, two round towers and a ditch or moat. Other bands omitted as unassessed: the report shows no palace conversion, folly construction, popular-usage evidence, enclosure type or state tenure."

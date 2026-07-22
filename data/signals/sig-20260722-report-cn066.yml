@@ -1,0 +1,93 @@
+id: sig-20260722-report-cn066
+site_id: gb-llanberis-dolbadarn
+attribute: designation_report
+value: 'Reference Number
+
+  CN066
+
+  Name
+
+  Castell Dolbadarn
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Gwynedd
+
+  Community
+
+  Llanberis
+
+  Easting
+
+  258591
+
+  Northing
+
+  359806
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The following provides a general description of the Scheduled Monument.
+
+  The monument consists of the remains of a castle, dating to the medieval period. A castle
+  is a defended residence or stronghold, built mainly of stone, in which the principal or
+  sole defence comprises the walls and towers bounding the site. Some form of keep may have
+  stood within the enclosure but these were not significant in defensive terms and served
+  mainly to provide accommodation.
+
+  Dolbadarn Castle was one of three castles begun by the Prince of Gwynedd, Llywelyn ap Iorwerth
+  in the early thirteenth century to defend the passes into Snowdonia, together with Dolwyddelan
+  Castle (CN040) and Castell y Bere (ME023). It sits on top of a steep‐sided rocky crag with
+  good views up and down the valley and controlled the main routeway through the Llanberis
+  Pass, and also guarded the economically important cattle pastures of the area.
+
+  The masonry of the castle is of several periods: the earliest work is unmortared and consists
+  of a simple curtain wall enclosing the summit of the rock, within which there were a number
+  of rectangular structures, including a hall, with walls up to 1m thick. There is an access
+  from the NE which comes into the large building on the N ‐ this is presumably original.
+  A large, well-built round tower, with walls 2m thick, is a later addition dating from the
+  1230s. Its first-floor entrance was originally reached by a timber stair and, unusually,
+  the doorway was defended by a portcullis. Inside the tower, beam holes for the two main
+  floor levels can be seen, as well as fireplaces. The basement was reached by a ladder and
+  the second floor and roof via a circular staircase in which the spiral reverses direction
+  halfway up. It is probable that this tower was where Llywelyn ap Gruffudd kept his brother,
+  Owain ap Gruffudd imprisoned for two decades, from 1255 to 1277.
+
+  The castle fell into English hands after the defeat of Llywelyn ap Gruffudd in 1282 and
+  was soon supplanted by Edward I’s new fortification at Caernarfon (CN079), and so was partially
+  dismantled and abandoned. Little is recorded concerning the castle after the early fourteenth
+  century, though there is a suggestion that Owain Glyndwr used the castle to imprison captives
+  circa 1400.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defence. It is a well-preserved and important relic of the medieval landscape. It retains
+  significant archaeological potential, with a strong probability of the presence of associated
+  archaeological features and deposits. The structures themselves may be expected to contain
+  archaeological information concerning chronology and building techniques.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2428
+source_title: Scheduled Monument Full Report — Castell Dolbadarn
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

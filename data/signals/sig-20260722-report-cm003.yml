@@ -1,0 +1,110 @@
+id: sig-20260722-report-cm003
+site_id: gb-laugharne-township-laugharne
+attribute: designation_report
+value: 'Reference Number
+
+  CM003
+
+  Name
+
+  Laugharne Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Carmarthenshire
+
+  Community
+
+  Laugharne Township
+
+  Easting
+
+  230214
+
+  Northing
+
+  210757
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a castle, dating to the medieval period which stands
+  on a low cliff by the side of the Coran stream, overlooking the estuary of the Taf. The
+  castle may be one at Abercorram mentioned in about 1116 as the castle of a Robert Courtemain,
+  but the first definite reference to the Norman castle is in 1189 when, after the death of
+  King Henry II, it was seized by the Lord Rhys, prince of Deheubarth.  It was destroyed by
+  Llywelyn the Great in 1215. This early 12th-century castle was probably a ringwork, with
+  fortifications and buildings made of wood; traces of an important building of this time
+  with a large hearth have been found by excavation.  The castle was remodelled in the second
+  half of the 12th century so that the interior of the ringwork was partially filled in and
+  new defences were constructed with a large rectangular hall built on the north. By the time
+  of a second Welsh attack in 1257 when it was again taken and burnt, the castle was in the
+  ownership of the de Brian family and it was Guy de Brian IV who subsequently began the strong
+  masonry castle present today later improved and repaired by his successors.
+
+  Two strong round towers, were built on the north side of a surrounding stone curtain wall.
+  The north-western tower which has a fine medieval domed roof acted as a keep and protected
+  a simple entrance through the curtain to its south.  A new stone hall was built against
+  the south curtain wall, and if not already in existence, an outer ward to the north was
+  added although probably only with timber defences at this stage.  The defences were further
+  strengthened at the end of the 13th century 2when a forward-projecting gatehouse was built
+  against the earlier entrance into the inner ward.  Constructed over the earlier ditch, the
+  opportunity was taken to incorporate a basement beneath the main entrance passage that has
+  a postern at its front to give access to the edge of the inner ward ditch.  In addition,
+  a new round tower with deep spurs was built at the south-west corner of the inner ward and
+  the defences of the outer ward, including the outer gatehouse, were rebuilt in stone. The
+  castle had so far been constructed entirely in red sandstone, but Guy de Brian VII who inherited
+  the lordship in 1349 set about improving the overall standard of accommodation using a distinctive
+  green stone. The whole south-western corner of the inner ward, including the round tower
+  and the inner gatehouse, was considerably heightened. The south-east corner was remodelled,
+  and a postern door, giving access out to the estuary, was inserted.  Finally, the outer
+  gatehouse was also rebuilt.
+
+  Following Guy de Brian VII’s death in 1390 there followed a long period of decline until
+  in 1575 the castle was granted by Elizabeth I to the dignitary Sir John Perrot who was to
+  convert it into a comfortable Tudor Mansion, as he did also at his main residence at Carew.
+  The old hall against the south curtain wall was completely remodelled and the curtain wall
+  heightened with mock battlements.  Ranges of new buildings extended around the south and
+  east of the inner ward and, on the north, the curtain wall between the two round towers
+  was demolished and replaced by a large rectangular accommodation block with the adjacent
+  north east tower heightened. The upper floors of the accommodation block were reached by
+  a projecting semi-circular stair tower. The Tudor ranges looked over a central cobbled courtyard,
+  on which contemporary accounts record a fountain played.  The inner gatehouse raised to
+  its present height and gardens were laid out in the outer ward.
+
+  The castle was slighted in the Civil War and then left as a romantic ruin during the 18th
+  century. At the turn of the 19th century, the outer ward was laid with formal gardens, a
+  gazebo overlooking the estuary was used in the 1930s and 40s by the author Richard Hughes,
+  who leased Castle House during at this time. Taken into state guardianship in the twentieth
+  century the site was partially excavated and has been extensively reconsolidated.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3078
+source_title: Scheduled Monument Full Report — Laugharne Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.
