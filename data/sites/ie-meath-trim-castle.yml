@@ -18,6 +18,7 @@ definitions_met:
     basis: 'The largest Anglo-Norman castle in Ireland: a genuine fortified private residence
       of a lord, with curtain wall, towers, gatehouses meant to be held, and a great keep
       serving as the lordly residence. Meets both halves of the criterion without strain.'
+    assessment: assessed
   popular_castle:
     verdict: 'yes'
     basis: A major visitor attraction operated and signposted as a castle by the Office of
@@ -37,7 +38,7 @@ definitions_met:
     basis: A genuine medieval build, not a post-defensive-era romantic one.
 register_entries:
 - register: ie-smr
-  ref: ME036-021
+  ref: ME036-048004-
   designation: Castle - Anglo-Norman masonry castle
 disputed: false
 first_seen: '2026-07-21'
@@ -51,7 +52,9 @@ sources:
 - url: https://en.wikipedia.org/wiki/Trim_Castle
   title: Trim Castle
   publisher: Wikipedia
-notes: One of the 129 SMR records classed 'Castle - Anglo-Norman masonry castle' - the strictest
-  of Ireland's three answers to how many castles it has. The SMR reference is recorded to
-  the class the register assigns; the specific record identifier should be re-verified against
-  the register before it is relied upon.
+notes: 'One of the 129 SMR records classed ''Castle - Anglo-Norman masonry castle'' - the
+  strictest of Ireland''s three answers to how many castles it has. SMR reference CORRECTED
+  on 2026-07-21 from a hand-entered ME036-021 to the register''s actual ME036-048004-, found
+  when the bulk import created a second record for this castle under its register townland
+  (Manorland). The founding caveat that hand-entered register refs needed verification was
+  justified: this one was wrong.'

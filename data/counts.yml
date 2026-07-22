@@ -8,7 +8,7 @@
 # WORLD, per the bounding register. They are never the same field and an
 # open band never gets a population figure at all.
 version: 1
-records_total: 117
+records_total: 4668
 bands:
 - definition: fortified_residence
   closure: enumerable
@@ -18,7 +18,7 @@ bands:
       'no': 9
       contested: 4
     register_derived:
-      'yes': 102
+      'yes': 4653
       'no': 0
       contested: 0
     unassessed: 0
@@ -33,7 +33,7 @@ bands:
       'yes': 0
       'no': 0
       contested: 0
-    unassessed: 104
+    unassessed: 4655
 - definition: state_fortification
   closure: enumerable
   held:
@@ -45,7 +45,7 @@ bands:
       'yes': 0
       'no': 0
       contested: 0
-    unassessed: 104
+    unassessed: 4655
 - definition: palatial_seat
   closure: open
   held:
@@ -57,7 +57,7 @@ bands:
       'yes': 0
       'no': 0
       contested: 0
-    unassessed: 104
+    unassessed: 4655
 - definition: revival_folly
   closure: open
   held:
@@ -69,7 +69,7 @@ bands:
       'yes': 0
       'no': 0
       contested: 0
-    unassessed: 104
+    unassessed: 4655
 - definition: popular_castle
   closure: open
   held:
@@ -81,4 +81,4 @@ bands:
       'yes': 0
       'no': 0
       contested: 0
-    unassessed: 104
+    unassessed: 4655

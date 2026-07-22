@@ -1,0 +1,14 @@
+id: sig-20260721-iesmr-la008-015
+site_id: ie-coolbanagher-coolbanagher
+attribute: register_entry
+value: 'SMR LA008-015----. MONUMENT_CLASS: Castle - hall-house.'
+source_url: https://heritagedata.maps.arcgis.com/apps/webappviewer/index.html?id=0c9eb9575b544081b0d296436d8f60f8&query=18a4b61b268-layer-9%2CSMRS%2CLA008-015----
+source_title: Archaeological Survey of Ireland - Sites and Monuments Record
+publisher: National Monuments Service
+source_date: '2026-07-21'
+observed_date: '2026-07-21'
+collected_by: import/ie-smr@1.0.0
+confidence: high
+notes: Register classification, not an assessment against this project's criterion. The survey
+  classifies by monument type; whether the structure meets the fortified_residence criterion
+  is a separate question nobody has answered for this entry.
