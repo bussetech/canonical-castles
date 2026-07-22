@@ -76,3 +76,33 @@ batches:
     359 disagreements: 258 granularity, 89 band-conflict, 12 category-error. Two records inside the closed
     Welsh cell were corrected from register-derived yes to contested, which reduced the fortified_residence
     register-derived count from 104 to 102.'
+- id: ie-smr-castles-import
+  date: '2026-07-21'
+  method: importer
+  produced:
+    signals: 4552
+    records: 4551
+    cells_closed: 1
+    records_corrected: 1
+  cells_closed:
+  - fortified_residence/IE
+  run_ref: null
+  cost:
+    measured: true
+    model_usd: 0
+    actions_minutes: null
+    human_minutes: null
+    basis: 'A genuine zero: scripts/import_register.py makes no model call. Fetch was 3 paginated requests
+      against a public CC-BY service (the endpoint caps a response at 2,000 features); transform took
+      ~5s and the full Jekyll build 16s at 4,668 records, which is what settled the open question about
+      whether this scale is renderable at all.'
+  note: 'Stage 3a. All 4,552 SMR records under MONUMENT_CLASS LIKE ''Castle%'', closing the Irish fortified_residence
+    cell — the second complete cell and the largest closable population attempted so far.
+
+
+    The import also CORRECTED the dataset. Trim Castle was hand-authored at founding with SMR ref ME036-021;
+    the register''s actual ref is ME036-048004-, and because the ref did not match, the importer created
+    a second record for the same castle under its register townland (Manorland) and pushed the cell one
+    over the register total. Fixed by making adoption REF-BASED rather than path-based — identifiers,
+    never names, the same discipline the disagreement ledger uses. The founding caveat that hand-entered
+    register refs needed verification was justified on the first one checked.'

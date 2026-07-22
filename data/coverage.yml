@@ -7,17 +7,25 @@ version: 1
 cells:
 - definition: fortified_residence
   jurisdiction: IE
-  state: partial
+  state: complete
   settled_by:
   - ie-smr
-  records_held: 1
+  records_held: 4552
   register_count: 4552
-  note: 'The most closable cell in the dataset. The Irish SMR is CC-BY, fully queryable, and classifies
-    by monument type, so this cell can in principle reach 4,552 records and stop. It currently holds a
-    handful of exemplars. Note the register_count is itself filter-dependent: 129 under the strictest
-    Anglo-Norman masonry reading, 4,552 for the whole Castle class.
+  note: 'CLOSED. All 4,552 records the Archaeological Survey of Ireland holds under MONUMENT_CLASS LIKE
+    ''Castle%'' have a record here, imported 2026-07-21 and reproducible from the committed snapshot.
 
-    '
+
+    READ IT NARROWLY. Complete against the SMR''s Castle class — not against the band''s criterion (4,551
+    of the 4,552 are assessment: register-derived at confidence: low), and not against any single idea
+    of an Irish castle. The same register answers the same question with 129 if you accept only ''Castle
+    - Anglo-Norman masonry castle''. Each record keeps the register''s finer class on its register_entry,
+    so the strict reading stays recoverable from the data without re-querying the service.
+
+
+    One record is assessed rather than imported: Trim Castle was hand-authored at founding, and the import
+    found its SMR reference had been recorded wrongly. Correcting it removed a duplicate that had pushed
+    this cell one over the register total.'
 - definition: fortified_residence
   jurisdiction: GB-WLS
   state: complete

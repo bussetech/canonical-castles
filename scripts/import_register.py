@@ -257,7 +257,172 @@ class CadwCastles:
         return rec
 
 
-ADAPTERS = {"gb-wls-cadw": CadwCastles}
+class IrishSMRCastles:
+    """Archaeological Survey of Ireland, MONUMENT_CLASS LIKE 'Castle%'.
+
+    The register this project's whole thesis rests on: the same service answers
+    "how many castles?" with 129, 4,552 or 31,431 depending only on the class
+    filter. This adapter takes the middle answer — the full Castle class — and
+    records the finer class on every record so the strict reading stays
+    recoverable from the data rather than requiring a re-query.
+
+    Paginated: the service caps a response at 2,000 features.
+    """
+
+    register_id = "ie-smr"
+    snapshot = "ie-smr-castles.json"
+    expected = 4552
+    band = "fortified_residence"
+    base = ("https://services-eu1.arcgis.com/HyjXgkV6KGMSF3jt/arcgis/rest/"
+            "services/SMROpenData/FeatureServer/0/query")
+    where = "MONUMENT_CLASS LIKE 'Castle%'"
+    page = 2000
+    source_title = "Archaeological Survey of Ireland - Sites and Monuments Record"
+    publisher = "National Monuments Service"
+    landing = "https://www.archaeology.ie/collections-and-publications/open-data/"
+
+    def fetch(self) -> bytes:
+        import json as _json
+        import urllib.parse
+        import urllib.request
+        feats, offset = [], 0
+        while True:
+            q = urllib.parse.urlencode({
+                "where": self.where, "outFields": "*", "returnGeometry": "false",
+                "resultOffset": offset, "resultRecordCount": self.page,
+                "orderByFields": "OBJECTID", "f": "json",
+            })
+            with urllib.request.urlopen(f"{self.base}?{q}", timeout=180) as fh:  # noqa: S310
+                batch = _json.loads(fh.read())
+            got = batch.get("features") or []
+            feats.extend(got)
+            print(f"  fetched {len(feats)}/{self.expected}")
+            if len(got) < self.page:
+                break
+            offset += self.page
+        return _json.dumps({"features": feats}, separators=(",", ":"),
+                           ensure_ascii=False, sort_keys=True).encode()
+
+    @staticmethod
+    def _name(a: dict) -> str:
+        """OS-map name, preferring the first edition and dropping its asides.
+
+        FIRST_EDITION reads like "Ballyvaghan Castle (in ruins)" — the
+        parenthetical is map annotation, not part of the name.
+        """
+        import re as _re
+        for key in ("FIRST_EDITION", "LATEST_EDITION"):
+            raw = (a.get(key) or "").strip()
+            if raw:
+                cleaned = _re.sub(r"\s*\([^)]*\)", "", raw).strip(" ,")
+                if cleaned:
+                    return cleaned
+        town = (a.get("TOWNLAND") or "").strip().title()
+        return f"Castle at {town}" if town else "Unnamed castle"
+
+    def normalise(self, raw: dict) -> list[dict]:
+        out = []
+        for feat in raw["features"]:
+            a = feat["attributes"]
+            out.append({
+                "ref": (a.get("SMRS") or "").strip(),
+                "name": self._name(a),
+                "county": (a.get("COUNTY") or "").strip().title() or None,
+                "locality": (a.get("TOWNLAND") or "").strip().title() or None,
+                "site_type": (a.get("MONUMENT_CLASS") or "").strip(),
+                "url": (a.get("WEBSITE_LINK") or "").strip() or None,
+                "lat": round(a["LATITUDE"], 5) if a.get("LATITUDE") else None,
+                "lon": round(a["LONGITUDE"], 5) if a.get("LONGITUDE") else None,
+            })
+        return out
+
+    def signal_id(self, item: dict) -> str:
+        return f"sig-{TODAY.replace('-', '')}-iesmr-{slug(item['ref'])}"
+
+    def record_id(self, item: dict) -> str:
+        place = item.get("locality") or item.get("county") or "ireland"
+        return f"ie-{slug(place)}-{slug(item['name'])}"
+
+    def signal(self, item: dict) -> dict:
+        return {
+            "id": self.signal_id(item),
+            "site_id": None,
+            "site_hint": f"{item['name']} — {item.get('county') or 'Ireland'}, IE",
+            "attribute": "register_entry",
+            "value": f"SMR {item['ref']}. MONUMENT_CLASS: {item['site_type']}.",
+            "source_url": item.get("url") or self.landing,
+            "source_title": self.source_title,
+            "publisher": self.publisher,
+            "source_date": TODAY,
+            "observed_date": TODAY,
+            "collected_by": "import/ie-smr@1.0.0",
+            "confidence": "high",
+            "notes": ("Register classification, not an assessment against this "
+                      "project's criterion. The survey classifies by monument type; "
+                      "whether the structure meets the fortified_residence criterion "
+                      "is a separate question nobody has answered for this entry."),
+        }
+
+    def record(self, item: dict, signal_id: str) -> dict:
+        strict = item["site_type"] == "Castle - Anglo-Norman masonry castle"
+        rec = {
+            "id": self.record_id(item),
+            "name": item["name"],
+            "tradition": "european_medieval",
+            "location": {"country": "IE"},
+            "definitions_met": {
+                self.band: {
+                    "verdict": "yes",
+                    "assessment": "register-derived",
+                    "basis": (
+                        f"The Archaeological Survey of Ireland records SMR {item['ref']} "
+                        f"as MONUMENT_CLASS: {item['site_type']}, within the Castle class "
+                        f"this band maps onto. Transcribed from the register's own "
+                        f"typology and NOT assessed against this band's criterion. "
+                        + ("This is one of the 129 Anglo-Norman masonry castles — the "
+                           "strictest reading of an Irish castle. " if strict else "")
+                        + "Treat as provisional."
+                    ),
+                }
+            },
+            "register_entries": [{
+                "register": self.register_id,
+                "ref": item["ref"],
+                "designation": item["site_type"],
+            }],
+            "first_seen": TODAY,
+            "last_updated": TODAY,
+            "confidence": "low",
+            "sources": [{
+                "url": item.get("url") or self.landing,
+                "title": self.source_title,
+                "publisher": self.publisher,
+                "date": TODAY,
+                "note": "Register entry; the sole source for this record.",
+            }],
+            "signals": [signal_id],
+            "notes": (
+                "Imported in bulk from the Irish Sites and Monuments Record. One "
+                "register speaks and nothing corroborates it, hence confidence: low. "
+                "Only fortified_residence carries a verdict; every other band is "
+                "OMITTED rather than set to no. The register's own finer class is kept "
+                "on the register_entry, so the strict Anglo-Norman reading stays "
+                "recoverable from the data without re-querying the service."
+            ),
+        }
+        if item.get("locality"):
+            rec["location"]["locality"] = item["locality"]
+        if item.get("county"):
+            rec["location"]["county"] = item["county"]
+        if item.get("lat") is not None:
+            rec["location"]["lat"] = item["lat"]
+            rec["location"]["lon"] = item["lon"]
+        if item.get("url"):
+            rec["register_entries"][0]["url"] = item["url"]
+        return rec
+
+
+ADAPTERS = {"gb-wls-cadw": CadwCastles, "ie-smr": IrishSMRCastles}
 
 
 def dump(obj: dict, order: list[str]) -> str:
@@ -327,6 +492,32 @@ def main() -> int:
     ids = resolve_ids(adapter, items)
     adopted_ids: list[str] = []
 
+    def adopted_by_ref(register_id: str, band: str) -> dict[str, str]:
+        """register ref -> id of an ASSESSED record already claiming it.
+
+        Path-based adoption is not enough. A hand-authored record can describe
+        the same structure under a different id — Trim Castle was written as
+        `ie-meath-trim-castle` while the register calls its townland Manorland,
+        so the importer cheerfully created a second record for the same castle
+        and the completeness count went one over the register total.
+
+        Joining on the REGISTER REF instead catches it, which is the same
+        discipline the disagreement ledger uses: identifiers, never names.
+        """
+        claimed: dict[str, str] = {}
+        for path in sorted(SITES.glob("*.yml")):
+            try:
+                rec = yaml.safe_load(path.read_text())
+            except Exception:
+                continue
+            entry = ((rec or {}).get("definitions_met") or {}).get(band) or {}
+            if entry.get("assessment") != "assessed":
+                continue
+            for e in rec.get("register_entries") or []:
+                if e.get("register") == register_id:
+                    claimed[e["ref"]] = rec["id"]
+        return claimed
+
     def adopted(path: pathlib.Path, band: str) -> bool:
         """Has a human taken this record over from the importer?
 
@@ -346,17 +537,24 @@ def main() -> int:
         entry = ((existing or {}).get("definitions_met") or {}).get(band) or {}
         return entry.get("assessment") == "assessed"
 
+    ref_claims = adopted_by_ref(adapter.register_id, adapter.band)
     wanted: dict[pathlib.Path, str] = {}
     for item in items:
         rid = ids[item["ref"]]
+        # A ref already claimed by an assessed record belongs to that record.
+        # The register evidence still lands — the signal is re-pointed at the
+        # adopting record rather than dropped, so the chain stays intact.
+        owner = ref_claims.get(item["ref"])
         sig = adapter.signal(item)
-        sig["site_id"] = rid
+        sig["site_id"] = owner or rid
         sig.pop("site_hint", None)  # resolved: the contract says omit it
         rec = adapter.record(item, sig["id"])
         rec["id"] = rid
         wanted[SIGNALS / f"{sig['id']}.yml"] = dump(sig, SIGNAL_KEY_ORDER)
         site_path = SITES / f"{rid}.yml"
-        if adopted(site_path, adapter.band):
+        if owner:
+            adopted_ids.append(f"{item['ref']}->{owner}")
+        elif adopted(site_path, adapter.band):
             adopted_ids.append(rid)
         else:
             wanted[site_path] = dump(rec, SITE_KEY_ORDER)
