@@ -165,12 +165,30 @@ cells:
   - ie-smr
   records_held: 1
   register_count: 31431
-  note: 'The largest closable population in the dataset: 31,431 ringfort-class records (rath 26,000, cashel
-    3,551, unclassified 1,880). Scholarship puts the number CONSTRUCTED nearer 45,000, the gap being roughly
-    37% attrition since the first Ordnance Survey — so this cell can close against the register while
-    remaining incomplete against the past.
+  note: 'The largest closable population in the dataset — 31,431 ringfort-class SMR records (rath 26,000,
+    cashel 3,551, unclassified 1,880) — and DELIBERATELY NOT IMPORTED. This cell stays partial by decision,
+    not by neglect.
 
-    '
+
+    The reason is measured rather than assumed. At 4,668 records CI takes 99s (data) and 71s (site); the
+    Irish castle import that produced those records was itself free. Adding 31,431 more is 7.7x the corpus,
+    which puts CI at roughly 15-40 minutes per pull request — the link checker walks every page against
+    every other, so it grows faster than linearly. Every future change to this project would pay that,
+    permanently, and the repository would carry about 72,000 files.
+
+
+    What that buys is one number. Total coverage of closable cells would go from 11% to roughly 85% —
+    but composed entirely of register-derived transcriptions at confidence: low, of a register that is
+    already open, already queryable, and already publishes the figure. This dataset would not learn anything
+    it cannot state right here: Ireland holds 31,431 ringfort-class monuments, and that sentence is already
+    true and already sourced on this page.
+
+
+    This is what diminishing returns actually looks like when you measure it. The remaining work with
+    real value is the opposite shape: 4,653 of 4,668 records currently carry register-derived verdicts
+    nobody has assessed, and closing that gap is worth more than any number of new rows. If the integer
+    is wanted for its own sake, the import is a solved problem — the adapter pattern, the pagination and
+    the adoption rules all exist — and it is one deliberate decision away.'
 - definition: enclosure_fortification
   jurisdiction: GB-WLS
   state: unexamined
