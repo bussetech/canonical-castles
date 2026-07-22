@@ -13,30 +13,38 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument GM063 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: >-
+      Cadw report GM063 records a courtyard castle, roughly circular, with a
+      full-height battered curtain wall and two square mural towers, held by
+      identified lords — Robert Fitzhamon, a royal phase under Henry II, then from
+      1217 the Turbeville Lords of Coity. Buildings stood within the ward and the
+      south tower was adapted for domestic use, evidencing lordly residence
+      coinciding with active defence.
 register_entries:
 - register: gb-wls-cadw
   ref: GM063
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=4354
 first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+last_updated: '2026-07-22'
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=4354
   title: Cof Cymru - National Historic Assets of Wales
   publisher: Cadw
   date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  note: Register entry and full scheduled-monument report; the assessment source.
 signals:
 - sig-20260721-cadw-gm063
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-gm063
+notes: >-
+  Assessed 2026-07-22 against Cadw scheduled-monument full report GM063
+  (sig-20260722-report-gm063); fortified_residence upgraded to assessed.
+  palatial_seat was considered on the late-16th-century domestic refurbishment of
+  the south tower (Tudor windows and fireplaces) but NOT set: the report describes
+  the castle as "virtually untouched since the late 12th century" with no
+  defensive fabric removed for amenity, so a modest refit does not evidence a
+  palatial phase. popular, revival, enclosure and state bands OMITTED — the report
+  does not speak to them. Confidence medium: single official report plus register.

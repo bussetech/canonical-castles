@@ -1,0 +1,73 @@
+id: sig-20260722-report-fl062
+site_id: gb-bagillt-hen-blas-site
+attribute: designation_report
+value: 'Reference Number
+
+  FL062
+
+  Name
+
+  Hen Blas Castle Site
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Flintshire
+
+  Community
+
+  Bagillt
+
+  Easting
+
+  322138
+
+  Northing
+
+  373436
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The following provides a general description for the scheduled ancient monument.
+
+  The monument consists of the remains of a castle, dating to the medieval period. A castle
+  is a defended residence or stronghold, built mainly of stone, in which the principal or
+  sole defence comprises the walls and towers bounding the site.    The monument consists
+  of the remains of an enclosure approximately 48m north-south by 50m east-west sited on a
+  spur-end between two streams flowing from west to east.  The enclosure is defined by a ditch
+  on the west and elsewhere by steep natural slopes. On the west is an outer enclosure 72m
+  north-south by 78m, again ditched on the west.  There is mention of a castle being built
+  in this location in 1157 and captured in 1166.  Excavations concluded in 1957 demonstrated
+  that an earthwork castle was replaced by a fortified manor house in the early thirteenth
+  century which was itself abandoned in the late fourteenth century.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2200
+source_title: Scheduled Monument Full Report — Hen Blas Castle Site
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

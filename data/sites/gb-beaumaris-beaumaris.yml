@@ -13,30 +13,47 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument AN001 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: >-
+      Cadw report AN001 describes a concentric castle of Edward I with four rings
+      of defences, gatehouses north and south built to be held, corner and
+      buttressing towers giving flanking fire, and a water-filled moat with a dock.
+      Domestic buildings stood within the inner ward (since removed), evidencing the
+      residence of the royal builder; a royal lord is still a lord under this band.
+  popular_castle:
+    verdict: "yes"
+    assessment: assessed
+    basis: >-
+      The report records the monument's designation as a UNESCO World Heritage Site
+      and its "national and international importance" — a major, universally
+      recognised monument a general audience would unhesitatingly call a castle.
+      This is usage evidence (WHS citation), not merely the register's naming.
 register_entries:
 - register: gb-wls-cadw
   ref: AN001
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3319
 first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+last_updated: '2026-07-22'
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3319
   title: Cof Cymru - National Historic Assets of Wales
   publisher: Cadw
   date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  note: Register entry and full scheduled-monument report; the assessment source.
 signals:
 - sig-20260721-cadw-an001
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-an001
+notes: >-
+  Assessed 2026-07-22 against Cadw scheduled-monument full report AN001
+  (sig-20260722-report-an001). fortified_residence and popular_castle set to
+  assessed yes. state_fortification was considered — the report frames Beaumaris as
+  a royal stronghold completing a "chain of fortifications" to control conquered
+  Gwynedd — but that band is aimed at post-1500 state/artillery works, and the
+  report also affirms domestic residence in the inner ward; per the band's explicit
+  inclusion of royal residences, it is treated as a fortified royal residence, and
+  state_fortification is OMITTED rather than set. palatial, revival and enclosure
+  bands OMITTED. Confidence medium: a single official report (however detailed) is
+  not high on one source.

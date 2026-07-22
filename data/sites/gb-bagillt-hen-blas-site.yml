@@ -12,30 +12,38 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument FL062 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: >-
+      Cadw report FL062 records excavations concluded in 1957 showing an earthwork
+      castle replaced in the early thirteenth century by a fortified manor house,
+      abandoned in the late fourteenth — a lord's residence set within a ditched
+      spur-end enclosure defended by a ditch and steep natural slopes. Earthwork and
+      timber castles fall within this band; a castle is recorded here from 1157 and
+      was captured in 1166, evidencing defensive tenure as well as residence.
 register_entries:
 - register: gb-wls-cadw
   ref: FL062
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2200
 first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+last_updated: '2026-07-22'
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2200
   title: Cof Cymru - National Historic Assets of Wales
   publisher: Cadw
   date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  note: Register entry and full scheduled-monument report; the assessment source.
 signals:
 - sig-20260721-cadw-fl062
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-fl062
+notes: >-
+  Assessed 2026-07-22 against Cadw scheduled-monument full report FL062
+  (sig-20260722-report-fl062); fortified_residence upgraded to assessed.
+  enclosure_fortification NOT assessed: although the site is a ditched enclosure,
+  the report identifies a lordly residence (earthwork castle, then fortified manor
+  house), which places it in fortified_residence and out of the enclosure band by
+  that band's own exclusion. popular, palatial, revival and state bands OMITTED —
+  the report does not speak to them. Confidence medium: single official report
+  plus the register.

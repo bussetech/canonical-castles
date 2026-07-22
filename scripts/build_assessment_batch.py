@@ -117,6 +117,8 @@ def main() -> int:
     ap.add_argument("--limit", type=int, default=5)
     ap.add_argument("--offset", type=int, default=0)
     ap.add_argument("--out-dir", help="write the gnome's three input files here")
+    ap.add_argument("--materialise", action="store_true",
+                    help="ALSO write each signal into data/signals/ as a committed file")
     ap.add_argument("--out", help="write a single combined batch here (inspection)")
     args = ap.parse_args()
 
@@ -198,6 +200,22 @@ def main() -> int:
 
         print(f"  wrote {out}/: signals.yml ({len(signals)}), existing_sites.yml, "
               f"entities.yml", file=sys.stderr)
+
+        # MATERIALISE. Assembling signals only at run time was a design error:
+        # the gnome correctly records which signals a verdict came from, so the
+        # resulting records cite ids that exist nowhere on disk and integrity
+        # rightly fails. Evidence a record cites has to be evidence a reader can
+        # open — that is the dataset's whole claim — so the signal becomes a
+        # committed file. The snapshot stays the raw provenance; the signal is
+        # the citable claim.
+        if args.materialise:
+            sigdir = ROOT / "data" / "signals"
+            sigdir.mkdir(parents=True, exist_ok=True)
+            for s in signals:
+                (sigdir / f"{s['id']}.yml").write_text(
+                    yaml.safe_dump(s, sort_keys=False, allow_unicode=True, width=88))
+            print(f"  materialised {len(signals)} signal file(s) into data/signals/",
+                  file=sys.stderr)
 
     if args.out:
         pathlib.Path(args.out).write_text(text)

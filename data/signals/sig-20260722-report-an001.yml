@@ -1,0 +1,93 @@
+id: sig-20260722-report-an001
+site_id: gb-beaumaris-beaumaris
+attribute: designation_report
+value: 'Reference Number
+
+  AN001
+
+  Name
+
+  Beaumaris Castle
+
+  Date of Designation
+
+  05/11/1925
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Isle of Anglesey
+
+  Community
+
+  Beaumaris
+
+  Easting
+
+  260712
+
+  Northing
+
+  376238
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The following provides a general description of the Scheduled Monument
+
+  The monument comprises the remains of a medieval castle built by King Edward I. Begun in
+  1295, Beaumaris Castle was the last royal stronghold to be built by the King in Wales and
+  completed the chain of fortifications with which he had begun to enclose Gwynedd in 1277.  Located
+  on the south-eastern coast of the Isle of Anglesey, the castle controlled the new county
+  of Anglesey and the Menai Strait that divides the island from the mainland.  Beaumaris,
+  meaning the ‘fair marsh’, was situated on level marshy ground not far from the water’s edge.  The
+  plan of the castle took full advantage of the flat site, unfettered by the natural constraints
+  that shaped Conwy and Caernarfon Castles. It was built on the concentric – walls within
+  walls – principle with four rings of formidable defences, including a wide water-filled
+  moat with a dock that enabled the castle to be supplied directly from the sea.
+
+  The castle consists of an inner ward or courtyard which is more or less square, with a gatehouse
+  north and south, and an outer ward of which the sides are not straight but angle outwards
+  slightly in the middle. There are towers at each corner of the inner and outer wards, with
+  buttressing towers in the outside centre of east and west inner walls, and traces of buildings
+  in the inner ward.  A moat once surrounded the castle and still exists on the north, west
+  and half the south sides. There is a dock on the south where the moat now ends. The entrance
+  is through the south gate, where cobbled floors survive.  To a large extent the structure
+  of the castle remains as it was constructed in 1295-1330. Domestic buildings within the
+  inner ward have been removed; the eastern part of the moat has been filled in and the castle
+  dock is no longer connected to the sea. The walls of the outer ward remain at their full
+  height.  The two gatehouses and the walls of the inner ward remain at the extent and height
+  reached before construction ceased in 1330. Although minor sums of money continued to be
+  spent on maintenance during the fourteenth and fifteenth centuries, there is no firm evidence
+  of work of any consequence. Nevertheless, it was sufficiently complete to be garrisoned
+  and besieged during the revolt of Owain Glyn Dŵr (about 1400-10).  By 1539, however, the
+  castle was reported to be in a ruinous state and by 1609 it was utterly decayed, so much
+  so that when civil war broke out in 1642, Viscount Bulkeley is said to have spent £3000
+  on repairs to it in the royalist cause. But the eventual victory of parliament led in 1646
+  to the surrender of the castle to Major-General Thomas Mytton and by about 1660 some partial
+  dismantling seems to have taken place.
+
+  The monument is of national and international importance for its potential to enhance our
+  knowledge of medieval social, domestic and political life and warfare. This is reflected
+  by its designation as a World Heritage Site.The scheduled area comprises the remains described
+  and an area around them within which related evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3319
+source_title: Scheduled Monument Full Report — Beaumaris Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.
