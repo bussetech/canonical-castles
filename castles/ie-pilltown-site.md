@@ -1,6 +1,6 @@
 ---
 layout: castle-record
 site_id: ie-pilltown-site
-title: "Site of Castle"
+title: "Castle site of"
 permalink: /castles/ie-pilltown-site/
 ---

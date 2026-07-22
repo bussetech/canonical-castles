@@ -4,34 +4,33 @@ tradition: european_medieval
 location:
   country: IE
   locality: Castlegrace
-  county: Tipperary South
-  lat: 52.28099
-  lon: -7.95678
+  county: Carlow
+  lat: 52.75417
+  lon: -6.74901
 definitions_met:
   fortified_residence:
     verdict: 'yes'
     assessment: register-derived
-    basis: 'The Archaeological Survey of Ireland records SMR TS087-027---- as MONUMENT_CLASS:
-      Castle - Anglo-Norman masonry castle, within the Castle class this band maps onto. Transcribed
-      from the register''s own typology and NOT assessed against this band''s criterion. This
-      is one of the 129 Anglo-Norman masonry castles — the strictest reading of an Irish castle.
-      Treat as provisional.'
+    basis: 'The Archaeological Survey of Ireland records SMR CW013-055---- as MONUMENT_CLASS:
+      Castle - unclassified, within the Castle class this band maps onto. Transcribed from
+      the register''s own typology and NOT assessed against this band''s criterion. Treat
+      as provisional.'
 register_entries:
 - register: ie-smr
-  ref: TS087-027----
-  designation: Castle - Anglo-Norman masonry castle
-  url: https://heritagedata.maps.arcgis.com/apps/webappviewer/index.html?id=0c9eb9575b544081b0d296436d8f60f8&query=18a4b61b268-layer-9%2CSMRS%2CTS087-027----
+  ref: CW013-055----
+  designation: Castle - unclassified
+  url: https://heritagedata.maps.arcgis.com/apps/webappviewer/index.html?id=0c9eb9575b544081b0d296436d8f60f8&query=18a4b61b268-layer-9%2CSMRS%2CCW013-055----
 first_seen: '2026-07-21'
 last_updated: '2026-07-21'
 confidence: low
 sources:
-- url: https://heritagedata.maps.arcgis.com/apps/webappviewer/index.html?id=0c9eb9575b544081b0d296436d8f60f8&query=18a4b61b268-layer-9%2CSMRS%2CTS087-027----
+- url: https://heritagedata.maps.arcgis.com/apps/webappviewer/index.html?id=0c9eb9575b544081b0d296436d8f60f8&query=18a4b61b268-layer-9%2CSMRS%2CCW013-055----
   title: Archaeological Survey of Ireland - Sites and Monuments Record
   publisher: National Monuments Service
   date: '2026-07-21'
   note: Register entry; the sole source for this record.
 signals:
-- sig-20260721-iesmr-ts087-027
+- sig-20260721-iesmr-cw013-055
 notes: 'Imported in bulk from the Irish Sites and Monuments Record. One register speaks and
   nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
   every other band is OMITTED rather than set to no. The register''s own finer class is kept

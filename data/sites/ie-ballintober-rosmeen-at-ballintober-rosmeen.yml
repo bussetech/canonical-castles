@@ -1,0 +1,46 @@
+id: ie-ballintober-rosmeen-at-ballintober-rosmeen
+name: Castle at Ballintober,Rosmeen
+tradition: european_medieval
+location:
+  country: IE
+  locality: Ballintober,Rosmeen
+  county: Roscommon
+  lat: 53.72216
+  lon: -8.41582
+definitions_met:
+  fortified_residence:
+    verdict: 'yes'
+    assessment: register-derived
+    basis: 'The Archaeological Survey of Ireland records SMR RO027-048002- as MONUMENT_CLASS:
+      Castle - Anglo-Norman masonry castle, within the Castle class this band maps onto. Transcribed
+      from the register''s own typology and NOT assessed against this band''s criterion. This
+      is one of the 129 Anglo-Norman masonry castles — the strictest reading of an Irish castle.
+      Treat as provisional.'
+register_entries:
+- register: ie-smr
+  ref: RO027-048002-
+  designation: Castle - Anglo-Norman masonry castle
+  url: https://heritagedata.maps.arcgis.com/apps/webappviewer/index.html?id=0c9eb9575b544081b0d296436d8f60f8&query=18a4b61b268-layer-9%2CSMRS%2CRO027-048002-
+- register: wikidata
+  ref: Q26696936
+  designation: archaeological site, castle
+  url: https://www.wikidata.org/wiki/Q26696936
+first_seen: '2026-07-21'
+last_updated: '2026-07-21'
+confidence: medium
+sources:
+- url: https://heritagedata.maps.arcgis.com/apps/webappviewer/index.html?id=0c9eb9575b544081b0d296436d8f60f8&query=18a4b61b268-layer-9%2CSMRS%2CRO027-048002-
+  title: Archaeological Survey of Ireland - Sites and Monuments Record
+  publisher: National Monuments Service
+  date: '2026-07-21'
+  note: Register entry; the sole source for this record.
+signals:
+- sig-20260721-iesmr-ro027-048002
+notes: 'Imported in bulk from the Irish Sites and Monuments Record. CORROBORATED: Wikidata
+  independently records this monument (Q26696936, joined on the SMR identifier) and classes
+  it archaeological site, castle, agreeing that it is a fortification. Two independent registers
+  rather than one, hence confidence: medium. The verdict stays register-derived — corroboration
+  is evidence, not assessment, and nobody has yet applied this band''s criterion to the structure
+  itself. Only fortified_residence carries a verdict; every other band is OMITTED rather than
+  set to no. The register''s own finer class is kept on the register_entry, so the strict
+  Anglo-Norman reading stays recoverable from the data without re-querying the service.'

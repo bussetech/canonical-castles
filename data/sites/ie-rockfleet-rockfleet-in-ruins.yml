@@ -20,9 +20,13 @@ register_entries:
   ref: MA067-025001-
   designation: Castle - tower house
   url: https://heritagedata.maps.arcgis.com/apps/webappviewer/index.html?id=0c9eb9575b544081b0d296436d8f60f8&query=18a4b61b268-layer-9%2CSMRS%2CMA067-025001-
+- register: wikidata
+  ref: Q2160689
+  designation: tower house
+  url: https://www.wikidata.org/wiki/Q2160689
 first_seen: '2026-07-21'
 last_updated: '2026-07-21'
-confidence: low
+confidence: medium
 sources:
 - url: https://heritagedata.maps.arcgis.com/apps/webappviewer/index.html?id=0c9eb9575b544081b0d296436d8f60f8&query=18a4b61b268-layer-9%2CSMRS%2CMA067-025001-
   title: Archaeological Survey of Ireland - Sites and Monuments Record
@@ -31,8 +35,11 @@ sources:
   note: Register entry; the sole source for this record.
 signals:
 - sig-20260721-iesmr-ma067-025001
-notes: 'Imported in bulk from the Irish Sites and Monuments Record. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no. The register''s own finer class is kept
-  on the register_entry, so the strict Anglo-Norman reading stays recoverable from the data
-  without re-querying the service.'
+notes: 'Imported in bulk from the Irish Sites and Monuments Record. CORROBORATED: Wikidata
+  independently records this monument (Q2160689, joined on the SMR identifier) and classes
+  it tower house, agreeing that it is a fortification. Two independent registers rather than
+  one, hence confidence: medium. The verdict stays register-derived — corroboration is evidence,
+  not assessment, and nobody has yet applied this band''s criterion to the structure itself.
+  Only fortified_residence carries a verdict; every other band is OMITTED rather than set
+  to no. The register''s own finer class is kept on the register_entry, so the strict Anglo-Norman
+  reading stays recoverable from the data without re-querying the service.'

@@ -1,0 +1,6 @@
+---
+layout: castle-record
+site_id: ie-liberties-carlingford-at-liberties-carlingford-louth
+title: "Castle at Liberties Of Carlingford"
+permalink: /castles/ie-liberties-carlingford-at-liberties-carlingford-louth/
+---

@@ -277,6 +277,7 @@ class IrishSMRCastles:
             "services/SMROpenData/FeatureServer/0/query")
     where = "MONUMENT_CLASS LIKE 'Castle%'"
     page = 2000
+    corroborator = "wikidata-ie-smr-monuments.json"   # joined on Wikidata P4057
     source_title = "Archaeological Survey of Ireland - Sites and Monuments Record"
     publisher = "National Monuments Service"
     landing = "https://www.archaeology.ie/collections-and-publications/open-data/"
@@ -303,28 +304,91 @@ class IrishSMRCastles:
         return _json.dumps({"features": feats}, separators=(",", ":"),
                            ensure_ascii=False, sort_keys=True).encode()
 
-    @staticmethod
-    def _name(a: dict) -> str:
-        """OS-map name, preferring the first edition and dropping its asides.
+    # FIRST_EDITION records what the Ordnance Survey map SHOWED, which is
+    # often an annotation rather than a name: "Not indicated" (949 records),
+    # "Castle" (443), the literal string "NULL" (165), "Hachured" (130),
+    # "Indicated" (105). Roughly 37% of the class. Taking those as names
+    # produces records called "Indicated" and — because ids derive from names —
+    # identifiers like `ie-calverstown-demesne-indicated`, which is worse than
+    # having no name at all.
+    NON_NAMES = {
+        "null", "none", "not indicated", "indicated", "hachured", "hachured only",
+        "outlined", "site", "site of", "site of castle", "castle", "castle in ruins",
+        "in ruins", "ruins", "ruin", "fort", "moat", "mound", "embanked enclosure",
+        "enclosure", "earthwork", "unnamed",
+    }
 
-        FIRST_EDITION reads like "Ballyvaghan Castle (in ruins)" — the
-        parenthetical is map annotation, not part of the name.
+    @classmethod
+    def _name(cls, a: dict) -> str:
+        """The OS-map name where there is one, and an honest placeholder where not.
+
+        Parentheticals are map annotation, not name: "Ballyvaghan Castle (in
+        ruins)" is Ballyvaghan Castle. A value that is ONLY annotation yields no
+        name, and the record falls back to its townland — "Castle at Mullaghreelan"
+        says what is known and claims nothing that is not.
         """
         import re as _re
         for key in ("FIRST_EDITION", "LATEST_EDITION"):
             raw = (a.get(key) or "").strip()
-            if raw:
-                cleaned = _re.sub(r"\s*\([^)]*\)", "", raw).strip(" ,")
-                if cleaned:
-                    return cleaned
+            if not raw:
+                continue
+            cleaned = _re.sub(r"\s*\([^)]*\)", "", raw).strip(" ,.")
+            if cleaned and cleaned.lower() not in cls.NON_NAMES:
+                return cleaned
         town = (a.get("TOWNLAND") or "").strip().title()
         return f"Castle at {town}" if town else "Unnamed castle"
 
+    def load_corroboration(self) -> dict[str, dict]:
+        """SMR ref -> the Wikidata item that independently records it.
+
+        CORROBORATION IS NOT ASSESSMENT. Two registers agreeing does not mean
+        anybody applied this project's criterion — the verdict stays
+        `register-derived`. What it does mean is that the record rests on two
+        independent bodies rather than one, and `confidence` is defined in the
+        schema as exactly that: aggregate corroboration. So corroborated
+        records move low -> medium and carry the second register's entry.
+
+        The two axes are deliberately separate. `assessment` answers "who
+        applied the criterion"; `confidence` answers "how well evidenced is
+        it". Collapsing them would let volume masquerade as judgement.
+        """
+        import collections as _c
+        path = SNAPSHOTS / self.corroborator
+        if not path.is_file():
+            return {}
+        types = _c.defaultdict(set)
+        meta = {}
+        for b in json.loads(path.read_text())["results"]["bindings"]:
+            ref = b["smr"]["value"].strip()
+            if "typeLabel" in b:
+                types[ref].add(b["typeLabel"]["value"])
+            meta[ref] = {"qid": b["item"]["value"].rsplit("/", 1)[-1],
+                         "name": b.get("itemLabel", {}).get("value", "")}
+        for ref, m in meta.items():
+            m["types"] = types.get(ref, set())
+        return meta
+
+    # Wikidata classes that corroborate the fortified_residence reading. A class
+    # outside this set does not refute the record — it is either unmapped (our
+    # ignorance) or a genuine disagreement, and disagreements are the
+    # disagreement ledger's job, not this importer's.
+    CORROBORATING = {
+        "castle", "tower house", "towerhouse in Ireland", "motte-and-bailey castle",
+        "motte", "castle ruin", "fortified house", "fortified tower", "ringwork castle",
+        "hall house", "keep", "fortification", "Anglo-Norman masonry castle",
+    }
+
     def normalise(self, raw: dict) -> list[dict]:
+        corr = self.load_corroboration()
         out = []
         for feat in raw["features"]:
             a = feat["attributes"]
+            ref = (a.get("SMRS") or "").strip()
+            c = corr.get(ref)
+            agrees = bool(c and (c["types"] & self.CORROBORATING))
             out.append({
+                "corroborated": {"qid": c["qid"], "name": c["name"],
+                                 "classes": sorted(c["types"])} if agrees else None,
                 "ref": (a.get("SMRS") or "").strip(),
                 "name": self._name(a),
                 "county": (a.get("COUNTY") or "").strip().title() or None,
@@ -419,6 +483,25 @@ class IrishSMRCastles:
             rec["location"]["lon"] = item["lon"]
         if item.get("url"):
             rec["register_entries"][0]["url"] = item["url"]
+
+        corr = item.get("corroborated")
+        if corr:
+            rec["confidence"] = "medium"
+            rec["register_entries"].append({
+                "register": "wikidata",
+                "ref": corr["qid"],
+                "designation": ", ".join(corr["classes"]),
+                "url": f"https://www.wikidata.org/wiki/{corr['qid']}",
+            })
+            rec["notes"] = rec["notes"].replace(
+                "One register speaks and nothing corroborates it, hence confidence: low.",
+                f"CORROBORATED: Wikidata independently records this monument "
+                f"({corr['qid']}, joined on the SMR identifier) and classes it "
+                f"{', '.join(corr['classes'])}, agreeing that it is a fortification. "
+                f"Two independent registers rather than one, hence confidence: medium. "
+                f"The verdict stays register-derived — corroboration is evidence, not "
+                f"assessment, and nobody has yet applied this band's criterion to the "
+                f"structure itself.")
         return rec
 
 
@@ -511,8 +594,8 @@ def main() -> int:
             except Exception:
                 continue
             entry = ((rec or {}).get("definitions_met") or {}).get(band) or {}
-            if entry.get("assessment") != "assessed":
-                continue
+            if entry.get("assessment", "assessed") != "assessed":
+                continue   # absent means assessed; only register-derived is ours
             for e in rec.get("register_entries") or []:
                 if e.get("register") == register_id:
                     claimed[e["ref"]] = rec["id"]
@@ -559,12 +642,45 @@ def main() -> int:
         else:
             wanted[site_path] = dump(rec, SITE_KEY_ORDER)
 
+    # ORPHANS. An importer that only writes is not reproducible: when the id
+    # rule changes — as it did when ~1,690 Irish records stopped being named
+    # after Ordnance Survey annotations — the old files stay behind and the
+    # register appears to hold thousands more structures than it does.
+    #
+    # This register OWNS exactly the files it would write, plus the ones a
+    # human has adopted. Anything else carrying a register_entry for it is
+    # residue from a previous run and is removed.
+    owned = {path for path in wanted if path.parent == SITES}
+    orphans = []
+    for path in sorted(SITES.glob("*.yml")):
+        if path in owned:
+            continue
+        try:
+            rec = yaml.safe_load(path.read_text()) or {}
+        except Exception:
+            continue
+        refs = {e.get("ref") for e in rec.get("register_entries") or []
+                if e.get("register") == adapter.register_id}
+        if not refs:
+            continue
+        entry = (rec.get("definitions_met") or {}).get(adapter.band) or {}
+        # MISSING MEANS ASSESSED. The schema defines an absent `assessment` as
+        # the default, human-authored case, so only an EXPLICIT
+        # `register-derived` marks a record this importer may remove. Reading
+        # absence as "not adopted" deleted a hand-authored record (Dun Aonghasa)
+        # on the first run — deletion must require a positive signal, never the
+        # lack of one.
+        if entry.get("assessment", "assessed") != "register-derived":
+            continue
+        orphans.append(path)
+
     stale = [p.name for p, text in wanted.items()
-             if not p.exists() or p.read_text() != text]
+             if not p.exists() or p.read_text() != text] + [p.name for p in orphans]
 
     if args.check:
         if stale:
-            print(f"import: STALE — {len(stale)} file(s) differ from the snapshot, e.g. "
+            print(f"import: STALE — {len(stale)} file(s) differ from the snapshot "
+                  f"({len(orphans)} orphaned), e.g. "
                   f"{', '.join(stale[:3])}\n  Run scripts/import_register.py "
                   f"--register {args.register} --transform and commit.", file=sys.stderr)
             return 1
@@ -574,6 +690,8 @@ def main() -> int:
 
     SIGNALS.mkdir(parents=True, exist_ok=True)
     SITES.mkdir(parents=True, exist_ok=True)
+    for path in orphans:
+        path.unlink()
     for path, text in wanted.items():
         path.write_text(text)
     print(f"import[{args.register}]: wrote {len(items)} signals + "
