@@ -1,0 +1,45 @@
+{%- comment -%}
+  Bullet graph (Stephen Few). A measure against a reference, in one line.
+
+  Built for exactly this question: how much of the knowable population do we
+  actually hold? The TRACK is the population, the BAR is what is held, and the
+  numbers are printed because a proportion this small is unreadable as geometry
+  alone — which is the honest thing for it to look like.
+
+  Params:
+    label      (required)
+    sub        (optional) small print under the label
+    value      (required) the measure
+    reference  (required) the population the measure is compared against
+    state      (optional) shown as small print after the numbers
+    display    (optional) pre-formatted "value / reference" text
+
+  When value == reference the bar fills the track: the cell is closed.
+{%- endcomment -%}
+{%- comment -%}
+  Internals are `_`-prefixed: Liquid includes share the caller's scope, so a
+  bare `assign pct` here would overwrite a caller's variable of that name.
+{%- endcomment -%}
+{%- assign _pct = 0 -%}
+{%- if include.reference and include.reference > 0 -%}
+  {%- assign _pct = include.value | times: 1.0 | divided_by: include.reference | times: 100 -%}
+{%- endif -%}
+{%- assign _shown = _pct -%}
+{%- comment -%}
+  A non-zero measure too small to render gets a hairline floor so it is visible
+  as "present but tiny" rather than absent. The exact value is always printed
+  beside it, so the floor aids discovery without standing in for the number.
+{%- endcomment -%}
+{%- if _pct > 0 and _pct < 0.6 -%}{%- assign _shown = 0.6 -%}{%- endif -%}
+<div class="viz-row">
+  <div class="viz-row__label">{{ include.label }}{% if include.sub %}<small>{{ include.sub }}</small>{% endif %}</div>
+  <div class="viz-bullet" role="presentation">
+    <div class="viz-bullet__measure" style="width: {{ _shown }}%"></div>
+  </div>
+  <div class="viz-row__value">
+    {%- if include.display -%}{{ include.display }}{%- else -%}
+      {{ include.value }} <small>/ {{ include.reference }}</small>
+    {%- endif -%}
+    {%- if include.state %} <small>· {{ include.state }}</small>{% endif -%}
+  </div>
+</div>

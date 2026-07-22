@@ -1,0 +1,67 @@
+{%- comment -%}
+  Visualization styles. Include ONCE per page, before any viz include.
+
+  Everything here is built from theme tokens (var(--color-*), var(--gray-*)) —
+  no hardcoded hex, matching the theme's own law that nothing in _sass hardcodes
+  a colour. Marks are near-monochrome by design, not by omission: the theme's
+  rule is "colour is wayfinding only", and encoding data classes by LIGHTNESS
+  rather than hue is also the strongest accessibility answer, since a lightness
+  ramp survives every form of colour blindness by construction.
+
+  Only two steps are ever used as readable classes (ink and gray-500, measured
+  ΔE 31 apart); a third (gray-400) appears only in ordered scales where every
+  segment is direct-labelled, and the lightest steps are track, never data.
+{%- endcomment -%}
+<style>
+  .viz { margin: var(--space-6, 2rem) 0; }
+  .viz__title { font-size: 1rem; font-weight: 700; margin: 0 0 .15rem; }
+  .viz__sub { font-size: .8125rem; color: var(--color-ink-soft, #565656); margin: 0 0 .9rem; max-width: 62ch; }
+  .viz__note { font-size: .75rem; color: var(--color-ink-soft, #565656); margin: .6rem 0 0; max-width: 68ch; }
+
+  /* One row = one labelled measure. Grid keeps every label and number in a
+     column so the eye compares along a straight edge (Few: align the values,
+     don't make the reader hunt). */
+  /* The value column is FIXED, not auto. With `auto` the longest value string
+     in a figure pushes its own track shorter than its neighbours', so the bars
+     no longer share a right edge and the eye cannot compare along a straight
+     line — which is the entire reason to draw bars rather than print numbers.
+     One width across every figure also aligns every track on the page. */
+  .viz-row { display: grid; grid-template-columns: minmax(8rem, 14rem) 1fr 10.5rem;
+             gap: .75rem; align-items: center; padding: .28rem 0; }
+  .viz-row__label { font-size: .8125rem; line-height: 1.25; }
+  .viz-row__label small { display: block; color: var(--color-ink-soft, #565656); font-size: .6875rem; }
+  .viz-row__value { font-size: .8125rem; text-align: right; font-variant-numeric: tabular-nums; }
+  .viz-row__value small { color: var(--color-ink-soft, #565656); }
+
+  /* Track is background, never a data class. */
+  .viz-track { position: relative; background: var(--gray-200, #E6E6E3); height: .75rem; border-radius: 2px; }
+  .viz-bar { height: 100%; border-radius: 0 2px 2px 0; background: var(--color-ink, #1A1A1A); }
+  .viz-bar--muted { background: var(--gray-500, #6B6B6B); }
+  .viz-bar--faint { background: var(--gray-400, #B8B8B4); }
+
+  /* Stacked: 2px surface gap between segments, per mark spec — segments are
+     separated by ground, never by a drawn border. */
+  .viz-stack { display: flex; height: .75rem; border-radius: 2px; overflow: hidden; background: var(--gray-200, #E6E6E3); }
+  .viz-stack__seg { height: 100%; }
+  .viz-stack__seg + .viz-stack__seg { box-shadow: -2px 0 0 0 var(--color-ground, #fff); }
+
+  /* Bullet graph (Few). A measure bar inside a track, with a reference tick.
+     The track carries the population; the bar carries what we hold. */
+  .viz-bullet { position: relative; background: var(--gray-200, #E6E6E3); height: 1rem; border-radius: 2px; }
+  .viz-bullet__measure { position: absolute; inset: 0 auto 0 0; background: var(--color-ink, #1A1A1A); border-radius: 2px 0 0 2px; }
+  .viz-bullet__ref { position: absolute; top: -.15rem; bottom: -.15rem; width: 2px; background: var(--color-ink, #1A1A1A); }
+  .viz-bullet__band { position: absolute; inset: 0 auto 0 0; background: var(--gray-300, #D9D9D6); }
+
+  .viz-legend { display: flex; flex-wrap: wrap; column-gap: 1.1rem; row-gap: .3rem; font-size: .75rem; margin: 0 0 .7rem; padding: 0; list-style: none; }
+  .viz-legend li { display: flex; align-items: center; gap: .35rem; }
+  .viz-swatch { width: .7rem; height: .7rem; border-radius: 2px; flex: none; }
+  .viz-swatch--ink { background: var(--color-ink, #1A1A1A); }
+  .viz-swatch--muted { background: var(--gray-500, #6B6B6B); }
+  .viz-swatch--faint { background: var(--gray-400, #B8B8B4); }
+  .viz-swatch--track { background: var(--gray-200, #E6E6E3); }
+
+  @media (max-width: 40rem) {
+    .viz-row { grid-template-columns: 1fr auto; }
+    .viz-row__label { grid-column: 1 / -1; }
+  }
+</style>
