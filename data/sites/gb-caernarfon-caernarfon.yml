@@ -12,30 +12,57 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument CN079 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: >-
+      Royal lordly residence and active fortress. The Eagle Tower was "probably
+      at first intended to accommodate the King's lieutenant" and the castle held
+      royal apartments, while the twin-towered King's Gate, the mural towers and
+      the curtain walls formed "a complete and defensible enclosure" that
+      withstood Glyn Dŵr's sieges of 1403-04 and Civil War sieges. A royal lord
+      is still a lord; both halves of the criterion are met.
+  popular_castle:
+    verdict: "yes"
+    assessment: assessed
+    basis: >-
+      Designated a World Heritage Site. Cadw records that its "sheer scale,
+      nobility and architectural finish set it apart from all the others" — a
+      monument of national and international standing that any general audience
+      unquestionably calls a castle.
+  revival_folly:
+    verdict: "no"
+    assessment: assessed
+    basis: >-
+      Begun 1283 by Edward I and built in two medieval phases (1283-1292,
+      1294-1330), a genuine Edwardian fortress squarely within the defensive
+      era; not a post-defensive sham or aesthetic construction.
 register_entries:
 - register: gb-wls-cadw
   ref: CN079
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3417
 first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+last_updated: '2026-07-22'
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3417
-  title: Cof Cymru - National Historic Assets of Wales
+  title: Scheduled Monument Full Report — Castell Caernarfon
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: '2026-07-22'
+  note: >-
+    Cadw's full scheduled-monument report (CN079); the sole source, read in full
+    for the band assessment. One official report plus the register = medium.
 signals:
 - sig-20260721-cadw-cn079
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-cn079
+notes: >-
+  Upgraded from bulk register import to assessed verdicts against the Cadw full
+  report. fortified_residence, popular_castle and revival_folly are now assessed
+  from the report's evidence. enclosure_fortification, state_fortification and
+  palatial_seat are OMITTED: the report describes a genuine, governing defensive
+  fabric (so not palatial_seat) and neither a prehistoric enclosure nor a
+  post-1500 state work. Though crown-built, the report frames it as a royal
+  residence and seat of government (Eagle Tower, royal apartments), which the
+  fortified_residence band explicitly admits — so it is not routed to
+  state_fortification. Confidence medium: one official report corroborated only
+  by the register.

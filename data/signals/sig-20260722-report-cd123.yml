@@ -1,0 +1,81 @@
+id: sig-20260722-report-cd123
+site_id: gb-cardigan-cardigan
+attribute: designation_report
+value: 'Reference Number
+
+  CD123
+
+  Name
+
+  Cardigan Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Ceredigion
+
+  Community
+
+  Cardigan
+
+  Easting
+
+  217791
+
+  Northing
+
+  245917
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument comprises the remains of a Medieval castle built by the Norman lord, Gilbert
+  de Clare around 1110. The castle is located at the southern end of the town of Cardigan,
+  on a rocky spur overlooking the river Teifi. Below the castle, the ground drops precipitously
+  to the east and south.
+
+  Lord Rhys captured the castle for the Welsh in 1164 and rebuilt it in stone in 1171, although
+  nothing remains of this earlier phase. By 1240 Walter Marshal, brother of the earl of Pembroke
+  captured and rebuilt the castle, however a major phase of rebuilding took place in about
+  1244-54 under Robert Waleran, who became constable in 1248. Most of the medieval fabric
+  that remains probably dates to this period. A keep on the north curtain wall was built in
+  1246-52 (completed in about 1261) and three towers were built in the south-east, east and
+  north of the site. The outer ward is roughly oval in plan enclosing approximately 3 acres.
+  In 1279 Edward III made the castle the administrative centre for the new shire of Cardigan.
+
+  Further repairs and building works continued into the fourteenth century, but after this
+  the castle appears to have been neglected. By 1343 the curtain wall was in ruins and by
+  1610 the Great Tower (north tower), was partially ruined. Excavations in 1984 revealed that
+  there had been a ditch, 7m wide, north of the tower, with a counterscarp bank about 7m wide
+  and 1.5m high. In the Civil War the castle was damaged further during a siege of Cardigan
+  by Parliamentarian forces in December 1644; the curtain wall between the east and south-east
+  towers was partially destroyed.
+
+  The monument is of national importance for its potential to enhance our knowledge of Medieval
+  social, domestic and political life and warfare. Notably, the first Eisteddfod was hosted
+  here in 1176.
+
+  The scheduled area comprises the remains described and an area around them within which
+  related evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=1885
+source_title: Scheduled Monument Full Report — Cardigan Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

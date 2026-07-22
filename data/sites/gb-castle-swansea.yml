@@ -14,29 +14,41 @@ built:
 definitions_met:
   fortified_residence:
     verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument GM012 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    assessment: assessed
+    basis: 'Cadw''s report describes a curtain wall, cross arrowslits, a turret with an arrowslit and
+      a full-height garderobe tower alongside a residential south block containing a first-floor hall
+      and solar — combined active defence and lordly residence, held by the de Braose lords.'
+  revival_folly:
+    verdict: 'no'
+    assessment: assessed
+    basis: A late-13th to early-14th-century castle of the medieval era held by the de Braose lords;
+      later reuse as an 18th-century debtors' prison is adaptation of the real castle, not a purpose-built
+      sham or revival.
 register_entries:
 - register: gb-wls-cadw
   ref: GM012
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3759
 first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+last_updated: '2026-07-22'
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3759
-  title: Cof Cymru - National Historic Assets of Wales
+  title: Scheduled Monument Full Report — Swansea Castle
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: '2026-07-22'
+  note: Cadw's full scheduled-monument report (GM012); read in full — records the curtain wall, arrowslits,
+    garderobe tower, residential south block with hall and solar, and the de Braose tenure.
 signals:
 - sig-20260721-cadw-gm012
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-gm012
+notes: 'Assessed from Cadw''s full designation report (GM012), the visible "New Castle". fortified_residence:
+  yes — arrowslits, garderobe tower and curtain wall are active defence, integrated with a residential
+  hall/solar block held by lords. revival_folly: no — a medieval castle, later adapted (debtors'' prison),
+  not a folly. palatial_seat OMITTED (borderline, deliberately not asserted): the report notes the New
+  Castle was built when "Edward I''s pacification of Wales had deprived it of any military importance"
+  and describes a "picturesque arcaded parapet" on the residential block — suggestive of decorative
+  fortification — but the same block retains functional arrowslits and a garderobe tower, and the towers
+  were sold off for economic rather than amenity reasons, so the report does not clearly evidence an
+  unfortified palatial phase; left unassessed rather than inflated. popular_castle OMITTED: no visitor/usage
+  evidence in the report. Confidence medium: single official report plus register.'

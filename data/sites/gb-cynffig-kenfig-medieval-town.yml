@@ -12,30 +12,47 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument GM042 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: >-
+      Cadw's report describes a castle keep c.14×15m with walls c.2m thick
+      standing 3–4m, its north wall best preserved and carrying an intact gun
+      loop — a defensible residential strongpoint that satisfies the
+      residence-and-defence test of a masonry castle. (The surrounding
+      bank-and-ditch ramparts enclosing the 3.34ha borough are communal town
+      defences and belong to a different band, not this half.)
+  revival_folly:
+    verdict: "no"
+    assessment: assessed
+    basis: >-
+      A medieval castle keep and fortified town with an intact gun loop
+      indicating genuine artillery-era defensive use — not post-defensive-era
+      castellated ornament or a sham; fails the revival criterion.
 register_entries:
 - register: gb-wls-cadw
   ref: GM042
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2235
-first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+first_seen: "2026-07-21"
+last_updated: "2026-07-22"
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2235
-  title: Cof Cymru - National Historic Assets of Wales
+  title: Scheduled Monument Full Report — Kenfig Castle & Medieval Town
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: "2026-07-22"
+  note: Cadw's full scheduled-monument report (GM042); describes the keep and the town ramparts, read in full and assessed.
 signals:
 - sig-20260721-cadw-gm042
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-gm042
+notes: >-
+  Assessed from Cadw's full report (GM042). fortified_residence assessed yes on
+  the strength of the castle keep (a lordly defensible strongpoint by type),
+  though the report names no individual lord — recorded as a gap. revival_folly:
+  no on the medieval keep with its intact gun loop. state_fortification NOT
+  asserted: the fortified town's bank-and-ditch ramparts are a plausible
+  candidate for that band as communal town defences, but the report does not
+  establish their tenure explicitly, so the band is left unassessed rather than
+  guessed. popular_castle, palatial_seat and enclosure_fortification omitted —
+  the report does not speak to them. Confidence medium: one official report plus
+  the register.

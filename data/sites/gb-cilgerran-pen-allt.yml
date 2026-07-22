@@ -13,29 +13,34 @@ built:
 definitions_met:
   fortified_residence:
     verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument PE169 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    assessment: assessed
+    basis: 'The report describes a motte-and-bailey castle: a 4m-high motte carrying the collapsed remains
+      of a masonry tower (the lord''s residential strongpoint) with a bailey defended by a 5–6m rock-cut
+      ditch, a bank standing up to 7m, a counterscarp and geophysically-confirmed complex multivallate
+      defences. That is active defence combined with a lordly residential strongpoint — both halves of
+      the criterion in the classic castle form.'
 register_entries:
 - register: gb-wls-cadw
   ref: PE169
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3702
 first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+last_updated: '2026-07-22'
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3702
-  title: Cof Cymru - National Historic Assets of Wales
+  title: Scheduled Monument Full Report — Castell Pen-yr-Allt
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: '2026-07-22'
+  note: Cadw's full scheduled-monument report (PE169); describes a motte-and-bailey castle with masonry
+    tower and multivallate defences.
 signals:
 - sig-20260721-cadw-pe169
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-pe169
+notes: 'Assessed against the Cadw full report (PE169). fortified_residence set to yes: the motte-and-bailey
+  form — a motte with a masonry tower and a bailey defended by rock-cut ditch, 7m bank, counterscarp
+  and multivallate defences — meets both halves of the criterion. The report notes the castle overlies
+  an earlier Iron Age promontory fort (with a possible roundhouse), but describes no fabric of that
+  prehistoric phase in its own terms, so enclosure_fortification is left unassessed rather than guessed.
+  No usage evidence for popular_castle and nothing for the other bands, so they are omitted. Confidence
+  medium: one official report plus the register.'

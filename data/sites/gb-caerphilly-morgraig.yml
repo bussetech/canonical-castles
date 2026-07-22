@@ -12,30 +12,46 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument GM031 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: >-
+      Ruined pentagonal walled enclosure c.40m across with its angles "defined by
+      the remains of four towers and on the east a keep", described by Cadw for
+      its "medieval defensive and domestic practices" — active defence (angle
+      towers, a keep) coincident with lordly domestic use on the southern boundary
+      of Welsh Senghennydd.
+  revival_folly:
+    verdict: "no"
+    assessment: assessed
+    basis: >-
+      A masonry castle "thought to have been built in the mid thirteenth century",
+      within the defensive era; not a post-defensive aesthetic construction.
 register_entries:
 - register: gb-wls-cadw
   ref: GM031
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3381
 first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+last_updated: '2026-07-22'
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3381
-  title: Cof Cymru - National Historic Assets of Wales
+  title: Scheduled Monument Full Report — Castell Morgraig
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: '2026-07-22'
+  note: >-
+    Cadw's full scheduled-monument report (GM031); the sole source, read in full
+    for the band assessment. One official report plus the register = medium.
 signals:
 - sig-20260721-cadw-gm031
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-gm031
+notes: >-
+  Upgraded from bulk register import to assessed verdicts. fortified_residence
+  and revival_folly assessed from the report's keep-and-four-towers description
+  and "defensive and domestic practices". The report notes the castle "may not
+  have been completed" and identifies no specific lord, but the keep, towers and
+  domestic function support the fortified_residence criterion. popular_castle is
+  OMITTED — an obscure ridge-top ruin with no visitor operation or public-standing
+  evidence in the report; asserting it would inflate the one band with no register
+  to check it. enclosure_fortification (this is a masonry keep-and-tower castle,
+  not a prehistoric enclosure) and state_fortification omitted. Confidence medium.

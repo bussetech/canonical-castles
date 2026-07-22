@@ -13,29 +13,33 @@ built:
 definitions_met:
   fortified_residence:
     verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument GM004 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    assessment: assessed
+    basis: 'Coity was the caput of the lordship, held by the de Turberville family from the early 12th
+      century and later the Gamages (identified lords). The inner ward has a faceted curtain wall incorporating
+      a rectangular keep, a west gatehouse and a north-east gatehouse, all set behind a deep ditch and
+      counterscarp bank — active defence held against siege in the 1405 Glyndwr rebellion. Domestic ranges
+      (a first-floor hall over a vaulted undercroft, kitchen with ovens) supply the residence half.'
 register_entries:
 - register: gb-wls-cadw
   ref: GM004
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2853
 first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+last_updated: '2026-07-22'
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2853
-  title: Cof Cymru - National Historic Assets of Wales
+  title: Scheduled Monument Full Report — Castell Coety
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: '2026-07-22'
+  note: Cadw's full scheduled-monument report (GM004); detailed fabric and documentary history.
 signals:
 - sig-20260721-cadw-gm004
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-gm004
+notes: 'Assessed against the Cadw full report (GM004). fortified_residence yes — identified lords (de
+  Turberville, later Gamage), a full defensive circuit (curtain, keep, two gatehouses, deep ditch and
+  counterscarp) and residential ranges, held under siege in 1405. The 16th-century domestic remodelling
+  (an added storey, new windows, two chimney stacks) improved amenity, but the report records no defensive
+  fabric being removed for it, so palatial_seat is not assessed. No visitor/WHS usage evidence in the
+  report, so popular_castle is omitted; the ringwork origin sits under an identified lordly residence,
+  so enclosure_fortification does not apply. Confidence medium: single official report plus register.'

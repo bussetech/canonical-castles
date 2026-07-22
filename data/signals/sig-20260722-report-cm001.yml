@@ -1,0 +1,97 @@
+id: sig-20260722-report-cm001
+site_id: gb-cyngor-bro-dyffryn-cennen-carreg-cennen
+attribute: designation_report
+value: 'Reference Number
+
+  CM001
+
+  Name
+
+  Castell Carreg Cennen
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Carmarthenshire
+
+  Community
+
+  Cyngor Bro Dyffryn Cennen
+
+  Easting
+
+  266813
+
+  Northing
+
+  219100
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a castle, dating to the medieval period which stands
+  on a spectacular limestone crag 90m above the valley of the River Cennen. The castle originated
+  as a stronghold of the rulers of the kingdom of Deheubarth in the 12th century before it
+  was taken by Edward 1 in 1277 during his Welsh campaigns. Although recovered briefly in
+  1282 by Prince Llywelyn ap Gruffudd during his struggle against the crown it was granted
+  to the king’s supporter John Giffard owner of Llandovery Castle in 1283. Apart from two
+  years following  the 1287 rebellion of Rhys ap Mareddudd the castle remained in the  possession
+  Giffard and his son until 1321 and it is  during this time nearly all the present stone
+  structure was built, obliterating any traces of earlier works.
+
+  The castle consists of an outer ward built to defend the castle on its more level and vulnerable
+  east and north approaches and which is composed of a curtain wall defended by small drum
+  towers at the angles and gate; this will have enclosed buildings such as stables and the
+  smithy, all that is visible today is the remains of a lime kin with the quarry ditch used
+  to provide raw material, outside the curtain wall to the north east are the turf covered
+  remains of a rectangular building of unknown purpose. An elaborate barbican defends the
+  way from the outer  into the inner ward by way of a narrow stepped ramp guarded by two gates
+  each with a moveable bridge over deep pits, at the west corner of this is a tower containing
+  a basement, referred to as a prison in 1369, from this a drawbridge gave access to the castle
+  gatehouse and inner ward.
+
+  The inner ward has the gatehouse, hub of the castle’s defence, situated at the centre of
+  the north side of an inner curtain wall flanked by strong circular north west and square
+  north east corner towers reached by wall walks. In contrast the south west and south east
+  corners of the curtain are lightly defended, by a curving projection and a corner turret
+  respectively, as the castle here sits directly on the precipitous cliff. Ranged along the
+  east wall are the castle’s main living quarters set at first floor level over a series of
+  ground floor basements. The hall entered by an external stone stair is centrally placed;
+  to the north is the kitchen with large stone fireplaces, to the south the owner’s private
+  apartments which show evidence of alteration, possibly during the tenure of John of Gaunt
+  in 1369. Two cisterns at the back of the gatehouse housed the castle’s water supply. A square
+  tower projecting from the west wall accessed from the hall contained the chapel. At the
+  south east corner of the ward steps lead down to a postern from which a narrow vaulted passage
+  runs along the cliff edge to the walled up front of natural cave; a construction designed
+  to prevent a vulnerable point from being used to undermine the castle. The blocking incorporates
+  a dovecot.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive and domestic practices. The monument is well-preserved and an important relic
+  of the medieval landscape. It retains significant archaeological potential, with a strong
+  probability of the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3300
+source_title: Scheduled Monument Full Report — Castell Carreg Cennen
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

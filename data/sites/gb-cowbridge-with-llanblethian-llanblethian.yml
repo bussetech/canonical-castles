@@ -14,29 +14,31 @@ built:
 definitions_met:
   fortified_residence:
     verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument GM094 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    assessment: assessed
+    basis: 'A large courtyard castle whose gatehouse and curtain wall are attributed to Gilbert de Clare
+      (the Last, d. 1314), an identified lord. Active defence: a massive twin-towered gatehouse — a gatehouse
+      meant to be held — and a high length of curtain wall on the north side. Residence: the walled ward
+      with a central mound carrying the shell of a thick-walled building, possibly an earlier keep.'
 register_entries:
 - register: gb-wls-cadw
   ref: GM094
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3389
 first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+last_updated: '2026-07-22'
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3389
-  title: Cof Cymru - National Historic Assets of Wales
+  title: Scheduled Monument Full Report — Llanblethian Castle
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: '2026-07-22'
+  note: Cadw's full scheduled-monument report (GM094); describes gatehouse, curtain wall and probable
+    keep, attributed to Gilbert de Clare.
 signals:
 - sig-20260721-cadw-gm094
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-gm094
+notes: 'Assessed against the Cadw full report (GM094). fortified_residence yes — a courtyard castle built
+  by the identified lord Gilbert de Clare, with a twin-towered gatehouse, high curtain wall and a probable
+  keep on the central mound: active defence plus lordly residence. No usage evidence for popular_castle
+  and nothing supporting the other bands, so they are omitted. Confidence medium: single official report
+  plus register.'

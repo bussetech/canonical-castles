@@ -1,0 +1,113 @@
+id: sig-20260722-report-mm047
+site_id: gb-caerwent-llanvair
+attribute: designation_report
+value: 'Reference Number
+
+  MM047
+
+  Name
+
+  Llanvair Castle
+
+  Date of Designation
+
+  07/07/1933
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Monmouthshire
+
+  Community
+
+  Caerwent
+
+  Easting
+
+  344577
+
+  Northing
+
+  192414
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a medieval castle and a later mansion. It is located
+  on the western edge of the village of Llanfair Discoed, immediately west of the churchyard.
+  Most of the surviving masonry is thought to date from the first half of the 13th century
+  when the FitzPayn family held the manor but may occupy an earlier site, Llanfair being one
+  of three hardwicks or dairy farms held under Striguil or Chepstow Lordship in Domesday.
+  It was later incorporated into a Tudor house of the Kemeys family. The castle is now incorporated
+  into the garden of a modern house.
+
+  The castle occupies a low spur to the north of and overlooking the parish church and present
+  village, with wide views across this lower ground towards the Roman Via Julia. At the point
+  of the spur is a compact rectangular masonry ward of roughly coursed limestone rubble with
+  round towers at its N and S angles, the curtain wall standing to a height of up to 5m above
+  the courtyard and 10m on externally on the west and south. This is defended by scarps to
+  the S above the churchyard and dry ditch to the west and north; the present lane to Wentwood
+  passes through the probable line of the eastern ditch. Further scarps to the north east
+  define one side of a larger outer enclosure, largely built over by the present bungalow
+  in the 1980s.
+
+  It seems to have seems to have been entered on the northern side, where there is a 2.5m
+  wide gap in the 1.5m thick curtain wall but no sign of a gatehouse. The principal surviving
+  ranges were set against the curtain walls on the west and south. The west range seems to
+  have contained a first-floor hall or well-appointed chamber block with two large robbed
+  out windows piercing the curtain wall and a small doorway to the north that may have served
+  an unusual timber latrine projecting over the ditch. most of the inner wall of the range
+  has been reduced to the level of the rubble choked courtyard. The three-storied south-west
+  corner tower is c3m in internal diameter with walls c1.8m thick. It still stands some 14m
+  high to almost parapet level, where it retains probable joist-holes for a timber gallery
+  or hourd. A nearly intact spiral stair in the thickness of the wall gives access to the
+  two upper floors, a change in masonry indicating that the second storey may have been an
+  addition; a doorway leads from it onto parapet of the west curtain wall. There were doorways
+  at ground and first-floor levels, which may not be contemporary. Embrasures for windows
+  survive on all three levels, those on the ground floor being plain splayed loops facing
+  along the adjacent curtain walls. Another (blocked) with a square basal oillet (decoration)
+  in Triassic sandstone similar to those in the later Marshal works at Chepstow and Caerleon
+  faced along the south curtain at second floor level. The surviving details of the tower
+  indicate a date in the first half of the thirteenth century.  Additional windows on the
+  upper floors have largely been robbed out. The northwestern angle tower was a relatively
+  small turret and is solid at courtyard level. Across the ditch to the north within the former
+  outer enclosure is the base of another isolated round structure, sometimes interpreted as
+  a tower. This has been heavily rebuilt in recent years but the location and thin walls may
+  indicate a dovecote. The eastern half of the site is more ruined; a high fragment of the
+  south curtain wall and some thinner internal walls of an east-west range survive, the latter
+  possibly relating to the later Kemeys house. The eastern  defences and any structures overlooking
+  the road had been robbed out by the early 19th century but the remains of their lower levels
+  may survive buried.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive and domestic architecture. The surviving structures are well-preserved retain
+  a number of distinctive period features that indicate the development of the building. It
+  forms an important relic of the medieval landscape and a prominent feature within the modern
+  one, being visible from several miles away on the lower ground to the south. It shares group
+  value and a number of distinctive architectural features with other early to mid 13th century
+  masonry castles in south-east wales, the round south-west tower being a fine example of
+  its type. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2351
+source_title: Scheduled Monument Full Report — Llanvair Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

@@ -12,30 +12,50 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument MM050 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: >-
+      A motte-and-bailey founded in the 12th century by Milo Fitzwalter, Lord of
+      Caldicot, and refortified in stone from c.1221 by Humphrey de Bohun. Active
+      defence: a keep with 3m walls, cross arrow loops, a crenellated parapet and
+      hourd; a curtain wall with a full wall-walk; and the de Bohun and Woodstock
+      gatehouses with portcullises and murder holes meant to be held. Residence:
+      grand lordly accommodation in the SE tower and hall range, and a gatehouse
+      built as "accommodation for the Lord and his family" — both halves met, for
+      identified lords.
+  revival_folly:
+    verdict: "no"
+    assessment: assessed
+    basis: >-
+      A 12th-14th-century castle within the defensive era; the 1885-1963 Cobb
+      restoration into a family home was restoration of a genuine castle, not a
+      post-defensive sham — the original defensive intent governs.
 register_entries:
 - register: gb-wls-cadw
   ref: MM050
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2353
 first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+last_updated: '2026-07-22'
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2353
-  title: Cof Cymru - National Historic Assets of Wales
+  title: Scheduled Monument Full Report — Caldicot Castle (unoccupied parts)
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: '2026-07-22'
+  note: >-
+    Cadw's full scheduled-monument report (MM050); the sole source, read in full
+    for the band assessment. One official report plus the register = medium.
 signals:
 - sig-20260721-cadw-mm050
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-mm050
+notes: >-
+  Upgraded from bulk register import to assessed verdicts. palatial_seat is
+  OMITTED: the 1885-1963 Cobb conversion made the gatehouse "a comfortable home"
+  and inserted larger windows, but this was a Victorian restoration of a genuine
+  castle rather than construction of an unfortified seat, and the report does not
+  frame a governing palatial phase. popular_castle omitted — the report is a
+  designation document and, beyond noting sale to the council in 1963, gives no
+  visitor-operation or public-standing evidence to assess the usage band on.
+  enclosure_fortification and state_fortification omitted. Confidence medium: one
+  official report plus the register.

@@ -1,0 +1,115 @@
+id: sig-20260722-report-me044
+site_id: gb-harlech-harlech
+attribute: designation_report
+value: 'Reference Number
+
+  ME044
+
+  Name
+
+  Castell Harlech
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Gwynedd
+
+  Community
+
+  Harlech
+
+  Easting
+
+  258099
+
+  Northing
+
+  331277
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The following provides a description of the Scheduled Monument.
+
+  This monument comprises the remains of a medieval castle built by King Edward I. Begun in
+  1283, the castle occupies a strategic site on a rocky outcrop with commanding views over
+  the sea.
+
+  The castle is of concentric type and built out of local Rhinog Grit and yellow sandstone.
+  The main defences consist of four round towers placed at the corners of a roughly rectangular
+  high-walled inner ward, with a lower-walled outer ward forming a narrow secondary line of
+  defence. Beyond this, steep cliffs to the north and west and an artificial ditch to the
+  west and south complete the defences. The outer ward broadly follows the line of the inner
+  ward, though its walls have been reduced in height.
+
+  In the centre of the inner ward''s eastern (town-facing) wall is a large square gatehouse
+  block and is the only surviving completed example of this form of gatehouse built for Edward
+  I. It consists of a pair of high D-shaped drum towers to the front, and a pair of narrower
+  stair towers to the rear, the latter rising up two stages above the inner ward''s corner
+  towers and one stage above the paired front towers.
+
+  The gatehouse housed the principal rooms, arranged as lavishly-appointed suites, one on
+  each of the upper floors. The first-floor apartment probably served as the constable''s
+  quarters, whilst the upper floor rooms, of rather finer quality of detail, would have been
+  reserved for important visitors. Access to these apartments was from the inner ward. Here
+  an external stone stair, arranged in three straight flights, leads to a round-arched entrance
+  off-centre to the left of the gatehouse''s 3-window inner elevation. Various fragmentary
+  fireplaces survive, mostly with stone hoods with decorative corbels. The gatehouse was conceived
+  as an independently defensible unit, and correspondingly could withstand assault from the
+  inner ward, in the event that it fell to the enemy.
+
+  The main approach to the castle is in the form of a tunnel entrance between the front towers
+  of the Gatehouse. This leads through to the inner ward via a system of defences including
+  portcullises, gates and murder-holes. The portcullises were operated from the first floor
+  and were therefore under the constable''s direct control.
+
+  A hall, chapel, service and storage buildings were sited around the north, south and west
+  sides, with the well located against the north wall. Of these buildings, only the walls
+  of the gabled chapel stand to any height; the remainder is reduced to foundation level.
+
+  The outer ward has a postern gate, comprising a gateway between small turrets, corbelled-out
+  from the wall; a complex bridge system with further gates and a large drawbridge no longer
+  survives. On the north side is a postern gate with small D-shaped drum towers. This gives
+  access to ''Castle Rock'', the rocky plateau which provides the site. A wall runs north-eastwards
+  and curves around and down to protect the rock on this side.
+
+  At the foot of the rock, at the north-western point, is the ''Gate-Next-the-Sea'', where
+  supplies were landed by ship. This gateway had its own drawbridge and portcullis system
+  and was further covered by two rock-cut engine platforms above. It was linked to the main
+  castle by a walled and defended track (known as the ''Way From the Sea'') which winds its
+  way up along the east and south sides of the rock.
+
+  Harlech remained in military use for several centuries. It is notable for playing a key
+  role in the events that marked the great Welsh uprising (1400-1414) led by Owain Glyndŵr,
+  during which it served as his residence and court from 1404 until 1409.  During the subsequent
+  Wars of the Roses the castle was held by the Welsh Lancastrians before surrendering to the
+  besieging Yorkists (as immortalized in the song ‘Men of Harlech’), and saw its last action
+  during the Civil War, when it was the last mainland British castle to hold out for King
+  Charles I before finally being surrendered in 1647.
+
+  This monument is of national and international importance for its potential to enhance our
+  knowledge of medieval social, domestic and political life and warfare. This is reflected
+  by its designation as a World Heritage Site. The scheduled area comprises the remains described
+  and an area around them within which related evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2464
+source_title: Scheduled Monument Full Report — Castell Harlech
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

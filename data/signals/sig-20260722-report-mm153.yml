@@ -1,0 +1,75 @@
+id: sig-20260722-report-mm153
+site_id: gb-caerwent-dinham
+attribute: designation_report
+value: 'Reference Number
+
+  MM153
+
+  Name
+
+  Dinham Castle
+
+  Date of Designation
+
+  06/03/1958
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Monmouthshire
+
+  Community
+
+  Caerwent
+
+  Easting
+
+  348032
+
+  Northing
+
+  192335
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a castle, dating to the medieval period. The castle
+  is situated in woodland on the E side of a small valley with a steep drop to the valley
+  bottom on the W and S sides. On the N side, below the castle, is a wide shallow ditch 0.5m
+  deep, which runs NW down the slope. On parts of the inners side low footings of a wall are
+  visible. The castle itself is situated on the top of the slope to the W and S, 3m above
+  the ditch. At the N end of the site are the remains of a rectangular stone-built building
+  measuring 14m N/S by 7m, containing two rooms. To the S of the rectangular building is a
+  T-shaped wall standing up to 1.8m high. This is rubble-built and has been spread. On the
+  S side of the wall is a level platform, and on the S side of the platform are the remains
+  of a second rectangular structure. On the E side of the site are faint traces of a bank.
+  The history of the site is obscure, although it is known that there was a church on this
+  location in the 12th century.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=574
+source_title: Scheduled Monument Full Report — Dinham Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

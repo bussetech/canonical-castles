@@ -157,3 +157,33 @@ contested — `disputed` and `dispute_note`. Everything else on the record is
 carried forward by deterministic code. Setting `assessment: assessed` on a band
 transfers ownership of that record away from the importer permanently, so do it
 only where the report actually supports the verdict.
+
+
+## Writing a record back — three rules a metered run had to teach
+
+These are not style preferences. Each one names a fault that reached committed
+data, validated against the schema, and cost real money to discover.
+
+**8. Never write a colon-space inside unquoted prose.** A `basis` reading
+`revival_folly is no: a symbolic status statement` is not a string — `: ` starts
+a YAML mapping, and the whole record fails to parse. Write the em dash instead:
+`revival_folly is no — a symbolic status statement`. This is the same family as
+the `verdict: yes` boolean trap: prose written into YAML meets YAML's
+punctuation rules, and loses. If a colon genuinely belongs in the sentence,
+quote the whole scalar.
+
+**9. Return the WHOLE record, never just the part you changed.** A record came
+back carrying its verdicts and nothing else — `name`, `location`, `built`,
+`sources` all gone. It was well-formed YAML and it passed the schema, because
+the damage was in what was *missing*. Assessing a structure's bands never
+licenses deleting its name. When a batch is large or its evidence is long, the
+temptation to emit a patch is strongest and the loss is hardest to see.
+
+**10. If you did not assess it, do not rewrite it.** Structures appear in
+context that are not yours to assess. Returning one unchanged-but-reformatted,
+with `last_updated` bumped, makes an echo look exactly like an assessment in
+every downstream count. Emit only the structures you actually assessed.
+
+`scripts/check_gnome_output.py` enforces 9 and 10 by comparing each returned
+record against the version it replaces. It cannot enforce 8 — a record that
+fails to parse never reaches it.

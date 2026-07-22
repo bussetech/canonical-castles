@@ -13,30 +13,46 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument MM007 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: >-
+      Curtain wall with three round towers enclosing the inner ward, a gatehouse
+      with a 14th-century drawbridge pit (active defence meant to be held), and a
+      two-storey hall block whose upper floor held the hall and the lord's solar
+      (residence); held by Hubert de Burgh and later the Earl of Lancaster. Both
+      the fortified and private-lordly-residence halves are met.
+  palatial_seat:
+    verdict: "yes"
+    assessment: assessed
+    basis: >-
+      In the 14th century the castle "ceased to have a military function and was
+      converted to provide suitable accommodation for the Earl of Lancaster",
+      with "larger windows replacing the arrow slits", fireplaces and garderobes
+      added and an elaborate ashlar chimney — defensive fabric relaxed for
+      residential amenity, the retained-relic test for this band.
 register_entries:
 - register: gb-wls-cadw
   ref: MM007
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2343
-first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+first_seen: "2026-07-21"
+last_updated: "2026-07-22"
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2343
-  title: Cof Cymru - National Historic Assets of Wales
+  title: Scheduled Monument Full Report — Grosmont Castle
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: "2026-07-22"
+  note: Cadw's full scheduled-monument report (MM007); assessed against the bands.
 signals:
 - sig-20260721-cadw-mm007
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-mm007
+notes: >-
+  Designation report (MM007) assessed. Two bands carry assessed verdicts, for
+  different phases (rule 3): fortified_residence: yes on the medieval defensive
+  fabric and lordly hall, and palatial_seat: yes on the documented 14th-century
+  conversion for the Earl of Lancaster (arrow slits replaced by larger windows,
+  fireplaces and garderobes added). popular_castle omitted — the report shows the
+  "Three Castles" grouping but no visitor-operation or public-standing evidence;
+  state_fortification and revival_folly not spoken to. One report plus register →
+  medium.

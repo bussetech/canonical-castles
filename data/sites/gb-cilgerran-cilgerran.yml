@@ -13,29 +13,47 @@ built:
 definitions_met:
   fortified_residence:
     verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument PE002 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    assessment: assessed
+    basis: 'Cadw''s report describes two strong round towers projecting beyond the curtain wall with
+      arrow slits, a main gatehouse with portcullis grooves and draw-bar holes (a gate meant to be held),
+      a curtain wall with wall-walk and a defensive ditch cutting off the promontory — active defence.
+      Residence with hall, private apartments and kitchen, held by Earl William Marshal of Pembroke
+      and later the Hastings and Vaughan families.'
+  revival_folly:
+    verdict: 'no'
+    assessment: assessed
+    basis: A 12th-13th-century masonry castle of the defensive era, refortified in the 1370s against
+      a feared French invasion; a genuine castle later left as a picturesque ruin, not a purpose-built
+      revival or sham.
+  popular_castle:
+    verdict: 'yes'
+    assessment: assessed
+    basis: The report records that the ruin's "picturesque setting made it an early favourite among tourists,
+      who from the 18th century, could visit by boat from Cardigan" — documented long-standing popular
+      visitor appeal, not merely a register name.
 register_entries:
 - register: gb-wls-cadw
   ref: PE002
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3057
 first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+last_updated: '2026-07-22'
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3057
-  title: Cof Cymru - National Historic Assets of Wales
+  title: Scheduled Monument Full Report — Castell Cilgerran
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: '2026-07-22'
+  note: Cadw's full scheduled-monument report (PE002); read in full — records the two round towers, gatehouse,
+    curtain wall, ditch, domestic buildings, lordly tenure and the site's 18th-century tourist appeal.
 signals:
 - sig-20260721-cadw-pe002
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-pe002
+notes: 'Assessed from Cadw''s full designation report (PE002). fortified_residence: yes — two round
+  towers with arrow slits, a gatehouse with portcullis and draw-bar holes, curtain wall with wall-walk
+  and a promontory-cutting ditch are active defence, integrated with hall, private apartments and kitchen
+  held by identified lords. revival_folly: no — a defensive-era castle, refortified in the 1370s. popular_castle:
+  yes — the report explicitly documents long-standing tourist visitation from the 18th century. palatial_seat
+  OMITTED: the Vaughans built a new house nearby and let the castle fall to ruin rather than converting
+  it into an unfortified seat, so no palatial phase of the castle itself is evidenced. Confidence medium:
+  single official report plus register. (The fragment scheduling PE384 is a separate record, gb-cilgerran-cilgerran-additional-area.)'

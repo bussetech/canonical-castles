@@ -13,29 +13,39 @@ built:
 definitions_met:
   fortified_residence:
     verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument CN004 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    assessment: assessed
+    basis: 'Built by Edward I from 1283 as "a secure residence for the king and a seat for the royal
+      court" (a royal lord is still a lord). Active defence: a 3m-thick, up-to-27m-high curtain wall with
+      eight round towers, a continuous wall walk, a west barbican and an entrance defended by drawbridge
+      and portcullis. Residence: a great hall range, royal apartments and a vaulted royal chapel — "the
+      most intact set of residential buildings left by the medieval English monarchy".'
+  popular_castle:
+    verdict: 'yes'
+    assessment: assessed
+    basis: 'The report cites the castle''s designation as a World Heritage Site and its standing as exceptional
+      "not only for the grandeur of its high towers and curtain walls, but also for its excellent state
+      of preservation" — public standing well beyond a mere naming convention.'
 register_entries:
 - register: gb-wls-cadw
   ref: CN004
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3411
 first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+last_updated: '2026-07-22'
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3411
-  title: Cof Cymru - National Historic Assets of Wales
+  title: Scheduled Monument Full Report — Castell Conwy
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: '2026-07-22'
+  note: Cadw's full scheduled-monument report (CN004); detailed fabric, royal residential function and
+    World Heritage citation.
 signals:
 - sig-20260721-cadw-cn004
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-cn004
+notes: 'Assessed against the Cadw full report (CN004). fortified_residence yes — a fortified royal residence
+  and seat of the royal court with a full Edwardian defensive circuit. popular_castle yes — the report''s
+  own World Heritage citation and reputation for preservation evidence broad public standing. state_fortification
+  is not assessed: though crown-built, the report frames the work as a royal residence, and that band
+  targets post-medieval state military works. Confidence held at medium per the single-source rule (one
+  official report plus register), however emphatic the report is.'

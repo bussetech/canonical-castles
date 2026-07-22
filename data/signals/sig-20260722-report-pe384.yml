@@ -1,0 +1,67 @@
+id: sig-20260722-report-pe384
+site_id: gb-cilgerran-cilgerran-additional-area
+attribute: designation_report
+value: 'Reference Number
+
+  PE384
+
+  Name
+
+  Cilgerran Castle Additional Area
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Pembrokeshire
+
+  Community
+
+  Cilgerran
+
+  Easting
+
+  219466
+
+  Northing
+
+  243078
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of a part of the remains of a castle, dating to the medieval period.
+  It comprises a part of the original ditch that protected the bailey of the early castle
+  at Cilgerran and which later formed part of the defences of the outer ward, together with
+  an area of the castle’s gatehouse, parts of which survive as low wall footings. The gatehouse’s
+  date is uncertain though it is thought to be early in the castle’s history.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive and is an addition to the scheduling of the majority
+  of Cilgerran Castle as scheduled monument CM002.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=450
+source_title: Scheduled Monument Full Report — Cilgerran Castle Additional Area
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

@@ -1,0 +1,102 @@
+id: sig-20260722-report-mm007
+site_id: gb-grosmont-grosmont
+attribute: designation_report
+value: 'Reference Number
+
+  MM007
+
+  Name
+
+  Grosmont Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Monmouthshire
+
+  Community
+
+  Grosmont
+
+  Easting
+
+  340556
+
+  Northing
+
+  224452
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a castle, dating to the medieval period. Grosmont,
+  together with White Castle (MM006) and Skenfrith (MM088), are known as the ''Three Castles''
+  and were held collectively. It is not known exactly when the first castle was built at Grosmont,
+  the earliest record of it dates from 1142 although its origins probably date to the early
+  years of the Norman conquest. The earliest castle on the site would have comprised a motte
+  surrounded by a moat with a timber keep and timber palisade, and may have been built by
+  William Fitz Osbern around AD 1070. The castle passed to the Marcher Lord Payn Fitz John
+  in the early twelfth century, who gifted it to King Stephen in exchange for the province
+  of Archenfield in 1137. It was under royal control for only two years before it was taken
+  by Brian Fitz Count of Abergavenny in 1139. In the mid-twelfth century it was granted by
+  charter to Walter Hereford who united it with Skenfrith and White Castle to form a single
+  lordship. After Walter''s death in 1160 the castle reverted to royal control, under Henry
+  II, and remained a royal fortress until 1201 when it was granted to Hubert Burgh.
+
+  The mound on which the castle is built is D-shaped, curved on the south-western side and
+  striaght on the north-eastern side. It is not clear whether this was the original shape
+  of the motte or whether it was altered to accommodate the square hall block. Indeed, the
+  date of the hall block is disputed with some evidence that it may have been an early feature
+  of the castle, a rectangular stone-built keep dating from the late 11th or early 12th century,
+  later remodelled by Hubert Burgh. Alternatively, it may have been built by Hubert Burgh
+  as part of his extensive programme of building work that was undertaken between 1219 and
+  1232 when he constructed the stone fortress still visible today.
+
+  The hall block is a rectangular, two storey building  with four narrow lancet windows on
+  the ground floor and thee large round-headed windows on the first floor. The ground floor
+  would have been a store room while the upper floor would have been divided into two with
+  the southern, larger, room functioning as the hall and the northern room the lord''s private
+  room, or solar. There are the remains of a spiral staircase built into the south-eastern
+  corner of the hall block, providing access from the ground floor into the main hall. On
+  the western side of the castle the imposing curtain wall and remains of three round towers
+  enclose the inner ward. The remains of the gatehouse are located on the south-easten side
+  of the castle, below which can be seen the remains of the 14th century drawbridge pit.
+
+  In the 14th century the castle ceased to have a military funcation and was converted to
+  provide suitable accommodation for the Earl of Lancaster who had been granted the Three
+  Castles by his brother, Edward I, following his subjugation of Wales. The austere, military
+  structure was remodelled, with larger windows replacing the arrow slits of the earlier castle,
+  fireplaces and garderobes added to the rooms in the towers, and two structures built outside
+  the curtain wall on the northern side. The chimney of the western of the two later external
+  structures is topped by an elaborate ashlar chimney pot and is an exceptional survival from
+  the medieval period.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2343
+source_title: Scheduled Monument Full Report — Grosmont Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

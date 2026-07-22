@@ -13,30 +13,54 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument GM002 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: >-
+      Built 1268-71 by Gilbert de Clare, lord of Glamorgan, as both fortress and
+      residence. Active defence: concentric curtain walls, twin D-shaped
+      gatehouses with portcullises at both ends, flanking corner towers and
+      large-scale water defences (an identified lord's held work). Residence: the
+      great ground-floor hall "was a sumptuous building" with well-appointed
+      state apartments on the south of the inner ward.
+  popular_castle:
+    verdict: "yes"
+    assessment: assessed
+    basis: >-
+      Cadw calls it "one of the great medieval castles of western Europe" and the
+      second largest in Britain, famed for its leaning tower — a monument of wide
+      public standing that a general audience recognises as a castle.
+  revival_folly:
+    verdict: "no"
+    assessment: assessed
+    basis: >-
+      A 13th-century concentric castle, "a revolutionary masterpiece of military
+      planning" within the defensive era; not a post-defensive folly or revival.
 register_entries:
 - register: gb-wls-cadw
   ref: GM002
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2848
 first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+last_updated: '2026-07-22'
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2848
-  title: Cof Cymru - National Historic Assets of Wales
+  title: Scheduled Monument Full Report — Caerphilly Castle
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: '2026-07-22'
+  note: >-
+    Cadw's full scheduled-monument report (GM002); the sole source, read in full
+    for the band assessment. One official report plus the register = medium.
 signals:
 - sig-20260721-cadw-gm002
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-gm002
+notes: >-
+  Upgraded from bulk register import to assessed verdicts against the Cadw full
+  report. palatial_seat is OMITTED, not set: although the report describes
+  sumptuous state apartments, the defensive fabric (concentric wards, gatehouses,
+  water defences) genuinely governs, so it fails the "defences absent/vestigial"
+  test rather than the report affirmatively speaking to a palatial phase. The
+  adjacent 17th-century Civil War gun-platform earthwork is a field work, not a
+  state fortification of this structure. enclosure_fortification and
+  state_fortification omitted. Confidence medium: one official report plus the
+  register.

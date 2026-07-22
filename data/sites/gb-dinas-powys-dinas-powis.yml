@@ -12,30 +12,47 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument GM021 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: >-
+      Cadw's report describes a rectangular Norman keep (18×13m, very thick
+      walls) and a curtain wall enclosing the site, with a main entrance archway
+      retaining a draw-bar hole and a narrow pointed-arch postern, and a great
+      hall and buildings lining the walls — a defensible residence that 'still
+      has the appearance of a defensive stronghold' on a naturally strong ridge.
+      It was the centre of the lordship of Dinas Powys, held by the Norman de
+      Sumeri family (Roger de Sumeri). Both halves of the criterion are met.
+  revival_folly:
+    verdict: "no"
+    assessment: assessed
+    basis: >-
+      A castle of c.1200 held by the Norman de Sumeri lords, with genuine
+      medieval defensive fabric — not a post-defensive-era castellated building
+      or sham; fails the revival criterion.
 register_entries:
 - register: gb-wls-cadw
   ref: GM021
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=1025
-first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+first_seen: "2026-07-21"
+last_updated: "2026-07-22"
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=1025
-  title: Cof Cymru - National Historic Assets of Wales
+  title: Scheduled Monument Full Report — Dinas Powis Castle
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: "2026-07-22"
+  note: Cadw's full scheduled-monument report (GM021); supplies fabric and the named lordly holder, read in full and assessed.
 signals:
 - sig-20260721-cadw-gm021
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-gm021
+notes: >-
+  Assessed from Cadw's full report (GM021), replacing the register-derived
+  verdict with an assessed fortified_residence: yes and adding revival_folly: no.
+  The curtain wall is straight-sectioned without corner towers, but the Norman
+  keep, curtain-bounded enclosure, gated entrance with draw-bar hole and postern
+  give active defence, and the great hall plus the de Sumeri lordship supply the
+  private-residence half. popular_castle left UNASSESSED — the report shows no
+  visitor operation or usage evidence. palatial_seat, state_fortification and
+  enclosure_fortification omitted — the report does not speak to them. Confidence
+  medium: one official report plus the register.

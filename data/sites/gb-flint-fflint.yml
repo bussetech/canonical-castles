@@ -13,29 +13,34 @@ built:
 definitions_met:
   fortified_residence:
     verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument FL003 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    assessment: assessed
+    basis: 'Assessed from Cadw full report FL003. Active defence: a square ward with a round tower at
+      each corner, arrowslit embrasures, moated inner and outer wards, a drawbridge, and an inner gatehouse
+      held by a turning gate, doors and a portcullis. Residence: residential tower floors, a large fireplace,
+      a chapel, and a great tower/donjon ("a castle within the castle") with full residential accommodation
+      and a well. Built in 1277 by Edward I (a royal lord is still a lord); both halves securely met.'
 register_entries:
 - register: gb-wls-cadw
   ref: FL003
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3806
 first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+last_updated: '2026-07-22'
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3806
-  title: Cof Cymru - National Historic Assets of Wales
+  title: Scheduled Monument Full Report — Castell y Fflint
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: '2026-07-22'
+  note: Cadw's full scheduled-monument report (FL003); read in full and assessed against the bands.
 signals:
 - sig-20260721-cadw-fl003
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-fl003
+notes: 'Upgraded to assessed against Cadw full report FL003 (sig-20260722-report-fl003). The report
+  richly describes active defence (corner towers, arrowslits, moated wards, drawbridge, inner gatehouse
+  with turning gate, doors and portcullis) and residence (residential tower floors, chapel, a donjon
+  "castle within the castle" with a well), supporting fortified_residence: yes for Edward I''s castle
+  of 1277 (a royal lord is still a lord). popular_castle OMITTED: however famous Flint is, the report
+  itself evidences no visitor operation or World Heritage standing, and assessment mode bars using outside
+  knowledge — per the usage rule the band is left unassessed. Other bands omitted likewise. Confidence
+  medium.'

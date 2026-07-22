@@ -1,0 +1,90 @@
+id: sig-20260722-report-gm021
+site_id: gb-dinas-powys-dinas-powis
+attribute: designation_report
+value: 'Reference Number
+
+  GM021
+
+  Name
+
+  Dinas Powis Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Vale of Glamorgan
+
+  Community
+
+  Dinas Powys
+
+  Easting
+
+  315275
+
+  Northing
+
+  171637
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The following provides a description of the Scheduled Ancient Monument.
+
+  The monument comprises the remains of a medieval castle. Dating to around 1200 or slightly
+  earlier, it was occupied into the 13th century and possibly later. It is located at the
+  southern end of a narrow ridge, with steep slopes below on all but the south-east side –
+  this gave the site great natural strength.
+
+  Only the curtain wall of Dinas Powys Castle remains standing, and much of this is ruinous;
+  but from the outside the castle still has the appearance of a defensive stronghold. The
+  castle has a rectangular keep measuring 18m by 13m which is reduced to rubble. The very
+  ruined north-west half of the early keep stands in a thicket just beyond the north curtain
+  wall. It appears to have been a typical early Norman example, rectangular, with very thick
+  walls, and it extended up to and possibly slightly beyond the curtain wall. When this was
+  built a doorway, now a ragged gap, was made into the keep’s basement.
+
+  The curtain wall is straight sectioned without corner towers and encloses a roughly rectangular
+  area. The main entrance on the south-east side was originally a simple round-headed archway;
+  now its merely a ragged gap, with a draw bar hole on its west side. A narrow postern gate
+  with a pointed arch is located in the north-east wall and there are indications that masonry
+  and timber buildings including a great hall will have lined the walls. The north-east and
+  north-west curtain walls are high and well preserved, with much of their facing stone still
+  in place. Putlog holes are the only relieving feature in their otherwise blank surfaces.
+  The south-west wall is in poor condition and has lost most of its facing stone. The south-east
+  side has the only window gaps in the castle and a fine east corner with large dressed Sutton
+  stone alternating quoins.
+
+  The castle was the centre of the lordship of Dinas Powys, and was held by the Norman de
+  Sumeri family certainly in the mid-12th century and possibly earlier; the lordship was probably
+  acquired by Roger de Sumeri soon after the initial Norman conquest of the area.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive and domestic practices. The monument is well-preserved and an important relic
+  of the medieval landscape. It retains significant archaeological potential, with a strong
+  probability of the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=1025
+source_title: Scheduled Monument Full Report — Dinas Powis Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

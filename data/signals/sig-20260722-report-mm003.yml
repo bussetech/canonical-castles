@@ -1,0 +1,135 @@
+id: sig-20260722-report-mm003
+site_id: gb-chepstow-chepstow
+attribute: designation_report
+value: 'Reference Number
+
+  MM003
+
+  Name
+
+  Chepstow Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Monmouthshire
+
+  Community
+
+  Chepstow
+
+  Easting
+
+  353352
+
+  Northing
+
+  194109
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The following provides a description of the Scheduled Ancient Monument.
+
+  This monument comprises the remains of a medieval castle begun in 1067 by William fitz Osbern,
+  earl of Hereford. It is situated on a limestone promontory on top of tall cliffs overlooking
+  the river Wye. The castle dominated the medieval town that developed around its foot; the
+  bridge which provided access for travellers into south Wales; and the river which was a
+  main highway of the period.
+
+  The oldest building in the castle is the Great Tower. Rectangular and measuring 36m long
+  by 14m wide, it dominates the centre of the castle. The tower contains some reused building
+  materials, probably brought from the ruins of the Roman town Venta Silurum – modern day
+  Caerwent. It was probably used as an audience chamber – a place where the King conducted
+  ceremonial or judicial functions.
+
+  Connecting the Upper and Middle Baileys is the gallery, a single-storey building which formed
+  a roofed passage. The Upper Bailey is likely to have been the centre of William fitz Osbern’s
+  original Norman castle. The end of the Upper Bailey is closed by Marshal’s Tower – a two
+  storey rectangular tower built by William Marshal (d. 1219) in the very early thirteenth
+  century. The first floor contains the remains of an elegant chamber lit by five finely dressed
+  windows.
+
+  Beyond the Upper Bailey gateway is a small defended platform which crosses a deep, rock-cut
+  ditch to the Upper Barbican. This ditch marks the western limit of the castle under the
+  Normans and William Marshal. The heavily defended Upper Barbican was created in the second
+  quarter of the thirteenth century when the defensive line was extended further along the
+  promontory to the west. The curtain wall runs from Marshal’s Tower in the Upper Bailey across
+  the ditch to the south-west tower. From the south-west tower the curtain wall curves around
+  to the Upper Gatehouse. From this gatehouse access there was access to the castle’s gardens
+  and the home farm. The curtain wall continues to cut off the end of the promontory and returns
+  for a short length to deter any attackers from clambering around the cliff into the castle.
+
+  The walls and towers of the Middle Bailey were added to the castle by William Marshal in
+  the late twelfth century as part of his complete remodelling of the castle’s defences. However,
+  the break in slope near the centre of this bailey may mark the position of the western defences
+  of the Norman castle. The entrance to the Middle Bailey is through a simple gateway in the
+  curtain wall which is protected by a three-storey D-shaped tower projecting forward from
+  the curtain wall. A low curtain wall links this tower to another of very similar design
+  at the outer angle of the middle bailey, but this was significantly modified with the insertion
+  of fireplaces and doorways during the early sixteenth century. The curtain wall returns
+  from the corner tower to a D-shaped tower – modified during the Civil War. The Middle Bailey
+  does not seem to have contained any buildings in the Middle Ages, perhaps because they would
+  have reduced the grandeur of the approach to the main entrance of the great tower.
+
+  The Lower Bailey is the most complicated part of the castle with buildings of many different
+  periods represented. The bailey was added to the castle by William Marshal in the late twelfth
+  century and substantially remodelled by Roger Bigod a hundred years later with the construction
+  of a large domestic range and Marten’s Tower. Bigod developed a suite of apartments and
+  lodgings appropriate for one of the richest magnates of King Edward I’s reign. The domestic
+  range consisted of two adjoining blocks linked by a central service passage, built to take
+  advantage of the changes in height across the site. The hall and ceremonial and private
+  chambers of the earl occupied the higher ground to the west, and the service rooms, kitchen
+  and additional accommodation were constructed below. The earl’s chamber (known as the ‘gloriette’)
+  was situated above the service rooms. This room would have been a combination of bedchamber,
+  a private sitting room and an audience chamber. To earn the name gloriette, this chamber
+  must have been very special or exotic.
+
+  Close to the entrance of the castle, Marten’s Tower, or the ‘New Tower’ as it was referred
+  to in Roger Bigod’s accounts, was started around 1288 and brought into use by 1293. It was
+  begun after the earl’s domestic apartments had been completed and almost certainly replaced
+  an earlier tower dating from the Marshal period. Marten’s Tower has been described as a
+  ‘mural tower to end all mural towers’, but it is far more than a simple defensive work.
+  In addition to the three storeys visible from the courtyard, there is a basement, a room
+  in the roof space and a private chapel carried out over the curtain wall to the east. The
+  castle well is just alongside the door.
+
+  The Main Gatehouse is of revolutionary design. It consists of two round towers of slightly
+  different diameter built close together and well equipped with arrowloops to provide a wide
+  field of fire. Outside there was a small barbican which further protected the entrance.
+  The round tower to the left was the castle’s prison and that to the right was a guardroom.
+  This is thought to be the oldest twin-towered gatehouse in Britain and demonstrates that
+  William Marshal and his master craftsmen were at the forefront of castle design, building
+  on their experiences in France and the Holy Land.
+
+  A number of wooden doors have survived at Chepstow Castle and these have been dated using
+  dendrochronology (tree-ring dating). The doors in the upper and middle bailey gateways at
+  Chepstow are made of two layers of elm and oak boards, clenched together with a regular
+  pattern of iron nails. At over 800 years old, they are believed to be the oldest castle
+  doors surviving in Europe.
+
+  This monument is of national importance for its potential to enhance our knowledge of medieval
+  social and domestic life and warfare. The scheduled area comprises the remains described
+  and an area around them within which related evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3137
+source_title: Scheduled Monument Full Report — Chepstow Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

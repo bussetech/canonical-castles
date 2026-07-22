@@ -13,29 +13,39 @@ built:
 definitions_met:
   fortified_residence:
     verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument CD123 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    assessment: assessed
+    basis: 'Cadw''s report describes a keep on the north curtain wall (1246-52), three mural towers to
+      the SE, E and N, an oval outer ward, and a 7m-wide defensive ditch with a counterscarp bank —
+      active defence. Built by the Norman lord Gilbert de Clare c.1110, held by Lord Rhys and the Marshals:
+      a fortified residence of a lord.'
+  revival_folly:
+    verdict: 'no'
+    assessment: assessed
+    basis: A genuine 12th-century Norman castle of the defensive era, with keep, towers and curtain wall
+      built for defence and later damaged in the Civil War siege of 1644 — not a post-defensive-era
+      sham or castellated ornament.
 register_entries:
 - register: gb-wls-cadw
   ref: CD123
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=1885
 first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+last_updated: '2026-07-22'
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=1885
-  title: Cof Cymru - National Historic Assets of Wales
+  title: Scheduled Monument Full Report — Cardigan Castle
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: '2026-07-22'
+  note: Cadw's full scheduled-monument report (CD123); read in full — records the keep, three towers,
+    curtain wall, defensive ditch and construction by the Norman lord Gilbert de Clare.
 signals:
 - sig-20260721-cadw-cd123
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-cd123
+notes: 'Assessed from Cadw''s full designation report (CD123). fortified_residence: yes — active defensive
+  fabric (keep, three towers, curtain wall, ditch and counterscarp) plus identified lords. revival_folly:
+  no — a defensive-era medieval castle. palatial_seat OMITTED: the report shows no unfortified amenity
+  phase (the castle decayed rather than being rebuilt as a country seat). popular_castle OMITTED: the
+  report notes the first Eisteddfod (1176) but gives no evidence of a modern visitor operation or general
+  public standing, and rule 2 forbids inflating this band on a register name alone. Confidence medium:
+  one official report plus the register, single source.'

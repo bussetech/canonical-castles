@@ -1,0 +1,73 @@
+id: sig-20260722-report-gm042
+site_id: gb-cynffig-kenfig-medieval-town
+attribute: designation_report
+value: 'Reference Number
+
+  GM042
+
+  Name
+
+  Kenfig Castle & Medieval Town
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Bridgend
+
+  Community
+
+  Cynffig
+
+  Easting
+
+  280103
+
+  Northing
+
+  182564
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a fortified medieval town and castle. Ramparts comprising
+  a bank and ditch define the town enclosure at the south west and the north east angles forming
+  a roughly quadrangular enclosure of about 3.34 ha. The rampart disappears to the south under
+  the large dunes over the south west quarter of the town. To the north it ends in front of
+  the south end of a building. In the south west area of the town, the rampart re-emerges
+  from the dunes and runs straight for 76m to the south west, fronted by a wide ditch. The
+  castle keep is c. 14x15m, with a 2 m. wide entrance at the south west corner. The walls
+  are composed of stone and pebbles and are c. 2 m. thick. They stand 3-4m. The south side
+  is the lowest, with an external height of 1-2 m. and internal height of 2.5 m. The north
+  wall is the best preserved with an internal height of 3m and with intact gun loop. South
+  of the keep is a complex of low walls.
+
+  The monument is of national importance for its potential to enhance our knowledge of both
+  medieval defensive practices and also urban organization and the growth of towns. The monument
+  is well preserved and important relic of the medieval landscape. It retains significant
+  archaeological potential, with a strong probability of the presence of both structural evidence
+  and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2235
+source_title: Scheduled Monument Full Report — Kenfig Castle & Medieval Town
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

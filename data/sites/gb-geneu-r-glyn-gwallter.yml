@@ -13,29 +13,33 @@ built:
 definitions_met:
   fortified_residence:
     verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument CD005 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    assessment: assessed
+    basis: 'Assessed from Cadw full report CD005. Active defence: a flat-topped motte (32–33m across,
+      4.5m high) that "would have been crowned by a great timber tower, with a strong breastwork on the
+      counterscarp", encircled by an 8m-wide U-shaped ditch and counterscarp bank, plus a defended bailey.
+      Residence: the bailey "would have been the site of the lordly hall"; the site was the caput of
+      the lordship of Geneu''r-glyn, established by the Anglo-Normans c.1110. Both halves met.'
 register_entries:
 - register: gb-wls-cadw
   ref: CD005
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=1826
 first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+last_updated: '2026-07-22'
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=1826
-  title: Cof Cymru - National Historic Assets of Wales
+  title: Scheduled Monument Full Report — Castell Gwallter
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: '2026-07-22'
+  note: Cadw's full scheduled-monument report (CD005); read in full and assessed against the bands.
 signals:
 - sig-20260721-cadw-cd005
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-cd005
+notes: 'Upgraded to assessed against Cadw full report CD005 (sig-20260722-report-cd005). The report
+  explicitly identifies both halves — a motte crowned by a great timber tower with a counterscarp breastwork
+  and a defended bailey (defence), and a bailey that "would have been the site of the lordly hall",
+  the caput of the lordship of Geneu''r-glyn established by the Anglo-Normans c.1110 (lordly residence)
+  — supporting fortified_residence: yes. Destroyed 1135, last recorded 1153. Other bands OMITTED: the
+  report does not speak to them, and as an obscure destroyed earthwork popular_castle is left unassessed.
+  Confidence medium.'

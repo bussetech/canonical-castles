@@ -1,0 +1,80 @@
+id: sig-20260722-report-cd005
+site_id: gb-geneu-r-glyn-gwallter
+attribute: designation_report
+value: 'Reference Number
+
+  CD005
+
+  Name
+
+  Castell Gwallter
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Ceredigion
+
+  Community
+
+  Geneu''r Glyn
+
+  Easting
+
+  262201
+
+  Northing
+
+  286781
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument comprises the remains of a motte and bailey castle, a military stronghold built
+  during the medieval period. A motte and bailey castle comprises a large conical or pyramidal
+  mound of soil or stone (the motte) surrounded by, or adjacent to, one or more embanked enclosures
+  (the bailey). Both may be surrounded by wet or dry ditches and could be further strengthened
+  with palisades, revetments, and/or a tower on top of the motte. The motte at Castell Gwallter
+  is a circular flat-topped mound with fine views particularly to the east, 32-33m in diameter
+  and about 4.5m high, surrounded by a U-shaped ditch 8m wide with a counterscarp bank outside
+  that, standing 4-5m above the ditch bottom and c.1m above the surrounding ground surface.
+  The motte would have been crowned by a great timber tower, with a strong breastwork on the
+  counterscarp. A small bailey or court, c.38m north-south by 28m, defined by a bank up to
+  c.1.5m high with traces of an external ditch, lies on the north side, and would have been
+  the site of the lordly hall and associated offices. There are indications of a much larger
+  court on the east side of the motte. This is roughly rectangular with rounded corners, roughly
+  80-100m east-west by 126-135m, and is defined largely by scarps. Such a large enclosure
+  would suit the dignity of the main castle of a lordship and would have accommodated assemblies
+  of lesser lords. The castle was established by the Anglo-Normans in about 1110 and was the
+  centre for the lordship of Geneu’r-glyn commote. It was destroyed in 1135 and is last heard
+  of in 1153. It may have been replaced by Domen Las, the castle of Abereinion (SAM CD100).
+  The castle lies some 50m south-west of St Michael’s Church and the two may have been contemporary.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive organisation. The well-preserved monument forms an important element within the
+  wider medieval context and the structure itself may be expected to contain archaeological
+  information relating to chronology, building techniques and functional detail.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=1826
+source_title: Scheduled Monument Full Report — Castell Gwallter
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

@@ -14,29 +14,49 @@ built:
 definitions_met:
   fortified_residence:
     verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument MM003 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    assessment: assessed
+    basis: 'Cadw''s report describes a rectangular Great Tower, a heavily defended Upper Barbican, curtain
+      walls, D-shaped mural towers and a main gatehouse of two round towers "well equipped with arrowloops
+      to provide a wide field of fire" — the oldest twin-towered gatehouse in Britain, a gate meant
+      to be held. Residence of earls (William fitz Osbern, William Marshal, Roger Bigod) with a domestic
+      range and the earl''s gloriette. Combined lordly residence and active defence.'
+  revival_folly:
+    verdict: 'no'
+    assessment: assessed
+    basis: Begun in 1067 by William fitz Osbern, earl of Hereford, and developed through the medieval
+      defensive era by Marshal and Bigod — a genuine great castle, not a post-defensive-era revival
+      or sham.
+  popular_castle:
+    verdict: 'yes'
+    assessment: assessed
+    basis: The report records nationally famous features — the oldest twin-towered gatehouse in Britain
+      and, dendrochronologically dated, "the oldest castle doors surviving in Europe" — the hallmarks
+      of a major, widely-known monument a general audience would unhesitatingly call a castle.
 register_entries:
 - register: gb-wls-cadw
   ref: MM003
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3137
 first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+last_updated: '2026-07-22'
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3137
-  title: Cof Cymru - National Historic Assets of Wales
+  title: Scheduled Monument Full Report — Chepstow Castle
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: '2026-07-22'
+  note: Cadw's full scheduled-monument report (MM003); read in full — records the Great Tower, baileys,
+    mural towers, twin-towered main gatehouse, the earls' domestic range/gloriette, and the famous surviving
+    doors.
 signals:
 - sig-20260721-cadw-mm003
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-mm003
+notes: 'Assessed from Cadw''s full designation report (MM003). fortified_residence: yes — Great Tower,
+  barbican, curtain walls, mural towers and the twin-towered gatehouse with flanking arrowloops are
+  active defence, integrated with the earls'' domestic apartments and gloriette. revival_folly: no —
+  an 11th-century-origin castle developed through the defensive era. popular_castle: yes — a judgment
+  call resting on the report''s superlatives (oldest twin-towered gatehouse in Britain; oldest surviving
+  castle doors in Europe), which mark a monument everybody has heard of, per band criterion. palatial_seat
+  OMITTED: the earls'' apartments sit within a fully defended castle whose defences still govern, so
+  the fortified_residence verdict covers them; no phase where fortification became merely decorative.
+  Confidence medium: single official report plus register.'

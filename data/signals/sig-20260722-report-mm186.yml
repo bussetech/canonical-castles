@@ -1,0 +1,85 @@
+id: sig-20260722-report-mm186
+site_id: gb-graig-meredydd
+attribute: designation_report
+value: 'Reference Number
+
+  MM186
+
+  Name
+
+  Castell Meredydd
+
+  Date of Designation
+
+  14/02/1973
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Newport
+
+  Community
+
+  Graig
+
+  Easting
+
+  322542
+
+  Northing
+
+  188739
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a castle, dating to the medieval period. The castle
+  remains occupy a pair of rocky outcrops at the southern edge of a shelf on steeply rising
+  ground above the Rhymney Valley, overlooked dramatically by Mynydd Machen to the north.
+  On the eastern outcrop are the remains of a small circular keep around 10m in diameter,
+  comprising two stretches of sandstone rubble stone walling up to 2.2m high with a rectangular
+  latrine chute extending down the cliff face to the south. A few courses of walling survive
+  of a short stretch of curtain wall filling the gap between the two outcrops. A second building,
+  perhaps a rectangular tower or hall occupied the level summit of the western outcrop, measuring
+  12m E/W by 7m. Running west from this is a collapsed wall which turns to the north as a
+  spread stony bank to form the western side of a roughly square bailey or enclosure. The
+  footings of an irregular rectangular building of uncertain date are located near the centre
+  of this, beyond which the bank continues NE towards the garden of a modern cottage, much
+  of the northern side of the enclosure being reduced to weak scarps. The eastern side of
+  the enclosure is defined by a massive stony bank 2-3m high, which must cover a substantial
+  fragment fo curtain wall. The castle is traditionally thought to have been built by Maeredydd
+  Gethin, Prince of Gwynllwg before 1201, although the first direct documentary reference
+  to it is in the mid 13th century, by which time it had fallen into Clare hands, apparently
+  through some legal intrigue. it is possible that at least some of the masonry remains may
+  date from after this period when Machen Forest was held as a hunting reserve by the Clares.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive and domestic architecture. With the possible exception of Castell Arnallt (MM086)
+  it is the only documented Welsh masonry castle in Gwent of which physical remains can be
+  identified, and of exceptional rarity of only a few in south Wales. The monument is well-preserved
+  and an important relic of the medieval landscape. It retains significant archaeological
+  potential, with a strong probability of the presence of both structural evidence and intact
+  associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2410
+source_title: Scheduled Monument Full Report — Castell Meredydd
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.
