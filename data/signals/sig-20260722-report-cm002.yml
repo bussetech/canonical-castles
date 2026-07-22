@@ -1,0 +1,119 @@
+id: sig-20260722-report-cm002
+site_id: gb-kidwelly-cydweli-kidwelly
+attribute: designation_report
+value: 'Reference Number
+
+  CM002
+
+  Name
+
+  Castell Cydweli / Kidwelly Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Carmarthenshire
+
+  Community
+
+  Kidwelly
+
+  Easting
+
+  240915
+
+  Northing
+
+  207096
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a castle, dating to the medieval period situated
+  on a prominent ridge at the upper limit of tidal water on the west bank of the River Gwendraeth.
+  First built as an earth and timber ringwork in about 1106 by Bishop Roger of Salisbury justicar
+  of Henry 1 this early castle took the form of a palisaded crescent shaped earth bank and
+  ditch using the natural scarp of the river as a defence on the east and these earthworks
+  still define the extent of the castle today. The lordship of Cydweli and the castle had
+  by 1139 passed to the de Londres family and then early in the thirteenth century by marriage
+  to Walter de Braose and eventually in 1244 to the de Chaworth family. During this, the period
+  of the Welsh wars of independence the castle was repeatedly attacked and changed hands several
+  times. Possibly first captured and burnt in 1159 by Rhys ap Gruffyd, the Lord Rhys, prince
+  of Deheubarth, it was he who was later recorded as making repairs to it in 1190. Having
+  returned to norman control in 1201 it was captured and burnt again in 1215 by Rhys Grug,
+  son of the Lord Rhys during Llwelyn ab Iorwerth’s campaigns but handed back to the English
+  in 1220 at the behest of Llywelyn himself. A ttacked again in 1231 this time by Llywelyn
+  it was held by Maerdudd son of Rhys Grug until regained by Patrick de Chaworth in 1244,
+  a strengthened castle held out against welsh attack in 1257-58. Pain de Chatworth (d1279)
+  after returning from crusade and in his role as Edward I’s commander in chief in south wales
+  began the transformation of the castle in the mid 1270’s into a masonry structure. The masonry
+  castle comprises a square inner ward with four large corner  round towers and simple portcullis
+  gates to north south set within an outer ward, originally defended by the timber palisade,
+  later by a stone curtain wall with a series of mural towers and two gates; a small defended
+  north gate and a Great Gatehouse on the south.
+
+  The Inner Ward was constructed by Pain de Chaworth conceived to convert the castle into
+  a strong ‘concentric’ castle with an inner and outer ring of defences. Later Henry, earl
+  of Lancaster acquired the castle through marriage and sometime after 1298 a large first-floor
+  hall was built on the on the east side of the ward of which little remains at the present
+  day though the chapel which was reached from it stands as a projecting tower overlooking
+  the river. This is built with white Sutton-stone mouldings around the doors and windows
+  and has a small cruciform roofed building attached on the south which housed the sacristy
+  set above the priest’s bedchamber. After 1300 these works were followed by the construction
+  of the massive outer curtain, or possibly the raising of a small existing one, with wall
+  walk and mural towers and the commencement of work on the Great Gatehouse. In turn this
+  necessitated the raising of the inner curtain towers to maintain an effective field of fire.  In
+  1361 Henry’s son and successor died without a male heir and by 1399 the castle had passed
+  into the hands of the Crown. The Great Gatehouse took at least a century to build, suffering
+  several setbacks including a Welsh siege in 1403 during the Glyndwr uprising before being
+  finally completed in 1422. Central to the defence of the castle it comprises two projecting
+  round towers set either side of a gate passage defended by inner and out gates and portcullises
+  and spanned by the main living accommodation of the castle. The towers have blocks to the
+  rear east and west; basements functioned as store rooms or prisons and ground floor rooms
+  probably housed porters or guards, the east tower also has a beehive- shaped dungeon. The
+  living space above comprises a large hall on the first floor with a side kitchen in the
+  east tower and a chamber in the west with above the constable or lord’s accommodation; solar,
+  chambers, latrines and other rooms. A small room at the front allowed for the raising of
+  the outer portcullis as well as having a series of murder holes, it will also have housed
+  the mechanism for raising the drawbridge.  Above this and accessible from the battlements
+  are three arched ‘machiolations’ for the dropping of missiles. The inner portcullis and
+  corresponding series of murder holes were accommodated in the first floor hall. The castle
+  was granted to Sir Rhys ap Thomas later in the fifteenth century as part of his reward for
+  helping Henry VII secure the throne at Bosworth and possibly as a result the accommodation
+  in the castle was improved. A hall was built in the outer ward served by a kitchen added
+  to the south west corner of the inner ward along with a  small lodging against the inside
+  of the outer curtain and a bakehouse near the north gate . Another rectangular building
+  near the north gate may have been intended for further accommodation .In 1630 the castle
+  was acquired by the Vaughan family of Golden Grove near Llandeilo, Carmarthenshire, already
+  ruinous it  took no part in the Civil War later that century, passing by descent to the
+  earls of Cawdor,  in 1927 was taken into State care.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive and domestic practices. The monument is well-preserved and an important relic
+  of the medieval landscape. It retains significant archaeological potential, with a strong
+  probability of the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2750
+source_title: Scheduled Monument Full Report — Castell Cydweli / Kidwelly Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.
