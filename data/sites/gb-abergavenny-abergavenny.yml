@@ -12,40 +12,66 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
+    verdict: "yes"
     assessment: assessed
-    basis: 'Both halves of the criterion are met by the report. Private lordly residence:
-      described as "an important medieval baronial castle" and the caput of the Abergavenny
-      Marcher lordship, held successively by the de Braose, Hastings and Beauchamp lords,
-      with a great hall, high-status solar apartments and a chamber fit for the constable.
-      Active defence: a curtain wall standing "almost to parapet height" with surviving wall-walk
-      flagging, a gatehouse "extended outwards into the ditch" with a rebate for a drawbridge,
-      and conjoined solar towers with spur buttresses, mural passages and arrow-lit loops.
-      Fortification and lordly residence coincide throughout the medieval life of the structure.'
+    basis: 'Both halves of the criterion are met. Private lordly residence — described as "an
+      important medieval baronial castle" and the caput of the Abergavenny Marcher lordship,
+      held successively by the de Braose, Hastings and Beauchamp lords, with a great hall,
+      high-status solar apartments and a chamber fit for the constable. Active defence — a
+      curtain wall standing "almost to parapet height" with surviving wall-walk flagging, a
+      gatehouse "extended outwards into the ditch" with a rebate for a drawbridge, and conjoined
+      solar towers with spur buttresses, mural passages and arrow-lit loops. Fortification and
+      lordly residence coincide throughout the medieval life of the structure.'
+  palatial_seat:
+    verdict: "no"
+    assessment: assessed
+    basis: 'Comfort and display are present but do not govern. The solar block was "clearly
+      built as much for display and domestic comfort as defence" and the 15th-century gatehouse
+      shows the "increasing precedence of comfort over defence" — yet real active defence
+      remains operative, with a curtain wall to parapet height and wall-walk and a held gatehouse
+      with drawbridge. There is no unfortified palatial phase; the defences were slighted after
+      the Civil War and the site quarried, not taken down for amenity. Fails the palatial-seat
+      test, which requires fortification to be absent, decorative or a retained relic that no
+      longer governs.'
+  revival_folly:
+    verdict: "no"
+    assessment: assessed
+    basis: 'A genuine medieval castle of the late 11th to 15th centuries, wholly within the
+      defensive era, with active fortification throughout. The only post-defensive castellated
+      element is the embattled 1818 shooting box built on the lowered motte for Lord Abergavenny
+      — a later addition to a real castle, not a structure built as scenery. The governing
+      intent of the monument is defensive, so it fails the revival-and-folly test, which requires
+      castle form built with no defensive intent at any point.'
   popular_castle:
-    verdict: 'yes'
+    verdict: "yes"
     assessment: assessed
-    basis: 'Assessed on usage, not the register''s name. The report records real public standing:
-      a museum/visitor operation now occupies the embattled 1818 building on the motte, the
-      site is discussed "in some guidebooks", and the castle "forms a prominent landmark in
-      modern Abergavenny" sharing group value with the priory, church and town-wall remains
+    basis: 'Assessed on usage, not the register''s name. The report records real public standing
+      — a museum and visitor operation now occupies the embattled 1818 building on the motte,
+      the site is discussed "in some guidebooks", and the castle "forms a prominent landmark
+      in modern Abergavenny" sharing group value with the priory, church and town-wall remains
       — evidence a general audience knows and visits it as a castle.'
 register_entries:
 - register: gb-wls-cadw
   ref: MM056
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2970
-first_seen: '2026-07-21'
-last_updated: '2026-07-22'
+first_seen: "2026-07-21"
+last_updated: "2026-07-22"
 confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2970
   title: Cof Cymru - National Historic Assets of Wales
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: "2026-07-21"
+  note: Register entry and full scheduled-monument report; the sole source for this record.
 signals:
 - sig-20260721-cadw-mm056
-notes: ASSESSED against the six band criteria on 2026-07-22 from Cadw's full designation report.
-  The assessing run returned this record stripped of its descriptive fields; those were restored
-  from the imported record and only the verdicts are the gnome's work. See docs/decisions/0002.
+- sig-20260722-report-mm056
+notes: 'ASSESSED against the band criteria on 2026-07-22 from Cadw''s full designation report
+  (MM056). Four bands carry assessed verdicts. enclosure_fortification and state_fortification
+  are left unassessed (omitted) — the report identifies a private Marcher lordship held continuously
+  by named lords, the tenure that places the monument under fortified_residence rather than
+  under a lord-less enclosure or a state work, and the report argues neither band affirmatively
+  (the Civil War slighting does not make a seigneurial castle a state installation). Descriptive
+  fields are carried forward unchanged from the imported record; only the verdicts and confidence
+  are the gnome''s work. See docs/decisions/0002.'
