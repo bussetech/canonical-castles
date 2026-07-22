@@ -40,9 +40,10 @@ register_entries:
 - register: ie-smr
   ref: ME036-048004-
   designation: Castle - Anglo-Norman masonry castle
+  url: https://heritagedata.maps.arcgis.com/apps/webappviewer/index.html?id=0c9eb9575b544081b0d296436d8f60f8&query=18a4b61b268-layer-9%2CSMRS%2CME036-048004-
 disputed: false
 first_seen: '2026-07-21'
-last_updated: '2026-07-21'
+last_updated: '2026-07-22'
 confidence: high
 sources:
 - url: https://www.archaeology.ie/collections-and-publications/open-data/
@@ -52,9 +53,17 @@ sources:
 - url: https://en.wikipedia.org/wiki/Trim_Castle
   title: Trim Castle
   publisher: Wikipedia
+- url: https://heritagedata.maps.arcgis.com/apps/webappviewer/index.html?id=0c9eb9575b544081b0d296436d8f60f8&query=18a4b61b268-layer-9%2CSMRS%2CME036-048004-
+  title: Archaeological Survey of Ireland - Sites and Monuments Record
+  publisher: National Monuments Service
+  date: '2026-07-21'
+signals:
+- sig-20260721-iesmr-me036-048004
 notes: 'One of the 129 SMR records classed ''Castle - Anglo-Norman masonry castle'' - the
   strictest of Ireland''s three answers to how many castles it has. SMR reference CORRECTED
   on 2026-07-21 from a hand-entered ME036-021 to the register''s actual ME036-048004-, found
   when the bulk import created a second record for this castle under its register townland
   (Manorland). The founding caveat that hand-entered register refs needed verification was
-  justified: this one was wrong.'
+  justified: this one was wrong. Register-classification signal sig-20260721-iesmr-me036-048004
+  (2026-07-21) independently corroborates the corrected reference ME036-048004-; it is a
+  monument-type classification, explicitly not a band assessment, so it changes no verdict.'
