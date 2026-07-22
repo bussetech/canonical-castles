@@ -51,6 +51,17 @@ the class filter.
 
 Local checks: `PYTHON=.venv/bin/python bash scripts/check-integrity.sh`.
 
+## Read before touching the importers
+
+- [`docs/decisions/0001-importers-do-not-own-human-judgement.md`](docs/decisions/0001-importers-do-not-own-human-judgement.md)
+  — adoption is by register ref not file path; adopted means untouched; deletion
+  requires a positive `register-derived` marker, never the absence of one. Three
+  separate bugs in one day all resolved in the machine's favour by default.
+- [`docs/roadmap.md`](docs/roadmap.md) — what is planned, and what is
+  deliberately not (Ireland's 31,431 ringforts, the three open bands, the four
+  blocked cells). Read the "deliberately not planned" section before adding
+  volume.
+
 ## How this repo works
 
 - **Site:** Jekyll + the shared studio theme, pinned by tag in `_config.yml`
