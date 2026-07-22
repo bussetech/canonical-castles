@@ -12,30 +12,34 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument FL004 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: "A concentric Edwardian castle begun 1277: a diamond inner ward with twin-towered gatehouses at two angles and single flanking towers at the others, curtain walls surviving to the wall-walks (battlemented parapets now lost), and a walled moat — active defence built to be held. The inner ward held the king's hall and chamber, the queen's hall and chamber, the chapel, and a constable's residence — a fortified royal residence (a royal lord is still a lord)."
 register_entries:
 - register: gb-wls-cadw
   ref: FL004
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=194
 first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+last_updated: '2026-07-22'
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=194
-  title: Cof Cymru - National Historic Assets of Wales
+  title: Scheduled Monument Full Report — Castell Rhuddlan
   publisher: Cadw
   date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  note: Full designation report; the sole source, assessed against the definition bands.
 signals:
 - sig-20260721-cadw-fl004
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-fl004
+notes: 'Assessed from Cadw''s full report (FL004), replacing the register-derived verdict.
+  fortified_residence YES: strong active defence (concentric plan, twin-towered gatehouses,
+  wall-walks, flanking towers, moat) plus royal residential apartments (king''s and
+  queen''s halls and chambers, chapel, constable''s residence). state_fortification
+  OMITTED: though a royal work later garrisoned in the Civil War, the band model places
+  royal residences in fortified_residence and reserves state_fortification for post-1500
+  artillery/state works — original purpose governs. popular_castle OMITTED: the report
+  is a designation and gives no operator/tourism/reference usage evidence; a famous
+  name is not usage evidence per band rule. palatial_seat, enclosure_fortification,
+  revival_folly OMITTED: not spoken to. Confidence medium: one official report plus
+  register.'

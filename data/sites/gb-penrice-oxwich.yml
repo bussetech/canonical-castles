@@ -12,30 +12,40 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument GM043 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "no"
+    assessment: assessed
+    basis: "The report describes a wall-walk and ruined parapet and a gateway between drum turrets, but states outright that the gateway and curtain wall were 'anachronisms, for show only' with 'no serious defensive function'. The active-defence half fails on the report's own words — this is a courtyard house, not a defensible work."
+  palatial_seat:
+    verdict: "yes"
+    assessment: assessed
+    basis: "A high-status residence named Castell Oxwich: a large 16th-c Mansel courtyard house with a grand first-floor hall lit by huge mullioned windows, a second-floor long gallery — 'that essential ingredient of the grand Tudor house' — and a mock military gateway for show only. Castle-word name with decorative, non-functional fortification."
+  revival_folly:
+    verdict: "no"
+    assessment: assessed
+    basis: "The mock military gateway and show-only curtain assert lordly status in castle form, but this is an inhabited Tudor courtyard house, not scenery — a SYMBOLIC castle, not a SHAM one. Same reading as the Raglan reference: symbolic castellation within a real residence does not make a folly."
 register_entries:
 - register: gb-wls-cadw
   ref: GM043
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2856
 first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+last_updated: '2026-07-22'
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2856
-  title: Cof Cymru - National Historic Assets of Wales
+  title: Scheduled Monument Full Report — Castell Oxwich
   publisher: Cadw
   date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  note: Full designation report; the sole source, assessed against the definition bands.
 signals:
 - sig-20260721-cadw-gm043
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-gm043
+notes: 'Assessed from Cadw''s full report (GM043), replacing the register-derived verdict.
+  This is the case the register class most misleads on: Cadw''s own text calls the
+  military features ''anachronisms, for show only'' with ''no serious defensive function'',
+  so fortified_residence is a reasoned NO, not an omission — a real all-but finding.
+  palatial_seat is YES (a grand Tudor courtyard house with long gallery bearing a castle
+  name). revival_folly is NO (symbolic, not sham — an inhabited residence). The verdicts
+  are independent, not driven off one another. enclosure_fortification, state_fortification
+  and popular_castle OMITTED: the report does not speak to them, and gives no usage
+  evidence for popular standing. Confidence medium: single official report plus register.'

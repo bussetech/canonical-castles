@@ -1,0 +1,117 @@
+id: sig-20260722-report-mm015
+site_id: gb-shirenewton-cas-troggy
+attribute: designation_report
+value: 'Reference Number
+
+  MM015
+
+  Name
+
+  Cas Troggy Castle
+
+  Date of Designation
+
+  11/01/1926
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Monmouthshire
+
+  Community
+
+  Shirenewton
+
+  Easting
+
+  341503
+
+  Northing
+
+  195203
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the upstanding masonry remains and earthworks of a medieval castle
+  begun for Roger Bigod III, Earl of Norfolk and Lord of Striguil (Chepstow) by 1303 on land
+  acquired from the monks of Tintern Abbey and almost certainly abandoned soon after his death
+  in 1306.
+
+  The surviving remains comprise a rectangular platform measuring 42m N/S by 27m E/W set on
+  low ground close to a stream. There is a large pond on lower ground to the southern side
+  of the platform but otherwise no sign of a moat on its other sides, in spite of the Cas
+  Troggy Brook running immediately to its north. The southern side of the platform is occupied
+  by the substantial ruin of a of a hall block with massive towers polygonal of typical ‘Edwardian’
+  construction at its SW and SE corners. All of the surviving external wall faces are of sandstone
+  ashlar, best seen in the impressive battered base of the curtain wall forming the northern
+  side of the hall. The hall was at first floor level above an undercroft at western end of
+  the block. It survives to a height of 6 to 7m above the court, to the top of the pointed
+  relieving arches of two tall windows, both reduced to a single precarious course of masonry
+  and missing all of their dressed stone. The wall between them has largely collapsed at this
+  level and may originally have contained a fireplace. The polygonal W tower has largely been
+  reduced to a substantial mound of rubble that must encase most of its lower storey, and
+  the a fragment of a polygonal or rectangular stair turret to the east, the toothing of which
+  survives on the face of the curtain wall. The external walls of this tower still stood at
+  least two storeys higher when recorded by artists in the 19th century and contained comfortable
+  chambers and windows with seats on both upper floors. A huge articulated section of its
+  northern appears to lie where it has fallen into the pond to the north and is likely to
+  retain intact structural details. The western tower was also polygonal internally and although
+  almost all of its outer facings have been lost was likely to have had a similar external
+  trace. It may have been entered via a door and short passage in the thickness of the curtain
+  wall a few metres to the east, the bases of which survive. The ground or first floor room
+  is features but retains its wall facings to a height of 2 or 3m; the wall heads are at least
+  5m above external ground level. There are signs of a very ruined turret extending W along
+  the curtain wall to mirror that of the W tower and a large rectangular latrine turret projecting
+  N along the lost E curtain wall. This retains a monumental outlet arch of a scale equal
+  to that for the Great Gatehouse latrine at nearby Llangibby and which would have enabled
+  a cart to be backed in for cleaning it out. This leads to a huge and high L-shaped cess
+  pit with a bipartite vaulted roof into which four shafts discharged, indicating at least
+  two storeys above the present. The northern ranges of the courtyard seems to have been less
+  substantially constructed and have largely been reduced to mounds of collapsed masonry,
+  but were evidently enclosed by a curtain wall and contained several other rectangular buildings.
+  There are no signs of a gatehouse or other towers.
+
+  The monument is of national importance as a closely dated and well preserved caste of the
+  early fourteenth century date high potential to enhance our knowledge of medieval domestic
+  and defensive architecture. In spite of its military trappings it was effectively a fortified
+  hunting lodge on the northern edge of Wentwood Forest serving Roger Bigod’s set at Chepstow.
+  Its massive corner towers and curtain walls contrast with significant weaknesses presented
+  by the lack of serious defences for the remainder of the site, the huge latrine outlet to
+  the eastern tower and large hall windows. It shares group value with a serious of other
+  palatial high status castle buildings constructed throughout Wales and the Marches by the
+  Crown and Marcher Lords at the end of the final Edwardian Conquest, nearby examples including
+  Roger Bigod’s hall, solar and Marten’s Tower at Chepstow and Gilbert de Clare’s nearby Llangibby.
+  These. These were deliberately designed as statements of rank, wealth and lordship and provided
+  lavish, often occasional accommodation for their lords and entourages, enclosed in imposing
+  defences dressed in the latest architectural forms and motifs. Cas Troggy is likely to retain
+  extensive intact buried structural remains and associated archaeological deposits that will
+  provide evidence of its construction, development and use. It is of particular interest
+  due to its probable limited period of use and function as a hunting seat and holds high
+  potential to retain closely dated artefactual and environmental evidence that may enhance
+  our knowledge of regional material culture and of medieval hunting and feasting. Cas Troggy
+  is a well-preserved an important relic of the broader medieval landscape and shares group
+  value with the more modest surviving castles and manors that exploited Wentwood Forest.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2960
+source_title: Scheduled Monument Full Report — Cas Troggy Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

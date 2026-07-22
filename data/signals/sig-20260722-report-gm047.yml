@@ -1,0 +1,91 @@
+id: sig-20260722-report-gm047
+site_id: gb-penrice-penrice
+attribute: designation_report
+value: 'Reference Number
+
+  GM047
+
+  Name
+
+  Penrice Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Swansea
+
+  Community
+
+  Penrice
+
+  Easting
+
+  249701
+
+  Northing
+
+  188494
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a stone-built castle. Possibly of Norman origin,
+  much of the stonework remaining is 13th century; a window with seats in the north-west gatehouse
+  overlooking the ward suggests a 13th century date.
+
+  The castle comprises a drum-tower keep with a large ward to its east side. A group of ruined
+  buildings at the north of the ward include a gatehouse with flanking defensive turrets.
+  Attached to the east side, externally, is a conical dovecote. The wall of the ward survives
+  generally to a height of about 3 to 5 metres. Irregularities at intervals appear to be small
+  open-backed defensive turrets. The circular keep at the west side is about 12m diameter,
+  surviving to a height of about three storeys; most openings appear to be walled up except
+  a slit opening facing west and a pointed arch facing north to the exterior. It has two small
+  semi-circular additions, one to east and one to west, and a three-storeyed rectangular building
+  attached to it on the exterior. The latter building survives on two sides only; it had a
+  gabled roof running north-east to south-west; large fireplace in its south-west wall with
+  segmental arch on corbels; remnants of flat arches in openings above.
+
+  Close to the keep is a small intra-mural building of which two walls remain, with a walled
+  up segmental opening to the exterior. The entrance building at the north has a portcullis
+  slot behind a gothic arch. Guard towers left and right with loops facing the entrance. The
+  one to the north has been adapted as a dovecote, the other is inaccessible. The rear corners
+  of this building facing the ward are rounded. Gothic arch of two orders to rear opening
+  to the ward; above this a first floor lancet window with seats in the reveals. Along the
+  north side is an enclosure with traces of intra-mural buildings. Two walls at the north
+  east side are a fragment of a building to which the lost wall dividing the ward into two
+  halves was attached.
+
+  The castle was abandoned in favour of Oxwich Castle in the late medieval period and fell
+  into ruin. It was slighted by Cromwell. When engraved by Buck in c. 1735 the surviving curtain
+  wall still had its crenellations. The ruins were probably reduced for picturesque effect
+  in the late 18th century. A wall dividing the ward into two halves has nearly all disappeared.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3762
+source_title: Scheduled Monument Full Report — Penrice Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

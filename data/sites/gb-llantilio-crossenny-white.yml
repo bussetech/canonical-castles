@@ -13,30 +13,39 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument MM006 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "contested"
+    assessment: assessed
+    basis: "The report cuts both ways. It describes a lordly castle with a private appartment, a chapel and a hall and heavy active defence (a twin round-towered gatehouse with portcullis and drawbridge, mural round towers, arrowslits and an exceptionally deep, steep-sided moat) — yet states that 'the sole purpose of White Castle was military', that it was garrisoned by troops and was austere and functional, so the private-residence half is argued against by the designation itself."
+disputed: true
+dispute_note: >
+  One reading takes White Castle as a fortified lordly residence — a Marcher
+  castle (William Fitz Osbern, later the crown under Lord Edward) with a private
+  appartment, a chapel and a hall. The other follows Cadw's own statement that
+  'the sole purpose of White Castle was military', a garrisoned, austere and
+  functional work whose residential provision was minimal (the hall only in
+  timber, a single private appartment), pulling it away from the residence half.
 register_entries:
 - register: gb-wls-cadw
   ref: MM006
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2957
-first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+first_seen: "2026-07-21"
+last_updated: "2026-07-22"
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2957
-  title: Cof Cymru - National Historic Assets of Wales
+  title: Scheduled Monument Full Report — White Castle
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: "2026-07-22"
+  note: Full scheduled-monument report; the basis for the assessed verdict.
 signals:
 - sig-20260721-cadw-mm006
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-mm006
+notes: >
+  Upgraded to an assessed record from Cadw's full report (MM006).
+  fortified_residence assessed 'contested' because the report simultaneously
+  documents residential fabric (private appartment, chapel, hall) and declares a
+  sole military purpose. state_fortification left unassessed — that band is for
+  gunpowder-age state works, whereas the original purpose here was a medieval
+  Marcher/crown lordship castle; its earth-and-timber origins are part of that
+  lordly castle, not a separate enclosure_fortification.

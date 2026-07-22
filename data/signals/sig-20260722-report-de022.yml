@@ -1,0 +1,77 @@
+id: sig-20260722-report-de022
+site_id: gb-ruthin-ruthin
+attribute: designation_report
+value: 'Reference Number
+
+  DE022
+
+  Name
+
+  Ruthin Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Denbighshire
+
+  Community
+
+  Ruthin
+
+  Easting
+
+  312294
+
+  Northing
+
+  358026
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The following provides a general description of the scheduled monument.
+
+  The monument consists of the remains of a castle, dating to the medieval period. A castle
+  is a defended residence or stronghold, built mainly of stone, in which the principal or
+  sole defence comprises the walls and towers bounding the site. Some form of keep may have
+  stood within the enclosure but these were not significant in defensive terms and served
+  mainly to provide accommodation.  Ruthin Castle is a 13th century castle and courtyard with
+  moat, standing on a ridge of red sandstone which rises above the Clwyd valley and overlooks
+  lower ground to the west. The castle was built of local, soft red sandstone and was in the
+  form of an irregular pentagon.  Little now remains of the castle buildings but it is possible
+  to locate the hall which was placed on the opposite side of the quadrangle to the gateway.
+  The chapel was probably one of the buildings abutting upon the west curtain wall and two
+  of the towers along the wall still exist while one corner constituted the entrance gateway.  The
+  outer courtyard lay beyond the west wall and is of later date than the towers and walls
+  of the castle.  The castle was surrounded by a moat which is still visible on the north
+  side.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3804
+source_title: Scheduled Monument Full Report — Ruthin Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

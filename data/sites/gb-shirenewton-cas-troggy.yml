@@ -12,30 +12,63 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument MM015 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: contested
+    assessment: assessed
+    basis: >
+      The report cuts both ways under this band's active-defence test. It describes
+      massive polygonal corner towers, an ashlar curtain wall with a battered base
+      and flanking angle towers (genuine defensible work), yet judges the site
+      "effectively a fortified hunting lodge" whose "massive corner towers and
+      curtain walls contrast with significant weaknesses presented by the lack of
+      serious defences for the remainder of the site, the huge latrine outlet to the
+      eastern tower and large hall windows", with "no signs of a gatehouse".
+  palatial_seat:
+    verdict: "yes"
+    assessment: assessed
+    basis: >
+      Cadw groups Cas Troggy with "palatial high status castle buildings...
+      deliberately designed as statements of rank, wealth and lordship" providing
+      "lavish, often occasional accommodation", and calls it "effectively a fortified
+      hunting lodge" serving Roger Bigod's seat at Chepstow — a status residence
+      whose military features are trappings rather than governing defences.
+  revival_folly:
+    verdict: "no"
+    assessment: assessed
+    basis: >
+      Begun for Roger Bigod III by 1303, squarely within the defensive era — its
+      military architecture is a symbolic statement of rank, not a post-defensive
+      sham or picturesque folly. A symbolic castle is not a sham one.
+disputed: true
+dispute_note: >
+  On the fortified_residence band the report argues both readings. It records real
+  defensive fabric — massive polygonal corner towers, an ashlar curtain wall with a
+  battered base and flanking angle towers — while judging the site "effectively a
+  fortified hunting lodge" with a "lack of serious defences for the remainder of the
+  site", large hall windows and a monumental latrine outlet undermining
+  defensibility, and "no signs of a gatehouse". The defensive reading and the
+  status-hunting-seat reading genuinely conflict.
 register_entries:
 - register: gb-wls-cadw
   ref: MM015
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2960
-first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+first_seen: "2026-07-21"
+last_updated: "2026-07-22"
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2960
   title: Cof Cymru - National Historic Assets of Wales
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: "2026-07-21"
+  note: Register entry and full scheduled-monument report; the report was read and the bands assessed against it.
 signals:
 - sig-20260721-cadw-mm015
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-mm015
+notes: >
+  Assessed against Cadw's full report (MM015), which mirrors the Raglan pattern —
+  military fabric present but explicitly subordinated to status and comfort.
+  fortified_residence is contested (defensive fabric vs. Cadw's "fortified hunting
+  lodge" reading), palatial_seat is yes, revival_folly is no (within the defensive
+  era). popular_castle is OMITTED — this is an obscure abandoned ruin with no visitor
+  operation or public standing shown in the report. Single Cadw source, confidence
+  medium.

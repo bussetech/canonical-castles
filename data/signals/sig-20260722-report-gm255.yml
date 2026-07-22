@@ -1,0 +1,73 @@
+id: sig-20260722-report-gm255
+site_id: gb-mawr-penlle-r
+attribute: designation_report
+value: 'Reference Number
+
+  GM255
+
+  Name
+
+  Penlle''r Castell
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Swansea
+
+  Community
+
+  Mawr
+
+  Easting
+
+  266537
+
+  Northing
+
+  209603
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument comprises the remains of a motte and bailey castle, a military stronghold built
+  during the medieval period. A motte and bailey castle comprises a large mound of soil or
+  stone (the motte) surrounded by, or adjacent to, one or more embanked enclosures (the bailey).
+  Both may be surrounded by wet or dry ditches and could be further strengthened with palisades,
+  revetments, and/or a tower on top of the motte.
+
+  The earthworks consist of a sub-rectangular mound, over 30m long, un-equally divided by
+  a broad ditch. There are traces of at least three drystone structures on the level top,
+  and the whole monument is surrounded by a deep v-shaped ditch. It is argued that the earthwork
+  was constructed in the late 13th century during a border dispute between William de Breos
+  and Rhys Fychan. The fact that Carreg Cennen castle is visible from the site may be significant,
+  but the insubstantial construction of the drystone structures suggests only temporary occupation.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive organisation. The well-preserved monument forms an important element within the
+  wider medieval context and the structure itself may be expected to contain archaeological
+  information relating to chronology, building techniques and functional detail.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3573
+source_title: Scheduled Monument Full Report — Penlle'r Castell
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

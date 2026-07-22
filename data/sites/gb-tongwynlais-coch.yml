@@ -12,30 +12,53 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument GM206 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: >
+      In its medieval phase the Clare lords of Glamorgan raised a stone fortress by
+      c.1290 over an earlier earth-and-timber motte — a masonry apron, shell keep,
+      three round towers (Kitchen, Keep and Well), a rectangular gatehouse and curtain
+      wall — a lordly residence with real active defence, "destroyed militarily in the
+      early 14th century" during the Welsh rebellions of 1314-1316.
+  revival_folly:
+    verdict: "yes"
+    assessment: assessed
+    basis: >
+      The standing building is the "Gothic fairytale castle" raised in 1875 by William
+      Burges for the third marquess of Bute — a purpose-built nineteenth-century
+      romantic castle whose drawbridge and portcullis are picturesque novelties and
+      whose interiors (Sleeping Beauty and Aesop's Fables schemes) are fantasy, built
+      in castle form for aesthetic and status ends rather than defence.
+  popular_castle:
+    verdict: "yes"
+    assessment: assessed
+    basis: >
+      A major operated monument of national importance for its Victorian Gothic-style
+      architecture — Cadw calls it "the Gothic fairytale castle that can be seen
+      today" — and one of the most recognised and visited castles in Wales.
 register_entries:
 - register: gb-wls-cadw
   ref: GM206
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3377
-first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+first_seen: "2026-07-21"
+last_updated: "2026-07-22"
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3377
   title: Cof Cymru - National Historic Assets of Wales
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: "2026-07-21"
+  note: Register entry and full scheduled-monument report; the report was read and the bands assessed against it.
 signals:
 - sig-20260721-cadw-gm206
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-gm206
+notes: >
+  Assessed against Cadw's full report (GM206), a two-phase structure. The genuine
+  medieval Clare fortress (motte, shell keep, round towers, gatehouse, destroyed
+  militarily) carries fortified_residence: yes; the standing Burges/Bute building
+  carries revival_folly: yes as a purpose-built Victorian romantic castle — the two
+  are different phases, not an inconsistency. popular_castle: yes as a famous operated
+  monument. palatial_seat OMITTED — the report shows fortification being added
+  decoratively, not defences removed for amenity. Single Cadw source, confidence
+  medium.

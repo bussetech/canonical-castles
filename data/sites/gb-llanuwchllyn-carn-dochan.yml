@@ -12,30 +12,28 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument ME049 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: "Probably built by Llywelyn ap Iorwerth, prince of Gwynedd, between 1215 and 1230 (an identified ruling lord), with a curtain wall carrying three integral towers, a central square tower, a D-shaped tower and a rock-cut defensive ditch providing active defence; Cadw cites importance for medieval settlement and defence — both halves met."
 register_entries:
 - register: gb-wls-cadw
   ref: ME049
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3208
-first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+first_seen: "2026-07-21"
+last_updated: "2026-07-22"
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3208
-  title: Cof Cymru - National Historic Assets of Wales
+  title: Scheduled Monument Full Report — Castell Carn Dochan
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: "2026-07-22"
+  note: Full scheduled-monument report; the basis for the assessed verdict.
 signals:
 - sig-20260721-cadw-me049
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-me049
+notes: >
+  Upgraded to an assessed record from Cadw's full report (ME049).
+  fortified_residence assessed 'yes' — a Welsh princely castle (Llywelyn the
+  Great) with a towered curtain wall and a rock-cut defensive ditch. Other bands
+  omitted; the report gives no usage evidence for popular_castle.

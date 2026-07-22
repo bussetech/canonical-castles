@@ -12,30 +12,31 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument MM129 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "no"
+    assessment: assessed
+    basis: "The residence half is met — a hall or tower within a walled enclosure traditionally held to be the manor of John Martel (1271 Wentwood Survey) — but the surviving defensive fabric is merely a spread stony bank over a collapsed rubble wall with 'no sign of an external ditch' and no towers or gatehouse; the criterion's active-defence half ('not merely a wall') is not met."
 register_entries:
 - register: gb-wls-cadw
   ref: MM129
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2373
-first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+first_seen: "2026-07-21"
+last_updated: "2026-07-22"
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2373
-  title: Cof Cymru - National Historic Assets of Wales
+  title: Scheduled Monument Full Report — Llanvaches Castle
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: "2026-07-22"
+  note: Full scheduled-monument report; the basis for the assessed verdict.
 signals:
 - sig-20260721-cadw-mm129
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-mm129
+notes: >
+  Upgraded to an assessed record from Cadw's full report (MM129).
+  fortified_residence assessed 'no' — a 'defended manor house' by tradition
+  whose only defensive fabric is a low enclosure wall with no external ditch and
+  no active-defence features. enclosure_fortification left unassessed: the
+  enclosure has an identified lordly residence, which that band excludes. The
+  report's framing as a 'small medieval castle' is tradition, not demonstrated
+  defence.

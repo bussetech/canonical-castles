@@ -13,30 +13,34 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument GM037 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: >
+      Established by the private lord William de Londres before c.1107 as a ringwork
+      and bailey, later given a rectangular stone keep (walls 1.8m thick, west wall
+      surviving to 12.5m), a faceted stone curtain wall entered by a gate passage, a
+      re-cut rock ditch flooded by the river, and a 21m hall with domestic quarters —
+      a defensible work and the residence of a named lord, both halves met.
 register_entries:
 - register: gb-wls-cadw
   ref: GM037
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2234
-first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+first_seen: "2026-07-21"
+last_updated: "2026-07-22"
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2234
   title: Cof Cymru - National Historic Assets of Wales
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: "2026-07-21"
+  note: Register entry and full scheduled-monument report; the report was read and the fortified_residence band assessed against it.
 signals:
 - sig-20260721-cadw-gm037
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-gm037
+notes: >
+  fortified_residence upgraded to assessed against Cadw's full report (GM037), which
+  documents a classic Norman ringwork-and-keep with lordly tenure, keep, hall and
+  curtain wall. Other bands left OMITTED — the report shows no palatial conversion,
+  no revival phase, and no visitor-operation/usage evidence for popular_castle.
+  Single Cadw source, confidence medium.

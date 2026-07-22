@@ -147,9 +147,16 @@ def main() -> int:
 
         if cell["state"] == "complete":
             held, total = cell.get("records_held"), cell.get("register_count")
-            if total is not None and held != total:
-                fail(f"coverage {key}: 'complete' but holds {held} of {total} "
-                     f"register entries")
+            # Every register entry must be ACCOUNTED FOR — either the record
+            # meets the band, or its evidence was read and it does not. The
+            # second is a result, not a gap, and before any band was assessed it
+            # could not occur: a bulk import gave every structure the same
+            # verdict, so held == total was the only shape completeness took.
+            out = cell.get("assessed_out") or 0
+            if total is not None and held + out != total:
+                fail(f"coverage {key}: 'complete' but accounts for {held} + "
+                     f"{out} assessed-out = {held + out} of {total} register "
+                     f"entries — {total - held - out} unexamined")
 
         # A register-derived verdict must name the register it came from,
         # otherwise "the register said so" is unfalsifiable.

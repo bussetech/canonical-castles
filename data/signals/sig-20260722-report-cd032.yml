@@ -1,0 +1,75 @@
+id: sig-20260722-report-cd032
+site_id: gb-ystrad-meurig-ystrad-meurig
+attribute: designation_report
+value: 'Reference Number
+
+  CD032
+
+  Name
+
+  Ystrad-Meurig Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Ceredigion
+
+  Community
+
+  Ystrad Meurig
+
+  Easting
+
+  270259
+
+  Northing
+
+  267519
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a castle, dating to the medieval period. A castle
+  is a defended residence or stronghold, built mainly of stone, in which the principal or
+  sole defence comprises the walls and towers bounding the site. Some form of keep may have
+  stood within the enclosure but these were not significant in defensive terms and served
+  mainly to provide accommodation. The remains of Ystrad-Meurig Castle consist of a rather
+  angular enclosure, about 100m north-south by 82m, occupying the southern tip of a spur.
+  This has traces of a rampart and ditch on the north where it faces level ground and is otherwise
+  defined by scarps above steep natural slopes. In the northern part of the enclosure are
+  the foundations of a massive rectangular stone tower, 18-20m across. This was apparently
+  part of a building complex at least 30m across. Within the south-western corner of the castle
+  enclosure, gentle scarps define an inner oval enclosure, about 35m north-south by 30m. The
+  castle was established in about 1110 and then destroyed in 1137. It was disputed, besieged
+  and rebuilt through the later twelfth century and is last recorded in 1208. It is possible
+  that earlier notices refer to a castle mound 1.6km to the east (SAM CD031).
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3588
+source_title: Scheduled Monument Full Report — Ystrad-Meurig Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

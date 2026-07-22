@@ -1,0 +1,103 @@
+id: sig-20260722-report-mg022
+site_id: gb-montgomery-montgomery
+attribute: designation_report
+value: 'Reference Number
+
+  MG022
+
+  Name
+
+  Montgomery Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Powys
+
+  Community
+
+  Montgomery
+
+  Easting
+
+  322129
+
+  Northing
+
+  296777
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The following provides a description of the Scheduled Ancient Monument.
+
+  This monument comprises the remains of a medieval castle begun in 1223 by Henry III. Situated
+  on an entirely new site atop a high ridge overlooking the Severn Valley, it was intended
+  to replace the nearby earth and timber fortification of Hen Domen.
+
+  The castle outworks themselves are made up of three elements – an outer D-shaped earth mound,
+  originally revetted with masonry; a rectangular barbican with earth banks originally carrying
+  palisades on its flanks; and a rock boss to the rear. A rock-cut ditch 13.7m wide and originally
+  6.7m deep separates the outworks and middle ward. Originally constructed in timber, the
+  defences of the middle ward were not rebuilt in stone until 1251-53. The medieval arrangements
+  of the internal buildings have largely been obliterated by the 16th and 17th century building
+  activity. However, it is reasonable to assume that the medieval soldiers’ lodgings, as well
+  as service buildings to meet the needs of the wider castle community, as distinct from the
+  king or the lord of the castle and his immediate associates housed in the inner ward.
+
+  At the entrance to the middle ward are the slight remains of the two rounded towers of the
+  outer gatehouse, built in 1251-53 together with the adjoining stone curtain wall. Behind
+  the east curtain, at the foot of the slope, is a 14th century kiln house, where grain was
+  dried after being harvested. During the 16th century, the west and south sides of the middle
+  ward were lined with lodgings. The scant remains of the foundations of one sizeable building,
+  perhaps the residence of Bishop Rowland Lee, can be seen inside the west curtain. The masonry-lined
+  pit in the north-west corner of the ward indicates the site of its latrine. Bishop Lee’s
+  building was demolished when Edward Herbert’s house was built in the 17th century.
+
+  The inner ward was constructed in stone from the outset, the buildings of the inner ward
+  were intended to house the king and his immediate household when in residence. The main
+  apartments were in the large twin-towered inner gatehouse, with a great chamber, private
+  rooms and a chapel. The castle well was in the adjacent D-shaped tower, and the ward would
+  have contained a timber hall, with a timber bakehouse and kitchen. The rock-cut inner ditch
+  measuring 13.7m wide and 6.1m deep with near vertical sides, separates the middle ward and
+  inner ward. The inner gatehouse consists of a gate passage flanked by a pair of three-quarter-round
+  towers, solid in their lower parts and with a rectangular room behind each tower. It was
+  protected by a portcullis and two pairs of heavy doors.
+
+  Beyond the gatehouse, on the western side, is the well tower. The well shaft sinks to a
+  depth of 64m. Little survives of the earlier medieval arrangements within the inner ward.
+  The only building which may survive from this early phase consists of two east-west walls,
+  which are more substantial than those of the various later lodgings. These could be the
+  foundations of a timber-framed hall, which would have created a courtyard in the southern
+  part of the ward. Associated with it were a timber bakehouse and kitchen.
+
+  In its final phase, the inner ward was lined with a series of lodgings ranged around the
+  curtain wall. These were two-storey timber-framed structures set on light foundation walls
+  of rubble masonry. A typical example can be found behind the entrance to the inner ward,
+  between the gatehouse and the well tower.
+
+  This monument is of national importance for its potential to enhance our knowledge of medieval
+  religious practices. The scheduled area comprises the remains described and an area around
+  them within which related evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=1976
+source_title: Scheduled Monument Full Report — Montgomery Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

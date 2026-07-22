@@ -1,0 +1,97 @@
+id: sig-20260722-report-gm043
+site_id: gb-penrice-oxwich
+attribute: designation_report
+value: 'Reference Number
+
+  GM043
+
+  Name
+
+  Castell Oxwich
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Swansea
+
+  Community
+
+  Penrice
+
+  Easting
+
+  249776
+
+  Northing
+
+  186298
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument comprises the remains of a courtyard house. It is located on the headland overlooking
+  Oxwich Bay. Built by the Mansel family in the 16th century, this impressively large courtyard
+  house is now ruined. There was probably a medieval house here, referred to in 1459 as being
+  owned by Philip Mansel, but the 16th century rebuilding has mor or less obliterated it.
+  The new house was constructed in two stages. First the gateway and south block were built
+  by Sir Rice between about 1520 and 1540. Next the huge and more sophisticated east block,
+  opposite the gateway, was added at right angles to it by his son Sir Edward before 1580.
+
+  The early part of the house lies on the west and south sides of the courtyard, the north
+  and part of the west sides of which have gone. The mock military gateway is a simple arch
+  between solid drum turrets. Over the arch is a heraldic panel bearing the arms of Sir Rice.
+  Next to it, to the south, is part of a round staircase tower which was probably originally
+  matched by a similar one on the north side. The curtain wall has a wall-walk and a ruined
+  parapet. The gateway and curtain wall were anachronisms, for show only, and had no serious
+  defensive function. The two storey south block is much altered. The mullioned windows are
+  Tudor, and there is doubt as to the position of the original entrance.
+
+  When Sir Rice moved to Margam in about 1540 his eldest son Edward took over Oxwich. His
+  ideas were much more grandiose, but he may have overstretched himself, as within 50 years
+  of its completion Oxwich was leased out. Sir Edward''s east block is E-shaped, the arms
+  of the E being three tower-like wings, each with six floors and numerous rooms. Now only
+  the south-east wing stands above ground floor level. The other two wings are largely ruinous
+  except for two barrel-vaulted basements beneath the middle one. At each end were uptodate
+  stairs in square stair wells around central piers. The bases of both are still visible.
+  The block was entered through a projecting porch in the courtyard, which is now gone but
+  which stood to the south side of the present entrance. On the first floor was a grand hall
+  lit by two huge windows on the courtyard side. The northernmost one, of 18 lights, survives
+  but is blocked up. Only vestiges remain of the other even larger one, of 24 lights. The
+  window openings of the east block demonstrate the luxurious nature of this part of the house:
+  they were rebated for glass.
+
+  At the second floor level, to the south of the hall, was an important chamber, perhaps Sir
+  Edward''s, with a fireplace and two tall windows. Above, occupying the whole length of the
+  wing, was that essential ingredient of the grand Tudor house, a long gallery. To the north
+  of the house, and almost certainly contemporary with it, is a ruined circular dovecote.
+
+  The monument is of national importance for its potential to enhance our knowledge of 16th
+  century secular architecture. The monument is a well-preserved example of its type and forms
+  an important element within the wider 16th century context. The structure itself may be
+  expected to contain archaeological information in regard to chronology, building techniques
+  and functional detail.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2856
+source_title: Scheduled Monument Full Report — Castell Oxwich
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

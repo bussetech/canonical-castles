@@ -1,0 +1,87 @@
+id: sig-20260722-report-gm046
+site_id: gb-llwchwr-loughor
+attribute: designation_report
+value: 'Reference Number
+
+  GM046
+
+  Name
+
+  Loughor Castle
+
+  Date of Designation
+
+  03/01/1934
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Swansea
+
+  Community
+
+  Llwchwr
+
+  Easting
+
+  256434
+
+  Northing
+
+  197980
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a castle dating to the medieval period. Loughor
+  castle is placed in a strategic position on the western edge of the lordship of Gower guarding
+  the lowest crossing of the River Loughor. The Romans too found this a strategic spot and
+  the castle was built in the south-east corner of the Roman auxiliary for of Leucarum. It
+  was founded in the early 12th century by Henry de Villiers. At this stage an oval area on
+  the highest part of the spur above the river was enclosed by a ditch, now gone, and the
+  edge heightened by a bank. Thus, despite its motte-like appearance, the earliest castle
+  was really a castle ringwork. Excavation has revealed that a rectangular kitchen occupied
+  the east side of the interior. Of the other buildings, which would have been of timber,
+  nothing is known.
+
+  The castle''s history was a turbulent one, and there are four further stages of rebuilding.
+  In the mid to late 12th century further timber buildings and possibly a stone tower, predecessor
+  to the present one, were built, and in the late 12th to early 13th century two stone buildings
+  were constructed in the middle. A stone curtain wall was built before 1215; its foundations
+  were found during excavation. The slight lip around the edge of the mound marks its position.
+  A small stone tower on the west side of the mound dates from the late 13th century or about
+  1300, the last building phase at the castle, perhaps during the lordships of William de
+  Braose II and III. The presence of a fireplace in the north wall, and garderobe in the south,
+  both on the first floor, indicates that the tower was residential. Its thick walls stand
+  to first floor level, and there was originally another floor above. The whole of the south-east
+  corner, complete with spiral stair, lies on its side, having fallen in the 1940s. Adjoining
+  the tower to the south was the entrance gateway. The castle was made redundant by Edward
+  I''s pacification of Wales and fell into decline.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=142
+source_title: Scheduled Monument Full Report — Loughor Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

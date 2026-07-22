@@ -1,0 +1,66 @@
+id: sig-20260722-report-gm229
+site_id: gb-rhoose-penmark
+attribute: designation_report
+value: 'Reference Number
+
+  GM229
+
+  Name
+
+  Penmark Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Vale of Glamorgan
+
+  Community
+
+  Rhoose
+
+  Easting
+
+  305859
+
+  Northing
+
+  168898
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a castle, dating to the medieval period. Penmark
+  is a substantial 13th century castle. A round tower stands to second floor level and a stretch
+  of hugh curtain walling of the inner ward runs southwards from it. Fragmentary remains of
+  other parts, with a large outer ward to the west. The castle was held by the de Umfreville
+  family and then by the Bawdrips.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3362
+source_title: Scheduled Monument Full Report — Penmark Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

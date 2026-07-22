@@ -13,30 +13,39 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument MM159 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: >-
+      Both halves met — built by William Fitz Osbern as the fortified head of an
+      independent Norman lordship, originally with a circular keep, a gatehouse
+      and a curtain wall (destroyed in the Civil War); the surviving Great Tower
+      held a first-floor hall and apartments over a cellar, and Edmund of
+      Lancaster's Hall was used for holding courts.
 register_entries:
 - register: gb-wls-cadw
   ref: MM159
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2393
-first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+first_seen: "2026-07-21"
+last_updated: "2026-07-22"
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2393
   title: Cof Cymru - National Historic Assets of Wales
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: "2026-07-22"
+  note: Scheduled-monument register entry and full designation report; the source assessed for the band verdict.
 signals:
 - sig-20260721-cadw-mm159
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-mm159
+notes: >-
+  Assessed 2026-07-22 from Cadw's full scheduled-monument report
+  (sig-20260722-report-mm159). fortified_residence upgraded to assessed: keep,
+  gatehouse and curtain wall (now lost) with a residential Great Tower, seat of
+  an independent lordship. popular_castle omitted despite the keep's fame as the
+  probable birthplace of Henry V — that is historical fame of the site, not
+  evidence of a visitor operation or popular castle-usage in the report. Great
+  Castle House now occupies the round-tower site but is a distinct later
+  building, not this record. Civil War garrisoning does not make it a
+  state_fortification (original seigneurial purpose governs). revival and
+  enclosure bands omitted as unspoken.

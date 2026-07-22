@@ -12,30 +12,34 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument PE163 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: >
+      Held within the Lordship of Pembroke, the coastal promontory ruin retains
+      active defensive fabric — a gate tower and D-shaped barbican at the south-west
+      entrance, a round central watch tower with a square stair turret, and embattled
+      curtain wall — alongside "parts of domestic buildings", combining held defence
+      and lordly residence.
 register_entries:
 - register: gb-wls-cadw
   ref: PE163
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2037
-first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+first_seen: "2026-07-21"
+last_updated: "2026-07-22"
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2037
   title: Cof Cymru - National Historic Assets of Wales
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: "2026-07-21"
+  note: Register entry and full scheduled-monument report; the report was read and the fortified_residence band assessed against it.
 signals:
 - sig-20260721-cadw-pe163
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-pe163
+notes: >
+  fortified_residence upgraded to assessed against Cadw's full report (PE163). The
+  report documents a gate tower, barbican, watch tower and embattled curtain wall
+  with domestic buildings under the Lordship of Pembroke. popular_castle is OMITTED —
+  the report describes only fabric, with no visitor-operation or usage evidence, and
+  a name is not usage evidence. Single Cadw source, confidence medium.

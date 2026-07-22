@@ -1,0 +1,88 @@
+id: sig-20260722-report-pe040
+site_id: gb-narberth-narberth
+attribute: designation_report
+value: 'Reference Number
+
+  PE040
+
+  Name
+
+  Narberth Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Pembrokeshire
+
+  Community
+
+  Narberth
+
+  Easting
+
+  210985
+
+  Northing
+
+  214394
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a castle, dating to the medieval period. It is situated
+  at the top of steep-sided spur overlooking the fording point of the Narberth Brook. It comprises
+  a sub rectangular enclosure measuring c 50 m north to south defined by the very fragmentary
+  remains of a masonry curtain wall. There are four cylindrical ‘drum’ towers, one at each
+  corner but only the two southern towers, each of three storeys, survive to any height. Midway
+  along the long west side of the ward are the remains of a small ‘D’-shaped turret and opposite
+  on the east side a larger ‘D’-shaped tower. Against the south curtain wall is a large, unvaulted
+  two-storey Great hall, which forms an ‘L’-shaped block with a two-storey vaulted building
+  against the east curtain. The enclosure was entered from the north over a ditch dividing
+  it form a possible outer ward. The fabric is limestone rubble throughout. Most of the facework
+  has been lost except on the two southern towers. The little dressed stone that survives
+  suggests the defences are from the mid-late 13th century and the domestic buildings are
+  from c 1300 onward.
+
+  Underlying earthworks may relate to an initial foundation of the castle in c 1100 but the
+  first record of the castle, when burnt and taken by the Welsh is from 1116. It may have
+  been attacked again in 1159 and was partially destroyed twice by Llewellyn ap Iorerth prince
+  of Gwynedd in 1215 and 1220. Held by Roger Mortimer, Lord of Wigmore from 1247 it was completely
+  destroyed in 1257 during the rising of the Welsh under Llywelyn ap Gruffudd. Likely to have
+  remained entirely of timber throughout this period the castle it was then probably Mortimer
+  who rebuilt it in stone with repair work after a minor attack of 1299 providing a context
+  for the domestic buildings as the Great Hall has widow detail of a broadly late 13th-early
+  14th century date.  An inventory of the castle survives from 1330 though by 1424 it was
+  recorded as in decay. Passing through a succession of families including episodes of being
+  held by the crown it continued to decline though a detailed survey of 1539 shows it to have
+  been fully occupied. Manorial courts were held into the castle well into the 16th century
+  and the castle was finally abandoned sometime after 1677.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=478
+source_title: Scheduled Monument Full Report — Narberth Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

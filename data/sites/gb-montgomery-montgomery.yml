@@ -13,30 +13,42 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument MG022 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: >-
+      Cadw report MG022 records an inner ward built in stone from the outset "to
+      house the king and his immediate household", with a twin-towered inner
+      gatehouse (great chamber, private rooms, chapel) flanked by
+      three-quarter-round towers and defended by a portcullis and two pairs of
+      heavy doors, plus a stone outer gatehouse and curtain of 1251-53 — active
+      defence meant to be held combined with a royal lordly residence satisfies
+      both halves of the band.
 register_entries:
 - register: gb-wls-cadw
   ref: MG022
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=1976
 first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+last_updated: '2026-07-22'
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=1976
   title: Cof Cymru - National Historic Assets of Wales
   publisher: Cadw
   date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  note: Register entry; original bulk-import source.
+- url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=1976
+  title: Scheduled Monument Full Report — Montgomery Castle
+  publisher: Cadw
+  date: '2026-07-22'
+  note: Full designation report; the evidence for the assessed verdict.
 signals:
 - sig-20260721-cadw-mg022
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-mg022
+notes: >-
+  Upgraded from bulk register import to assessed against Cadw's full
+  scheduled-monument report (sig-20260722-report-mg022). fortified_residence
+  assessed yes from the report's described fabric and royal residential ranges;
+  all other bands omitted (unassessed) because the report does not speak to
+  them. Confidence medium — one official report plus the register, no
+  independent corroboration.

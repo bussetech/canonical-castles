@@ -1,0 +1,78 @@
+id: sig-20260722-report-br126
+site_id: gb-maescar-du-sennybridge
+attribute: designation_report
+value: 'Reference Number
+
+  BR126
+
+  Name
+
+  Castell-Du, Sennybridge
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Powys
+
+  Community
+
+  Maescar
+
+  Easting
+
+  291971
+
+  Northing
+
+  228400
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  Castell Du, also known as Rhyd y Briw, consists of the remains of a castle, dating to the
+  medieval period. The castle is located on the SW side of Sennybridge and commands the crossing
+  of the river Senny at its junction with the Usk. The remains consist of a stone wall 26m
+  in length, orientated ENE/WSW, with a D-shaped tower projecting from the centre. The tower
+  is 6m in diameter and stands to a maximum height of 6m. Much of the original facing stone
+  has been lost, exposing the rubble interior, although a section survives on the W side.
+  Below the tower on the E side is a large chunk of fallen masonry lying on its side, surrounded
+  by fallen stones. To the W of the tower is a stretch of turf-covered walling, probably the
+  remains of a range. Most of this walling is hidden below the vegetation, but one section
+  stands to 2m high adjacent to which is a narrow stone-built passage that leads into the
+  extant WWII pillbox. This pillbox is one of two built on the castle site using masonry to
+  mimic the castle walling. The second, on the E side, now lies within a neighbouring garden.
+  Little is known of the history of the castle, although it is thought to have been constructed
+  by Llywelyn ab Gruffudd around 1262. Records suggest that it was possibly the ''new castle
+  beyond Brecon'' destroyed by the then Lord Edward (later Edward I) in 1265. The surviving
+  structural elements on the site may belong to a subsequent castle, as records show the use
+  of the Rhy y Briw into the 1270s.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=1761
+source_title: Scheduled Monument Full Report — Castell-Du, Sennybridge
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

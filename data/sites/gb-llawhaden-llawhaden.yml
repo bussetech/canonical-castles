@@ -13,30 +13,39 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument PE024 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: >-
+      Both halves met — the gatehouse has D-shaped towers on deeply spurred
+      bases with arrow slits, a machicolation gallery, 'murder holes', a
+      portcullis slot and vaulted guardhouses (a gatehouse meant to be held),
+      set in a curtain wall with a wall walk; and it was the residence of the
+      bishops of St David's (an ecclesiastical lord), rebuilt as a fortified
+      mansion under Bishop Adam de Houghton.
 register_entries:
 - register: gb-wls-cadw
   ref: PE024
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=482
-first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+first_seen: "2026-07-21"
+last_updated: "2026-07-22"
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=482
   title: Cof Cymru - National Historic Assets of Wales
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: "2026-07-22"
+  note: Scheduled-monument register entry and full designation report; the source assessed for the band verdict.
 signals:
 - sig-20260721-cadw-pe024
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-pe024
+notes: >-
+  Assessed 2026-07-22 from Cadw's full scheduled-monument report
+  (sig-20260722-report-pe024). fortified_residence upgraded from
+  register-derived to assessed on the strength of a held gatehouse plus
+  documented episcopal residence. palatial_seat omitted rather than set: the
+  report shows amenity (window seats, gardens, a chapel porch built for estate
+  views, service-only polygonal towers) but the 14th-century gatehouse is a
+  genuine defensive work that still governs the approach, so fortification is
+  not a mere relic. All other bands omitted — the report does not speak to
+  popular usage, revival/folly, state tenure, or an unlorded enclosure.
