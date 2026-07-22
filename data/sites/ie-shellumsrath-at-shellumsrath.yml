@@ -1,0 +1,45 @@
+id: ie-shellumsrath-at-shellumsrath
+name: Castle at Shellumsrath
+tradition: european_medieval
+location:
+  country: IE
+  locality: Shellumsrath
+  county: Kilkenny
+  lat: 46.48818
+  lon: -15.81731
+definitions_met:
+  fortified_residence:
+    verdict: 'yes'
+    assessment: register-derived
+    basis: 'The Archaeological Survey of Ireland records SMR KK019-086---- as MONUMENT_CLASS:
+      Castle - unclassified, within the Castle class this band maps onto. Transcribed from
+      the register''s own typology and NOT assessed against this band''s criterion. Treat
+      as provisional.'
+register_entries:
+- register: ie-smr
+  ref: KK019-086----
+  designation: Castle - unclassified
+  url: https://heritagedata.maps.arcgis.com/apps/webappviewer/index.html?id=0c9eb9575b544081b0d296436d8f60f8&query=18a4b61b268-layer-9%2CSMRS%2CKK019-086----
+- register: wikidata
+  ref: Q137754144
+  designation: tower house
+  url: https://www.wikidata.org/wiki/Q137754144
+first_seen: '2026-07-21'
+last_updated: '2026-07-21'
+confidence: medium
+sources:
+- url: https://heritagedata.maps.arcgis.com/apps/webappviewer/index.html?id=0c9eb9575b544081b0d296436d8f60f8&query=18a4b61b268-layer-9%2CSMRS%2CKK019-086----
+  title: Archaeological Survey of Ireland - Sites and Monuments Record
+  publisher: National Monuments Service
+  date: '2026-07-21'
+  note: Register entry; the sole source for this record.
+signals:
+- sig-20260721-iesmr-kk019-086
+notes: 'Imported in bulk from the Irish Sites and Monuments Record. CORROBORATED: Wikidata
+  independently records this monument (Q137754144, joined on the SMR identifier) and classes
+  it tower house, agreeing that it is a fortification. Two independent registers rather than
+  one, hence confidence: medium. The verdict stays register-derived — corroboration is evidence,
+  not assessment, and nobody has yet applied this band''s criterion to the structure itself.
+  Only fortified_residence carries a verdict; every other band is OMITTED rather than set
+  to no. The register''s own finer class is kept on the register_entry, so the strict Anglo-Norman
+  reading stays recoverable from the data without re-querying the service.'

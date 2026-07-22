@@ -16,9 +16,9 @@ bands:
     assessed:
       'yes': 2
       'no': 9
-      contested: 4
+      contested: 7
     register_derived:
-      'yes': 4653
+      'yes': 4650
       'no': 0
       contested: 0
     unassessed: 0

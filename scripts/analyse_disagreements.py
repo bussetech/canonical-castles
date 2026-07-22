@@ -180,6 +180,48 @@ UNKNOWN = "UNKNOWN"
 
 CADW_REGISTER = "gb-wls-cadw"
 WD_REGISTER = "wikidata"
+IE_REGISTER = "ie-smr"
+
+# Irish SMR monument classes -> band. Same asymmetry rule as Cadw: an explicit
+# None is a positive claim, an absent key is our ignorance and is skipped.
+IE_BANDS: dict[str, str | None] = {
+    "Castle - unclassified": FORTIFIED,
+    "Castle - tower house": FORTIFIED,
+    "Castle - motte": FORTIFIED,
+    "Castle - motte and bailey": FORTIFIED,
+    "Castle - ringwork": FORTIFIED,
+    "Castle - Anglo-Norman masonry castle": FORTIFIED,
+    "Castle - hall-house": FORTIFIED,
+    "Castle - ringwork and bailey": FORTIFIED,
+}
+
+# Wikidata classes seen on Irish monuments, beyond the shared vocabulary above.
+WIKIDATA_BANDS_IE: dict[str, str] = {
+    "towerhouse in Ireland": FORTIFIED,
+    "fortified tower": FORTIFIED,
+    "fortified house": FORTIFIED,
+    "hall house": FORTIFIED,
+    "manor house": PALATIAL,
+    "stately home": PALATIAL,
+    "country house": PALATIAL,
+    "ringfort": ENCLOSURE,
+    "rath": ENCLOSURE,
+    "cashel": ENCLOSURE,
+    # Positive non-fortification claims: a round tower is a monastic bell
+    # tower, not a castle, however tower-shaped.
+    "Irish round tower": None,
+    "high cross": None,
+    "abbey": None,
+    "friary": None,
+    "holy well": None,
+    "ogham stone": None,
+    "baptismal font": None,
+}
+
+# Classes that describe a USE rather than a type. A castle operating as a museum
+# is still a castle; treating "museum" as a competing classification would
+# manufacture disagreement out of a building's opening hours.
+USE_NOT_TYPE = {"museum", "visitor centre", "tourist attraction", "hotel"}
 
 
 def slug(text: str) -> str:
@@ -217,14 +259,22 @@ def load_wikidata() -> dict[str, dict]:
     return meta
 
 
-def band_of_wikidata(types: set[str]) -> tuple[str | None, str]:
+def band_of_wikidata(types: set[str], extra: dict[str, str] | None = None
+                     ) -> tuple[str | None, str]:
     """Pick the most specific mapped class, preferring the fortified reading.
 
     Returns UNKNOWN — not None — when nothing is mapped. None would assert that
     Wikidata places the structure outside every band, which we are in no
     position to say.
     """
-    mapped = {t: WIKIDATA_BANDS[t] for t in types if t in WIKIDATA_BANDS}
+    vocab = dict(WIKIDATA_BANDS)
+    if extra:
+        vocab.update(extra)
+    # A use is not a type. A castle run as a museum is still a castle, and
+    # letting "museum" compete as a classification would manufacture
+    # disagreement out of a building's opening hours.
+    types = {x for x in types if x not in USE_NOT_TYPE}
+    mapped = {t: vocab[t] for t in types if t in vocab}
     if not mapped:
         return UNKNOWN, ", ".join(sorted(types)) or "(unclassified)"
     for term, band in sorted(mapped.items()):
@@ -253,15 +303,149 @@ def _row(ref, c, m, cadw_band, wd_band, wd_term, kind, basis) -> dict:
     }
 
 
+
+def classify(left_name: str, left_class: str, left_band, right_name: str,
+             right_class: str, right_band, disputed: bool) -> tuple[str, str]:
+    """Decide the KIND of a disagreement, and say why.
+
+    Shared by every register pair so the four corrections this logic went
+    through are not re-litigated per pair: unknown is not denial, silence is
+    not a claim, our own exclusions are disputes rather than their errors, and
+    the comparison runs in both directions.
+    """
+    if disputed:
+        return "band-conflict", (
+            f"{left_name} classes this {left_class}; {right_name}'s {right_class} "
+            f"maps to {right_band}. This project's bands EXCLUDE {left_class.lower()}s "
+            f"— fortified_residence rules out passive defences without active defensive "
+            f"capability — but that exclusion is a definitional stance others reject, "
+            f"not a fact. Recorded as a dispute between readings rather than as "
+            f"anyone's error.")
+    if left_band is None:
+        return "category-error", (
+            f"{left_name} classes this {left_class}, which maps to no definition band — "
+            f"under this project's bands it is not a fortification at all. "
+            f"{right_name}'s {right_class} maps to {right_band}. One of the two is wrong.")
+    if right_band is None:
+        return "category-error", (
+            f"{right_name} classes this {right_class}, which maps to no definition "
+            f"band — under this project's bands it is not a fortification at all. "
+            f"{left_name}'s {left_class} maps to {left_band}. One of the two is wrong.")
+    return "band-conflict", (
+        f"{left_name}'s {left_class} maps to {left_band}; {right_name}'s "
+        f"{right_class} maps to {right_band}. The registers disagree about what KIND of "
+        f"thing this is, not merely how precisely to describe it.")
+
+
 def held_records() -> dict[str, str]:
     """Cadw ref -> local record id, for structures this dataset already holds."""
     out = {}
     for path in sorted((ROOT / "data" / "sites").glob("*.yml")):
         rec = yaml.safe_load(path.read_text())
         for entry in rec.get("register_entries") or []:
-            if entry.get("register") == CADW_REGISTER:
+            if entry.get("register") in (CADW_REGISTER, IE_REGISTER):
                 out[entry["ref"]] = rec["id"]
     return out
+
+
+
+
+def load_ie_smr() -> dict[str, dict]:
+    out = {}
+    for feat in json.loads((SNAPSHOTS / "ie-smr-castles.json").read_text())["features"]:
+        a = feat["attributes"]
+        ref = (a.get("SMRS") or "").strip()
+        if not ref:
+            continue
+        out[ref] = {
+            "name": (a.get("FIRST_EDITION") or a.get("TOWNLAND") or "").strip(),
+            "site_type": (a.get("MONUMENT_CLASS") or "").strip(),
+            "url": (a.get("WEBSITE_LINK") or "").strip() or None,
+        }
+    return out
+
+
+def load_wikidata_ie() -> dict[str, dict]:
+    types: dict[str, set[str]] = collections.defaultdict(set)
+    meta: dict[str, dict] = {}
+    raw = json.loads((SNAPSHOTS / "wikidata-ie-smr-monuments.json").read_text())
+    for b in raw["results"]["bindings"]:
+        ref = b["smr"]["value"].strip()
+        if "typeLabel" in b:
+            types[ref].add(b["typeLabel"]["value"])
+        meta[ref] = {
+            "qid": b["item"]["value"].rsplit("/", 1)[-1],
+            "name": b.get("itemLabel", {}).get("value", ""),
+        }
+    for ref, m in meta.items():
+        m["types"] = types.get(ref, set())
+    return meta
+
+
+def build_ireland(held: dict[str, str]) -> list[dict]:
+    """Irish SMR vs Wikidata, joined on P4057 (Irish Sites and Monuments Record ID).
+
+    Second register pair, same rules. The Irish join is much thinner than the
+    Welsh one — Wikidata carries an SMR id for roughly 7% of the castle records
+    — and that thinness is itself worth publishing: corroboration is scarce,
+    so a record backed by two registers is genuinely better evidenced than the
+    4,200-odd backed by one.
+    """
+    smr = load_ie_smr()
+    wd = load_wikidata_ie()
+    rows, unknown, unmapped = [], collections.Counter(), collections.Counter()
+
+    for ref, m in sorted(wd.items()):
+        c = smr.get(ref)
+        if not c or not c["site_type"]:
+            continue
+        wd_band, wd_term = band_of_wikidata(m["types"], WIKIDATA_BANDS_IE)
+        ie_band = IE_BANDS.get(c["site_type"], "UNMAPPED")
+
+        if wd_band == UNKNOWN and ie_band != FORTIFIED:
+            unknown[wd_term] += 1
+            continue
+        if ie_band != FORTIFIED and wd_band != FORTIFIED:
+            continue
+        if ie_band == "UNMAPPED":
+            unmapped[c["site_type"]] += 1
+            continue
+        if wd_band == UNKNOWN:
+            unknown[wd_term] += 1
+            continue
+        if ie_band is None and wd_band is None:
+            continue
+
+        row_id = f"ie-{slug(ref)}"
+        side_l = {"register": IE_REGISTER, "ref": ref, "name": c["name"],
+                  "classification": c["site_type"], "band": ie_band}
+        if c["url"]:
+            side_l["url"] = c["url"]
+        side_r = {"register": WD_REGISTER, "ref": m["qid"], "name": m["name"],
+                  "classification": wd_term, "band": wd_band,
+                  "url": f"https://www.wikidata.org/wiki/{m['qid']}"}
+
+        if ie_band == wd_band:
+            if wd_term == c["site_type"].lower():
+                continue
+            kind = "granularity"
+            basis = (f"Both map to {ie_band}. The Irish SMR is more specific "
+                     f"({c['site_type']}) than Wikidata ({wd_term}); the registers "
+                     f"agree about the kind of thing and differ only in precision.")
+        else:
+            kind, basis = classify("The Irish SMR", c["site_type"], ie_band,
+                                   "Wikidata", wd_term, wd_band, False)
+
+        rows.append({"id": row_id, "kind": kind, "left": side_l, "right": side_r,
+                     "site_id": held.get(ref), "basis": basis})
+
+    for term, n in unmapped.most_common(10):
+        print(f"  note: unmapped Irish MONUMENT_CLASS {term!r} ({n}x) — add it to "
+              f"IE_BANDS deliberately", file=sys.stderr)
+    for term, n in unknown.most_common(6):
+        print(f"  note: no Wikidata band mapping for {term!r} ({n}x, Ireland) — "
+              f"skipped rather than reported as an error", file=sys.stderr)
+    return rows
 
 
 def build() -> dict:
@@ -327,29 +511,9 @@ def build() -> dict:
                 f"thing and differ only in precision."))
             continue
 
-        if c["site_type"] in CADW_DISPUTED:
-            kind, basis = "band-conflict", (
-                f"Cadw classes this {c['site_type']}; Wikidata's {wd_term} maps to "
-                f"{wd_band}. This project's bands EXCLUDE {c['site_type'].lower()}s — "
-                f"fortified_residence rules out passive defences without active "
-                f"defensive capability — but that exclusion is a definitional stance "
-                f"others reject, not a fact. Recorded as a dispute between readings "
-                f"rather than as anyone's error.")
-        elif cadw_band is None:
-            kind, basis = "category-error", (
-                f"Cadw classes this {c['site_type']}, which maps to no definition band "
-                f"— under this project's bands it is not a fortification at all. "
-                f"Wikidata's {wd_term} maps to {wd_band}. One of the two is wrong.")
-        elif wd_band is None:
-            kind, basis = "category-error", (
-                f"Wikidata classes this {wd_term}, which maps to no definition band — "
-                f"under this project's bands it is not a fortification at all. Cadw's "
-                f"{c['site_type']} maps to {cadw_band}. One of the two is wrong.")
-        else:
-            kind, basis = "band-conflict", (
-                f"Cadw's {c['site_type']} maps to {cadw_band}; Wikidata's {wd_term} maps "
-                f"to {wd_band}. The registers disagree about what KIND of thing this is, "
-                f"not merely how precisely to describe it.")
+        kind, basis = classify("Cadw", c["site_type"], cadw_band,
+                               "Wikidata", wd_term, wd_band,
+                               c["site_type"] in CADW_DISPUTED)
         rows.append(_row(ref, c, m, cadw_band, wd_band, wd_term, kind, basis))
 
     granular = []
@@ -363,12 +527,16 @@ def build() -> dict:
     for r in rows:
         r["site_id"] = held.get(r["left"]["ref"])
 
+    rows.extend(build_ireland(held))
+
     allrows = sorted(rows + granular, key=lambda r: (r["kind"], r["id"]))
     return {
         "version": 1,
         "generated_from": {
-            "registers": [CADW_REGISTER, WD_REGISTER],
-            "join": "Wikidata P3007 (Cadw Monument ID) == Cadw SAMNumber",
+            "registers": [CADW_REGISTER, IE_REGISTER, WD_REGISTER],
+            "join": ("Wales: Wikidata P3007 (Cadw Monument ID) == Cadw SAMNumber. "
+                     "Ireland: Wikidata P4057 (Irish Sites and Monuments Record ID) "
+                     "== SMR SMRS."),
             "note": (
                 "Joined on an identifier, never a name. SYMMETRIC: a row is emitted "
                 "whenever the two registers place the same monument in different "

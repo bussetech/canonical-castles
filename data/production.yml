@@ -106,3 +106,40 @@ batches:
     over the register total. Fixed by making adoption REF-BASED rather than path-based — identifiers,
     never names, the same discipline the disagreement ledger uses. The founding caveat that hand-entered
     register refs needed verification was justified on the first one checked.'
+- id: ie-corroboration
+  date: '2026-07-21'
+  method: importer
+  produced:
+    disagreements: 321
+    records_corroborated: 317
+    records_corrected: 3
+    records_renamed: 1690
+  cells_closed: []
+  run_ref: null
+  cost:
+    measured: true
+    model_usd: 0
+    actions_minutes: null
+    human_minutes: null
+    basis: Deterministic; no model call. As with the Welsh comparison, the real cost was judgement rather
+      than compute — this batch found and fixed three defects in work shipped hours earlier, and that
+      debugging sits in the unmeasured console column.
+  note: 'Depth rather than breadth. Ireland joined to Wikidata on P4057 (Irish Sites and Monuments Record
+    ID), adding 321 comparison rows and corroborating 317 records against a second independent register
+    — confidence low -> medium, with the verdict left register-derived because corroboration is evidence,
+    not assessment.
+
+
+    Three defects in the previous batch were found and fixed:
+
+    1. ~1,690 Irish records (37%) were named after Ordnance Survey ANNOTATIONS rather than names — ''Not
+    indicated'' (949), ''Castle'' (443), the literal string ''NULL'' (165), ''Hachured'' (130) — and because
+    ids derive from names, identifiers like ie-calverstown-demesne-indicated were baked in. Now falls
+    back to ''Castle at <townland>'', which claims nothing it does not know.
+
+    2. The importer only ever wrote files, so changing the id rule left thousands of orphans and the register
+    appeared to hold more structures than it does. It now owns and removes its own residue.
+
+    3. That orphan sweep deleted a hand-authored record on its first run (Dun Aonghasa), because an ABSENT
+    assessment field was read as not-adopted. The schema defines absent as assessed. Deletion now requires
+    a positive register-derived marker, never the lack of one.'
