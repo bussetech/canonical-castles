@@ -1,0 +1,68 @@
+id: sig-20260722-report-gm031
+site_id: gb-caerphilly-morgraig
+attribute: designation_report
+value: 'Reference Number
+
+  GM031
+
+  Name
+
+  Castell Morgraig
+
+  Date of Designation
+
+  28/04/1928
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Cardiff
+
+  Community
+
+  Lisvane
+
+  Easting
+
+  316020
+
+  Northing
+
+  184368
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument comprises the remains of a castle, dating to the medieval period. It is located
+  on the southern boundary of the Welsh lands of Senghennydd Is Caech on a ridge top overlooking
+  the Cardiff plain. The ruined remains consist of a walled pentagonal enclosure about 40m
+  in diameter with the angles defined by the remains of four towers and on the east a keep.
+  It is thought to have been built in the mid thirteenth century and may not have been completed.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive and domestic practices. The monument is well-preserved and an important relic
+  of the medieval landscape. It retains significant archaeological potential, with a strong
+  probability of the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3381
+source_title: Scheduled Monument Full Report — Castell Morgraig
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

@@ -1,0 +1,95 @@
+id: sig-20260722-report-fl130
+site_id: gb-dyserth-dyserth
+attribute: designation_report
+value: 'Reference Number
+
+  FL130
+
+  Name
+
+  Dyserth Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Denbighshire
+
+  Community
+
+  Dyserth
+
+  Easting
+
+  306034
+
+  Northing
+
+  379922
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument comprises the remains of the outer defences of an important but short lived
+  stone castle established by Henry III in 1241 following a documented false start on nearby
+  Graig Fawr and comprehensively destroyed by Llywelyn ap Grufudd in 1263. Most of the inner
+  ward and the rock below it was destroyed by quarrying during the First World War but its
+  general layout is known from an antiquarian survey published in 1912.
+
+  It was located on a towering limestone rock overlooking the eastern bank of the lower reaches
+  of the River Clwyd and comprised a compact, irregular inner ward at the highest point of
+  the site a with rectangular outer ward on lower ground blocking the approach from the east
+  and a smaller crescentic outwork to the west, the remaining sides being defended by precipitous
+  slopes. The inner ward comprised an unusual west-facing gatehouse, apparently flanked by
+  one round and one polygonal tower at its eastern side, two large polygonal towers facing
+  north opposite a domestic range, presumed to be a hall and chambers. There were a series
+  of slighter outworks and buildings to the west and south, almost all of which have been
+  completely quarried away, with the exception of the western tip of the crescent shaped enclosure
+  and its scarped rocky defences. The surviving outer ward is defined by a stony bank and
+  rock-cut ditch to the north and east, where it is currently entered from a causeway crossing
+  the ditch. There is now a tennis court to the northern side of the interior.Whilst a number
+  of articulated fragments of well-mortared limestone masonry survive around the base of the
+  hill there is no upstanding stonework, although the outer ward bank may represent the base
+  of a wall and the buried lower stages of a square tower and curtain wall shown on early
+  plans may survive in the remaining portion of the western enclosure.
+
+  Along with the extensive rebuilding of the ancient Welsh seat of Deganwy some 15 miles to
+  the west Dyserth Castle is of historical and archaeological significance as one of two just
+  new castles begun in Wales by Henry III of England. These were intended to support Henry''s
+  abortive invasion of Gwynedd and to control the disputed Perfeddwlad (the land between the
+  Conwy and the Dee), and whilst building works are documented at Dyserth into the 1250s the
+  two castles spent most of the decade under an intermittent state of siege until their eventual
+  capture and destruction by Llywelyn. Although the relatively recent destruction of most
+  of Dyserth''s inner ward represents a great loss, the surviving outer ward and outworks
+  are of national importance as the remains of a documented Royal castle with a very limited
+  period of use that formed a precursor to the great campaign castle of his son Edward I.
+  The remaining portions are likely to retain significant buried structural evidence and associated
+  deposits with potential to enhance our knowledge of the construction, development and use
+  of the castle and more widely of elite medieval military architecture and domestic practices
+  in Wales and beyond. It may also retain artefactual evidence of material culture dateable
+  to a closely documented period, along with environmental evidence of the use of the castle
+  and its contemporary medieval landscape.
+
+  The scheduled are comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=640
+source_title: Scheduled Monument Full Report — Dyserth Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

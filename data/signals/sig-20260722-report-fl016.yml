@@ -1,0 +1,74 @@
+id: sig-20260722-report-fl016
+site_id: gb-hawarden-hawarden
+attribute: designation_report
+value: 'Reference Number
+
+  FL016
+
+  Name
+
+  Hawarden Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Flintshire
+
+  Community
+
+  Hawarden
+
+  Easting
+
+  331907
+
+  Northing
+
+  365367
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The following provides a general description of the scheduled ancient monument.
+
+  The monument consists of the remains of a castle, dating to the medieval period. A castle
+  is a defended residence or stronghold, built mainly of stone, in which the principal or
+  sole defence comprises the walls and towers bounding the site. Some form of keep may have
+  stood within the enclosure but these were not significant in defensive terms and served
+  mainly to provide accommodation.   Hawarden Castle consists of a masonry castle built upon
+  an earlier motte and bailey castle.  The earlier castle was constructed by Hugh, Earl of
+  Chester, and consists of a steep sided conical mound with a bailey to the north-east.  The
+  masonry castle was constructed from c.1297, and was partially demolished c.1660.  The remaining
+  structure includes a shell keep on the motte, a curtain wall around the bailey, and a hall
+  with an elaborate barbican.  The site has been greatly affected by the landscaping associated
+  with Hawarden Castle Park.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3085
+source_title: Scheduled Monument Full Report — Hawarden Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

@@ -1,0 +1,106 @@
+id: sig-20260722-report-pe002
+site_id: gb-cilgerran-cilgerran
+attribute: designation_report
+value: 'Reference Number
+
+  PE002
+
+  Name
+
+  Castell Cilgerran
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Pembrokeshire
+
+  Community
+
+  Cilgerran
+
+  Easting
+
+  219493
+
+  Northing
+
+  243117
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The following provides a general description of the Scheduled Monument.
+
+  The monument consists of the remains of a castle, dating to the medieval period. Cilgerran
+  castle is situated on a precipitous rocky promontory above the River Teifi. It comprises
+  an outer ward separated by a defensive ditch from an inner ward defended by two strong towers
+  and a main gatehouse. The castle may be the site of ‘Cenarth Bychan’ where a Welsh attack
+  of 1109 resulted in Nest the wife of Gerald of Windsor absconding with Owain the son of
+  the Prince of Powys. The name is first mentioned in 1164, when captured by the Lord Rhys.  It
+  was recaptured by William Marshal, Earl of Pembroke, in 1204 and then retaken by the Welsh
+  during Llewellyn the Great''s campaigns during 1215.  William''s son, another William, regained
+  control eight years later and it is likely the present masonry castle is his work.
+
+  The form of the castle may reflect the earliest earthwork castle as the bank and ditch cutting
+  off the promontory and enclosing the outer ward might be the site of the original bailey.  The
+  outer ward has a gatehouse surviving as low footings but its date is uncertain. The ward
+  wall is a modern rebuild following the collapse of the original wall due to quarrying on
+  the cliff below. William fortified The inner ward in stone with two towers and a gatehouse.
+  The strong, plain round towers protrude well beyond the curtain wall and the outer defensive
+  parts are thicker than the inner, as series of arrow slits are the only openings on the
+  outer side. Both towers have a ground floor and three upper storeys. The eastern tower entered
+  at first-floor level from the courtyard by a door leading to a newel stair had a separate
+  entrance to the ground floor and the upper floors were probably accessed by a trapdoor.
+  The west tower originally also had a first-floor entrance this reached by a stair from the
+  inner ward. The ground floor must have been reached by a trap door and possibly functioning
+  as a strong room or dungeon. Later a door was inserted together with a newel stair to provide
+  access to above and a cross wall so that a portion could remain as a strong room. The gatehouse,
+  now collapsed, has a gate passage with portcullis grooves and draw bar holes. Above was
+  a vaulted room, perhaps a chapel, and above this a passage in the curtain wall connected
+  with the two round towers, these could also be reached from the curtain wall walk. Along
+  the northeast and northwest sides of the inner ward the curtain wall and the remains of
+  buildings date to the second half of the thirteenth century by which time the castle had
+  passed through marriage from the Marshalls first to the de Cantelupes and then to the Hastings
+  family. Footings remain of a hall and private apartments and a kitchen against the west
+  wall.
+
+  In the 1370s an invasion from France was feared, and Edward III ordered that the now rather
+  derelict castle be refortified and a large tower at the northwest corner probably belongs
+  to this period. After 1389, when the Hastings family died out, the castle passed to the
+  crown.  It may have been captured and held for a short time in 1405 during Glyndwr’s wars
+  of independence, it was certainly damaged during the attack.  After that the castle''s active
+  military service came to an end.  In the Tudor period, the Vaughan family were granted the
+  castle by Henry VII, and they continued to occupy it until the early 17th century, when
+  they built a new house nearby.  The castle fell into ruin, but its picturesque setting made
+  it an early favourite among tourists, who from the 18th century, could visit by boat from
+  Cardigan.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3057
+source_title: Scheduled Monument Full Report — Castell Cilgerran
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

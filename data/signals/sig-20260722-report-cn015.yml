@@ -1,0 +1,106 @@
+id: sig-20260722-report-cn015
+site_id: gb-criccieth-cricieth
+attribute: designation_report
+value: 'Reference Number
+
+  CN015
+
+  Name
+
+  Castell Cricieth
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Gwynedd
+
+  Community
+
+  Criccieth
+
+  Easting
+
+  249991
+
+  Northing
+
+  337719
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The following provides a general description of the Scheduled Monument.
+
+  The monument consists of the remains of a castle, dating to the medieval period. A castle
+  is a defended residence or stronghold, built mainly of stone, in which the principal or
+  sole defence comprises the walls and towers bounding the site. Some form of keep may have
+  stood within the enclosure but these were not significant in defensive terms and served
+  mainly to provide accommodation.
+
+  Criccieth is a native castle of Llywelyn Fawr, later altered by Edward I.  The inner ward
+  is attributed to Llywelyn Fawr (Llywelyn ab Iorwerth) and the outer to Llywelyn ap Gruffydd,
+  and Edward is credited with substantially reconstructing and heightening both the SE or
+  Leyburn tower (part of the inner ward), and the SW or Great Tower, and with converting the
+  N tower to take a siege engine.  The inner gatehouse was heightened under Edward II.  The
+  castle fell and was burnt down in 1404 during the Glyndwr rising.
+
+  The main surviving remains of the SW tower are the N wall and parts of the E wall; the S
+  and W walls seem to have fallen over the edge.  Much of the outer face appears to have fallen
+  away from the curtain wall on the S running from this tower across to the outer gatehouse.  The
+  latter is of simple design, with a passage running through the remains of a square tower.  Masonry
+  foundations in the turf of this area may suggest the presence of other buildings here.
+
+  A postern to the S of the SE or Leyburn tower gives access from the outer into the inner
+  ward, where there are various features, perhaps suggesting a kitchen; foundations indicate
+  a structure against the inner side of the curtain here on the S.  It has been suggested
+  that the battlements were rebuilt by Edward I and heightened by Edward II.
+
+  The inner gatehouse consists of two towers either side of an entrance passage, that to the
+  W contains a cistern at the inner end of the passage, fed by a natural spring and is probably
+  that known as the Cistern Tower; stairs behind led to the upper floors.
+
+  A fair amount survives of the SE or Leyburn tower; there is a platform in the near left-hand
+  corner as one enters from the courtyard, while living rock visible on the floor suggests
+  that the actual flooring was at a higher level.  The corners have fallen away, but otherwise
+  masonry survives to a height of 3.0m or thereabouts.
+
+  The N or Engine Tower has a shallow, stepped ramp up its SE side, presumably to provide
+  access for the siege engine, although it is not entirely clear from the remains on the ground
+  how this was achieved.  This ramp is a clear addition to the original tower, with a very
+  obvious straight joint following the original outer face.  There are signs of a blocked
+  postern through the outer curtain wall just by this ramp.  The curtain in general survives
+  much better at this N end than around the S.  The castle was strategically placed on an
+  isolated rock oucrop on the coastal edge where it commands views in all directions and could
+  be re-provisioned by boat. The borough, chartered in 1284, probably occupied the dingle
+  separating the castle crag from the rock of Dinas to the north-west.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  settlement and defence. It retains significant archaeological potential, with a strong probability
+  of the presence of associated archaeological features and deposits.  The structures themselves
+  may be expected to contain archaeological information concerning chronology and building
+  techniques.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=294
+source_title: Scheduled Monument Full Report — Castell Cricieth
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

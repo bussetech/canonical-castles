@@ -1,0 +1,79 @@
+id: sig-20260722-report-br111
+site_id: gb-crickhowell-crickhowell
+attribute: designation_report
+value: 'Reference Number
+
+  BR111
+
+  Name
+
+  Crickhowell Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Powys
+
+  Community
+
+  Crickhowell
+
+  Easting
+
+  321748
+
+  Northing
+
+  218240
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a castle, dating to the medieval period. The castle,
+  also known as Alisby''s castle occupies a vantage point with commanding views along the
+  Usk valley. It originated as a Motte, measuring 60m in diameter and 8m high, and Bailey
+  with timber buildings, probably built by the Turberville family in the 12th century. In
+  1272 it was rebuilt in stone by Sir Grimbald Pauncefote who married a Turberville heiress.
+  On the summit of the motte a stone shell keep was built, traces of which can still be seen,
+  while the base of the motte was enclosed by a defensive wall with two D-shaped towers on
+  the southern side. The bailey, measuring around 90m by 65m, was enclosed by a curtain wall.
+  A print by Samuel and Nathaniel Buck from 1741 shows the curtain wall with at least 3 round
+  towers along the bailey wall. On the SE side of the Bailey a conjoined double tower was
+  built, comprising one round and one square tower, with crenellations surmounting the top
+  of the square tower. The remains of a further tower were identified during the excavation
+  of a service trench on the W side of the bailey. During the 14th century the castle was
+  refortified by Sir John Pauncefote, great-grandson of Sir Grimbald, following royal command,
+  but it was nonetheless unable to withstand attack from Owain Glyndwr''s forces who left
+  it in ruins. The castle was never repaired and was uninhabited by the mid-16th century.
+  The remains of the motte and D-shaped towers, together with the substantial remains of the
+  conjoined towers, still stand on the site, while the bailey area is now occupied by a playground.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=1754
+source_title: Scheduled Monument Full Report — Crickhowell Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

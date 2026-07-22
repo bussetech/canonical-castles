@@ -1,0 +1,118 @@
+id: sig-20260722-report-cn004
+site_id: gb-conwy-conwy
+attribute: designation_report
+value: 'Reference Number
+
+  CN004
+
+  Name
+
+  Castell Conwy
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Conwy
+
+  Community
+
+  Conwy
+
+  Easting
+
+  278374
+
+  Northing
+
+  377460
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The following provides a description of the Scheduled Monument.
+
+  This monument comprises the remains of a medieval castle built by King Edward I. Begun in
+  1283, the castle and town were established as part of a ring of new English fortresses encircling
+  the Welsh heartland of Snowdonia in Gwynedd. The castle was built on a new site on the west
+  bank of the river Conwy.
+
+  The castle was constructed quickly in one main building phase. Two adjoining wards (inner
+  ward and outer ward) were built with a substantial curtain wall forming the perimeter of
+  the castle. The curtain wall is 3m thick and 27m high with eight round towers rising to
+  41m above the river. A continuous wall walk runs around the top of the curtain wall.
+
+  The outer ward contains the main entrance, entered from the west barbican, which is reached
+  by climbing a stepped ramp from the town. The approach to the entrance is defended by a
+  drawbridge and portcullis. The north-west and south-west towers and the short length of
+  curtain wall between together form an extended version of the twin-towered gateways seen
+  in other Edwardian castles. The outer ward was intended for the more public functions of
+  the castle and for the domestic services.
+
+  On the south side of the outer ward is the great hall range. The great hall is thought to
+  have been at the centre of the range, with a lesser hall, served through an ante-room at
+  one end and a chapel at the other. The north and east sides of the court are lined with
+  buildings to house the kitchen, guardrooms and domestic offices (only the foundations remain).
+  On the east side is the castle well. Each of the four towers accessed from the outer ward
+  contained two floors, each with one habitable room, and a basement for storage. Exceptionally,
+  the Prison Tower also has a well-concealed sub-basement, clearly designed as a prison cell.
+
+  The inner ward provided a secure residence for the king and a seat for the royal court.
+  It was defensible even if the outer ward were lost. The separating wall sits behind a deep
+  ditch cut in the rock. This was crossed by a drawbridge operated from, and leading to, a
+  small gatehouse covering a narrow passage to the inner ward. The inner ward is also accessible
+  directly from the River Conwy. The elaborate watergate has disappeared but the remains of
+  steps lead up to the east barbican. The inner ward has four towers similar to those in the
+  outer ward, except that each is crowned by a turret and two contain rooms that signify their
+  greater importance. The inner ward also contains an L-shaped two-storey building housing
+  the royal apartments. The King’s Tower and the Chapel Tower contain more royal apartments;
+  the Chapel Tower also housing a vaulted chapel. The Stockhouse and Bakehouse Towers are
+  entered from the court of the inner ward and the upper rooms may have been intended for
+  guests.
+
+  With an outer ward containing a great hall, chambers and kitchen, and a more secluded inner
+  ward with private chambers and a royal chapel, the excellent preservation of these royal
+  chambers which remain relatively unaltered from their thirteenth-century form, provide a
+  unique insight into how the royal household lived.
+
+  By 1332, however, the castle was unfit to accommodate the king. Major repair works were
+  put in place around 1347 when the great hall range and royal apartments were remodelled
+  to support a newly leaded roof. In 1399 Richard II took refuge here before his capture at
+  nearby Flint Castle. And two years later the supporters of Owain Glyn Dŵr succeeded in capturing
+  the castle.
+
+  Minor renovation continued throughout the fifteenth and sixteenth centuries, but it was
+  during the Civil War that Conwy saw military action again, when Archbishop John Williams
+  fortified and held the castle for King Charles I. In 1646 it was among the last strongholds
+  to capitulate to parliament at the end of the Civil War. Despite some attempt at deliberate
+  destruction, the castle remained virtually intact.
+
+  The monument is of national and international importance for its potential to enhance our
+  knowledge of medieval social, domestic and political life and warfare. This is reflected
+  by its designation as a World Heritage Site. Significantly, Conwy Castle is exceptional
+  not only for the grandeur of its high towers and curtain walls, but also for its excellent
+  state of preservation. Inside the imposing outer shell, the castle contains the most intact
+  set of residential buildings left by the medieval English monarchy in Wales or England.
+  The scheduled area comprises the remains described and an area around them within which
+  related evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3411
+source_title: Scheduled Monument Full Report — Castell Conwy
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

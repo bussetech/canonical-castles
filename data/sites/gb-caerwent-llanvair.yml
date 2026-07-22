@@ -12,30 +12,48 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument MM047 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: >-
+      The FitzPayn family's manorial caput (they "held the manor"): a compact
+      masonry ward with round flanking towers at N and S angles and a curtain wall
+      standing 5m internally and 10m externally, defended by scarps and a dry
+      ditch. The three-storey SW tower carries arrow-loop embrasures, a doorway
+      onto the west curtain's parapet and joist-holes "for a timber gallery or
+      hourd", enclosing a first-floor hall/chamber block — both active defence and
+      lordly residence.
+  revival_folly:
+    verdict: "no"
+    assessment: assessed
+    basis: >-
+      A masonry castle of "the first half of the thirteenth century", later
+      absorbed into a Tudor house; the medieval defensive intent governs, not a
+      post-defensive folly.
 register_entries:
 - register: gb-wls-cadw
   ref: MM047
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2351
 first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+last_updated: '2026-07-22'
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2351
-  title: Cof Cymru - National Historic Assets of Wales
+  title: Scheduled Monument Full Report — Llanvair Castle
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: '2026-07-22'
+  note: >-
+    Cadw's full scheduled-monument report (MM047); the sole source, read in full
+    for the band assessment. One official report plus the register = medium.
 signals:
 - sig-20260721-cadw-mm047
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-mm047
+notes: >-
+  Upgraded from bulk register import to assessed verdicts. palatial_seat is
+  OMITTED although the castle "was later incorporated into a Tudor house of the
+  Kemeys family" and now sits in a modern garden: the report describes the
+  surviving medieval defences and a later house built over the eastern range, but
+  does not evidence defensive fabric removed for amenity, so the palatial phase is
+  not affirmatively established. popular_castle omitted — "visible from several
+  miles away" is prominence, not visitor operation or wide public standing.
+  enclosure_fortification and state_fortification omitted. Confidence medium.

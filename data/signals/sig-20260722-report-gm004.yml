@@ -1,0 +1,83 @@
+id: sig-20260722-report-gm004
+site_id: gb-coity-higher-coety
+attribute: designation_report
+value: 'Reference Number
+
+  GM004
+
+  Name
+
+  Castell Coety
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Bridgend
+
+  Community
+
+  Coity Higher
+
+  Easting
+
+  292323
+
+  Northing
+
+  181500
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a castle, dating to the medieval period. The castle
+  stands on slightly raised ground to the north of the village of Coity with wide views over
+  the Vale of Glamorgan to the south. Coity was the caput or administrative centre of the
+  lordship of the same name and held by the de Turberville familiy from the early 12th century.  Thought
+  to originate as a late 11th century ringwork and bailey the castle consists of an inner
+  ward with the remains of an outer ward to the west. The inner ward has a circular faceted
+  curtain wall incorporating a rectangular keep, both dating predominately to the later 12th
+  century. Ranged along the south side of the ward are domestic quarters originating from
+  extensive rebuilding in the 14th century which comprise the remains of a central first-floor
+  hall set above a vaulted undercroft, to the west of which were ground-floor service rooms,
+  including a kitchen with ovens. The base of a ruined large malting kiln remains.  Adjacent
+  to the keep, are a west gatehouse and a small north east annexe, also from this period.
+  Late in the 14th century the castle passed to Sir Lawrence Berkerolles who was to defend
+  it against siege during the Gylndwr rebellion in 1405, prompting unsuccessful rescue attempts
+  by both Prince Henry and Henry IV. Although the castle was badly damaged it may not have
+  been lost.  Repairs were made under the succeeding Gamage family and 15th century work includes
+  a chapel, projecting south tower housing latrines and a well-preserved north east gatehouse.
+  In the 16th century the living quarters were completely remodelled including the addition
+  of a storey, new windows and two chimney stacks. The inner ward is surrounded by a deep
+  ditch and a strong counterscarp bank both absent on the west where cross walls join to the
+  now ruinous curtain of the rectangular outer ward. Built in the 14th century and then added
+  to in the 15th to include a small square gatehouse at the western end.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive and domestic practices. The monument is well-preserved and an important relic
+  of the medieval landscape. It retains significant archaeological potential, with a strong
+  probability of the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2853
+source_title: Scheduled Monument Full Report — Castell Coety
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

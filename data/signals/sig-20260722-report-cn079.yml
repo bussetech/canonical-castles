@@ -1,0 +1,113 @@
+id: sig-20260722-report-cn079
+site_id: gb-caernarfon-caernarfon
+attribute: designation_report
+value: 'Reference Number
+
+  CN079
+
+  Name
+
+  Castell Caernarfon
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Gwynedd
+
+  Community
+
+  Caernarfon
+
+  Easting
+
+  247787
+
+  Northing
+
+  362663
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The following provides a description of the Scheduled Ancient Monument.
+
+  This monument comprises the remains of a medieval castle built by King Edward I. The castle
+  and town were established in 1283 to confirm his defeat of Llywelyn, Prince of Wales, and
+  conquest of Gwynedd. As a result, Caernarfon became the centre of government for north Wales.
+  The castle and walled town are situated on a rocky outcrop between the mouths of two rivers,
+  the Seiont and the Cadnant, on the Menai Strait.
+
+  Edward I chose a previously fortified site for his most imposing castle in Wales and its
+  associated walled town. The castle is believed to have been sited on an earlier Norman motte
+  and bailey fortification. The site was subsequently controlled by the Welsh from about 1115
+  until Edward I’s victory in 1283. Although nothing of this or the buildings erected by the
+  princes of Gwynedd between about 1115 and 1283 survive.
+
+  The ground plan and most of the upstanding remains visible today are those of the castle
+  begun in 1283 by Edward I. Building was carried out in two phases (1283-1292) and (1294-1330).
+  The first phase saw the construction of a significant castle ditch, castle walls and towers
+  alongside town walls. The whole external southern façade and east end of the castle from
+  the Eagle Tower round to the North-East Tower had been built to a good height. Bands of
+  different coloured stone were incorporated into the curtain walls echoing the Emperor Constantine’s
+  Roman city of Constantinople. Together, the town walls and south section of the castle formed
+  a complete and defensible enclosure.
+
+  The second building phase (1294-1330) commenced after a widespread revolt by the Welsh.
+  The castle and town of Caernarfon was overrun and much damage was caused to the new town
+  wall. As a consequence Edward I ordered the rebuilding of the damaged sections of town wall
+  and castle. When this had been completed in 1295, work re-started on those areas of the
+  castle that had been left unfinished after the first phase of building.
+
+  The plan of the castle is shaped like a ‘figure of eight’, originally divided into two at
+  the centre with a lower ward to the right (west) of the main entrance and an upper ward
+  to the left (east). Entrance into the castle was gained through the King’s Gate, a sophisticated
+  twin-towered gatehouse. To the west of the King’s Gate lies the lower ward. Within this
+  ward, the Eagle Tower, Queen’s Tower, Chamberlain Tower, Well Tower and kitchens are located.
+  The Eagle Tower is the greatest of all the castle’s towers and was probably at first intended
+  to accommodate the King’s lieutenant. Everything about it was designed on a magnificent
+  scale. Like the other northern towers it comprises a basement and three storeys, but there
+  is more generous provision of wall-chambers and its group of three turrets gives it special
+  distinction. The copings on the turret battlements preserve the remains of numerous stone
+  figures – the west turret contains an eagle which is still recognizable.
+
+  Within the upper ward the Black Tower, Cistern Tower, Queen’s Gate, Watch Tower, North-East
+  Tower and Granary Tower are located. The Queen’s Gate was the second great twin-towered
+  gateway into the castle and was built up against the earthen motte of the earlier Norman
+  castle.
+
+  The castle continued to the maintained and garrisoned, and successfully withstood sieges
+  by Owain Glyn Dŵr in 1403 and 1404. By 1538 the castle is reported to have been in disrepair.
+  However, during the Civil War (1642-48) the castle was once more garrisoned for the king
+  and besieged three times. In 1660 the government gave order for the castle and town walls
+  to be dismantled and demolished, although it appears that this did not occur to any large
+  degree.
+
+  The monument is of national and international importance for its potential to enhance our
+  knowledge of medieval social, domestic and political life and warfare. This is reflected
+  by its designation as a World Heritage Site. Significantly, the sheer scale, nobility and
+  architectural finish of Caernarfon castle set it apart from all the others.
+
+  The scheduled area comprises the remains described and an area around them within which
+  related evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3417
+source_title: Scheduled Monument Full Report — Castell Caernarfon
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

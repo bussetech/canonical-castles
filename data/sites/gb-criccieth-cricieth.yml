@@ -12,30 +12,51 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument CN015 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: >-
+      Cadw's report describes an inner and outer ward bounded by a curtain wall
+      with wall-walks and rebuilt battlements, a twin-towered inner gatehouse, a
+      simple outer gatehouse and flanking towers (the SE/Leyburn, SW/Great and
+      N/Engine towers, the last adapted with a stepped ramp to mount a siege
+      engine) — active defence meant to be held. It was the residence of the
+      Welsh princes Llywelyn Fawr and Llywelyn ap Gruffydd, later reconstructed
+      by Edward I. Both the active-defence and private-lordly-residence halves
+      of the criterion are met.
+  revival_folly:
+    verdict: "no"
+    assessment: assessed
+    basis: >-
+      A 13th-century native Welsh castle, burnt in the 1404 Glyndŵr rising — a
+      genuine medieval defensive work built within the defensive era, not a
+      post-defensive-era castellated house or sham; fails the revival criterion.
 register_entries:
 - register: gb-wls-cadw
   ref: CN015
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=294
-first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+first_seen: "2026-07-21"
+last_updated: "2026-07-22"
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=294
-  title: Cof Cymru - National Historic Assets of Wales
+  title: Scheduled Monument Full Report — Castell Cricieth
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: "2026-07-22"
+  note: Cadw's full scheduled-monument report (CN015); supplies fabric and named lords, read in full and assessed.
 signals:
 - sig-20260721-cadw-cn015
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-cn015
+notes: >-
+  Assessed from Cadw's full report (CN015), replacing the register-derived
+  fortified_residence verdict with an assessed yes and adding revival_folly: no.
+  The report supplies curtain wall, wall-walks, battlements, a twin-towered
+  inner gatehouse, an outer gatehouse, the Leyburn/Great/Engine towers, a
+  postern and a cistern, and names the lords (Llywelyn Fawr, Llywelyn ap
+  Gruffydd, later Edward I). popular_castle left UNASSESSED: this designation
+  text shows no visitor operation or usage evidence, and the dataset does not
+  inflate the one band with no register to check it. state_fortification omitted
+  — the Edwardian reconstruction does not convert a Welsh princely castle into a
+  state work; original seigneurial purpose governs. palatial_seat and
+  enclosure_fortification omitted — the report does not speak to them. Confidence
+  medium: one official report plus the register.

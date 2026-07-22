@@ -13,29 +13,33 @@ built:
 definitions_met:
   fortified_residence:
     verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument CN016 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    assessment: assessed
+    basis: 'A castle built c.1080 by Robert of Rhuddlan and later held and rebuilt by Llywelyn and by
+      Henry III (identified lords). Active defence: a polygonal donjon enclosure wall with a c.40ft round
+      tower, a bailey wall c.5ft thick with an outer ditch, and a strong gateway of paired D-shaped towers.
+      Residence: the King''s Hall completed by 1250 and chambers with fireplaces. Both halves of the
+      criterion are met.'
 register_entries:
 - register: gb-wls-cadw
   ref: CN016
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3395
 first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+last_updated: '2026-07-22'
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3395
-  title: Cof Cymru - National Historic Assets of Wales
+  title: Scheduled Monument Full Report — Deganwy Castle
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: '2026-07-22'
+  note: Cadw's full scheduled-monument report (CN016); detailed fabric and documentary history across
+    multiple 13th-century phases.
 signals:
 - sig-20260721-cadw-cn016
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-cn016
+notes: 'Assessed against the Cadw full report (CN016). fortified_residence yes — a lordly/royal castle
+  with donjon, round tower, twin-towered gateway and hall, built and rebuilt by identified lords through
+  the 13th century. The earlier phases named in the report (Roman occupation, the Llys of Maelgwn Gwynedd,
+  "Arx Decantorum" in 822) are documentary context, not described as defensive-enclosure fabric in their
+  own terms, so enclosure_fortification is left unassessed. No visitor/WHS usage evidence, so popular_castle
+  is omitted. Confidence medium: one official report plus register.'

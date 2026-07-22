@@ -1,0 +1,72 @@
+id: sig-20260722-report-cm008
+site_id: gb-carmarthen-carmarthen
+attribute: designation_report
+value: 'Reference Number
+
+  CM008
+
+  Name
+
+  Carmarthen Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Carmarthenshire
+
+  Community
+
+  Carmarthen
+
+  Easting
+
+  241294
+
+  Northing
+
+  219972
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a masonry castle dating mainly the 12th to 14th
+  centuries. The castle originating at the beginning of the 12th century replaced an earlier
+  fortification further down the River Towy and quickly became important, passing into the
+  hands of the Crown and becoming the  administrative centre of south west Wales. Captured
+  and destroyed by Llywelyn the Great in 1215 it was recaptured by William Marshall the younger,
+  earl of Pembroke in 1223, the first masonry castle may have been constructed at this date.
+  The remains comprises a stone-revetted motte, twin-towered gatehouse, a south west corner
+  tower and wall turret east of this together with short sections of curtain wall, all to
+  the west of the site. The motte walls have two small half-round turrets to the north and
+  paired buttresses representing the site of a further turret to west, the majority of this
+  fabric is the result of 19th century reconstruction.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=331
+source_title: Scheduled Monument Full Report — Carmarthen Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

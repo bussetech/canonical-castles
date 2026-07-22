@@ -1,0 +1,67 @@
+id: sig-20260722-report-gm094
+site_id: gb-cowbridge-with-llanblethian-llanblethian
+attribute: designation_report
+value: 'Reference Number
+
+  GM094
+
+  Name
+
+  Llanblethian Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Vale of Glamorgan
+
+  Community
+
+  Cowbridge with Llanblethian
+
+  Easting
+
+  298893
+
+  Northing
+
+  174181
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a castle dating to the medieval period. Llanblethian
+  (aka St Quintin''s) comprises a large courtyard castle. The massive twin-towered gatehouse
+  and high stretch of curtain wall on the north side are the main remnants. A ruinous low
+  wall surrounds the rectilinear ward to the west. In the centre is a mound with the shell
+  of a thick-walled building possibly an earlier keep on it. The gatehouse and curtain wall
+  are thought to be early 14th century, built by Gilbert de Clare (the Last, d. 1314).
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3389
+source_title: Scheduled Monument Full Report — Llanblethian Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

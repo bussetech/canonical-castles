@@ -12,30 +12,37 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument FL016 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: >-
+      The report gives its own definition — "a defended residence or stronghold
+      ... in which the principal or sole defence comprises the walls and towers
+      bounding the site" — and describes a shell keep serving "mainly to provide
+      accommodation", a curtain wall around the bailey and a hall with an
+      elaborate barbican (defence meant to be held); the earlier work was built
+      by Hugh, Earl of Chester. Both halves are met.
 register_entries:
 - register: gb-wls-cadw
   ref: FL016
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3085
-first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+first_seen: "2026-07-21"
+last_updated: "2026-07-22"
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3085
-  title: Cof Cymru - National Historic Assets of Wales
+  title: Scheduled Monument Full Report — Hawarden Castle
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: "2026-07-22"
+  note: Cadw's full scheduled-monument report (FL016); assessed against the bands.
 signals:
 - sig-20260721-cadw-fl016
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-fl016
+notes: >-
+  Designation report (FL016) assessed. fortified_residence: yes — the report
+  quotes its own castle definition and describes a shell keep for accommodation, a
+  curtain wall around the bailey and a hall with an elaborate barbican, built on an
+  earlier motte-and-bailey by Hugh, Earl of Chester. Other bands omitted: no
+  popular-usage evidence, no palatial conversion (partially demolished c.1660), no
+  post-defensive-era construction. This record is the medieval ruin (FL016), not
+  the neighbouring 18th-century Gothic house. One report plus register → medium.

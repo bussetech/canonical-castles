@@ -12,30 +12,36 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument PE366 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: >-
+      Inner ward with round towers, a square tower with projecting turret, a
+      rectangular keep retaining early arrow loops, a gatehouse and a wall-walk
+      carried on corbels (active defence held), together with a spacious hall
+      with large windows and private apartments (residence); founded by Tancred
+      and later held by de Bohun and Queen Eleanor. Both halves are met.
 register_entries:
 - register: gb-wls-cadw
   ref: PE366
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2714
-first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+first_seen: "2026-07-21"
+last_updated: "2026-07-22"
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2714
-  title: Cof Cymru - National Historic Assets of Wales
+  title: Scheduled Monument Full Report — Haverfordwest Castle
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: "2026-07-22"
+  note: Cadw's full scheduled-monument report (PE366); assessed against the bands.
 signals:
 - sig-20260721-cadw-pe366
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-pe366
+notes: >-
+  Designation report (PE366) assessed. fortified_residence upgraded to assessed:
+  yes on described towers, keep with arrow loops, gatehouse, wall-walk, hall and
+  apartments, with named lordly holders. Other bands omitted: the later
+  conversion documented is to a PRISON, not a palatial residence, so palatial_seat
+  is not supported; the report gives no popular-usage evidence; Civil-War
+  refortification does not change the original lordly purpose. One report plus
+  register → medium.

@@ -1,0 +1,111 @@
+id: sig-20260722-report-gm012
+site_id: gb-castle-swansea
+attribute: designation_report
+value: 'Reference Number
+
+  GM012
+
+  Name
+
+  Swansea Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Swansea
+
+  Community
+
+  Castle
+
+  Easting
+
+  265718
+
+  Northing
+
+  193085
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a castle dating to the medieval period. Swansea
+  Castle stands on a clifftop, below which the River Tawe originally flowed, and its position
+  was strategic: it commanded the lowest crossing of the river, the main east-west route in
+  south Wales, and a good harbour. What is visible now is only a small part of the latest
+  castle on the site, which in its heyday in the late 13th century stretched from Welcome
+  Lane in the north to Caer Street in the south, and from the clifftop in the east almost
+  to Princess Way in the west. (The first phases of castle building found to the north are
+  scheduled under GM441).
+
+  Swansea Castle''s history was a turbulent one: it suffered in many Welsh raids, and changed
+  hands many times. It was a Norman castle, first mentioned in 1116 as being attacked by the
+  Welsh. It was established by Henry I''s friend Henry de Beaumont, first earl of Warwick,
+  as the seat of administration of the marcher lordship of Gower, which Henry bestowed on
+  him in about 1106. This first castle was of motte and bailey type and nothing of it remains
+  above ground. The west side of its deep ditch has been excavated to the north of the present
+  remains. It was rebuilt in stone on the same site, probably after being razed by the Welsh
+  in 1217. Nothing remains above ground of this stage either, but the west side of the curtain
+  wall has been found, together with a mural tower. To the south-west of this small castle,
+  called the ''Old Castle'', a large roughly rectangular outer bailey was walled in stone
+  in the 13th century.
+
+  The ''New Castle'', of which the present day remains were part, lay in its south-east corner,
+  built on the site of an earlier graveyard. This ''New Castle'' dates from the late 13th
+  to early 14th century, by which time Edward I''s pacification of Wales had deprived it of
+  any military importance. It continued as an administrative centre but at a reduced level.
+  Its holders, then the de Braoses, preferred to live at Oystermouth Castle, and inevitable
+  decline set in. Stripped of their usefulness, the various gates and towers of the bailey
+  - Harold''s Gate, Donald''s Tower, Bokynham Tower and Singleton Tower - were sold off in
+  the early 14th century.
+
+  The visible remains consist of the north and south blocks, probably the work of William
+  de Braose II and William de Braose III, connected by a short stretch of much-altered curtain
+  wall. The curtain wall was originally continued up Castle Bailey Street on the west, and
+  west from the north block to enclose a roughly rectangular area, with an entrance on the
+  west side. The well preserved south block, which occupied most of the south side of the
+  ''New Castle'', is the most spectacular part, with its picturesque arcaded parapet on top
+  of the outside walls. This was probably a slightly later addition to the main building,
+  which was a residential block. The two large windows on the south side are the windows of
+  the first-floor hall, and below them are the narrow windows of three barrel-vaulted chambers.
+  In the angled wing to the east was a sub-basement with great battered walls, from which
+  there was access to the river. On the first floor was a solar, or private chamber, reached
+  by steps on the west side. At the west end of the block is a spectacular circular garderobe
+  tower standing to its full height, and in the south-east angle is a small turret with an
+  arrowslit.
+
+  The small rectangular tower to the north has been much altered in post-medieval times, but
+  retains a few original features such as cross arrowslits. On the ground floor are three
+  vaulted chambers, with four rooms above them inserted in the late 18th century when the
+  block was turned into a debtors'' prison. It had probably been used as a prison for a long
+  time before.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3759
+source_title: Scheduled Monument Full Report — Swansea Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

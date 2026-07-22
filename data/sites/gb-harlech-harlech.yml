@@ -12,30 +12,46 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument ME044 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: >-
+      Concentric Edwardian castle (begun 1283) whose gatehouse was "conceived as
+      an independently defensible unit" with paired drum towers, portcullises and
+      murder-holes (active defence meant to be held); the gatehouse held
+      lavishly-appointed residential suites and the castle served as Owain
+      Glyndŵr's residence and court 1404-1409 — a royal lord is still a lord, so
+      both halves are met.
+  popular_castle:
+    verdict: "yes"
+    assessment: assessed
+    basis: >-
+      Explicitly designated a UNESCO World Heritage Site ("reflected by its
+      designation as a World Heritage Site"), immortalised in the song "Men of
+      Harlech" and a major operated monument — real public standing, not merely a
+      register naming convention.
 register_entries:
 - register: gb-wls-cadw
   ref: ME044
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2464
-first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+first_seen: "2026-07-21"
+last_updated: "2026-07-22"
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2464
-  title: Cof Cymru - National Historic Assets of Wales
+  title: Scheduled Monument Full Report — Castell Harlech
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: "2026-07-22"
+  note: Cadw's full scheduled-monument report (ME044); assessed against the bands.
 signals:
 - sig-20260721-cadw-me044
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-me044
+notes: >-
+  Designation report (ME044) assessed. fortified_residence: yes (concentric
+  defences, independently defensible gatehouse, residential suites, Glyndŵr's
+  court) and popular_castle: yes (WHS designation, "Men of Harlech", major
+  monument). state_fortification omitted — this is an Edwardian royal castle
+  whose original purpose governs, counted as a royal fortified residence, not a
+  post-1500 state work. palatial_seat and revival_folly not supported: defences
+  stayed in military use for centuries. Single official report, however emphatic
+  → confidence medium (rule 7).

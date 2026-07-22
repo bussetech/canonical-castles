@@ -13,29 +13,41 @@ built:
 definitions_met:
   fortified_residence:
     verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument CN040 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    assessment: assessed
+    basis: 'Assessed from Cadw full report CN040. Active defence: two towers linked by a 13th-century
+      curtain wall (4ft 6in–5ft 6in thick) with a wall-walk and a surviving arrowslit loop, rock-cut
+      ditches to E and W, a keep entered on the first floor via a fore-building with a drawbridge pit,
+      a main NE gateway and a defended postern. Residence: keep and NW tower with fireplaces, window
+      seats and latrines. The castle was the royal residence of Llywelyn ap Gruffydd — a royal/princely
+      lord is still a lord. Both halves met.'
+  revival_folly:
+    verdict: 'no'
+    assessment: assessed
+    basis: 'A genuine 12th–13th-century native Welsh fortress. The well-preserved keep owes its state
+      to late-15th-century re-occupation and 19th-century restoration by Lord Willoughby de Eresby —
+      restoration of real medieval defensive fabric, not a post-defensive sham built in castle form.'
 register_entries:
 - register: gb-wls-cadw
   ref: CN040
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3406
 first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+last_updated: '2026-07-22'
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3406
-  title: Cof Cymru - National Historic Assets of Wales
+  title: Scheduled Monument Full Report — Castell Dolwyddelan
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: '2026-07-22'
+  note: Cadw's full scheduled-monument report (CN040); read in full and assessed against the bands.
 signals:
 - sig-20260721-cadw-cn040
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-cn040
+notes: 'Upgraded from register-derived to assessed against Cadw full report CN040 (sig-20260722-report-cn040).
+  The report is substantial and describes genuine defensive fabric plus documented royal Welsh occupation,
+  supporting fortified_residence: yes. revival_folly assessed no because the 19th-century Willoughby
+  restoration restored real medieval fabric rather than building a sham. Other bands (enclosure_fortification,
+  state_fortification, palatial_seat, popular_castle) are OMITTED: the report does not speak to them
+  — in particular it evidences state guardianship (from 1930) but not a visitor operation or public
+  standing, and per the usage rule popular_castle needs more than managed-monument status. Confidence
+  medium: one official report plus the register.'

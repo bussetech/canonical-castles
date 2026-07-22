@@ -1,0 +1,77 @@
+id: sig-20260722-report-cn173
+site_id: gb-criccieth-criccieth-outer-bank-defences
+attribute: designation_report
+value: 'Reference Number
+
+  CN173
+
+  Name
+
+  Criccieth Castle, Outer Bank Defences
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Gwynedd
+
+  Community
+
+  Criccieth
+
+  Easting
+
+  249961
+
+  Northing
+
+  337791
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The following provides a general description of the Scheduled Monument.
+
+  The monument consists of what are thought to be the outer defensive bank and ditch of Criccieth
+  castle. There are three scheduled areas outside the wall which at present encloses the castle
+  rock, leading from the entrance and visitor centre to where the land drops away to the sea.
+
+  The area around the visitor centre consists of mown grass and the small concrete-surfaced
+  yard at the back of the visitor centre.
+
+  W of the visitor centre, the grassy area rises quite sharply up from the road (probably
+  due to the making of the latter), and then dips down towards the boundary wall. This may
+  well be the remains of a ditch. Further W again, a definite bank is detectable just above
+  and about 1.5 m from the edge of the road cutting. This bank seems to disappear under the
+  boundary wall at the beginning of the car parking area.
+
+  Between the car parking area and the boundary wall is a strip of verge 1 - 2 m wide which
+  rises up to the foot of the wall, but this may be the natural lie of the land.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defence. It retains significant archaeological potential, with a strong probability of the
+  presence of associated archaeological features and deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3184
+source_title: Scheduled Monument Full Report — Criccieth Castle, Outer Bank Defences
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

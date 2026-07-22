@@ -1,0 +1,80 @@
+id: sig-20260722-report-gm441
+site_id: gb-castle-original-swansea
+attribute: designation_report
+value: 'Reference Number
+
+  GM441
+
+  Name
+
+  Original Swansea Castle
+
+  Date of Designation
+
+  14/03/1990
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Swansea
+
+  Community
+
+  Castle
+
+  Easting
+
+  265699
+
+  Northing
+
+  193157
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of the first phases of Swansea Castle. (The later phases
+  of the castle to the south are scheduled under GM012). The castle stands on the crest of
+  a north-south gravel scarp, bounded on the east by the navigable River Tawe (now represented
+  by The Strand). Its position was strategic: it commanded the lowest crossing of the river,
+  the main east-west route in south Wales, and a good harbour.
+
+  Swansea Castle''s history was a turbulent one: it suffered in many Welsh raids, and changed
+  hands many times. It was a Norman castle, first mentioned in 1116 as being attacked by the
+  Welsh. It was established by Henry I''s friend Henry de Beaumont, first earl of Warwick,
+  as the seat of administration of the marcher lordship of Gower, which Henry bestowed on
+  him in about 1106. This first castle was of motte and bailey type and nothing of it remains
+  above ground. The west side of its deep ditch has been excavated to the north of the present
+  remains. It was rebuilt in stone on the same site, probably after being razed by the Welsh
+  in 1217. Nothing remains above ground of this stage either, but the west side of the curtain
+  wall has been found, together with a mural tower. To the south-west of this small castle,
+  called the ''Old Castle'', a large roughly rectangular outer bailey was walled in stone
+  in the 13th century.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive practices. The monument is well-preserved and an important relic of the medieval
+  landscape. It retains significant archaeological potential, with a strong probability of
+  the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3738
+source_title: Scheduled Monument Full Report — Original Swansea Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

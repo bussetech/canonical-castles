@@ -13,29 +13,40 @@ built:
 definitions_met:
   fortified_residence:
     verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument CM008 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    assessment: assessed
+    basis: 'Cadw''s report describes a stone-revetted motte, a twin-towered gatehouse (a gate meant to
+      be held), a south-west corner tower, a wall turret and sections of curtain wall with half-round
+      turrets — active defensive features. A castle that passed to the Crown and became the administrative
+      centre of south-west Wales, held by lords including William Marshall the younger, earl of Pembroke.'
+  revival_folly:
+    verdict: 'no'
+    assessment: assessed
+    basis: A 12th-14th-century masonry castle of the defensive era; although much visible fabric is 19th-century
+      reconstruction, it reconstructs the real castle on its own site rather than being a purpose-built
+      sham or folly.
 register_entries:
 - register: gb-wls-cadw
   ref: CM008
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=331
 first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+last_updated: '2026-07-22'
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=331
-  title: Cof Cymru - National Historic Assets of Wales
+  title: Scheduled Monument Full Report — Carmarthen Castle
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: '2026-07-22'
+  note: Cadw's full scheduled-monument report (CM008); read in full — records the motte, twin-towered
+    gatehouse, corner tower, curtain wall and the castle's role as administrative centre of south-west
+    Wales.
 signals:
 - sig-20260721-cadw-cm008
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-cm008
+notes: 'Assessed from Cadw''s full designation report (CM008). fortified_residence: yes — motte, twin-towered
+  gatehouse, corner tower and curtain wall are active defence, and the castle was a royal/lordly administrative
+  seat. revival_folly: no — a defensive-era castle; the note that "the majority of this fabric is the
+  result of 19th century reconstruction" is reconstruction of the real castle on its own site (an explicit
+  band exclusion), not a folly. palatial_seat and popular_castle OMITTED: the report gives no evidence
+  of an unfortified amenity phase or of modern popular/visitor standing. Confidence medium: single official
+  report plus register.'

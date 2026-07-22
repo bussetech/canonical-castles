@@ -111,6 +111,51 @@ def eligible(register: str) -> tuple[list[dict], dict[str, list[str]]]:
     return out, skipped
 
 
+def all_structures(register: str) -> list[dict]:
+    """Every held structure with a report, ignoring eligibility."""
+    reports = json.loads((SNAPSHOTS / REPORTS[register]).read_text())
+    out = []
+    for path in sorted(SITES.glob("*.yml")):
+        rec = yaml.safe_load(path.read_text())
+        entry = next((e for e in rec.get("register_entries") or []
+                      if e.get("register") == register), None)
+        report = reports.get(entry["ref"]) if entry else None
+        if not report:
+            continue
+        out.append({"site_id": rec["id"], "name": rec.get("name") or rec["id"],
+                    "ref": entry["ref"],
+                    "report_url": report["url"], "report": "\n".join(report["text"])})
+    return out
+
+
+def signal_for(s: dict) -> dict:
+    """The signal a structure's designation report becomes. Deterministic id."""
+    return {
+        "id": f"sig-{TODAY.replace('-', '')}-report-{slug(s['ref'])}",
+        "site_id": s["site_id"],
+        "attribute": "designation_report",
+        "value": s["report"],
+        "source_url": s["report_url"],
+        "source_title": f"Scheduled Monument Full Report — {s['name']}",
+        "publisher": "Cadw",
+        "observed_date": TODAY,
+        "collected_by": "scripts/build_assessment_batch.py",
+        "confidence": "high",
+        "notes": ("The designation text. Assess the six bands against THIS evidence "
+                  "only; omit any band it does not speak to."),
+    }
+
+
+def write_signals(structures: list[dict]) -> int:
+    sigdir = ROOT / "data" / "signals"
+    sigdir.mkdir(parents=True, exist_ok=True)
+    for s in structures:
+        sig = signal_for(s)
+        (sigdir / f"{sig['id']}.yml").write_text(
+            yaml.safe_dump(sig, sort_keys=False, allow_unicode=True, width=88))
+    return len(structures)
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--register", required=True, choices=sorted(REPORTS))
@@ -120,6 +165,11 @@ def main() -> int:
     ap.add_argument("--materialise", action="store_true",
                     help="ALSO write each signal into data/signals/ as a committed file")
     ap.add_argument("--out", help="write a single combined batch here (inspection)")
+    ap.add_argument("--materialise-only", metavar="IDS",
+                    help="comma-separated site ids: write JUST their signal files and "
+                         "exit. Signal ids are deterministic, so evidence for an "
+                         "already-assessed batch can be regenerated rather than "
+                         "recovered from a run artifact.")
     args = ap.parse_args()
 
     if args.limit < 1 or args.limit > MAX_BATCH:
@@ -129,6 +179,21 @@ def main() -> int:
         return 2
 
     pool, skipped = eligible(args.register)
+
+    if args.materialise_only:
+        # Eligibility is deliberately bypassed: these structures are assessed
+        # ALREADY, which is exactly why they are no longer eligible, and their
+        # records cite signal files that must exist for integrity to pass.
+        wanted = {s.strip() for s in args.materialise_only.split(",") if s.strip()}
+        by_id = {i["site_id"]: i for i in all_structures(args.register)}
+        missing = wanted - set(by_id)
+        if missing:
+            print(f"no report held for: {', '.join(sorted(missing))}", file=sys.stderr)
+            return 2
+        written = write_signals([by_id[i] for i in sorted(wanted)])
+        print(f"  materialised {written} signal file(s) into data/signals/",
+              file=sys.stderr)
+        return 0
 
     # Fill by character budget as well as count, so cost per batch is bounded.
     batch: list[dict] = []
@@ -169,20 +234,7 @@ def main() -> int:
         out = pathlib.Path(args.out_dir)
         out.mkdir(parents=True, exist_ok=True)
 
-        signals = [{
-            "id": f"sig-{TODAY.replace('-', '')}-report-{slug(s['ref'])}",
-            "site_id": s["site_id"],
-            "attribute": "designation_report",
-            "value": s["report"],
-            "source_url": s["report_url"],
-            "source_title": f"Scheduled Monument Full Report — {s['name']}",
-            "publisher": "Cadw",
-            "observed_date": TODAY,
-            "collected_by": "scripts/build_assessment_batch.py",
-            "confidence": "high",
-            "notes": ("The designation text. Assess the six bands against THIS evidence "
-                      "only; omit any band it does not speak to."),
-        } for s in batch]
+        signals = [signal_for(s) for s in batch]
         (out / "signals.yml").write_text(
             yaml.safe_dump(signals, sort_keys=False, allow_unicode=True, width=100))
 
@@ -209,13 +261,8 @@ def main() -> int:
         # committed file. The snapshot stays the raw provenance; the signal is
         # the citable claim.
         if args.materialise:
-            sigdir = ROOT / "data" / "signals"
-            sigdir.mkdir(parents=True, exist_ok=True)
-            for s in signals:
-                (sigdir / f"{s['id']}.yml").write_text(
-                    yaml.safe_dump(s, sort_keys=False, allow_unicode=True, width=88))
-            print(f"  materialised {len(signals)} signal file(s) into data/signals/",
-                  file=sys.stderr)
+            print(f"  materialised {write_signals(batch)} signal file(s) into "
+                  f"data/signals/", file=sys.stderr)
 
     if args.out:
         pathlib.Path(args.out).write_text(text)

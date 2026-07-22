@@ -12,30 +12,49 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument CM001 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: >-
+      Cadw's report describes an outer ward with a curtain wall, drum towers and
+      gate, an elaborate barbican whose stepped ramp is guarded by two gates
+      over deep pits, and a central gatehouse — 'hub of the castle's defence' —
+      flanked by a circular NW and square NE tower reached by wall-walks: active
+      defence meant to be held. The east range holds the lord's living quarters
+      (hall, kitchen, private apartments, chapel, cisterns). Held by the rulers
+      of Deheubarth, then Edward I, then John Giffard (named lords). Both halves
+      of the criterion are met.
+  revival_folly:
+    verdict: "no"
+    assessment: assessed
+    basis: >-
+      A 12th–14th-century castle, stronghold of Deheubarth then the Giffards,
+      with a complete working defensive circuit — a genuine medieval fortress of
+      the defensive era, not a post-defensive-era castellated house or sham.
 register_entries:
 - register: gb-wls-cadw
   ref: CM001
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3300
-first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+first_seen: "2026-07-21"
+last_updated: "2026-07-22"
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3300
-  title: Cof Cymru - National Historic Assets of Wales
+  title: Scheduled Monument Full Report — Castell Carreg Cennen
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: "2026-07-22"
+  note: Cadw's full scheduled-monument report (CM001); rich fabric, defensive and domestic, read in full and assessed.
 signals:
 - sig-20260721-cadw-cm001
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-cm001
+notes: >-
+  Assessed from Cadw's full report (CM001), replacing the register-derived
+  verdict with an assessed fortified_residence: yes and adding revival_folly: no.
+  Evidence: outer-ward curtain and drum towers, barbican and gated ramp over
+  pits, central gatehouse flanked by corner towers with wall-walks, and the
+  lord's east-range apartments, hall, kitchen and chapel; lords of Deheubarth,
+  Edward I and John Giffard. popular_castle left UNASSESSED — the designation
+  text describes the dramatic crag but shows no visitor operation or usage
+  evidence, and the dataset does not inflate this band. palatial_seat,
+  state_fortification and enclosure_fortification omitted — the report does not
+  speak to them. Confidence medium: one official report plus the register.

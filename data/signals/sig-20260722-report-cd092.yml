@@ -1,0 +1,75 @@
+id: sig-20260722-report-cd092
+site_id: gb-dyffryn-arth-allt-craig-arth
+attribute: designation_report
+value: 'Reference Number
+
+  CD092
+
+  Name
+
+  Castell Allt Craig-Arth
+
+  Date of Designation
+
+  16/09/1949
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Ceredigion
+
+  Community
+
+  Dyffryn Arth
+
+  Easting
+
+  249481
+
+  Northing
+
+  262373
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument comprises the remains of a motte and bailey castle, a military stronghold built
+  during the medieval period.  A motte and bailey castle comprises a large conical or pyramidal
+  mound of soil or stone (the motte) surrounded by, or adjacent to, one or more embanked enclosures
+  (the bailey).  Both may be surrounded by wet or dry ditches and could be further strengthened
+  with palisades, revetments, and/or a tower on top of the motte.  Castell Allt Craig-Arth
+  is defended on three sides by steep slopes to streams and on the east by a double bank and
+  ditch.  The inner bank is c.6.5m above the ditch and c.3.5m above the interior.  The motte
+  appears to be partly natural.  It is c.8m high and oval in shape, being c.11m across at
+  its greatest diameter.  There is a second mound to the west.  The entrance through the two
+  banks on the east side is straight, at the northern end.  There are slight banks at the
+  west end and there was possibly a second entrance there.  The monument is situated within
+  a wood.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive organisation.  The well-preserved monument forms an important element within the
+  wider medieval context and the structure itself may be expected to contain archaeological
+  information relating to chronology, building techniques and functional detail.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=758
+source_title: Scheduled Monument Full Report — Castell Allt Craig-Arth
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

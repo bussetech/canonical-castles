@@ -1,0 +1,92 @@
+id: sig-20260722-report-fl003
+site_id: gb-flint-fflint
+attribute: designation_report
+value: 'Reference Number
+
+  FL003
+
+  Name
+
+  Castell y Fflint
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Flintshire
+
+  Community
+
+  Flint
+
+  Easting
+
+  324694
+
+  Northing
+
+  373286
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The following provides a description of the Scheduled Ancient Monument.
+
+  This monument comprises the remains of a medieval castle begun in 1277 by King Edward I.
+  The castle is located on the foreshore of the Dee estuary, dominating the river and the
+  route along the coastal plain.
+
+  The castle consists of a square ward with a round tower at each corner. Notably, the south-eastern
+  tower (Great Tower) is much bigger and offset from the main courtyard by a moat which probably
+  contained sea water at high tide, and was crossed by a drawbridge. This highly sophisticated
+  separate tower or donjon has a strong barrel-vaulted circular gallery at basement level,
+  surrounding a central space and supporting a ring of small interconnecting rooms on the
+  floor above. It probably contained all the facilities necessary to withstand a siege (storerooms,
+  well, residential accommodation, chapel) many of them duplicated in the courtyard, and was
+  effectively a castle within the castle. Notably, this unique tower design has no known exact
+  parallel in Britain or the Continent.
+
+  The North-East Tower is the best preserved of the three towers around the inner ward. It
+  comprised a basement with three floors above, some of which appear to have been residential.
+  The North-West Tower contains arrowslit embrasures in the basement, though the upper rooms
+  may have been residential. A large fireplace survives on one floor. The South-West Tower
+  contained a circular basement with three circular storeys above.
+
+  To the south of the castle lies a moated outer ward, although it does not totally surround
+  the castle. Here the outer gatehouse was located. Details of a turning bridge, which spanned
+  a section of the ditch, have been recovered by archaeological excavation. Little survives
+  of the curtain walls; only the southern wall and a section at the north-west still remain
+  on the original scale. The rest, together with the three corner towers were robbed to varying
+  extents during later reuse of the castle. Within the curtain wall, close to the Great Tower,
+  sits the inner gatehouse. This was protected by a turning gate, set of doors at the end
+  of the entrance passage and portcullis.
+
+  The castle changed hands several times during the Civil War, before finally falling to Parliament
+  in 1646; shortly afterwards it was substantially destroyed. Subsequent use of the site saw
+  a new county gaol built in the outer ward of the castle in 1784-85, a structure which survived
+  until 1962.
+
+  This monument is of national importance for its potential to enhance our knowledge of medieval
+  social, domestic and political life and warfare. The scheduled area comprises the remains
+  described and an area around them within which related evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3806
+source_title: Scheduled Monument Full Report — Castell y Fflint
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

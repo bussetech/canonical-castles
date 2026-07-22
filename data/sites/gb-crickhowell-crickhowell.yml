@@ -12,30 +12,49 @@ built:
   period: Medieval
 definitions_met:
   fortified_residence:
-    verdict: 'yes'
-    assessment: register-derived
-    basis: 'Cadw classes scheduled monument BR111 as SiteType: Castle within BroadClass: Defence.
-      This verdict is transcribed from the register''s own typology and NOT assessed against
-      this band''s criterion — the register designates by protection class, and its inclusion
-      rule is not this band''s rule. Treat as provisional.'
+    verdict: "yes"
+    assessment: assessed
+    basis: >-
+      Cadw's report describes a 12th-century motte (60m diameter, 8m high) and
+      bailey rebuilt in stone in 1272, with a shell keep on the motte, a
+      defensive wall carrying two D-shaped flanking towers, a bailey curtain
+      wall with round towers and a crenellated conjoined double tower — active
+      defence with flanking fire and parapets. Built and held by the Turberville
+      family, then rebuilt by Sir Grimbald Pauncefote and refortified by Sir
+      John Pauncefote (named lords) before Glyndŵr left it in ruins. Both halves
+      of the criterion are met.
+  revival_folly:
+    verdict: "no"
+    assessment: assessed
+    basis: >-
+      A 12th-century timber motte-and-bailey rebuilt in stone in 1272 and
+      refortified under royal command in the 14th century, ruined in the Glyndŵr
+      rising — a genuine medieval defensive castle of the defensive era, not a
+      post-defensive-era folly.
 register_entries:
 - register: gb-wls-cadw
   ref: BR111
   designation: 'Scheduled Monument — SiteType: Castle'
   url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=1754
-first_seen: '2026-07-21'
-last_updated: '2026-07-21'
-confidence: low
+first_seen: "2026-07-21"
+last_updated: "2026-07-22"
+confidence: medium
 sources:
 - url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=1754
-  title: Cof Cymru - National Historic Assets of Wales
+  title: Scheduled Monument Full Report — Crickhowell Castle
   publisher: Cadw
-  date: '2026-07-21'
-  note: Register entry; the sole source for this record.
+  date: "2026-07-22"
+  note: Cadw's full scheduled-monument report (BR111); supplies fabric, phasing and named lords, read in full and assessed.
 signals:
 - sig-20260721-cadw-br111
-notes: 'Imported in bulk from Cadw''s scheduled-monument register. One register speaks and
-  nothing corroborates it, hence confidence: low. Only fortified_residence carries a verdict;
-  every other band is OMITTED rather than set to no, because no source consulted so far speaks
-  to them. Upgrading this record means applying the bands to the structure itself and setting
-  assessment: assessed.'
+- sig-20260722-report-br111
+notes: >-
+  Assessed from Cadw's full report (BR111), replacing the register-derived
+  verdict with an assessed fortified_residence: yes and adding revival_folly: no.
+  Evidence: shell keep on the motte, D-shaped and round flanking towers, bailey
+  curtain wall, crenellated conjoined double tower, and the Turberville then
+  Pauncefote lords. popular_castle left UNASSESSED — the bailey is now a
+  playground and the report shows no visitor operation or usage evidence; the
+  dataset does not inflate this band. palatial_seat, state_fortification and
+  enclosure_fortification omitted — the report does not speak to them. Confidence
+  medium: one official report plus the register.

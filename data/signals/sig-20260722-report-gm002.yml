@@ -1,0 +1,103 @@
+id: sig-20260722-report-gm002
+site_id: gb-caerphilly-caerphilly
+attribute: designation_report
+value: 'Reference Number
+
+  GM002
+
+  Name
+
+  Caerphilly Castle
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Caerphilly
+
+  Community
+
+  Caerphilly
+
+  Easting
+
+  315483
+
+  Northing
+
+  187098
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  This monument comprises the remains of a medieval castle built by ‘Red Gilbert’ de Clare
+  between 1268-1271. Caerphilly Castle is one of the great medieval castles of western Europe.
+  Several factors give it this pre-eminence – its immense size (1.2ha), making it the second
+  largest in Britain, its large-scale use of water for defence and the fact that it is the
+  first truly concentric castle in Britain. At the time of its building, it was a revolutionary
+  masterpiece of military planning.
+
+  One of Henry III’s most powerful and ambitious barons, Gilbert de Clare, lord of Glamorgan,
+  built the castle. His purpose was to secure the area and prevent lowland south Wales from
+  falling into the hands of the Welsh leader Llywelyn ap Gruffudd, who controlled most of
+  mid and north Wales.
+
+  The outer skin or ward is formed by a low battlemented curtain wall with large semi-circular
+  projections in the corners and gatehouses in the middle of the east and west sides. Only
+  a narrow strip separates this from the much stronger inner ward which has high curtain walls,
+  circular corner towers and two large strong gatehouses corresponding with the outer ones.
+
+  The south and north lakes around the castle formed an almost impregnable barrier to attackers.
+  The dams themselves are a major achievement of medieval engineering. The South Dam is earlier
+  than the north dam; its outer face was protected by a massive wall with a battery of projecting
+  buttresses. The outer defences were completed by making a 1.2ha artificial island to the
+  west of the castle, known as the hornwork. The outer gatehouse on the east side is both
+  the present and original entrance. The outer ward is entered via a bridge leading to its
+  east gatehouse with twin D-shaped towers, only the restored outer walls of which remain.
+
+  The inner ward is the most impressive part of the castle. The corner towers demonstrate
+  varying degrees of preservation. The north-west tower is complete, little remains of the
+  north-east tower and the south-east is partly ruined. It stands at 15m high and leans at
+  an angle 10° from vertical, and the cause, whether subsidence or Civil War slighting, is
+  unknown. The imposing east gatehouse of the inner ward consists of twin D-shaped towers,
+  a central passage with portcullises at both ends and circular stair turrets on the inner
+  corners. The apartment on the second floor was probably that of the constable of the castle.
+
+  On the south side of the inner ward are the great hall and state apartments. The large ground-floor
+  hall was a sumptuous building. The two doors at the east end led to a buttery and cellar,
+  possibly with a small chapel over them. To the west were the state apartments, well-appointed
+  rooms with fireplaces and a large traceried window on the first floor.
+
+  To the north-west of the moat lies a 17th century Civil War earthwork gun platform. It is
+  not known if the earthwork was raised by the royalists or if it was the work of parliamentarian
+  forces after March 1646.
+
+  The castle’s active history was an extremely short one. By 1283 Edward I had removed the
+  threat of Welsh independence and the need for Caerphilly had gone. Minor Welsh attacks in
+  1294-5 and 1316 and a siege in 1326-27 failed to make any impact and the castle feel into
+  ruin.
+
+  This monument is of national importance for its potential to enhance our knowledge of medieval
+  social, domestic and political life and warfare. The scheduled area comprises the remains
+  described and an area around them within which related evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2848
+source_title: Scheduled Monument Full Report — Caerphilly Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

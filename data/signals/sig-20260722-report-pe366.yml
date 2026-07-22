@@ -1,0 +1,104 @@
+id: sig-20260722-report-pe366
+site_id: gb-haverfordwest-haverfordwest
+attribute: designation_report
+value: 'Reference Number
+
+  PE366
+
+  Name
+
+  Haverfordwest Castle
+
+  Date of Designation
+
+  20/02/1986
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Pembrokeshire
+
+  Community
+
+  Haverfordwest
+
+  Easting
+
+  195310
+
+  Northing
+
+  215735
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument consists of the remains of a castle, dating to the medieval period. It stands
+  at the end of ridge falling steeply on all but the western side that overlooks the western
+  Cleddau and tidal reaches at the lowest fordable location.
+
+  The castle was founded sometime between 1108 and 1124 by Tancred an immigrant Fleming as
+  part of the encouraged settlement of the cantref of Rhos at this time and is first recorded
+  when held by his son Richard Fitz Tancred in 118, at the time of Gerald of Wales visit in
+  the retinue of Archbishop Baldwin. At this stage the castle will have been a mostly earth
+  and timber construction though with a masonry keep part of which still survives. Richard’s
+  heir Robert was removed from the castle in 1210 by King John who in 1215 granted it to William
+  Marshall, Earl of Pembroke. An attack on Haverfordwest in 1220 by Llywelyn the Great burnt
+  the town but failed to breach the castle and it is likely by this time it had been rebuilt
+  in stone. The castle passed to the de Bohun family in the mid thirteen century and in 1289
+  was exchanged with Queen Eleanor. In the short period before her death in 1290  the queen
+  spent large sums on the castle and much of the existing masonry which is late 13th century
+  in style can be ascribed to this building program. In the 14th century the castle was held
+  by a series of owners including Edward the Black prince (from 1359 to 1367) and was repaired
+  in the hands of the Crown in 1381-1385. It repulsed an attack during the Glyndwr rebellion
+  in 1405. By the 16th century it was derelict but hastily refortified during the Civil War,
+  lost to Parliamentary forces in 1644, later recaptured and held for a year before surrendered
+  after the battle of Colby Moor, not far to the west in 1645 after the route of a Royalist
+  army on the march. In 1648 it was ordered to be slighted.
+
+  The castle is divided into two wards, the inner ward has round towers on the north-west
+  and south-west corners, while the south-east corner has a square tower with an additional
+  projecting turret. The north east corner being defended by the rectangular keep which survives
+  as footings incorporating some early arrow loops. The ward was entered to the west by a
+  gatehouse in a location now occupied by an 18th century building dating to the later use
+  of the castle as a prison. The remains of a spacious hall with large windows lie on the
+  south side. Private apartments formed part of an east range where later conversion to a
+  prison has blocked windows and seen much of the masonry refaced. The south west and south
+  east towers have three storeys, the latter will have incorporated the chapel and at the
+  base is a postern gate. The northwest tower preserves a wall walk carried on a row of corbels
+  on its east side, much of the exterior masonry was refaced in the later conversion. The
+  interior of outer ward provided a site for a new prison in 1820 and has seen redevelopment
+  to modern times. Little remains of the medieval defences though the curtain wall survives
+  in a much rebuilt form along most of the north side with one small semi-circular turret
+  and one square tower further east. The outer gatehouse of which no trace remains is likely
+  to have been on the west; removal of both outer and inner gatehouses may have begun as a
+  result of the Civil War slighting, completed by the stone robbing and development of later
+  centuries.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  defensive and domestic practices. The monument is well-preserved and an important relic
+  of the medieval landscape. It retains significant archaeological potential, with a strong
+  probability of the presence of both structural evidence and intact associated deposits.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=2714
+source_title: Scheduled Monument Full Report — Haverfordwest Castle
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.

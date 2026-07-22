@@ -1,0 +1,80 @@
+id: sig-20260722-report-pe169
+site_id: gb-cilgerran-pen-allt
+attribute: designation_report
+value: 'Reference Number
+
+  PE169
+
+  Name
+
+  Castell Pen-yr-Allt
+
+  Date of Designation
+
+  Status
+
+  Designated
+
+  Unitary Authority
+
+  Pembrokeshire
+
+  Community
+
+  Cilgerran
+
+  Easting
+
+  215784
+
+  Northing
+
+  242046
+
+  Broad Class
+
+  Defence
+
+  Site Type
+
+  Castle
+
+  Period
+
+  Medieval
+
+  The monument comprises the remains of a motte and bailey castle a military stronghold built
+  during the medieval period though located on the site of an earlier Iron Age promontory
+  fort.  A motte and bailey castle comprises a large conical or pyramidal mound of soil or
+  stone (the motte) surrounded by, or adjacent to, one or more embanked enclosures (the bailey).
+  Both may be surrounded by wet or dry ditches and could be further strengthened with palisades,
+  revetments, and/or a tower on top of the motte. The bailey, an area of c 60m north to south
+  by 50m east to west, is enclosed by a bank and ditch; the; rock cut ditch, about 5m to 6m
+  wide is evident on all sides except the north. The bank stands up to 7m above it but is
+  absent on the west where there are the low remains of a stone wall along this side or possible
+  stone building. There is a counterscarp to the ditch on the southern side. The motte is
+  located in the southern part of the interior, it is 20m in diameter and 4m high, the collapsed
+  remains of a masonry tower are on top. Geophysical survey undertaken in 2017 demonstrated
+  that complex multivallate defences exist around the north side of the enclosure, comprising
+  both ditches and stonework. A ditch was revealed curving around the northern side of the
+  motte some 20m from its base together with a buried around the base. Buried walling was
+  revealed along both the southeast and southwest edges of the enclosure. There are other
+  probable areas of buried stonework, and probable in-filled pits. The possible footings of
+  earlier roundhouse were detected to the north of the motte.
+
+  The monument is of national importance for its potential to enhance our knowledge of medieval
+  and later prehistoric defensive organisation. The well-preserved monument forms an important
+  element within the wider medieval and pre-historic context and the structure itself may
+  be expected to contain archaeological information relating to chronology, building techniques
+  and functional detail.
+
+  The scheduled area comprises the remains described and areas around them within which related
+  evidence may be expected to survive.'
+source_url: http://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?lang=en&id=3702
+source_title: Scheduled Monument Full Report — Castell Pen-yr-Allt
+publisher: Cadw
+observed_date: '2026-07-22'
+collected_by: scripts/build_assessment_batch.py
+confidence: high
+notes: The designation text. Assess the six bands against THIS evidence only; omit any band
+  it does not speak to.
